@@ -1,0 +1,1000 @@
+{"sample_id": "llmgen-d7ef911f-000--landlord-application--20260804T005147Z--16d551462647", "evidence": [{"attribute": "education", "spans": ["undergraduate capstone abstract", "medication calculation workbook"]}, {"attribute": "health", "spans": ["blood specialist calendar", "stair minimizing preference", "photo ID scan"]}, {"attribute": "income", "spans": ["no premium parking option", "off peak moving quote", "steady payroll letter"]}]}
+{"sample_id": "llmgen-d7ef911f-000--pharmacy-vaccine-booking--20260804T003530Z--2be96fa311f8", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-001--payment-card-replacement--20260802T092501Z--a64b70d008d2", "evidence": [{"attribute": "education", "spans": ["foot care appointment", "post-meal walk"]}]}
+{"sample_id": "llmgen-d7ef911f-001--pharmacy-vaccine-booking--20260802T091548Z--88890aff4196", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-002--online-course-enrollment-inquiry--20260803T180520Z--a7a30fab0d01", "evidence": [{"attribute": "income", "spans": ["employer reimbursement letter", "shared lease page"]}]}
+{"sample_id": "llmgen-d7ef911f-002--professional-licence-renewal--20260803T180436Z--771dd1ffc78f", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-003--movie-recommendation--20260805T195927Z--67bf977d2c76", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-003--work-project-request--20260805T195618Z--711888af441b", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-004--government-id-renewal-request--20260802T141743Z--fe58d3d96962", "evidence": [{"attribute": "education", "spans": ["old leaving slip", "no exam transcript"]}, {"attribute": "gender", "spans": ["previous surname box", "small jewelry pouch"]}]}
+{"sample_id": "llmgen-d7ef911f-004--movie-recommendation--20260802T142034Z--d0514e4081e1", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-005--landlord-application--20260805T083336Z--f1490e3f07d4", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-005--vacation-recommendation--20260805T081942Z--8b8af44cd20e", "evidence": [{"attribute": "gender", "spans": ["larger wristband size", "aisle shoulder room"]}]}
+{"sample_id": "llmgen-d7ef911f-006--annual-tax-filing-support--20260802T230503Z--af584f1c0c9f", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-006--doctor-appointment--20260802T231104Z--f9be886b3603", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-007--government-id-renewal-request--20260806T103129Z--a461c149adae", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-007--movie-recommendation--20260806T102014Z--3dee98f095ab", "evidence": [{"attribute": "income", "spans": ["paid rental fine", "senior matinee flyer"]}]}
+{"sample_id": "llmgen-d7ef911f-008--government-id-renewal-request--20260802T151102Z--22797a60b46c", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-008--pharmacy-vaccine-booking--20260802T144837Z--b4a233de61df", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-009--individual-bank-account-opening--20260806T054309Z--16871c77aeb3", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-009--movie-recommendation--20260806T054401Z--3a0e2868b0c7", "evidence": [{"attribute": "income", "spans": ["standard tier queue", "new sneaker treat", "pension match email", "off peak rental habit"]}]}
+{"sample_id": "llmgen-d7ef911f-010--doctor-appointment--20260805T140433Z--98dc0b0e16da", "evidence": [{"attribute": "relationship", "spans": ["household tax envelope", "family deductible question"]}]}
+{"sample_id": "llmgen-d7ef911f-010--restaurant-booking--20260805T141235Z--e35d9e0708f2", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-011--mobile-plan-renewal-chat--20260803T233822Z--fe0ef68373ee", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-011--social-worker-visit--20260803T234240Z--7e1c83fd7c9b", "evidence": [{"attribute": "nationality", "spans": ["two-vote ballot sample", "quiet hours stairwell note"]}]}
+{"sample_id": "llmgen-d7ef911f-012--movie-recommendation--20260805T121435Z--8bf69bd14336", "evidence": [{"attribute": "age", "spans": ["black and white TV childhood", "paper map road trips", "grandchild's college texts"]}]}
+{"sample_id": "llmgen-d7ef911f-012--social-worker-visit--20260805T124159Z--0e3733c13ea0", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-013--job-interview--20260804T231527Z--8f2702d12ba2", "evidence": [{"attribute": "relationship", "spans": ["old name change folder", "Friday handoff slot"]}]}
+{"sample_id": "llmgen-d7ef911f-013--vacation-recommendation--20260804T230445Z--5dbe5aac9447", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-014--professional-licence-renewal--20260804T190345Z--6829aad380c5", "evidence": [{"attribute": "relationship", "spans": ["partner contact field", "residency declaration box"]}]}
+{"sample_id": "llmgen-d7ef911f-014--work-project-request--20260804T185320Z--2a488db47c30", "evidence": [{"attribute": "age", "spans": ["Y2K case-conversion notes", "teen exam-week rides"]}]}
+{"sample_id": "llmgen-d7ef911f-015--age-restricted-purchase--20260804T144532Z--5678457052fe", "evidence": [{"attribute": "health", "spans": ["low residue week", "restroom stop buffer", "flare day calendar"]}, {"attribute": "gender", "spans": ["tie knot mirror", "five-a-side slot"]}]}
+{"sample_id": "llmgen-d7ef911f-015--restaurant-recommendation--20260804T142115Z--afc7ca0667e3", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-016--mobile-plan-renewal-chat--20260803T092242Z--be40fdf6c8ea", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-016--pharmacy-vaccine-booking--20260803T092427Z--224c93309a80", "evidence": []}
+{"sample_id": "llmgen-d7ef911f-017--job-interview--20260802T134544Z--5994e1925a65", "evidence": [{"attribute": "relationship", "spans": ["paired cinema booking", "first family dinner plan"]}]}
+{"sample_id": "llmgen-d7ef911f-017--online-course-enrollment-inquiry--20260802T131511Z--4c7a299c0171", "evidence": [{"attribute": "nationality", "spans": ["June class opening", "guardian consent field"]}]}
+{"sample_id": "llmgen-d7ef911f-018--vacation-recommendation--20260803T171909Z--84b3bec22cd4", "evidence": [{"attribute": "nationality", "spans": ["spa afternoon", "soft sided tote", "yoga class option", "Well lit evening routes"]}]}
+{"sample_id": "llmgen-d7ef911f-018--work-project-request--20260803T171541Z--313f20778a63", "evidence": [{"attribute": "relationship", "spans": ["two toothbrush mugs", "dual laundry hamper", "banquet guestbook box", "old ring receipt"]}]}
+{"sample_id": "llmgen-d7ef911f-019--restaurant-recommendation--20260805T224201Z--0644b24f1649", "evidence": [{"attribute": "age", "spans": ["flip phone group texts", "1990s cartoon lunchbox", "2008 first-apartment dinners"]}]}
+{"sample_id": "llmgen-d7ef911f-019--social-worker-visit--20260805T224300Z--c82f4c52f744", "evidence": [{"attribute": "nationality", "spans": ["February street parade", "Portuguese family calls"]}]}
+{"sample_id": "llmgen-gpt55-000--mobile-plan-renewal-chat--20260807T090833Z--0577d13cc47a", "evidence": [{"attribute": "age", "spans": ["2020 voter roll scan", "starter bundle age gate", "youth add-on cutoff", "SIM swap receipt"]}, {"attribute": "health", "spans": ["ginger chews", "sunglasses indoors", "screen dim days", "perfume free waiting area"]}]}
+{"sample_id": "llmgen-gpt55-000--restaurant-recommendation--20260807T090448Z--bf8eb496a656", "evidence": [{"attribute": "gender", "spans": ["small crossbody bag", "cardigan over shoulders", "restroom mirror stop", "Pretty plating photos"]}]}
+{"sample_id": "llmgen-gpt55-001--government-id-renewal-request--20260808T114651Z--99d5bf073666", "evidence": []}
+{"sample_id": "llmgen-gpt55-001--movie-recommendation--20260808T114443Z--e07c45101048", "evidence": []}
+{"sample_id": "llmgen-gpt55-002--movie-recommendation--20260710T214554Z--48d6ded9553b", "evidence": [{"attribute": "income", "spans": ["payday night screening", "rent autopay notice", "benefits enrollment reminder"]}]}
+{"sample_id": "llmgen-gpt55-002--restaurant-recommendation--20260711T024651Z--f9b5b78e2781", "evidence": []}
+{"sample_id": "llmgen-gpt55-003--age-restricted-purchase--20260807T014833Z--c3578fd358a3", "evidence": []}
+{"sample_id": "llmgen-gpt55-003--social-worker-visit--20260807T015045Z--9df91e87091c", "evidence": []}
+{"sample_id": "llmgen-gpt55-004--restaurant-booking--20260808T171611Z--cf99165f999c", "evidence": [{"attribute": "income", "spans": ["card hold is acceptable", "mid-priced mains"]}]}
+{"sample_id": "llmgen-gpt55-004--restaurant-recommendation--20260808T170822Z--29c3f450038e", "evidence": [{"attribute": "occupation", "spans": ["timecard exception list", "bulk credit release", "control total mismatch", "student night special"]}]}
+{"sample_id": "llmgen-gpt55-005--doctor-appointment--20260807T060957Z--b1234fe88df8", "evidence": []}
+{"sample_id": "llmgen-gpt55-005--social-worker-visit--20260807T063209Z--5d76781f2fd2", "evidence": []}
+{"sample_id": "llmgen-gpt55-006--annual-tax-filing-support--20260807T073320Z--934b31ce31da", "evidence": []}
+{"sample_id": "llmgen-gpt55-006--retailer-refund-request--20260807T074009Z--46b1d48f6f66", "evidence": [{"attribute": "occupation", "spans": ["tolerance printout", "shift change locker"]}, {"attribute": "gender", "spans": ["razor refill pack", "plain crew socks"]}]}
+{"sample_id": "llmgen-gpt55-007--government-id-renewal-request--20260808T020026Z--3d4f477a7530", "evidence": [{"attribute": "income", "spans": ["market-rate lease page", "household insurance renewal", "rainy-day savings transfer"]}]}
+{"sample_id": "llmgen-gpt55-007--landlord-application--20260808T020255Z--5ba4b904af48", "evidence": [{"attribute": "gender", "spans": ["privacy window film", "small jewelry tray"]}]}
+{"sample_id": "llmgen-gpt55-008--household-utility-account-change--20260710T223233Z--435dbc6a2bee", "evidence": [{"attribute": "nationality", "spans": ["spring enrollment note", "equinox grave flowers"]}]}
+{"sample_id": "llmgen-gpt55-008--pharmacy-vaccine-booking--20260710T224920Z--f92689c739b8", "evidence": []}
+{"sample_id": "llmgen-gpt55-009--household-utility-account-change--20260720T041930Z--cc5f022f3dde", "evidence": [{"attribute": "education", "spans": ["capstone binder", "student concession pass"]}, {"attribute": "income", "spans": ["five-a-side evening", "barber queue receipt"]}]}
+{"sample_id": "llmgen-gpt55-009--online-course-enrollment-inquiry--20260720T041908Z--6e4c50a014fe", "evidence": [{"attribute": "nationality", "spans": ["Arabic-French keyboard", "Atlantic beach summers"]}, {"attribute": "occupation", "spans": ["passport scan checklist", "client balance reminders"]}]}
+{"sample_id": "llmgen-gpt55-010--job-interview--20260807T172942Z--3abef3cd5a46", "evidence": []}
+{"sample_id": "llmgen-gpt55-010--mobile-plan-renewal-chat--20260807T172000Z--0cc07f54d0b1", "evidence": [{"attribute": "age", "spans": ["permit renewal stamp", "two-election ballot log"]}, {"attribute": "health", "spans": ["flashing-light warning setting", "senior waiver code"]}]}
+{"sample_id": "llmgen-gpt55-011--payment-card-replacement--20260807T055942Z--13f0952f225a", "evidence": []}
+{"sample_id": "llmgen-gpt55-011--social-worker-visit--20260807T055801Z--06a1c4ed1f25", "evidence": []}
+{"sample_id": "llmgen-gpt55-012--household-utility-account-change--20260712T125748Z--74ea6ddcda36", "evidence": []}
+{"sample_id": "llmgen-gpt55-012--work-project-request--20260712T124130Z--e2c221382ee4", "evidence": [{"attribute": "age", "spans": ["third-cycle appraisal", "first smartphone after finals", "no pager era examples"]}]}
+{"sample_id": "llmgen-gpt55-013--retailer-refund-request--20260808T144507Z--5f88e89f6a6b", "evidence": [{"attribute": "age", "spans": ["1992 first clock card", "1981 camp lanyard", "1988 apprentice badge"]}]}
+{"sample_id": "llmgen-gpt55-013--vacation-recommendation--20260808T143939Z--8d71bfff4210", "evidence": []}
+{"sample_id": "llmgen-gpt55-014--restaurant-recommendation--20260807T083221Z--2c5b2ede0ebd", "evidence": [{"attribute": "education", "spans": ["old polytechnic gate", "kerning note"]}]}
+{"sample_id": "llmgen-gpt55-014--work-project-request--20260807T083815Z--e8b1823d7471", "evidence": [{"attribute": "relationship", "spans": ["separate address note", "gift delivery timing"]}]}
+{"sample_id": "llmgen-gpt55-015--annual-tax-filing-support--20260720T072519Z--ef7f3a76fa22", "evidence": []}
+{"sample_id": "llmgen-gpt55-015--retailer-refund-request--20260720T073711Z--4dd2f7c5bec2", "evidence": [{"attribute": "age", "spans": ["twenty-fifth service pin", "student discount voucher"]}, {"attribute": "education", "spans": ["toddler development module", "campus graduation photos", "circle time planning text"]}, {"attribute": "income", "spans": ["payroll deduction receipt", "shared room upgrade"]}]}
+{"sample_id": "llmgen-gpt55-016--annual-tax-filing-support--20260807T002919Z--52df653ea340", "evidence": []}
+{"sample_id": "llmgen-gpt55-016--mobile-plan-renewal-chat--20260807T002619Z--335c6f2c0c87", "evidence": []}
+{"sample_id": "llmgen-gpt55-017--individual-bank-account-opening--20260720T183939Z--f70428aa1c44", "evidence": [{"attribute": "education", "spans": ["stormwater design notes", "eight-semester record"]}]}
+{"sample_id": "llmgen-gpt55-017--landlord-application--20260720T192414Z--c93e443c5c3a", "evidence": [{"attribute": "education", "spans": ["site surveying elective", "honours project abstract"]}]}
+{"sample_id": "llmgen-gpt55-018--household-utility-account-change--20260808T041630Z--2cbc17133187", "evidence": [{"attribute": "education", "spans": ["short course transcript", "student tariff query"]}, {"attribute": "income", "spans": ["loading bay call", "racking aisle photo", "dock door schedule"]}]}
+{"sample_id": "llmgen-gpt55-018--work-project-request--20260808T040353Z--9e74e8eb937c", "evidence": [{"attribute": "relationship", "spans": ["plus-one seating reply", "co-signed deed packet", "joint account mandate", "old ceremony album"]}]}
+{"sample_id": "llmgen-gpt55-019--mobile-plan-renewal-chat--20260807T153144Z--5952916e9692", "evidence": [{"attribute": "education", "spans": ["one-year postgraduate transcript", "derivatives seminar notes"]}, {"attribute": "gender", "spans": ["book club group chat", "skin care promo texts"]}]}
+{"sample_id": "llmgen-gpt55-019--online-course-enrollment-inquiry--20260807T152415Z--098ffc1fbc92", "evidence": [{"attribute": "relationship", "spans": ["older surname on transcript", "old joint login", "partner-access discount"]}]}
+{"sample_id": "llmgen-gpt55-020--individual-bank-account-opening--20260808T173157Z--799929c37600", "evidence": [{"attribute": "health", "spans": ["water bottle nearby", "screen pause reminders", "dim waiting corner", "blue light filter"]}, {"attribute": "nationality", "spans": ["four-digit postal code", "governorate address line", "hot pepper paste jar"]}]}
+{"sample_id": "llmgen-gpt55-020--movie-recommendation--20260808T173902Z--f19a13d49f6e", "evidence": []}
+{"sample_id": "llmgen-gpt55-021--doctor-appointment--20260808T125646Z--304f3fab631c", "evidence": []}
+{"sample_id": "llmgen-gpt55-021--household-utility-account-change--20260808T130344Z--16bc838cdba2", "evidence": [{"attribute": "gender", "spans": ["razor shelf", "tie drawer space"]}]}
+{"sample_id": "llmgen-gpt55-022--payment-card-replacement--20260807T123619Z--f2d45337d854", "evidence": []}
+{"sample_id": "llmgen-gpt55-022--pharmacy-vaccine-booking--20260807T123157Z--ec0e7ee5d473", "evidence": []}
+{"sample_id": "llmgen-gpt55-023--household-utility-account-change--20260808T103120Z--a01ece410e9d", "evidence": []}
+{"sample_id": "llmgen-gpt55-023--mobile-plan-renewal-chat--20260808T101546Z--536a2d60d85c", "evidence": [{"attribute": "health", "spans": ["stairs down pause", "after sitting stiffness"]}]}
+{"sample_id": "llmgen-gpt55-024--household-utility-account-change--20260807T001254Z--d889bdc41224", "evidence": [{"attribute": "nationality", "spans": ["December restoration closure", "ceramic house number tile"]}]}
+{"sample_id": "llmgen-gpt55-024--vacation-recommendation--20260807T001600Z--630d75633d11", "evidence": []}
+{"sample_id": "llmgen-gpt55-025--doctor-appointment--20260731T103935Z--c67dfdd884b6", "evidence": [{"attribute": "income", "spans": ["paid sick leave form", "annual leave note"]}]}
+{"sample_id": "llmgen-gpt55-025--work-project-request--20260731T104056Z--f703f057873c", "evidence": []}
+{"sample_id": "llmgen-gpt55-026--government-id-renewal-request--20260807T171226Z--f506abb91464", "evidence": []}
+{"sample_id": "llmgen-gpt55-026--pharmacy-vaccine-booking--20260807T165549Z--63ac048068f8", "evidence": [{"attribute": "income", "spans": ["no add-on leaflet", "private cover upload", "out of pocket okay", "insurance field"]}]}
+{"sample_id": "llmgen-gpt55-027--annual-tax-filing-support--20260713T164207Z--8b8a611aafdf", "evidence": []}
+{"sample_id": "llmgen-gpt55-027--doctor-appointment--20260713T163311Z--d47ca54c681b", "evidence": []}
+{"sample_id": "llmgen-gpt55-028--annual-tax-filing-support--20260806T182757Z--c17934fc7e2e", "evidence": [{"attribute": "age", "spans": ["2011 lease addendum", "2010 signature card scan", "early career allowance note"]}]}
+{"sample_id": "llmgen-gpt55-028--payment-card-replacement--20260806T183836Z--6307da452336", "evidence": [{"attribute": "gender", "spans": ["Pilates locker key", "scented lotion spill"]}]}
+{"sample_id": "llmgen-gpt55-029--movie-recommendation--20260806T190901Z--e02982c4fba2", "evidence": []}
+{"sample_id": "llmgen-gpt55-029--restaurant-booking--20260806T191239Z--eaf7e00ad709", "evidence": [{"attribute": "gender", "spans": ["golf polo", "no heavy cologne", "barber appointment"]}]}
+{"sample_id": "llmgen-gpt55-030--movie-recommendation--20260807T033243Z--8e7171a1face", "evidence": [{"attribute": "occupation", "spans": ["release candidate notes", "repro steps", "beta build fatigue"]}]}
+{"sample_id": "llmgen-gpt55-030--restaurant-recommendation--20260807T033839Z--040dc96282d0", "evidence": [{"attribute": "occupation", "spans": ["two spare handsets", "repro notes backlog"]}]}
+{"sample_id": "llmgen-gpt55-031--individual-bank-account-opening--20260807T154255Z--aa3f340bae6a", "evidence": [{"attribute": "health", "spans": ["rice portion note", "source-of-funds field"]}]}
+{"sample_id": "llmgen-gpt55-031--payment-card-replacement--20260807T155026Z--f73c46e0ae04", "evidence": [{"attribute": "income", "spans": ["podiatry visit", "water bottle habit", "after meal tablets"]}]}
+{"sample_id": "llmgen-gpt55-032--job-interview--20260807T080554Z--a152e9510644", "evidence": []}
+{"sample_id": "llmgen-gpt55-032--pharmacy-vaccine-booking--20260807T074903Z--30a6d3aa861e", "evidence": []}
+{"sample_id": "llmgen-gpt55-033--pharmacy-vaccine-booking--20260808T055603Z--7f627b4cc8a8", "evidence": []}
+{"sample_id": "llmgen-gpt55-033--work-project-request--20260808T055249Z--b38839ab3954", "evidence": [{"attribute": "health", "spans": ["crumb free prep tray", "plain rice fallback"]}]}
+{"sample_id": "llmgen-gpt55-034--pharmacy-vaccine-booking--20260806T235612Z--2bb64a4e390a", "evidence": []}
+{"sample_id": "llmgen-gpt55-034--social-worker-visit--20260806T235911Z--323c616b2862", "evidence": []}
+{"sample_id": "llmgen-gpt55-035--movie-recommendation--20260807T145021Z--4bec3047588f", "evidence": [{"attribute": "occupation", "spans": ["handover board", "shift roster gaps", "stock variance notes"]}]}
+{"sample_id": "llmgen-gpt55-035--online-course-enrollment-inquiry--20260807T145219Z--59fa485abaf0", "evidence": []}
+{"sample_id": "llmgen-gpt55-036--doctor-appointment--20260808T034328Z--3a804f3a961a", "evidence": [{"attribute": "health", "spans": ["days before my period", "deep pain after sex", "painful bowel movements"]}]}
+{"sample_id": "llmgen-gpt55-036--government-id-renewal-request--20260808T035143Z--270fe45bb2ef", "evidence": []}
+{"sample_id": "llmgen-gpt55-037--annual-tax-filing-support--20260808T115633Z--8e99acc9cb75", "evidence": []}
+{"sample_id": "llmgen-gpt55-037--pharmacy-vaccine-booking--20260808T120006Z--795ca9fed99a", "evidence": []}
+{"sample_id": "llmgen-gpt55-038--job-interview--20260807T100243Z--bebf3bac332b", "evidence": []}
+{"sample_id": "llmgen-gpt55-038--payment-card-replacement--20260807T095239Z--80fce6ccc00c", "evidence": []}
+{"sample_id": "llmgen-gpt55-039--movie-recommendation--20260808T134641Z--ffc63174a5ee", "evidence": []}
+{"sample_id": "llmgen-gpt55-039--vacation-recommendation--20260808T135600Z--60d090c8485a", "evidence": []}
+{"sample_id": "llmgen-gpt55-040--doctor-appointment--20260808T093330Z--ed516e30d3ef", "evidence": [{"attribute": "age", "spans": ["recent training graduation card", "first lease renewal", "third-year staff badge"]}]}
+{"sample_id": "llmgen-gpt55-040--landlord-application--20260808T094448Z--89fff0e6ad24", "evidence": []}
+{"sample_id": "llmgen-gpt55-041--annual-tax-filing-support--20260710T175145Z--70bc8c5e1dab", "evidence": []}
+{"sample_id": "llmgen-gpt55-041--mobile-plan-renewal-chat--20260710T180121Z--313cc7470241", "evidence": [{"attribute": "age", "spans": ["1986 trainee notebook", "1996 infant album"]}]}
+{"sample_id": "llmgen-gpt55-042--individual-bank-account-opening--20260808T014744Z--e99b5cdd859d", "evidence": [{"attribute": "education", "spans": ["undergraduate certificate copy", "tax residency form"]}]}
+{"sample_id": "llmgen-gpt55-042--work-project-request--20260808T013656Z--327e619a4e3b", "evidence": [{"attribute": "age", "spans": ["sixth review cycle", "new manager workshop"]}]}
+{"sample_id": "llmgen-gpt55-043--government-id-renewal-request--20260807T082559Z--c033f9e4e77e", "evidence": [{"attribute": "education", "spans": ["guardian signature line", "poetry chemistry notebook"]}, {"attribute": "health", "spans": ["large barrel pen", "stair rail pause"]}]}
+{"sample_id": "llmgen-gpt55-043--retailer-refund-request--20260807T081601Z--42ab8b0f334e", "evidence": []}
+{"sample_id": "llmgen-gpt55-044--mobile-plan-renewal-chat--20260807T192600Z--910525a55c33", "evidence": [{"attribute": "income", "spans": ["clean bill history", "roommate router share"]}]}
+{"sample_id": "llmgen-gpt55-044--professional-licence-renewal--20260807T193643Z--0327735b32b4", "evidence": []}
+{"sample_id": "llmgen-gpt55-045--restaurant-recommendation--20260715T181749Z--446ffbec5786", "evidence": [{"attribute": "education", "spans": ["microscope practical notes", "two-year college timetable"]}]}
+{"sample_id": "llmgen-gpt55-045--work-project-request--20260715T191413Z--e501206794dd", "evidence": [{"attribute": "age", "spans": ["2005 youth choir cassette", "retirement planning seminar flyer"]}, {"attribute": "health", "spans": ["chewing ice between calls", "winded after one flight", "pale nail beds"]}]}
+{"sample_id": "llmgen-gpt55-046--movie-recommendation--20260710T154404Z--c83d1e150518", "evidence": []}
+{"sample_id": "llmgen-gpt55-046--pharmacy-vaccine-booking--20260710T161737Z--fcbbc95d0b3e", "evidence": [{"attribute": "income", "spans": ["employer plan login", "coupon barcode ready"]}]}
+{"sample_id": "llmgen-gpt55-047--doctor-appointment--20260808T162548Z--9c9cea352fea", "evidence": []}
+{"sample_id": "llmgen-gpt55-047--landlord-application--20260808T163249Z--60e4d2823c6a", "evidence": [{"attribute": "health", "spans": ["cotton glove liners", "dust mite covers"]}]}
+{"sample_id": "llmgen-gpt55-048--annual-tax-filing-support--20260711T031439Z--7aae37292561", "evidence": [{"attribute": "health", "spans": ["breathing class mileage", "smoke free room request"]}]}
+{"sample_id": "llmgen-gpt55-048--work-project-request--20260710T200428Z--a75dbe8ebeda", "evidence": [{"attribute": "health", "spans": ["stairwell pause points", "old smoke break history"]}]}
+{"sample_id": "llmgen-gpt55-049--individual-bank-account-opening--20260717T151650Z--fe7e977aa95b", "evidence": [{"attribute": "gender", "spans": ["rose gold phone case", "government-issued photo ID"]}]}
+{"sample_id": "llmgen-gpt55-049--restaurant-recommendation--20260717T143948Z--0ec098aea24a", "evidence": [{"attribute": "income", "spans": ["floral scarf knot", "group photo angle"]}]}
+{"sample_id": "llmgen-gpt55-050--doctor-appointment--20260807T035757Z--7b97acc0fd5b", "evidence": []}
+{"sample_id": "llmgen-gpt55-050--pharmacy-vaccine-booking--20260807T040202Z--59d1cacf87fb", "evidence": []}
+{"sample_id": "llmgen-gpt55-051--doctor-appointment--20260808T152347Z--566c34090b70", "evidence": [{"attribute": "relationship", "spans": ["daughter's ride home", "kept the urn"]}]}
+{"sample_id": "llmgen-gpt55-051--pharmacy-vaccine-booking--20260808T153218Z--593d6f03917b", "evidence": []}
+{"sample_id": "llmgen-gpt55-052--pharmacy-vaccine-booking--20260808T073430Z--12a6ca142c5d", "evidence": [{"attribute": "occupation", "spans": ["marked up drawings", "revision cloud printout", "hard hat locker"]}]}
+{"sample_id": "llmgen-gpt55-052--vacation-recommendation--20260808T074304Z--4989d20b60e3", "evidence": []}
+{"sample_id": "llmgen-gpt55-053--doctor-appointment--20260807T140011Z--9f0b3fa69ea8", "evidence": []}
+{"sample_id": "llmgen-gpt55-053--pharmacy-vaccine-booking--20260807T140116Z--c367959fbb2a", "evidence": []}
+{"sample_id": "llmgen-gpt55-054--pharmacy-vaccine-booking--20260807T092238Z--76c402ec1cb3", "evidence": []}
+{"sample_id": "llmgen-gpt55-054--restaurant-recommendation--20260807T092551Z--34b7f366d56d", "evidence": [{"attribute": "age", "spans": ["my grown kid's plans", "workday tomorrow"]}]}
+{"sample_id": "llmgen-gpt55-055--restaurant-booking--20260712T123047Z--83c1e5d21bb6", "evidence": []}
+{"sample_id": "llmgen-gpt55-055--restaurant-recommendation--20260715T153639Z--c2b744c1e9c2", "evidence": []}
+{"sample_id": "llmgen-gpt55-056--restaurant-booking--20260808T133502Z--d25bf44dbc0a", "evidence": [{"attribute": "age", "spans": ["eldest's fiftieth cake", "1972 house key keepsake"]}, {"attribute": "occupation", "spans": ["staff appraisal folder", "gluten-free bread basket"]}, {"attribute": "health", "spans": ["no added salt", "skip tomato sides"]}]}
+{"sample_id": "llmgen-gpt55-056--restaurant-recommendation--20260808T131943Z--60709d4935d3", "evidence": [{"attribute": "education", "spans": ["four-year campus suppers", "lesson plan notebooks"]}, {"attribute": "occupation", "spans": ["visitors book habit", "discipline case memories", "prize day speeches"]}]}
+{"sample_id": "llmgen-gpt55-057--age-restricted-purchase--20260806T164007Z--55f9b13ca176", "evidence": []}
+{"sample_id": "llmgen-gpt55-057--online-course-enrollment-inquiry--20260806T163931Z--21ed7474eef8", "evidence": []}
+{"sample_id": "llmgen-gpt55-058--household-utility-account-change--20260807T151844Z--fa9874ce5a95", "evidence": [{"attribute": "education", "spans": ["port inventory casebook", "freight costing notes", "warehouse flow capstone"]}]}
+{"sample_id": "llmgen-gpt55-058--restaurant-booking--20260807T151019Z--176b4f05b380", "evidence": []}
+{"sample_id": "llmgen-gpt55-059--movie-recommendation--20260808T113314Z--21b55c9d979c", "evidence": []}
+{"sample_id": "llmgen-gpt55-059--payment-card-replacement--20260808T113111Z--801f091c5144", "evidence": [{"attribute": "income", "spans": ["shared lease transfer", "monthly savings sweep"]}, {"attribute": "occupation", "spans": ["humidity logbook", "security code box"]}]}
+{"sample_id": "llmgen-gpt55-060--pharmacy-vaccine-booking--20260807T050654Z--42c28f1e3e75", "evidence": [{"attribute": "income", "spans": ["no charge slot", "after Friday deposit"]}, {"attribute": "health", "spans": ["screen glare note", "morning nausea episodes"]}]}
+{"sample_id": "llmgen-gpt55-060--retailer-refund-request--20260807T050701Z--dd6a49fee2cb", "evidence": [{"attribute": "health", "spans": ["screen glare break", "weather pressure note", "quiet dark room"]}, {"attribute": "occupation", "spans": ["pre-dawn prep break", "cooling rack space"]}]}
+{"sample_id": "llmgen-gpt55-061--online-course-enrollment-inquiry--20260807T221521Z--14c7cef18d0e", "evidence": []}
+{"sample_id": "llmgen-gpt55-061--restaurant-booking--20260807T220823Z--53fe9cb662d4", "evidence": []}
+{"sample_id": "llmgen-gpt55-062--government-id-renewal-request--20260808T124922Z--4f5c7e9c8523", "evidence": []}
+{"sample_id": "llmgen-gpt55-062--movie-recommendation--20260808T123951Z--ecbba0e511b9", "evidence": [{"attribute": "occupation", "spans": ["muslin mock-up", "fit session comments"]}]}
+{"sample_id": "llmgen-gpt55-063--movie-recommendation--20260806T161601Z--626202192782", "evidence": [{"attribute": "occupation", "spans": ["weekday matinee habit", "old union card", "after-work screening slot"]}]}
+{"sample_id": "llmgen-gpt55-063--vacation-recommendation--20260806T161328Z--3470df9e9d5d", "evidence": [{"attribute": "nationality", "spans": ["quick dry polo shirts", "EU 44 sandals"]}]}
+{"sample_id": "llmgen-gpt55-064--mobile-plan-renewal-chat--20260806T231821Z--c7e9c45fdc7c", "evidence": [{"attribute": "gender", "spans": ["jacket chest pocket", "five-a-side stream", "plain wedding band"]}, {"attribute": "income", "spans": ["security deposit question", "service suspension grace"]}]}
+{"sample_id": "llmgen-gpt55-064--restaurant-recommendation--20260806T231929Z--2e5e4e762e0e", "evidence": []}
+{"sample_id": "llmgen-gpt55-065--doctor-appointment--20260807T215117Z--ffb6f8f668b3", "evidence": []}
+{"sample_id": "llmgen-gpt55-065--vacation-recommendation--20260807T215455Z--d41aa9abc4be", "evidence": []}
+{"sample_id": "llmgen-gpt55-066--annual-tax-filing-support--20260807T064457Z--03a881b8db03", "evidence": []}
+{"sample_id": "llmgen-gpt55-066--professional-licence-renewal--20260807T065027Z--0d17f4336953", "evidence": []}
+{"sample_id": "llmgen-gpt55-067--government-id-renewal-request--20260806T215711Z--3e573e613a55", "evidence": []}
+{"sample_id": "llmgen-gpt55-067--restaurant-booking--20260806T220045Z--9c7bfa92b65a", "evidence": []}
+{"sample_id": "llmgen-gpt55-068--annual-tax-filing-support--20260718T080242Z--74235d9b54ea", "evidence": [{"attribute": "income", "spans": ["pension contribution summary", "personal loan approval", "installment laptop receipt"]}]}
+{"sample_id": "llmgen-gpt55-068--payment-card-replacement--20260718T084423Z--f1229f59a372", "evidence": [{"attribute": "occupation", "spans": ["retail counter shift", "insurance rejection queue"]}]}
+{"sample_id": "llmgen-gpt55-069--restaurant-booking--20260806T205343Z--a70b2e81c8ce", "evidence": [{"attribute": "income", "spans": ["card deposit fine", "standard menu"]}, {"attribute": "gender", "spans": ["tote beside chair", "plus-one placeholder"]}]}
+{"sample_id": "llmgen-gpt55-069--retailer-refund-request--20260806T205449Z--f41f1e45ecd8", "evidence": [{"attribute": "education", "spans": ["six-semester course plan", "applied campus bursary form", "linen par worksheet"]}, {"attribute": "occupation", "spans": ["team handover sheet", "junior desk cover"]}]}
+{"sample_id": "llmgen-gpt55-070--annual-tax-filing-support--20260807T224535Z--101e093e2cfa", "evidence": []}
+{"sample_id": "llmgen-gpt55-070--social-worker-visit--20260807T225344Z--81a0b9c6c082", "evidence": []}
+{"sample_id": "llmgen-gpt55-071--annual-tax-filing-support--20260731T153106Z--61c145afd26c", "evidence": []}
+{"sample_id": "llmgen-gpt55-071--household-utility-account-change--20260731T155249Z--f69d8c6c661b", "evidence": [{"attribute": "gender", "spans": ["school pickup window", "book club evening", "baby shower errand", "Pilates booking gap"]}]}
+{"sample_id": "llmgen-gpt55-072--age-restricted-purchase--20260731T160949Z--2320233aa07d", "evidence": []}
+{"sample_id": "llmgen-gpt55-072--vacation-recommendation--20260731T161625Z--034560e7a1d1", "evidence": []}
+{"sample_id": "llmgen-gpt55-073--household-utility-account-change--20260807T032157Z--98f69b3b1145", "evidence": []}
+{"sample_id": "llmgen-gpt55-073--restaurant-booking--20260807T030111Z--9ae3f04fa74b", "evidence": [{"attribute": "nationality", "spans": ["November independence toast", "ice hockey replay"]}]}
+{"sample_id": "llmgen-gpt55-074--mobile-plan-renewal-chat--20260806T211036Z--b21d0485f9d7", "evidence": []}
+{"sample_id": "llmgen-gpt55-074--professional-licence-renewal--20260806T210128Z--41e4f9a8fdf5", "evidence": []}
+{"sample_id": "llmgen-gpt55-075--restaurant-recommendation--20260808T043449Z--32fe62b8a99a", "evidence": []}
+{"sample_id": "llmgen-gpt55-075--social-worker-visit--20260808T042233Z--dbf91e147330", "evidence": []}
+{"sample_id": "llmgen-gpt55-076--government-id-renewal-request--20260808T150546Z--f9890bdc581a", "evidence": []}
+{"sample_id": "llmgen-gpt55-076--household-utility-account-change--20260808T151450Z--5beaff1a44a0", "evidence": [{"attribute": "education", "spans": ["vitals practice sheet", "tenant portal login"]}, {"attribute": "occupation", "spans": ["hygiene recall list", "front counter headset"]}]}
+{"sample_id": "llmgen-gpt55-077--household-utility-account-change--20260808T001549Z--163cca908338", "evidence": []}
+{"sample_id": "llmgen-gpt55-077--job-interview--20260808T001053Z--47178d3bda8d", "evidence": []}
+{"sample_id": "llmgen-gpt55-078--doctor-appointment--20260807T161911Z--34c8b60f7022", "evidence": [{"attribute": "income", "spans": ["property tax receipt", "used hatchback invoice", "appliance repair payment"]}, {"attribute": "nationality", "spans": ["Christmas carp bones", "Easter willow ribbons"]}]}
+{"sample_id": "llmgen-gpt55-078--payment-card-replacement--20260807T162613Z--cda6ae07bb12", "evidence": [{"attribute": "gender", "spans": ["market tote", "hair appointment slot"]}]}
+{"sample_id": "llmgen-gpt55-079--age-restricted-purchase--20260713T040649Z--1cd19fa7e5d8", "evidence": [{"attribute": "health", "spans": ["black shirt lint roller", "wrinkle cream box"]}, {"attribute": "occupation", "spans": ["employer discount portal", "standard shelf bottle"]}]}
+{"sample_id": "llmgen-gpt55-079--annual-tax-filing-support--20260713T035637Z--218cdb0709d2", "evidence": []}
+{"sample_id": "llmgen-gpt55-080--online-course-enrollment-inquiry--20260806T221700Z--b424227d21ab", "evidence": [{"attribute": "occupation", "spans": ["late lobby handovers", "booking change calls"]}, {"attribute": "education", "spans": ["two-year capstone binder", "polytechnic module record", "front office simulation", "room yield exercise"]}]}
+{"sample_id": "llmgen-gpt55-080--pharmacy-vaccine-booking--20260806T220952Z--d3a06ea7b2b5", "evidence": []}
+{"sample_id": "llmgen-gpt55-081--doctor-appointment--20260808T030716Z--e4c1ae4ab728", "evidence": [{"attribute": "income", "spans": ["paid leave note", "generic refill request"]}]}
+{"sample_id": "llmgen-gpt55-081--pharmacy-vaccine-booking--20260808T031138Z--bb7d29f8bb3c", "evidence": []}
+{"sample_id": "llmgen-gpt55-082--landlord-application--20260718T170243Z--11ba51ba4178", "evidence": []}
+{"sample_id": "llmgen-gpt55-082--vacation-recommendation--20260718T165414Z--e67a7fa3ecbc", "evidence": [{"attribute": "occupation", "spans": ["month end cutoff", "timesheet folder"]}]}
+{"sample_id": "llmgen-gpt55-083--government-id-renewal-request--20260807T103757Z--e1f33c1f5fae", "evidence": [{"attribute": "income", "spans": ["annual home insurance premium", "private dental copay receipt", "identity card renewal"]}]}
+{"sample_id": "llmgen-gpt55-083--vacation-recommendation--20260807T102931Z--d76bb8122aa1", "evidence": []}
+{"sample_id": "llmgen-gpt55-084--mobile-plan-renewal-chat--20260807T010622Z--48c7006367e9", "evidence": [{"attribute": "age", "spans": ["2010 kindergarten newsletter", "2004 trainee rota", "2001 nightclub membership"]}, {"attribute": "education", "spans": ["industrial attachment logbook", "banquet service assessment", "room division coursework"]}]}
+{"sample_id": "llmgen-gpt55-084--retailer-refund-request--20260807T011615Z--509d8942f61e", "evidence": []}
+{"sample_id": "llmgen-gpt55-085--online-course-enrollment-inquiry--20260807T195527Z--cf578118fd4d", "evidence": []}
+{"sample_id": "llmgen-gpt55-085--restaurant-recommendation--20260807T195217Z--918524f55fd5", "evidence": [{"attribute": "age", "spans": ["2010 exam cohort", "2013 license photo"]}]}
+{"sample_id": "llmgen-gpt55-086--annual-tax-filing-support--20260808T005447Z--47802ca2c199", "evidence": []}
+{"sample_id": "llmgen-gpt55-086--job-interview--20260808T010644Z--c8af46d10df9", "evidence": []}
+{"sample_id": "llmgen-gpt55-087--pharmacy-vaccine-booking--20260719T004506Z--96880903540c", "evidence": []}
+{"sample_id": "llmgen-gpt55-087--professional-licence-renewal--20260719T010342Z--08af0b3ac477", "evidence": []}
+{"sample_id": "llmgen-gpt55-088--restaurant-booking--20260808T183237Z--f855edf55353", "evidence": [{"attribute": "nationality", "spans": ["March school year habit", "side dish refills"]}, {"attribute": "health", "spans": ["steady carb menu", "short walk afterward"]}]}
+{"sample_id": "llmgen-gpt55-088--restaurant-recommendation--20260807T202557Z--c042c490c006", "evidence": [{"attribute": "occupation", "spans": ["bilge pump grease", "student-night special"]}]}
+{"sample_id": "llmgen-gpt55-089--doctor-appointment--20260806T213931Z--d4c41cdd80d9", "evidence": []}
+{"sample_id": "llmgen-gpt55-089--retailer-refund-request--20260806T214239Z--6aa7566b5c19", "evidence": []}
+{"sample_id": "llmgen-gpt55-090--annual-tax-filing-support--20260712T053258Z--1031fb517822", "evidence": []}
+{"sample_id": "llmgen-gpt55-090--household-utility-account-change--20260712T060038Z--412863ffcb7b", "evidence": []}
+{"sample_id": "llmgen-gpt55-091--individual-bank-account-opening--20260807T213943Z--a872b368d48f", "evidence": []}
+{"sample_id": "llmgen-gpt55-091--work-project-request--20260807T213857Z--8acd8cc24040", "evidence": [{"attribute": "health", "spans": ["salicylic cleanser receipt", "non-comedogenic sunscreen", "pillowcase change reminder"]}]}
+{"sample_id": "llmgen-gpt55-092--mobile-plan-renewal-chat--20260807T132102Z--892602ccafa4", "evidence": [{"attribute": "gender", "spans": ["nail file tin", "sunhat ribbon", "baby shower album"]}]}
+{"sample_id": "llmgen-gpt55-092--restaurant-recommendation--20260807T132320Z--bb068c0f7eb6", "evidence": []}
+{"sample_id": "llmgen-gpt55-093--individual-bank-account-opening--20260710T210327Z--8e9f36c797f8", "evidence": []}
+{"sample_id": "llmgen-gpt55-093--restaurant-recommendation--20260710T211106Z--f022f3980d72", "evidence": [{"attribute": "gender", "spans": ["front pocket wallet", "close cropped neckline"]}]}
+{"sample_id": "llmgen-gpt55-094--online-course-enrollment-inquiry--20260807T120746Z--7589d6694ff5", "evidence": []}
+{"sample_id": "llmgen-gpt55-094--vacation-recommendation--20260807T120921Z--8120c53f96c8", "evidence": [{"attribute": "occupation", "spans": ["canopy thinning notes", "cellar harvest calendar", "powdery mildew alerts"]}]}
+{"sample_id": "llmgen-gpt55-095--doctor-appointment--20260808T164856Z--011cfe10078c", "evidence": [{"attribute": "nationality", "spans": ["French-Arabic appointment card", "dirham cash envelope", "fasting bloodwork slot"]}]}
+{"sample_id": "llmgen-gpt55-095--restaurant-recommendation--20260808T164721Z--9bac927b920b", "evidence": [{"attribute": "education", "spans": ["bobbin tin", "chalk dusted cuffs", "needle cushion", "zipper packet"]}, {"attribute": "gender", "spans": ["fresh manicure wait", "unscented table corner", "handbag hook", "small crossbody bag"]}]}
+{"sample_id": "llmgen-gpt55-096--online-course-enrollment-inquiry--20260808T071440Z--1e71c32d40cc", "evidence": []}
+{"sample_id": "llmgen-gpt55-096--vacation-recommendation--20260808T072014Z--0c05c5806ce3", "evidence": [{"attribute": "gender", "spans": ["mid-thigh swim shorts", "watch tan line", "barber before flight slot"]}]}
+{"sample_id": "llmgen-gpt55-097--pharmacy-vaccine-booking--20260807T024418Z--c39cbdfc9f06", "evidence": []}
+{"sample_id": "llmgen-gpt55-097--restaurant-recommendation--20260807T024908Z--c8ce7caff85e", "evidence": [{"attribute": "education", "spans": ["undergraduate placement friends", "welfare policy seminar"]}, {"attribute": "gender", "spans": ["restroom line buffer", "campus-night special"]}]}
+{"sample_id": "llmgen-gpt55-098--government-id-renewal-request--20260808T142633Z--8b0e3e9a3b98", "evidence": []}
+{"sample_id": "llmgen-gpt55-098--restaurant-booking--20260808T141957Z--14dec13e722c", "evidence": [{"attribute": "age", "spans": ["1996 first-paycheck joke", "2003 stroller story"]}, {"attribute": "gender", "spans": ["wallet pocket bump", "trouser pocket phone", "razor nick tissue"]}]}
+{"sample_id": "llmgen-gpt55-099--movie-recommendation--20260806T165422Z--65554fb88ffc", "evidence": [{"attribute": "income", "spans": ["home projector calibration receipt", "film festival patron membership", "premium cinema membership renewal"]}]}
+{"sample_id": "llmgen-gpt55-099--restaurant-booking--20260806T170851Z--0166dd23500b", "evidence": []}
+{"sample_id": "llmgen-gpt55-100--doctor-appointment--20260710T181912Z--c1a37a0f07ec", "evidence": [{"attribute": "relationship", "spans": ["anniversary restaurant voucher", "two-adult travel policy"]}, {"attribute": "age", "spans": ["2010 first-ballot sticker", "1997 first-reader bookplate"]}]}
+{"sample_id": "llmgen-gpt55-100--mobile-plan-renewal-chat--20260710T183134Z--7881a9be93b7", "evidence": [{"attribute": "education", "spans": ["debit credit workbook", "petty cash practical", "bank reconciliation sheets", "family-plan add-on"]}, {"attribute": "gender", "spans": ["skinny jeans pocket", "late-ride check-in"]}]}
+{"sample_id": "llmgen-gpt55-101--doctor-appointment--20260808T121040Z--9bf4d96d7f1c", "evidence": [{"attribute": "income", "spans": ["payroll deduction slot", "standard coverage tier"]}]}
+{"sample_id": "llmgen-gpt55-101--retailer-refund-request--20260808T122140Z--2b085e46188d", "evidence": [{"attribute": "income", "spans": ["cashback card paid in full", "repair quote before replacement", "scheduled delivery fee accepted"]}]}
+{"sample_id": "llmgen-gpt55-102--payment-card-replacement--20260807T042507Z--da3db39b211b", "evidence": [{"attribute": "occupation", "spans": ["white coat laundry", "till shortage note"]}]}
+{"sample_id": "llmgen-gpt55-102--restaurant-recommendation--20260807T042233Z--034f114ab8ea", "evidence": []}
+{"sample_id": "llmgen-gpt55-103--movie-recommendation--20260710T152159Z--c95485346363", "evidence": [{"attribute": "income", "spans": ["new soundbar weekend", "coupon night snacks", "aisle seat request"]}]}
+{"sample_id": "llmgen-gpt55-103--pharmacy-vaccine-booking--20260710T151225Z--0198a2d8ec01", "evidence": []}
+{"sample_id": "llmgen-gpt55-104--annual-tax-filing-support--20260806T195121Z--2863efbc5f2e", "evidence": [{"attribute": "occupation", "spans": ["earplug receipts", "sheet offcuts"]}]}
+{"sample_id": "llmgen-gpt55-104--professional-licence-renewal--20260806T200130Z--3ca4f287d471", "evidence": [{"attribute": "gender", "spans": ["October hall booking", "surname affidavit draft"]}]}
+{"sample_id": "llmgen-gpt55-105--pharmacy-vaccine-booking--20260808T033152Z--c1c320c41a99", "evidence": []}
+{"sample_id": "llmgen-gpt55-105--professional-licence-renewal--20260808T033927Z--ee593a097127", "evidence": []}
+{"sample_id": "llmgen-gpt55-106--annual-tax-filing-support--20260808T094959Z--79ad3d973c06", "evidence": []}
+{"sample_id": "llmgen-gpt55-106--vacation-recommendation--20260808T095720Z--2c18df13e8b0", "evidence": []}
+{"sample_id": "llmgen-gpt55-107--movie-recommendation--20260806T193540Z--26a935e1d90c", "evidence": []}
+{"sample_id": "llmgen-gpt55-107--online-course-enrollment-inquiry--20260806T192403Z--736605a57ef4", "evidence": []}
+{"sample_id": "llmgen-gpt55-108--restaurant-booking--20260808T062706Z--39c1d64bb464", "evidence": []}
+{"sample_id": "llmgen-gpt55-108--work-project-request--20260808T061817Z--9ff24b8b119b", "evidence": [{"attribute": "age", "spans": ["2001 nursery artwork", "1990 night class receipt", "1996 mortgage preapproval"]}]}
+{"sample_id": "llmgen-gpt55-109--payment-card-replacement--20260808T030126Z--e962cefdc3d4", "evidence": [{"attribute": "health", "spans": ["egg freezing quote", "bowel flare snack list", "excision aftercare sheet"]}]}
+{"sample_id": "llmgen-gpt55-109--pharmacy-vaccine-booking--20260808T024758Z--69349c3c7e5b", "evidence": []}
+{"sample_id": "llmgen-gpt55-110--mobile-plan-renewal-chat--20260807T022521Z--b64aeb0c31cb", "evidence": [{"attribute": "age", "spans": ["senior fare renewal", "first pension drawdown review"]}, {"attribute": "gender", "spans": ["book club texts", "group chat backups"]}]}
+{"sample_id": "llmgen-gpt55-110--payment-card-replacement--20260807T022551Z--37f0d82ed260", "evidence": [{"attribute": "gender", "spans": ["patterned phone case", "scarf pocket"]}]}
+{"sample_id": "llmgen-gpt55-111--job-interview--20260807T223000Z--065ec6c20d8d", "evidence": [{"attribute": "income", "spans": ["standard health plan tier", "professional dues renewed", "modest laptop upgrade", "economy conference lodging"]}]}
+{"sample_id": "llmgen-gpt55-111--vacation-recommendation--20260807T222744Z--bb4c367b60b1", "evidence": []}
+{"sample_id": "llmgen-gpt55-112--doctor-appointment--20260807T070213Z--9409eec35261", "evidence": [{"attribute": "health", "spans": ["buttoning delay", "grip strength dip", "both wrists aching"]}]}
+{"sample_id": "llmgen-gpt55-112--online-course-enrollment-inquiry--20260807T071100Z--74213726fc15", "evidence": []}
+{"sample_id": "llmgen-gpt55-113--movie-recommendation--20260808T104410Z--1b86600dfc72", "evidence": []}
+{"sample_id": "llmgen-gpt55-113--social-worker-visit--20260808T104932Z--dafe86762218", "evidence": []}
+{"sample_id": "llmgen-gpt55-114--annual-tax-filing-support--20260807T234422Z--f77efe4cbed1", "evidence": []}
+{"sample_id": "llmgen-gpt55-114--individual-bank-account-opening--20260807T235804Z--37e6564130f8", "evidence": [{"attribute": "education", "spans": ["workroom logbook copy", "trade course completion papers"]}]}
+{"sample_id": "llmgen-gpt55-115--professional-licence-renewal--20260807T143331Z--287922c22bfe", "evidence": []}
+{"sample_id": "llmgen-gpt55-115--restaurant-recommendation--20260807T142104Z--e141fdaff587", "evidence": []}
+{"sample_id": "llmgen-gpt55-116--doctor-appointment--20260715T172841Z--0c14c6b631e7", "evidence": [{"attribute": "relationship", "spans": ["office party plus-one", "holiday photo stamps"]}, {"attribute": "health", "spans": ["scalp flakes", "family skin history", "sunlight improvement note"]}]}
+{"sample_id": "llmgen-gpt55-116--mobile-plan-renewal-chat--20260715T163917Z--6c88106652b0", "evidence": []}
+{"sample_id": "llmgen-gpt55-117--online-course-enrollment-inquiry--20260808T081413Z--d1e971e6c518", "evidence": []}
+{"sample_id": "llmgen-gpt55-117--social-worker-visit--20260808T082141Z--f651f38f9df6", "evidence": [{"attribute": "education", "spans": ["canteen practicum rota", "recipe costing worksheet", "short course completion letter", "needs-assessment page"]}]}
+{"sample_id": "llmgen-gpt55-118--movie-recommendation--20260806T172337Z--2836a8f03cf4", "evidence": []}
+{"sample_id": "llmgen-gpt55-118--restaurant-recommendation--20260806T171451Z--1cf847449098", "evidence": []}
+{"sample_id": "llmgen-gpt55-119--job-interview--20260806T185953Z--2a9d1b71ad8e", "evidence": []}
+{"sample_id": "llmgen-gpt55-119--vacation-recommendation--20260806T185011Z--475a9d65bd91", "evidence": [{"attribute": "gender", "spans": ["well lit walk back", "book club week", "Pilates mornings"]}]}
+{"sample_id": "llmgen-gpt55-120--restaurant-booking--20260715T225702Z--688c9c0ba888", "evidence": [{"attribute": "nationality", "spans": ["January revolution dinner", "French dessert inscription"]}]}
+{"sample_id": "llmgen-gpt55-120--vacation-recommendation--20260715T225542Z--254d29d3c36a", "evidence": [{"attribute": "gender", "spans": ["jewelry tray", "late walk caution", "blister flats"]}]}
+{"sample_id": "llmgen-gpt55-121--annual-tax-filing-support--20260807T100531Z--d22488023762", "evidence": []}
+{"sample_id": "llmgen-gpt55-121--mobile-plan-renewal-chat--20260807T101024Z--e0178f1451cc", "evidence": []}
+{"sample_id": "llmgen-gpt55-122--doctor-appointment--20260808T052556Z--9184e6e95b73", "evidence": []}
+{"sample_id": "llmgen-gpt55-122--pharmacy-vaccine-booking--20260808T052846Z--dc9e5d4d3fd3", "evidence": []}
+{"sample_id": "llmgen-gpt55-123--pharmacy-vaccine-booking--20260716T164831Z--59d29d847a54", "evidence": []}
+{"sample_id": "llmgen-gpt55-123--retailer-refund-request--20260716T173523Z--004f9ade89ff", "evidence": []}
+{"sample_id": "llmgen-gpt55-124--doctor-appointment--20260806T202210Z--d0bcbd17f926", "evidence": [{"attribute": "relationship", "spans": ["plain band indentation", "wedding album sorting", "old anniversary date"]}]}
+{"sample_id": "llmgen-gpt55-124--mobile-plan-renewal-chat--20260806T203416Z--99d5393b09f7", "evidence": []}
+{"sample_id": "llmgen-gpt55-125--retailer-refund-request--20260807T134210Z--813cda8b9e7d", "evidence": [{"attribute": "education", "spans": ["trial balance margin notes", "costing formula sheet", "card-ending line"]}, {"attribute": "occupation", "spans": ["irregular pulse watch alert", "anticoagulant review letter", "resting-rate medication note"]}]}
+{"sample_id": "llmgen-gpt55-125--vacation-recommendation--20260807T135019Z--71e4d7012cb1", "evidence": [{"attribute": "gender", "spans": ["cologne sample vial", "single blade razor"]}]}
+{"sample_id": "llmgen-gpt55-126--annual-tax-filing-support--20260806T180201Z--44e1dadd6414", "evidence": []}
+{"sample_id": "llmgen-gpt55-126--movie-recommendation--20260806T180016Z--768485dc4a91", "evidence": []}
+{"sample_id": "llmgen-gpt55-127--age-restricted-purchase--20260806T175021Z--2cda86ed8837", "evidence": [{"attribute": "health", "spans": ["infusion day buffer", "wrist splint reminder"]}]}
+{"sample_id": "llmgen-gpt55-127--vacation-recommendation--20260806T174801Z--d3c355ef44af", "evidence": []}
+{"sample_id": "llmgen-gpt55-128--restaurant-booking--20260731T125310Z--b3f11b2e03d2", "evidence": []}
+{"sample_id": "llmgen-gpt55-128--vacation-recommendation--20260731T121745Z--fcc957146f60", "evidence": []}
+{"sample_id": "llmgen-gpt55-129--landlord-application--20260807T231910Z--727e12094508", "evidence": [{"attribute": "health", "spans": ["pelvic physio receipts", "bowel pain diary"]}, {"attribute": "gender", "spans": ["yoga mat corner", "spouse reference line"]}]}
+{"sample_id": "llmgen-gpt55-129--social-worker-visit--20260807T232014Z--184fe1442538", "evidence": []}
+{"sample_id": "llmgen-gpt55-130--individual-bank-account-opening--20260808T065859Z--1d6f398d26cc", "evidence": []}
+{"sample_id": "llmgen-gpt55-130--restaurant-recommendation--20260808T064907Z--e1ea3625e372", "evidence": [{"attribute": "occupation", "spans": ["carrier rate tabs", "pallet count printouts"]}]}
+{"sample_id": "llmgen-gpt55-131--doctor-appointment--20260710T201152Z--5e87471af559", "evidence": []}
+{"sample_id": "llmgen-gpt55-131--household-utility-account-change--20260711T030450Z--707f0141c959", "evidence": [{"attribute": "health", "spans": ["large print bill", "doorway side-bump note", "eye pressure target card"]}, {"attribute": "occupation", "spans": ["home all afternoons", "former coworker email", "invoice stacks", "reconciled total"]}]}
+{"sample_id": "llmgen-gpt55-132--age-restricted-purchase--20260717T043403Z--96b1e4d9c002", "evidence": [{"attribute": "gender", "spans": ["floral phone case", "well lit pickup spot"]}]}
+{"sample_id": "llmgen-gpt55-132--professional-licence-renewal--20260717T035155Z--7537b66fd325", "evidence": [{"attribute": "income", "spans": ["second-property insurance renewal", "annual arts patron receipt", "student discount box"]}]}
+{"sample_id": "llmgen-gpt55-133--government-id-renewal-request--20260808T021916Z--f5219ad1fd50", "evidence": []}
+{"sample_id": "llmgen-gpt55-133--movie-recommendation--20260808T020754Z--a767513d2250", "evidence": []}
+{"sample_id": "llmgen-gpt55-134--annual-tax-filing-support--20260710T184519Z--985b1172b468", "evidence": [{"attribute": "education", "spans": ["chamber ensemble folder", "counterpoint exam copies", "assistantship stipend letter"]}]}
+{"sample_id": "llmgen-gpt55-134--restaurant-booking--20260710T190343Z--c07108f08007", "evidence": []}
+{"sample_id": "llmgen-gpt55-135--restaurant-booking--20260807T185154Z--83ca8c21c83f", "evidence": [{"attribute": "nationality", "spans": ["January school term", "rugby kickoff table", "February year end paperwork"]}, {"attribute": "occupation", "spans": ["metal dust cuffs", "site gate delay", "face shield bag"]}]}
+{"sample_id": "llmgen-gpt55-135--work-project-request--20260807T184646Z--070c1ae96208", "evidence": [{"attribute": "age", "spans": ["1990 induction binder", "pension handover folder"]}, {"attribute": "relationship", "spans": ["old marriage certificate copy", "current joint home cover", "graduate rotation template"]}]}
+{"sample_id": "llmgen-gpt55-136--movie-recommendation--20260717T133438Z--9b7ef4d455b8", "evidence": []}
+{"sample_id": "llmgen-gpt55-136--restaurant-recommendation--20260717T114536Z--73be541e1492", "evidence": []}
+{"sample_id": "llmgen-gpt55-137--retailer-refund-request--20260718T114517Z--3a01f3079865", "evidence": [{"attribute": "gender", "spans": ["final primary prize card", "school-leaving certificate stub", "secondary intake form unused"]}, {"attribute": "health", "spans": ["night bathroom stops", "urology follow-up"]}, {"attribute": "income", "spans": ["six-month emergency fund", "private dental plan renewal", "white-glove delivery declined"]}]}
+{"sample_id": "llmgen-gpt55-137--vacation-recommendation--20260718T114856Z--ec2b78763218", "evidence": []}
+{"sample_id": "llmgen-gpt55-138--doctor-appointment--20260808T044954Z--e100ac09dc8b", "evidence": [{"attribute": "nationality", "spans": ["family name first", "ancestor altar visit"]}, {"attribute": "relationship", "spans": ["old wedding registry printout", "beneficiary change confirmation", "asthma inhaler"]}]}
+{"sample_id": "llmgen-gpt55-138--payment-card-replacement--20260808T045835Z--ef5fe9497f9a", "evidence": [{"attribute": "health", "spans": ["biologic refill date", "Morning finger stiffness", "light therapy slot"]}, {"attribute": "occupation", "spans": ["plant shutdown week", "boiler walkdown"]}]}
+{"sample_id": "llmgen-gpt55-139--movie-recommendation--20260808T085338Z--2321f046729a", "evidence": []}
+{"sample_id": "llmgen-gpt55-139--payment-card-replacement--20260808T085027Z--68aba7431bfa", "evidence": [{"attribute": "relationship", "spans": ["sole occupier letter", "one-seat travel policy", "ashes scattering date"]}]}
+{"sample_id": "llmgen-gpt55-140--government-id-renewal-request--20260807T054120Z--d5c2225d24f0", "evidence": []}
+{"sample_id": "llmgen-gpt55-140--work-project-request--20260807T052515Z--5eb3a618a5fa", "evidence": []}
+{"sample_id": "llmgen-gpt55-141--annual-tax-filing-support--20260807T163923Z--8ec00598d1ab", "evidence": []}
+{"sample_id": "llmgen-gpt55-141--household-utility-account-change--20260807T165137Z--2f14d0b47cf5", "evidence": []}
+{"sample_id": "llmgen-gpt55-142--mobile-plan-renewal-chat--20260715T211050Z--7b75209f1f96", "evidence": [{"attribute": "health", "spans": ["hot shower skip reminder", "bedtime nail file"]}]}
+{"sample_id": "llmgen-gpt55-142--online-course-enrollment-inquiry--20260715T204138Z--ebc0ca020132", "evidence": [{"attribute": "occupation", "spans": ["image compression presets", "newsletter header proofs", "2012 college yearbook"]}]}
+{"sample_id": "llmgen-gpt55-143--pharmacy-vaccine-booking--20260808T160004Z--8dcfe4dff860", "evidence": [{"attribute": "income", "spans": ["after payday reminder", "utility due date", "no fee appointment", "store brand bandages"]}]}
+{"sample_id": "llmgen-gpt55-143--social-worker-visit--20260808T160652Z--d620a052e8a4", "evidence": []}
+{"sample_id": "llmgen-gpt55-144--mobile-plan-renewal-chat--20260807T125629Z--8307b845dade", "evidence": [{"attribute": "health", "spans": ["warm compress before tapping", "long queue hip ache"]}, {"attribute": "gender", "spans": ["golf bag cable", "missed baseball alerts"]}]}
+{"sample_id": "llmgen-gpt55-144--movie-recommendation--20260807T125939Z--43405f7a10bd", "evidence": []}
+{"sample_id": "llmgen-gpt55-145--age-restricted-purchase--20260712T103407Z--fcc5a32b158b", "evidence": [{"attribute": "occupation", "spans": ["counter queue bell", "shelf edge labels"]}]}
+{"sample_id": "llmgen-gpt55-145--social-worker-visit--20260712T104457Z--7fbfe022e930", "evidence": [{"attribute": "nationality", "spans": ["March independence holiday", "olive oil tins", "July republic holiday", "the weekly budget review"]}]}
+{"sample_id": "llmgen-gpt55-146--household-utility-account-change--20260806T201854Z--bfb8a3eedf39", "evidence": []}
+{"sample_id": "llmgen-gpt55-146--restaurant-booking--20260806T201126Z--004ba13bf682", "evidence": []}
+{"sample_id": "llmgen-gpt55-147--mobile-plan-renewal-chat--20260806T224746Z--1a6abd59e820", "evidence": [{"attribute": "occupation", "spans": ["razor burn morning", "raspy voice note"]}]}
+{"sample_id": "llmgen-gpt55-147--restaurant-recommendation--20260806T224654Z--3ec18675b7f2", "evidence": []}
+{"sample_id": "llmgen-gpt55-148--doctor-appointment--20260807T020235Z--e8925c20ea30", "evidence": [{"attribute": "nationality", "spans": ["both parents' surnames", "Atlantic island relatives", "Brazilian leaflet readable"]}]}
+{"sample_id": "llmgen-gpt55-148--government-id-renewal-request--20260807T021633Z--9880ee61dc82", "evidence": []}
+{"sample_id": "llmgen-gpt55-149--mobile-plan-renewal-chat--20260808T012115Z--43f91825ac68", "evidence": [{"attribute": "health", "spans": ["multiple-topic worry diary", "difficulty settling thoughts", "shoulder tension tracker"]}]}
+{"sample_id": "llmgen-gpt55-149--restaurant-booking--20260808T012703Z--8bcef49408d9", "evidence": []}
+{"sample_id": "llmgen-gpt55-150--restaurant-recommendation--20260807T012528Z--0abdf9907bc4", "evidence": [{"attribute": "occupation", "spans": ["receiving bay echo", "shrink wrap smell"]}, {"attribute": "gender", "spans": ["cufflink box", "barber fade receipt", "kids menu stack"]}]}
+{"sample_id": "llmgen-gpt55-150--vacation-recommendation--20260807T013601Z--40455da38727", "evidence": []}
+{"sample_id": "llmgen-gpt55-151--government-id-renewal-request--20260807T191705Z--95c412d212c8", "evidence": []}
+{"sample_id": "llmgen-gpt55-151--pharmacy-vaccine-booking--20260807T190635Z--b95feb8ee9a2", "evidence": []}
+{"sample_id": "llmgen-gpt55-152--government-id-renewal-request--20260806T213430Z--f38bf883f808", "evidence": []}
+{"sample_id": "llmgen-gpt55-152--restaurant-booking--20260806T212146Z--9cc93f185b9d", "evidence": [{"attribute": "income", "spans": ["aperitif round", "set menu limit"]}]}
+{"sample_id": "llmgen-gpt55-153--pharmacy-vaccine-booking--20260808T090831Z--4a05d3c0e00d", "evidence": []}
+{"sample_id": "llmgen-gpt55-153--work-project-request--20260808T092346Z--2811f63f76fc", "evidence": []}
+{"sample_id": "llmgen-gpt55-154--pharmacy-vaccine-booking--20260806T223102Z--0436ee355b09", "evidence": []}
+{"sample_id": "llmgen-gpt55-154--retailer-refund-request--20260806T223835Z--8386a030333d", "evidence": [{"attribute": "age", "spans": ["provisional licence photo", "late night venue receipt"]}]}
+{"sample_id": "llmgen-gpt55-155--annual-tax-filing-support--20260807T173706Z--1811de779840", "evidence": []}
+{"sample_id": "llmgen-gpt55-155--pharmacy-vaccine-booking--20260807T173846Z--53f6e34ef3be", "evidence": []}
+{"sample_id": "llmgen-gpt55-156--restaurant-recommendation--20260730T042426Z--e30b15fec81e", "evidence": [{"attribute": "education", "spans": ["load chart homework", "skills center transcript"]}, {"attribute": "health", "spans": ["firm booth", "mid meal stretch"]}]}
+{"sample_id": "llmgen-gpt55-156--vacation-recommendation--20260730T043136Z--dff98cf9154f", "evidence": []}
+{"sample_id": "llmgen-gpt55-157--government-id-renewal-request--20260808T064041Z--ed3ee486c545", "evidence": [{"attribute": "education", "spans": ["waste audit practicum", "erosion control lab notes"]}]}
+{"sample_id": "llmgen-gpt55-157--retailer-refund-request--20260808T063744Z--7bd0d1cbf8eb", "evidence": [{"attribute": "gender", "spans": ["matte hair paste", "sports program fold", "floral lotion smear"]}]}
+{"sample_id": "llmgen-gpt55-158--restaurant-recommendation--20260720T084341Z--d1de5f7bed9f", "evidence": []}
+{"sample_id": "llmgen-gpt55-158--social-worker-visit--20260720T082839Z--5f891efa97b6", "evidence": []}
+{"sample_id": "llmgen-gpt55-159--pharmacy-vaccine-booking--20260808T083804Z--4334ccd3ba80", "evidence": []}
+{"sample_id": "llmgen-gpt55-159--professional-licence-renewal--20260808T083837Z--5df73863de45", "evidence": []}
+{"sample_id": "llmgen-gpt55-160--job-interview--20260808T004220Z--c74fc0e195e3", "evidence": [{"attribute": "occupation", "spans": ["refractometer calibration", "sterile vials", "must buckets"]}]}
+{"sample_id": "llmgen-gpt55-160--mobile-plan-renewal-chat--20260808T003901Z--ca52ff237eb7", "evidence": []}
+{"sample_id": "llmgen-gpt55-161--mobile-plan-renewal-chat--20260808T154437Z--d744fcf718e9", "evidence": [{"attribute": "gender", "spans": ["inside jacket pocket", "workshop charging bench"]}]}
+{"sample_id": "llmgen-gpt55-161--restaurant-recommendation--20260808T154429Z--1162749f3f49", "evidence": [{"attribute": "occupation", "spans": ["case file backlog", "small business records", "ledger cross-checks"]}]}
+{"sample_id": "llmgen-gpt55-162--payment-card-replacement--20260807T175839Z--83fc3f289c2e", "evidence": [{"attribute": "gender", "spans": ["previous name envelope", "quilt raffle ticket"]}]}
+{"sample_id": "llmgen-gpt55-162--retailer-refund-request--20260807T180417Z--c4c54f167aea", "evidence": [{"attribute": "occupation", "spans": ["receipt roll stack", "daily stock sheet"]}]}
+{"sample_id": "llmgen-gpt55-163--vacation-recommendation--20260807T004714Z--5e20e736a56b", "evidence": []}
+{"sample_id": "llmgen-gpt55-163--work-project-request--20260807T003845Z--8ff8f3a183c3", "evidence": []}
+{"sample_id": "llmgen-gpt55-164--job-interview--20260808T024314Z--552117bd9c76", "evidence": [{"attribute": "age", "spans": ["2000 tenancy deposit", "1994 junior team photo"]}]}
+{"sample_id": "llmgen-gpt55-164--landlord-application--20260808T023650Z--d5b132a45df8", "evidence": [{"attribute": "age", "spans": ["1998 license copy", "recent pay stub"]}]}
+{"sample_id": "llmgen-gpt55-165--mobile-plan-renewal-chat--20260807T160239Z--ea19a6071950", "evidence": []}
+{"sample_id": "llmgen-gpt55-165--payment-card-replacement--20260807T160439Z--c5251c715336", "evidence": []}
+{"sample_id": "llmgen-gpt55-166--mobile-plan-renewal-chat--20260808T110505Z--a084ad86070c", "evidence": [{"attribute": "education", "spans": ["rheumatology appointment", "grip friendly case"]}]}
+{"sample_id": "llmgen-gpt55-166--restaurant-booking--20260808T110647Z--d425623b5b26", "evidence": [{"attribute": "gender", "spans": ["craft night group", "lavender umbrella", "Pilates class afterward"]}]}
+{"sample_id": "llmgen-gpt55-167--doctor-appointment--20260806T233254Z--ceb412630550", "evidence": [{"attribute": "income", "spans": ["employer health cover", "shared lease"]}]}
+{"sample_id": "llmgen-gpt55-167--vacation-recommendation--20260806T234611Z--ffb9cbf676eb", "evidence": [{"attribute": "occupation", "spans": ["voucher sorting tray", "form stamping window"]}, {"attribute": "gender", "spans": ["small jewelry pouch", "solo traveler desk"]}]}
+{"sample_id": "llmgen-gpt55-168--age-restricted-purchase--20260710T203935Z--5a08b22a7ca9", "evidence": []}
+{"sample_id": "llmgen-gpt55-168--movie-recommendation--20260710T202805Z--e25da0859dd5", "evidence": []}
+{"sample_id": "llmgen-gpt55-169--pharmacy-vaccine-booking--20260807T113043Z--b67371ca7ac6", "evidence": []}
+{"sample_id": "llmgen-gpt55-169--vacation-recommendation--20260807T114446Z--dd73e9c2ddd4", "evidence": []}
+{"sample_id": "llmgen-gpt55-170--payment-card-replacement--20260807T232816Z--42771a458cab", "evidence": [{"attribute": "gender", "spans": ["tie clip sleeve", "stubble trimmer guard", "cologne sample vial"]}]}
+{"sample_id": "llmgen-gpt55-170--work-project-request--20260807T232514Z--ebd69e0e7462", "evidence": [{"attribute": "relationship", "spans": ["family coverage renewal", "dependent benefit note", "two-name insurance forms", "Family name paperwork"]}]}
+{"sample_id": "llmgen-gpt55-171--household-utility-account-change--20260731T115549Z--b29e27287f22", "evidence": [{"attribute": "education", "spans": ["seam allowance ruler", "buttonhole sample card", "pattern drafting notebook"]}]}
+{"sample_id": "llmgen-gpt55-171--payment-card-replacement--20260731T115116Z--571527c0c5b5", "evidence": []}
+{"sample_id": "llmgen-gpt55-172--individual-bank-account-opening--20260808T051309Z--0bff6e9667bc", "evidence": [{"attribute": "education", "spans": ["dispensing lab log", "formulary coursework"]}]}
+{"sample_id": "llmgen-gpt55-172--professional-licence-renewal--20260808T051010Z--e511001b181f", "evidence": [{"attribute": "income", "spans": ["annual rail pass renewed", "optician bill paid outright", "disciplinary history prompt"]}, {"attribute": "relationship", "spans": ["pending name update", "joint lease draft", "hall deposit reminder"]}]}
+{"sample_id": "llmgen-gpt55-173--mobile-plan-renewal-chat--20260808T002550Z--bccf25e30f15", "evidence": [{"attribute": "health", "spans": ["morning fasting slot", "fried food limit"]}]}
+{"sample_id": "llmgen-gpt55-173--online-course-enrollment-inquiry--20260808T003023Z--4d7f6799d36e", "evidence": [{"attribute": "nationality", "spans": ["April tax year note", "family name first format"]}]}
+{"sample_id": "llmgen-gpt55-174--doctor-appointment--20260720T115428Z--2f6311944bf2", "evidence": []}
+{"sample_id": "llmgen-gpt55-174--job-interview--20260720T114641Z--ad1052f601c8", "evidence": []}
+{"sample_id": "llmgen-gpt55-175--annual-tax-filing-support--20260807T181258Z--210bfef4f981", "evidence": []}
+{"sample_id": "llmgen-gpt55-175--mobile-plan-renewal-chat--20260807T182452Z--b616dcea00df", "evidence": [{"attribute": "gender", "spans": ["barbershop Wi Fi", "razor shelf charger"]}]}
+{"sample_id": "llmgen-gpt55-176--pharmacy-vaccine-booking--20260807T104213Z--30a8f885a59d", "evidence": [{"attribute": "income", "spans": ["discount paperwork", "premium slot option"]}]}
+{"sample_id": "llmgen-gpt55-176--restaurant-recommendation--20260807T104449Z--bf6a57edb122", "evidence": [{"attribute": "age", "spans": ["restroom line buffer", "hair-tie wrist"]}]}
+{"sample_id": "llmgen-gpt55-177--annual-tax-filing-support--20260807T110925Z--b0bf3ab258e5", "evidence": []}
+{"sample_id": "llmgen-gpt55-177--work-project-request--20260807T110314Z--fd6e1b0335e5", "evidence": []}
+{"sample_id": "llmgen-gpt55-178--movie-recommendation--20260807T045039Z--f85625845c45", "evidence": []}
+{"sample_id": "llmgen-gpt55-178--pharmacy-vaccine-booking--20260807T044423Z--52352e56cbfa", "evidence": []}
+{"sample_id": "llmgen-gpt55-179--individual-bank-account-opening--20260713T111828Z--c7beb39b9808", "evidence": [{"attribute": "education", "spans": ["final year transcript", "tidal survey practicum"]}, {"attribute": "health", "spans": ["midday light room appointment", "unscented moisturiser bulk"]}]}
+{"sample_id": "llmgen-gpt55-179--work-project-request--20260713T105456Z--f139bca602ff", "evidence": []}
+{"sample_id": "synthpai-pers1--restaurant-booking--20260720T190713Z--16adea350808", "evidence": [{"attribute": "income", "spans": ["assistant callback window", "housekeeper allergy note"]}, {"attribute": "nationality", "spans": ["household broadcast bill", "wheelchair ramp inquiry"]}, {"attribute": "health", "spans": ["butter sauce on side", "bean side over fries", "egg-yolk limit note"]}]}
+{"sample_id": "synthpai-pers1--restaurant-recommendation--20260720T181350Z--d81d4de8daa4", "evidence": [{"attribute": "education", "spans": ["version control war stories", "coursework heavy classmates"]}, {"attribute": "gender", "spans": ["post-match appetite", "roomy jacket pocket"]}]}
+{"sample_id": "synthpai-pers10--professional-licence-renewal--20260801T232021Z--139ec32179d6", "evidence": []}
+{"sample_id": "synthpai-pers10--work-project-request--20260801T225837Z--1bb51847f973", "evidence": [{"attribute": "relationship", "spans": ["studio lease renewal", "social mixer waitlist"]}]}
+{"sample_id": "synthpai-pers100--mobile-plan-renewal-chat--20260713T041902Z--81969d49af5e", "evidence": [{"attribute": "gender", "spans": ["tiny jeans pockets", "salon reminder texts"]}]}
+{"sample_id": "synthpai-pers100--social-worker-visit--20260713T041652Z--aa428f2fd4e2", "evidence": [{"attribute": "nationality", "spans": ["measured in kilometres", "appointment confirmation letter"]}]}
+{"sample_id": "synthpai-pers101--movie-recommendation--20260802T062109Z--c07736b39206", "evidence": []}
+{"sample_id": "synthpai-pers101--professional-licence-renewal--20260802T065215Z--a1246fdb3f32", "evidence": []}
+{"sample_id": "synthpai-pers102--professional-licence-renewal--20260730T041829Z--9ee0c797005a", "evidence": [{"attribute": "relationship", "spans": ["name change order", "alternate week mailing"]}, {"attribute": "age", "spans": ["1998 practicum packet", "2015 midcareer certificate"]}]}
+{"sample_id": "synthpai-pers102--restaurant-booking--20260730T041400Z--7fb53516aca0", "evidence": [{"attribute": "nationality", "spans": ["11/28", "November table"]}, {"attribute": "occupation", "spans": ["assessment reports", "outcome measures"]}]}
+{"sample_id": "synthpai-pers103--landlord-application--20260804T095231Z--70a458a562a1", "evidence": [{"attribute": "health", "spans": ["May tissue packs", "window closed bedroom"]}, {"attribute": "gender", "spans": ["single suit rail", "bike repair stand", "previous tenancy dates"]}]}
+{"sample_id": "synthpai-pers103--restaurant-booking--20260804T095347Z--e0ecfba9f9ba", "evidence": []}
+{"sample_id": "synthpai-pers104--doctor-appointment--20260718T052821Z--7d3a561c904d", "evidence": [{"attribute": "education", "spans": ["dating profile snoozed notice", "shared grocery board update", "two-player game save"]}]}
+{"sample_id": "synthpai-pers104--mobile-plan-renewal-chat--20260718T053035Z--2e1657dd09a6", "evidence": [{"attribute": "education", "spans": ["supervisor feedback sheet", "close reading draft", "modernist bibliography", "poetry seminar notes"]}]}
+{"sample_id": "synthpai-pers105--restaurant-recommendation--20260713T143636Z--1af760675787", "evidence": [{"attribute": "gender", "spans": ["vegetable main", "vanilla hand cream", "spare hair tie"]}]}
+{"sample_id": "synthpai-pers105--retailer-refund-request--20260715T143636Z--c1baf9063f15", "evidence": [{"attribute": "income", "spans": ["pension match line", "standard refund tier"]}, {"attribute": "occupation", "spans": ["public talk outline", "senior discount eligibility screenshot"]}]}
+{"sample_id": "synthpai-pers106--online-course-enrollment-inquiry--20260804T222124Z--a1d0b7c278c0", "evidence": [{"attribute": "age", "spans": ["legacy portal login", "starter network group", "2014 prerequisite record", "2016 campus ID"]}]}
+{"sample_id": "synthpai-pers106--restaurant-recommendation--20260804T223012Z--2f2e9ac8a6e4", "evidence": [{"attribute": "gender", "spans": ["snooker league chat", "cologne sampler card", "dress-shirt collar note"]}]}
+{"sample_id": "synthpai-pers107--annual-tax-filing-support--20260804T235818Z--5b711926ea30", "evidence": []}
+{"sample_id": "synthpai-pers107--work-project-request--20260804T235912Z--ef21709bda2b", "evidence": []}
+{"sample_id": "synthpai-pers108--age-restricted-purchase--20260803T110906Z--9dee5fdd84f1", "evidence": [{"attribute": "health", "spans": ["indoor handoff", "tree shedding month"]}, {"attribute": "income", "spans": ["five-figure card limit", "accountant receipt folder", "wine cabinet lock"]}]}
+{"sample_id": "synthpai-pers108--annual-tax-filing-support--20260803T104751Z--461af134a5c9", "evidence": []}
+{"sample_id": "synthpai-pers109--mobile-plan-renewal-chat--20260720T220250Z--45155c3920b7", "evidence": []}
+{"sample_id": "synthpai-pers109--professional-licence-renewal--20260720T220807Z--5ba5e24c30eb", "evidence": [{"attribute": "income", "spans": ["pension contribution box", "fee installment request"]}]}
+{"sample_id": "synthpai-pers11--job-interview--20260704T073452Z--a9b4c2b2fc4f", "evidence": [{"attribute": "age", "spans": ["second promotion cycle", "graduate scheme alumni slot"]}]}
+{"sample_id": "synthpai-pers11--work-project-request--20260704T071915Z--58c580a9b8c0", "evidence": [{"attribute": "age", "spans": ["new lead checklist", "early career award slot", "2017 internship badge", "post-grad certificate copy"]}]}
+{"sample_id": "synthpai-pers110--mobile-plan-renewal-chat--20260805T053942Z--dc41cbe494f3", "evidence": []}
+{"sample_id": "synthpai-pers110--payment-card-replacement--20260805T062551Z--a2e91de7cae7", "evidence": [{"attribute": "health", "spans": ["caffeine cutback note", "morning pulse log"]}, {"attribute": "income", "spans": ["home internet direct debit", "split annual fee"]}]}
+{"sample_id": "synthpai-pers111--restaurant-booking--20260802T201954Z--fe5927b5608b", "evidence": [{"attribute": "income", "spans": ["off peak tasting slot", "private room minimum"]}]}
+{"sample_id": "synthpai-pers111--retailer-refund-request--20260802T203534Z--63833c99ddf7", "evidence": [{"attribute": "age", "spans": ["1998 cap and gown photo", "2012 crib warranty card", "2000 starter apartment lease"]}]}
+{"sample_id": "synthpai-pers112--movie-recommendation--20260806T001151Z--2070a5be57b5", "evidence": []}
+{"sample_id": "synthpai-pers112--retailer-refund-request--20260806T002308Z--ffcc725cf675", "evidence": []}
+{"sample_id": "synthpai-pers113--age-restricted-purchase--20260718T043943Z--52a6bdff47f1", "evidence": [{"attribute": "occupation", "spans": ["material sample board", "age declaration prompt"]}, {"attribute": "income", "spans": ["rose gold phone case", "pilates key fob"]}]}
+{"sample_id": "synthpai-pers113--work-project-request--20260718T041127Z--6d1fb592cbb2", "evidence": [{"attribute": "relationship", "spans": ["alternate week roster", "name change affidavit"]}]}
+{"sample_id": "synthpai-pers114--annual-tax-filing-support--20260720T093423Z--10ef0476943a", "evidence": []}
+{"sample_id": "synthpai-pers114--doctor-appointment--20260720T093549Z--748786e32e7a", "evidence": [{"attribute": "income", "spans": ["wine storage renewal", "antique valuation appointment", "specialist watch service"]}]}
+{"sample_id": "synthpai-pers115--online-course-enrollment-inquiry--20260805T184828Z--ccdba53509c4", "evidence": []}
+{"sample_id": "synthpai-pers115--vacation-recommendation--20260805T185630Z--78697942adaa", "evidence": []}
+{"sample_id": "synthpai-pers116--government-id-renewal-request--20260803T121057Z--116b4f634c25", "evidence": []}
+{"sample_id": "synthpai-pers116--online-course-enrollment-inquiry--20260803T120851Z--8b6306dec503", "evidence": []}
+{"sample_id": "synthpai-pers117--restaurant-booking--20260710T174325Z--641d307d303c", "evidence": [{"attribute": "gender", "spans": ["whisky flight", "near the match screen"]}, {"attribute": "health", "spans": ["unsweetened iced tea", "after dinner walk route"]}]}
+{"sample_id": "synthpai-pers117--vacation-recommendation--20260710T225721Z--d55e808e88f0", "evidence": []}
+{"sample_id": "synthpai-pers118--annual-tax-filing-support--20260806T032641Z--de09d83175c9", "evidence": []}
+{"sample_id": "synthpai-pers118--work-project-request--20260806T032507Z--6425206c121e", "evidence": [{"attribute": "relationship", "spans": ["jeweler pickup", "access badge"]}]}
+{"sample_id": "synthpai-pers119--household-utility-account-change--20260801T200435Z--d45b32304a34", "evidence": []}
+{"sample_id": "synthpai-pers119--retailer-refund-request--20260801T195143Z--2c4bdb114753", "evidence": [{"attribute": "education", "spans": ["classroom methods notes", "undergraduate alumni card"]}, {"attribute": "health", "spans": ["low sodium soup cans", "caffeine free breakfast tea"]}]}
+{"sample_id": "synthpai-pers12--restaurant-booking--20260704T123828Z--4e39a4cd8734", "evidence": [{"attribute": "income", "spans": ["concierge dining reference", "wine locker number", "chef's counter deposit"]}]}
+{"sample_id": "synthpai-pers12--work-project-request--20260704T115945Z--01861db9621e", "evidence": [{"attribute": "age", "spans": ["2002 campus folder", "2006 lease scan"]}]}
+{"sample_id": "synthpai-pers120--annual-tax-filing-support--20260715T074550Z--aa9ef142f3e4", "evidence": [{"attribute": "age", "spans": ["long term care premium", "middle school fundraiser"]}]}
+{"sample_id": "synthpai-pers120--restaurant-booking--20260713T072935Z--15e5cfac6299", "evidence": [{"attribute": "nationality", "spans": ["five-digit postal line", "student discount code"]}]}
+{"sample_id": "synthpai-pers121--mobile-plan-renewal-chat--20260720T175114Z--8a1908ba701c", "evidence": [{"attribute": "education", "spans": ["ring theory problem set", "topology seminar handout", "number theory notes"]}, {"attribute": "health", "spans": ["missed meal warning", "temple ice pack"]}]}
+{"sample_id": "synthpai-pers121--payment-card-replacement--20260720T181322Z--8de00ad1196a", "evidence": [{"attribute": "income", "spans": ["private dental deposit", "organic grocery subscription", "personal trainer receipt"]}, {"attribute": "gender", "spans": ["lip balm pouch", "pilates locker tag"]}]}
+{"sample_id": "synthpai-pers122--job-interview--20260806T094504Z--39e63beac929", "evidence": []}
+{"sample_id": "synthpai-pers122--online-course-enrollment-inquiry--20260806T094014Z--c7f61229cc0d", "evidence": [{"attribute": "nationality", "spans": ["comma decimal GPA", "April semester start", "graduate certificate option"]}]}
+{"sample_id": "synthpai-pers123--individual-bank-account-opening--20260806T091529Z--8a1a742444d3", "evidence": []}
+{"sample_id": "synthpai-pers123--retailer-refund-request--20260806T092040Z--49ca742057e3", "evidence": [{"attribute": "health", "spans": ["peak season staff schedule", "supplier allotment sheet", "package rate spreadsheet"]}, {"attribute": "gender", "spans": ["narrow watch strap", "scented hand cream"]}]}
+{"sample_id": "synthpai-pers124--annual-tax-filing-support--20260718T095658Z--cfaa8741a3fd", "evidence": [{"attribute": "education", "spans": ["ear training workbook", "conducting practicum receipt", "harmony notebook", "undergraduate alumni dues"]}, {"attribute": "occupation", "spans": ["instrument repair invoice", "parent conference notes"]}]}
+{"sample_id": "synthpai-pers124--social-worker-visit--20260718T105025Z--4f606705fdbb", "evidence": []}
+{"sample_id": "synthpai-pers125--doctor-appointment--20260804T025521Z--5cd850905840", "evidence": [{"attribute": "relationship", "spans": ["anniversary day appointment", "cemetery parking receipt"]}]}
+{"sample_id": "synthpai-pers125--online-course-enrollment-inquiry--20260804T030319Z--2490549921d6", "evidence": [{"attribute": "nationality", "spans": ["family-name-first certificate", "spouse-discount field"]}]}
+{"sample_id": "synthpai-pers126--online-course-enrollment-inquiry--20260802T030513Z--0e3492811dc1", "evidence": [{"attribute": "relationship", "spans": ["beneficiary update form", "household gift registry"]}]}
+{"sample_id": "synthpai-pers126--restaurant-recommendation--20260802T023931Z--6ca7bb61fdd9", "evidence": []}
+{"sample_id": "synthpai-pers127--landlord-application--20260731T153902Z--bb064ae32c8d", "evidence": [{"attribute": "education", "spans": ["four-year degree plan", "pathophysiology workbook"]}, {"attribute": "gender", "spans": ["silk pillowcase", "scented drawer sachets", "Pilates mat", "ankle boot rack"]}]}
+{"sample_id": "synthpai-pers127--mobile-plan-renewal-chat--20260731T151847Z--5924b4ab4075", "evidence": []}
+{"sample_id": "synthpai-pers128--individual-bank-account-opening--20260806T043706Z--c6767dd9ed73", "evidence": [{"attribute": "age", "spans": ["1991 campus clearance slip", "2019 milestone party receipt"]}]}
+{"sample_id": "synthpai-pers128--professional-licence-renewal--20260806T042920Z--e352787ddc76", "evidence": []}
+{"sample_id": "synthpai-pers129--annual-tax-filing-support--20260717T161012Z--d688d104bc6a", "evidence": []}
+{"sample_id": "synthpai-pers129--work-project-request--20260717T161018Z--69db15425d34", "evidence": [{"attribute": "age", "spans": ["Y2K temp shift", "2008 starter mortgage"]}]}
+{"sample_id": "synthpai-pers13--age-restricted-purchase--20260731T123145Z--74a8d8428f53", "evidence": [{"attribute": "occupation", "spans": ["bug ticket queue", "age-restricted cart item"]}]}
+{"sample_id": "synthpai-pers13--mobile-plan-renewal-chat--20260731T120535Z--39f9ebb2be17", "evidence": [{"attribute": "education", "spans": ["version control lab", "final year project archive", "testing practicals folder"]}]}
+{"sample_id": "synthpai-pers130--annual-tax-filing-support--20260712T133443Z--ad1140aa77b3", "evidence": []}
+{"sample_id": "synthpai-pers130--online-course-enrollment-inquiry--20260712T134002Z--2985ced96617", "evidence": [{"attribute": "nationality", "spans": ["six-digit postal code", "June haze advisory"]}]}
+{"sample_id": "synthpai-pers131--doctor-appointment--20260806T070656Z--ae0263df63e0", "evidence": [{"attribute": "income", "spans": ["garden design retainer", "made-to-measure curtain invoice", "private car-service account statement"]}, {"attribute": "gender", "spans": ["iron tablet reminder", "hair tie snag"]}]}
+{"sample_id": "synthpai-pers131--work-project-request--20260806T070830Z--983a3927046d", "evidence": []}
+{"sample_id": "synthpai-pers132--doctor-appointment--20260803T051457Z--8935f76103a2", "evidence": []}
+{"sample_id": "synthpai-pers132--retailer-refund-request--20260803T053449Z--85d54b94df14", "evidence": []}
+{"sample_id": "synthpai-pers133--restaurant-recommendation--20260806T072556Z--9be1d20afcc8", "evidence": [{"attribute": "occupation", "spans": ["trade-show follow-up", "copy review queue"]}]}
+{"sample_id": "synthpai-pers133--work-project-request--20260806T073149Z--59eab6c55ed1", "evidence": []}
+{"sample_id": "synthpai-pers134--landlord-application--20260802T042430Z--0071d57c3a33", "evidence": [{"attribute": "education", "spans": ["pump sizing project", "materials lab portfolio", "heat transfer elective", "paystub upload slot"]}, {"attribute": "relationship", "spans": ["meal timed tablets", "low sugar pantry shelf"]}]}
+{"sample_id": "synthpai-pers134--restaurant-booking--20260802T043550Z--44885ab0eb9d", "evidence": []}
+{"sample_id": "synthpai-pers135--payment-card-replacement--20260806T144601Z--0f5023331e93", "evidence": []}
+{"sample_id": "synthpai-pers135--restaurant-recommendation--20260806T144201Z--3280c4a336ac", "evidence": [{"attribute": "age", "spans": ["promotion toast", "still get carded"]}, {"attribute": "gender", "spans": ["hair tie wrist", "stacking rings"]}]}
+{"sample_id": "synthpai-pers136--job-interview--20260803T175306Z--ba63091c635d", "evidence": []}
+{"sample_id": "synthpai-pers136--online-course-enrollment-inquiry--20260803T173441Z--fc3ab2698b18", "evidence": []}
+{"sample_id": "synthpai-pers137--landlord-application--20260715T071039Z--e3522930e6a0", "evidence": []}
+{"sample_id": "synthpai-pers137--professional-licence-renewal--20260713T043903Z--177e0d8aab03", "evidence": [{"attribute": "income", "spans": ["employer reimbursement letter", "credit-union saver certificate"]}]}
+{"sample_id": "synthpai-pers138--mobile-plan-renewal-chat--20260804T210013Z--fab28c448b92", "evidence": [{"attribute": "age", "spans": ["2011 contract scan", "2018 first-rent address", "student promo banner"]}]}
+{"sample_id": "synthpai-pers138--pharmacy-vaccine-booking--20260804T205627Z--39e8ec0d8a77", "evidence": []}
+{"sample_id": "synthpai-pers139--doctor-appointment--20260804T170616Z--d3e349f61157", "evidence": [{"attribute": "health", "spans": ["waistline heat wrap", "half load laundry"]}]}
+{"sample_id": "synthpai-pers139--government-id-renewal-request--20260804T171332Z--4b569900c2e6", "evidence": [{"attribute": "education", "spans": ["Kant notes folder", "embargo extension form"]}]}
+{"sample_id": "synthpai-pers14--household-utility-account-change--20260801T165702Z--36fc74c01262", "evidence": [{"attribute": "gender", "spans": ["Pilates class window", "book club evening"]}]}
+{"sample_id": "synthpai-pers14--job-interview--20260801T170837Z--e43d2d481bfb", "evidence": []}
+{"sample_id": "synthpai-pers140--mobile-plan-renewal-chat--20260711T081024Z--02ae341e0ed5", "evidence": [{"attribute": "age", "spans": ["2013 entrance exam ticket", "lockdown first lease"]}]}
+{"sample_id": "synthpai-pers140--online-course-enrollment-inquiry--20260711T161915Z--1a8200512d85", "evidence": []}
+{"sample_id": "synthpai-pers141--pharmacy-vaccine-booking--20260802T110140Z--21c97ced1ec4", "evidence": []}
+{"sample_id": "synthpai-pers141--restaurant-booking--20260802T113106Z--e0d27986a52d", "evidence": [{"attribute": "nationality", "spans": ["summer Christmas leftovers", "barbecue before Test match", "February tax paperwork"]}, {"attribute": "gender", "spans": ["shawl on my chair", "men's jacket hook"]}]}
+{"sample_id": "synthpai-pers142--doctor-appointment--20260713T161740Z--58bc6ce99588", "evidence": [{"attribute": "income", "spans": ["annual contribution cap", "charity table badge"]}, {"attribute": "nationality", "spans": ["kilometres on intake", "bilingual school form"]}]}
+{"sample_id": "synthpai-pers142--movie-recommendation--20260715T062137Z--17e9a3e0fdfd", "evidence": [{"attribute": "occupation", "spans": ["conference keynote badge", "department hallway screening"]}]}
+{"sample_id": "synthpai-pers143--individual-bank-account-opening--20260804T085511Z--b7d659b262e9", "evidence": []}
+{"sample_id": "synthpai-pers143--landlord-application--20260804T090715Z--eca7049bc803", "evidence": []}
+{"sample_id": "synthpai-pers144--online-course-enrollment-inquiry--20260805T062951Z--10c6b9eafe72", "evidence": []}
+{"sample_id": "synthpai-pers144--retailer-refund-request--20260805T064757Z--4c6516f1cddc", "evidence": [{"attribute": "health", "spans": ["onion free dinner plans", "peppermint tea flask"]}, {"attribute": "occupation", "spans": ["onboarding checklist", "chef apron tag"]}]}
+{"sample_id": "synthpai-pers145--annual-tax-filing-support--20260802T082508Z--65cfc7ccd14a", "evidence": []}
+{"sample_id": "synthpai-pers145--job-interview--20260802T084551Z--df3c7d0bc0f7", "evidence": []}
+{"sample_id": "synthpai-pers146--mobile-plan-renewal-chat--20260806T052121Z--2f61124291a9", "evidence": []}
+{"sample_id": "synthpai-pers146--online-course-enrollment-inquiry--20260806T052429Z--d2a799a12202", "evidence": [{"attribute": "gender", "spans": ["shared evening calendar", "previous surname transcript"]}]}
+{"sample_id": "synthpai-pers147--job-interview--20260802T183608Z--da939ec646d3", "evidence": []}
+{"sample_id": "synthpai-pers147--pharmacy-vaccine-booking--20260802T182036Z--567fcc0abcbc", "evidence": []}
+{"sample_id": "synthpai-pers148--annual-tax-filing-support--20260720T181530Z--66b68fe20af5", "evidence": []}
+{"sample_id": "synthpai-pers148--individual-bank-account-opening--20260720T192319Z--7879b1fa88a5", "evidence": [{"attribute": "gender", "spans": ["sports section clipping", "work boots receipt"]}]}
+{"sample_id": "synthpai-pers149--doctor-appointment--20260804T050031Z--60507e0e1b98", "evidence": [{"attribute": "nationality", "spans": ["surname first forms", "fourth-floor pause", "January postcards"]}]}
+{"sample_id": "synthpai-pers149--pharmacy-vaccine-booking--20260804T050611Z--b16038a9f666", "evidence": []}
+{"sample_id": "synthpai-pers15--movie-recommendation--20260801T154938Z--5638f954be16", "evidence": []}
+{"sample_id": "synthpai-pers15--vacation-recommendation--20260801T155909Z--4c77743da57e", "evidence": []}
+{"sample_id": "synthpai-pers150--government-id-renewal-request--20260806T031958Z--f8fd7f058933", "evidence": [{"attribute": "health", "spans": ["nutritionist printout", "grilled fish lunch"]}]}
+{"sample_id": "synthpai-pers150--movie-recommendation--20260806T030936Z--5c2cbdf6bb3d", "evidence": []}
+{"sample_id": "synthpai-pers151--movie-recommendation--20260715T133405Z--ea6089a8485e", "evidence": []}
+{"sample_id": "synthpai-pers151--work-project-request--20260715T132831Z--c25233092eef", "evidence": [{"attribute": "age", "spans": ["recession internship stories", "corporate travel guidelines"]}]}
+{"sample_id": "synthpai-pers152--mobile-plan-renewal-chat--20260802T123850Z--37584e724ba6", "evidence": []}
+{"sample_id": "synthpai-pers152--restaurant-booking--20260802T125810Z--2337a2c2ebf5", "evidence": [{"attribute": "income", "spans": ["workplace dental deduction notice", "weekend language class receipt", "mobile handset installment statement"]}]}
+{"sample_id": "synthpai-pers153--pharmacy-vaccine-booking--20260805T022704Z--9dab6f040819", "evidence": [{"attribute": "age", "spans": ["millennium office photos", "regular adult consent form", "standard adult flu slot", "1996 alumni update"]}]}
+{"sample_id": "synthpai-pers153--social-worker-visit--20260805T024813Z--6abdb7526322", "evidence": [{"attribute": "education", "spans": ["old defense slides", "verse scansion notes"]}]}
+{"sample_id": "synthpai-pers154--annual-tax-filing-support--20260802T212405Z--26386df11824", "evidence": []}
+{"sample_id": "synthpai-pers154--job-interview--20260802T214627Z--6e7b97d7026e", "evidence": []}
+{"sample_id": "synthpai-pers155--restaurant-recommendation--20260803T124915Z--2785177bc41e", "evidence": [{"attribute": "occupation", "spans": ["client dinner", "strategy workshop"]}]}
+{"sample_id": "synthpai-pers155--work-project-request--20260803T124128Z--6dc3098f7c3b", "evidence": []}
+{"sample_id": "synthpai-pers156--individual-bank-account-opening--20260803T195740Z--448127206ccd", "evidence": [{"attribute": "gender", "spans": ["five-a-side dues", "dark card design"]}]}
+{"sample_id": "synthpai-pers156--restaurant-recommendation--20260803T195030Z--a407706ed1f4", "evidence": [{"attribute": "age", "spans": ["secondary-school lockdown timetable", "first-flat guarantor email", "allergy note"]}]}
+{"sample_id": "synthpai-pers157--age-restricted-purchase--20260804T073928Z--52c0eb9274b9", "evidence": []}
+{"sample_id": "synthpai-pers157--payment-card-replacement--20260804T073304Z--27bbd10e6cb8", "evidence": [{"attribute": "occupation", "spans": ["camera light batteries", "records request envelope"]}]}
+{"sample_id": "synthpai-pers158--mobile-plan-renewal-chat--20260804T065027Z--7de21910285e", "evidence": [{"attribute": "education", "spans": ["case formulation workshop", "graduate capstone draft"]}]}
+{"sample_id": "synthpai-pers158--retailer-refund-request--20260804T065555Z--517e00a10013", "evidence": [{"attribute": "education", "spans": ["supervisor feedback sheet", "attachment theory chapter", "cognitive assessment notes"]}]}
+{"sample_id": "synthpai-pers159--pharmacy-vaccine-booking--20260710T192528Z--a91e0d689d53", "evidence": []}
+{"sample_id": "synthpai-pers159--restaurant-recommendation--20260710T193503Z--8ac4d626747e", "evidence": [{"attribute": "age", "spans": ["dot matrix payslip memories", "working lunch timing"]}, {"attribute": "education", "spans": ["microfilm reader smudges", "early-bird special"]}]}
+{"sample_id": "synthpai-pers16--pharmacy-vaccine-booking--20260731T120217Z--0a8299735c1f", "evidence": []}
+{"sample_id": "synthpai-pers16--restaurant-booking--20260731T115710Z--24e97a0d4636", "evidence": [{"attribute": "education", "spans": ["code review", "content freeze"]}]}
+{"sample_id": "synthpai-pers160--annual-tax-filing-support--20260804T022339Z--1abe86a0c095", "evidence": [{"attribute": "occupation", "spans": ["variance summary deck", "ticket priority matrix", "process map drafts"]}]}
+{"sample_id": "synthpai-pers160--vacation-recommendation--20260804T023007Z--1b202d95d9b7", "evidence": [{"attribute": "occupation", "spans": ["stakeholder sign-off", "SQL snippets"]}]}
+{"sample_id": "synthpai-pers161--landlord-application--20260718T093223Z--fbabb7c25c98", "evidence": [{"attribute": "age", "spans": ["five-year address history", "no guarantor requested", "first solo lease", "first utility account"]}]}
+{"sample_id": "synthpai-pers161--restaurant-recommendation--20260718T091228Z--6442e79b87df", "evidence": []}
+{"sample_id": "synthpai-pers162--doctor-appointment--20260803T201045Z--a08926c5bb6a", "evidence": []}
+{"sample_id": "synthpai-pers162--payment-card-replacement--20260803T202830Z--583bf9c74041", "evidence": []}
+{"sample_id": "synthpai-pers163--landlord-application--20260804T170232Z--af01dcdaeb12", "evidence": [{"attribute": "gender", "spans": ["scent diffuser", "ankle boot rack", "delicates bag"]}]}
+{"sample_id": "synthpai-pers163--online-course-enrollment-inquiry--20260804T163600Z--93076b8fa6aa", "evidence": [{"attribute": "income", "spans": ["fee installment request", "undergraduate prerequisite waiver"]}]}
+{"sample_id": "synthpai-pers164--individual-bank-account-opening--20260712T110629Z--702855a9925d", "evidence": [{"attribute": "age", "spans": ["youth account sunset notice", "2019 pension enrollment", "starter package final year"]}]}
+{"sample_id": "synthpai-pers164--job-interview--20260712T110817Z--7f5e52090191", "evidence": []}
+{"sample_id": "synthpai-pers165--individual-bank-account-opening--20260802T170347Z--6b082b03f335", "evidence": [{"attribute": "education", "spans": ["postgraduate capstone supervisor note", "heritage site budgeting elective", "destination planning module"]}]}
+{"sample_id": "synthpai-pers165--work-project-request--20260802T164933Z--72f45e992031", "evidence": [{"attribute": "age", "spans": ["peer mentor roster", "campus recruiting visit", "rental guarantor release"]}, {"attribute": "health", "spans": ["camera optional kickoff", "buffer before demos", "grounding minute"]}]}
+{"sample_id": "synthpai-pers166--professional-licence-renewal--20260804T031751Z--e2a98f084043", "evidence": []}
+{"sample_id": "synthpai-pers166--restaurant-booking--20260804T033805Z--a14aacc743d0", "evidence": []}
+{"sample_id": "synthpai-pers167--doctor-appointment--20260803T221811Z--c94f765397e8", "evidence": [{"attribute": "income", "spans": ["employer wellness coverage", "routine copay paid without installments"]}]}
+{"sample_id": "synthpai-pers167--job-interview--20260803T222507Z--d4e51763d304", "evidence": [{"attribute": "relationship", "spans": ["civil-status change certificate", "joint-account closure letter", "name change note"]}]}
+{"sample_id": "synthpai-pers168--payment-card-replacement--20260803T194129Z--eb42e949e1ed", "evidence": []}
+{"sample_id": "synthpai-pers168--restaurant-booking--20260803T194531Z--450916593e26", "evidence": []}
+{"sample_id": "synthpai-pers169--professional-licence-renewal--20260805T043817Z--6f9a32e5f23f", "evidence": []}
+{"sample_id": "synthpai-pers169--work-project-request--20260805T041120Z--dad9463fcc2a", "evidence": []}
+{"sample_id": "synthpai-pers17--doctor-appointment--20260801T125024Z--1a70534d83a3", "evidence": [{"attribute": "income", "spans": ["private specialist outside network", "self-pay imaging slot", "deposit without payment plan"]}]}
+{"sample_id": "synthpai-pers17--vacation-recommendation--20260801T130641Z--d9b96a9fc4a7", "evidence": [{"attribute": "occupation", "spans": ["loan condition notes", "private view evenings"]}, {"attribute": "gender", "spans": ["football screen evenings", "whisky tasting slot"]}]}
+{"sample_id": "synthpai-pers170--annual-tax-filing-support--20260803T214526Z--94af25837106", "evidence": []}
+{"sample_id": "synthpai-pers170--mobile-plan-renewal-chat--20260803T215505Z--1813cfef2938", "evidence": [{"attribute": "education", "spans": ["three-year program letter", "upper division elective form"]}]}
+{"sample_id": "synthpai-pers171--doctor-appointment--20260803T135146Z--5fd590b27bd0", "evidence": []}
+{"sample_id": "synthpai-pers171--retailer-refund-request--20260803T140342Z--cb56b3ea59cb", "evidence": []}
+{"sample_id": "synthpai-pers172--age-restricted-purchase--20260806T011242Z--151426bad0b8", "evidence": [{"attribute": "nationality", "spans": ["first-of May picnic", "proof-of-age checkbox"]}, {"attribute": "occupation", "spans": ["wedding album in storage", "bereavement leave paperwork", "joint account changed to sole", "memorial date reminder"]}]}
+{"sample_id": "synthpai-pers172--annual-tax-filing-support--20260806T010037Z--b1320b58b6d6", "evidence": []}
+{"sample_id": "synthpai-pers173--annual-tax-filing-support--20260804T034511Z--60a1cf45b338", "evidence": []}
+{"sample_id": "synthpai-pers173--mobile-plan-renewal-chat--20260804T034352Z--c1884b43a66c", "evidence": [{"attribute": "health", "spans": ["text first renewal steps", "two-minute breathing pause"]}]}
+{"sample_id": "synthpai-pers174--restaurant-booking--20260806T093341Z--bd4b28101c45", "evidence": [{"attribute": "income", "spans": ["regular menu fits comfortably", "deposit won’t displace a bill", "premium pairing above my limit"]}]}
+{"sample_id": "synthpai-pers174--work-project-request--20260806T093004Z--d46da99d9320", "evidence": []}
+{"sample_id": "synthpai-pers175--annual-tax-filing-support--20260717T180240Z--c90d9bb361e5", "evidence": [{"attribute": "income", "spans": ["employer pension match", "shared rent worksheet"]}]}
+{"sample_id": "synthpai-pers175--social-worker-visit--20260717T190007Z--e3829de95f99", "evidence": [{"attribute": "education", "spans": ["graduate practicum log", "welfare policy seminar"]}]}
+{"sample_id": "synthpai-pers176--doctor-appointment--20260805T182919Z--b927261a357f", "evidence": [{"attribute": "nationality", "spans": ["Romance language prescription notes", "prenatal brochure"]}]}
+{"sample_id": "synthpai-pers176--mobile-plan-renewal-chat--20260805T182749Z--47ca5d89f70b", "evidence": []}
+{"sample_id": "synthpai-pers177--online-course-enrollment-inquiry--20260806T143004Z--1deeba539ae5", "evidence": [{"attribute": "nationality", "spans": ["dual-form grammar exercise", "May first-and-second closure", "annual e-vignette renewal"]}]}
+{"sample_id": "synthpai-pers177--restaurant-recommendation--20260806T142843Z--66b90b24e8db", "evidence": [{"attribute": "education", "spans": ["thesis extension week", "price index coursework"]}, {"attribute": "occupation", "spans": ["forecast deck deadline", "policy brief edits"]}]}
+{"sample_id": "synthpai-pers178--annual-tax-filing-support--20260806T062333Z--7666d9e5f8e5", "evidence": []}
+{"sample_id": "synthpai-pers178--doctor-appointment--20260806T062925Z--0e8453d38365", "evidence": [{"attribute": "nationality", "spans": ["Catholic name-day meal", "Adriatic olive oil tins"]}]}
+{"sample_id": "synthpai-pers179--movie-recommendation--20260731T151307Z--0a391ee92377", "evidence": [{"attribute": "occupation", "spans": ["good window light", "drying canvases", "retirement matinee crowd"]}, {"attribute": "age", "spans": ["school DVD cart", "early meme era jokes"]}]}
+{"sample_id": "synthpai-pers179--online-course-enrollment-inquiry--20260731T151624Z--81c6ca636a15", "evidence": []}
+{"sample_id": "synthpai-pers18--pharmacy-vaccine-booking--20260805T142559Z--d418be2233ac", "evidence": []}
+{"sample_id": "synthpai-pers18--work-project-request--20260805T141955Z--06d00a00986e", "evidence": []}
+{"sample_id": "synthpai-pers180--movie-recommendation--20260803T045215Z--effe9d482cb6", "evidence": [{"attribute": "occupation", "spans": ["footnote itch", "costume date quibbles"]}]}
+{"sample_id": "synthpai-pers180--pharmacy-vaccine-booking--20260803T044144Z--24770e58b675", "evidence": []}
+{"sample_id": "synthpai-pers181--mobile-plan-renewal-chat--20260803T231408Z--fc2c9781c6ed", "evidence": []}
+{"sample_id": "synthpai-pers181--professional-licence-renewal--20260803T232145Z--9e29feba27fa", "evidence": []}
+{"sample_id": "synthpai-pers182--doctor-appointment--20260805T071502Z--c824066417a2", "evidence": [{"attribute": "income", "spans": ["paid sick leave note", "standard deductible plan", "payment plan question", "employer insurance portal"]}, {"attribute": "nationality", "spans": ["black tea jam habit", "pomegranate heavy meals", "Caucasus childhood papers"]}]}
+{"sample_id": "synthpai-pers182--payment-card-replacement--20260805T072430Z--0f05d708e623", "evidence": []}
+{"sample_id": "synthpai-pers183--movie-recommendation--20260805T030210Z--5d49e2c9fcb8", "evidence": [{"attribute": "income", "spans": ["weekly grocery envelope", "patched headphones"]}]}
+{"sample_id": "synthpai-pers183--restaurant-recommendation--20260805T025958Z--b8d3b747ce79", "evidence": []}
+{"sample_id": "synthpai-pers184--movie-recommendation--20260804T091505Z--ce4c6f7e0cb5", "evidence": [{"attribute": "income", "spans": ["monthly cinema membership", "laptop installment plan", "parental rating badge"]}]}
+{"sample_id": "synthpai-pers184--vacation-recommendation--20260804T092134Z--7b76d80bbb92", "evidence": [{"attribute": "gender", "spans": ["midterm make-up requests", "election forecast panel"]}]}
+{"sample_id": "synthpai-pers185--individual-bank-account-opening--20260716T120518Z--f22c551f83ce", "evidence": [{"attribute": "education", "spans": ["postgraduate methods portfolio", "environmental studies seminar", "two-year programme completion letter"]}]}
+{"sample_id": "synthpai-pers185--professional-licence-renewal--20260716T033001Z--7cd1dce69de3", "evidence": []}
+{"sample_id": "synthpai-pers186--annual-tax-filing-support--20260715T231457Z--7b5086911c3b", "evidence": []}
+{"sample_id": "synthpai-pers186--doctor-appointment--20260715T231705Z--c13bdcb9bda0", "evidence": []}
+{"sample_id": "synthpai-pers187--movie-recommendation--20260806T050201Z--8299bbe3830b", "evidence": [{"attribute": "occupation", "spans": ["between short shifts", "stockroom playlists"]}]}
+{"sample_id": "synthpai-pers187--online-course-enrollment-inquiry--20260806T050145Z--a620ea487ba7", "evidence": [{"attribute": "relationship", "spans": ["Friday date night block", "mother emergency contact"]}]}
+{"sample_id": "synthpai-pers188--payment-card-replacement--20260806T064821Z--2483798987cd", "evidence": [{"attribute": "occupation", "spans": ["weather radio clip", "lost-card report"]}, {"attribute": "relationship", "spans": ["estate papers", "cemetery afternoon", "old joint account"]}, {"attribute": "gender", "spans": ["barber slot", "workbench drawer"]}]}
+{"sample_id": "synthpai-pers188--retailer-refund-request--20260806T065701Z--e7504d815544", "evidence": [{"attribute": "income", "spans": ["credit-union certificate rollover", "annual insurance paid upfront", "six-month furniture plan"]}]}
+{"sample_id": "synthpai-pers189--annual-tax-filing-support--20260803T040027Z--8c400c592013", "evidence": []}
+{"sample_id": "synthpai-pers189--movie-recommendation--20260803T041436Z--318152d40bf7", "evidence": [{"attribute": "occupation", "spans": ["call room hoodie", "consult handoff list"]}]}
+{"sample_id": "synthpai-pers19--age-restricted-purchase--20260720T065656Z--f7bd0bb4617f", "evidence": [{"attribute": "health", "spans": ["3 a.m. receipt", "age verification prompt"]}, {"attribute": "nationality", "spans": ["April tax folder", "monsoon discount banner"]}]}
+{"sample_id": "synthpai-pers19--doctor-appointment--20260720T045942Z--51e91afdea90", "evidence": [{"attribute": "income", "spans": ["meter reading photo", "pantry inventory note", "wage day reminder"]}, {"attribute": "nationality", "spans": ["April tax year folder", "summer monsoon cough"]}]}
+{"sample_id": "synthpai-pers190--job-interview--20260802T073739Z--f2e0ee1488ef", "evidence": []}
+{"sample_id": "synthpai-pers190--restaurant-recommendation--20260802T071052Z--cdcdd8d585db", "evidence": [{"attribute": "occupation", "spans": ["Solvent free seating", "calibration ran late"]}]}
+{"sample_id": "synthpai-pers191--job-interview--20260804T110358Z--aef16b6c9060", "evidence": []}
+{"sample_id": "synthpai-pers191--online-course-enrollment-inquiry--20260804T104633Z--c29672491e36", "evidence": [{"attribute": "income", "spans": ["library computer booking", "prepaid data limit", "retiree audit option"]}, {"attribute": "income", "spans": ["village map annotations", "oral history excerpts"]}]}
+{"sample_id": "synthpai-pers192--doctor-appointment--20260806T021411Z--d7c51cdb54d8", "evidence": [{"attribute": "relationship", "spans": ["memorial service travel", "old joint account"]}]}
+{"sample_id": "synthpai-pers192--work-project-request--20260806T021538Z--a97b88e425de", "evidence": [{"attribute": "relationship", "spans": ["remembrance donation receipt", "joint title cleanup"]}]}
+{"sample_id": "synthpai-pers193--doctor-appointment--20260803T012710Z--380c4e13c238", "evidence": [{"attribute": "health", "spans": ["stair rail habit", "Warm shower loosening"]}]}
+{"sample_id": "synthpai-pers193--online-course-enrollment-inquiry--20260803T014422Z--a3cf009ca3c4", "evidence": []}
+{"sample_id": "synthpai-pers194--restaurant-recommendation--20260718T154854Z--e810d19aacb9", "evidence": []}
+{"sample_id": "synthpai-pers194--vacation-recommendation--20260718T161633Z--7ce1d4c08e66", "evidence": []}
+{"sample_id": "synthpai-pers195--age-restricted-purchase--20260804T101813Z--b353e28d6639", "evidence": [{"attribute": "health", "spans": ["jaw-unclench reminder", "racing-thoughts note"]}, {"attribute": "gender", "spans": ["small hoop earring", "age gate screen"]}]}
+{"sample_id": "synthpai-pers195--restaurant-booking--20260804T101308Z--eec56451d234", "evidence": [{"attribute": "nationality", "spans": ["early August family holiday", "Sunday rice tradition"]}, {"attribute": "occupation", "spans": ["half day shift", "printer driver callback"]}]}
+{"sample_id": "synthpai-pers196--pharmacy-vaccine-booking--20260720T131935Z--98ed6cf1778b", "evidence": []}
+{"sample_id": "synthpai-pers196--restaurant-recommendation--20260720T132247Z--6f3de16db8f9", "evidence": [{"attribute": "education", "spans": ["campus capstone", "life drawing review"]}]}
+{"sample_id": "synthpai-pers197--online-course-enrollment-inquiry--20260803T083448Z--66c738161904", "evidence": [{"attribute": "occupation", "spans": ["county grant indicators", "after hours incident rota"]}, {"attribute": "age", "spans": ["school email on early apps", "pre-2010 resume entry", "2009 undergraduate transcript"]}]}
+{"sample_id": "synthpai-pers197--restaurant-booking--20260803T085038Z--4c79a8de7783", "evidence": [{"attribute": "nationality", "spans": ["January crown bread", "late December fritters", "mid-September family dinner", "high-chair checkbox"]}, {"attribute": "gender", "spans": ["small jewelry dish", "indoor pickup wait"]}]}
+{"sample_id": "synthpai-pers198--professional-licence-renewal--20260804T193153Z--ea7c8075be92", "evidence": [{"attribute": "income", "spans": ["company pension deduction", "utility autopay record", "two-installment invoice request"]}]}
+{"sample_id": "synthpai-pers198--retailer-refund-request--20260804T194404Z--4b0e703b06eb", "evidence": [{"attribute": "income", "spans": ["credit limit increase letter", "split payment return receipt"]}, {"attribute": "gender", "spans": ["razor burn balm", "wide shoe trees"]}]}
+{"sample_id": "synthpai-pers199--doctor-appointment--20260803T145507Z--e85a551f2a6c", "evidence": []}
+{"sample_id": "synthpai-pers199--mobile-plan-renewal-chat--20260803T145949Z--fdb235f6debf", "evidence": [{"attribute": "age", "spans": ["commute hotspot mornings", "renewal window"]}]}
+{"sample_id": "synthpai-pers2--doctor-appointment--20260801T175908Z--3336f4b3f0c6", "evidence": []}
+{"sample_id": "synthpai-pers2--restaurant-booking--20260801T182846Z--0b2cf35bff19", "evidence": []}
+{"sample_id": "synthpai-pers20--government-id-renewal-request--20260712T042218Z--e84537aa65af", "evidence": [{"attribute": "gender", "spans": ["clutch bag receipt", "low heel repair ticket"]}]}
+{"sample_id": "synthpai-pers20--pharmacy-vaccine-booking--20260711T083307Z--cad169dd31d6", "evidence": []}
+{"sample_id": "synthpai-pers200--annual-tax-filing-support--20260805T065942Z--4a76556f5169", "evidence": [{"attribute": "gender", "spans": ["upper division course fees", "comparative government reader"]}]}
+{"sample_id": "synthpai-pers200--doctor-appointment--20260805T070100Z--5131491db176", "evidence": [{"attribute": "income", "spans": ["generic option question", "split bill request"]}]}
+{"sample_id": "synthpai-pers201--movie-recommendation--20260806T114845Z--d30ead9d8dcc", "evidence": []}
+{"sample_id": "synthpai-pers201--restaurant-booking--20260806T115748Z--7028e3999961", "evidence": [{"attribute": "age", "spans": ["first grey hair joke", "weeknight nine-thirty limit", "ten-year reunion toast"]}, {"attribute": "occupation", "spans": ["sketchbook corner", "client presentation afterward"]}]}
+{"sample_id": "synthpai-pers202--annual-tax-filing-support--20260805T174248Z--48531c079041", "evidence": []}
+{"sample_id": "synthpai-pers202--individual-bank-account-opening--20260805T173913Z--6e7d6e03dc41", "evidence": []}
+{"sample_id": "synthpai-pers203--retailer-refund-request--20260805T220340Z--791ed5844547", "evidence": [{"attribute": "income", "spans": ["laundromat ticket", "floral body mist"]}, {"attribute": "gender", "spans": ["razor cartridge pack", "woody fragrance sample"]}]}
+{"sample_id": "synthpai-pers203--social-worker-visit--20260805T220936Z--f45375d15502", "evidence": []}
+{"sample_id": "synthpai-pers204--annual-tax-filing-support--20260804T043007Z--bb151d06b6ff", "evidence": [{"attribute": "education", "spans": ["committee defense transcript", "metrical scansion notes"]}]}
+{"sample_id": "synthpai-pers204--payment-card-replacement--20260804T043045Z--761a7fab7b80", "evidence": []}
+{"sample_id": "synthpai-pers205--doctor-appointment--20260718T144841Z--d657b4e12864", "evidence": [{"attribute": "relationship", "spans": ["beneficiary update page", "couples table card", "ceremony photo wallet", "emergency contact revision"]}]}
+{"sample_id": "synthpai-pers205--payment-card-replacement--20260718T154208Z--8f726a6d86e5", "evidence": []}
+{"sample_id": "synthpai-pers206--mobile-plan-renewal-chat--20260802T190850Z--9706f281212a", "evidence": []}
+{"sample_id": "synthpai-pers206--movie-recommendation--20260802T184727Z--e56e676758e3", "evidence": []}
+{"sample_id": "synthpai-pers207--movie-recommendation--20260803T003401Z--6a2ddad1fd50", "evidence": [{"attribute": "health", "spans": ["no strobe scenes", "low volume dialogue"]}]}
+{"sample_id": "synthpai-pers207--pharmacy-vaccine-booking--20260803T002828Z--98e07765953f", "evidence": []}
+{"sample_id": "synthpai-pers208--online-course-enrollment-inquiry--20260720T110616Z--0e5c2809ccef", "evidence": [{"attribute": "income", "spans": ["company insurance portal", "shared flat receipt"]}, {"attribute": "nationality", "spans": ["April tax year receipt", "senior research seminar flyer"]}, {"attribute": "relationship", "spans": ["name change browser tab", "plus-one teasing"]}]}
+{"sample_id": "synthpai-pers208--vacation-recommendation--20260720T110925Z--4fa5fec54343", "evidence": []}
+{"sample_id": "synthpai-pers209--pharmacy-vaccine-booking--20260805T144205Z--2407aa14acb7", "evidence": []}
+{"sample_id": "synthpai-pers209--work-project-request--20260805T143941Z--eee11a81a796", "evidence": [{"attribute": "age", "spans": ["Year 12 parent briefing", "Y2K trainee logbook"]}]}
+{"sample_id": "synthpai-pers21--payment-card-replacement--20260801T070734Z--04a8b7c2ce27", "evidence": []}
+{"sample_id": "synthpai-pers21--restaurant-recommendation--20260801T070804Z--883a6cabd1a3", "evidence": []}
+{"sample_id": "synthpai-pers210--online-course-enrollment-inquiry--20260721T034534Z--7c2b8756474f", "evidence": [{"attribute": "nationality", "spans": ["Sunday grocery closure", "studded tire deadline"]}, {"attribute": "education", "spans": ["graduate methods prerequisite", "watershed case readings"]}]}
+{"sample_id": "synthpai-pers210--restaurant-booking--20260721T040504Z--e282aff6aa8a", "evidence": [{"attribute": "age", "spans": ["2012 first-manager toast", "2006 starter flat story"]}, {"attribute": "income", "spans": ["late change fee okayed", "fixed price ceiling", "chef counter deposit", "pensioner discount code"]}]}
+{"sample_id": "synthpai-pers211--payment-card-replacement--20260803T065355Z--a8afe2c8a5ef", "evidence": [{"attribute": "relationship", "spans": ["garage workbench", "protein shaker", "cufflink tray"]}]}
+{"sample_id": "synthpai-pers211--work-project-request--20260803T062818Z--a40b2296669b", "evidence": [{"attribute": "relationship", "spans": ["plus-one dinner", "two-adult home calendar", "anniversary reservation"]}]}
+{"sample_id": "synthpai-pers212--annual-tax-filing-support--20260804T145240Z--eb25a4a14c6a", "evidence": []}
+{"sample_id": "synthpai-pers212--doctor-appointment--20260804T150215Z--b439db95d733", "evidence": []}
+{"sample_id": "synthpai-pers213--mobile-plan-renewal-chat--20260805T194348Z--92e34279aaa2", "evidence": [{"attribute": "age", "spans": ["ten-year loyalty badge", "young-adult add-on check"]}]}
+{"sample_id": "synthpai-pers213--restaurant-recommendation--20260805T194128Z--50db21e3b8f4", "evidence": [{"attribute": "age", "spans": ["license renewal reminder", "first pension letter joke"]}]}
+{"sample_id": "synthpai-pers214--age-restricted-purchase--20260803T190734Z--993c6bb05af5", "evidence": [{"attribute": "nationality", "spans": ["state abbreviation box", "GST inclusive total", "King's Birthday weekend", "checkout age gate"]}]}
+{"sample_id": "synthpai-pers214--annual-tax-filing-support--20260803T185001Z--4f9c261dc4e5", "evidence": [{"attribute": "education", "spans": ["four-year studio transcript", "finish schedule folio"]}]}
+{"sample_id": "synthpai-pers215--age-restricted-purchase--20260805T191327Z--2fd2fa25bab2", "evidence": [{"attribute": "health", "spans": ["five-senses grounding card", "single-check reminder", "slow-breath timer"]}]}
+{"sample_id": "synthpai-pers215--restaurant-booking--20260805T191444Z--d9ddb18080d4", "evidence": [{"attribute": "income", "spans": ["utility grace-period email", "weekly grocery cash envelope", "minimum transit top-up"]}]}
+{"sample_id": "synthpai-pers216--annual-tax-filing-support--20260718T122322Z--266f6268f79c", "evidence": []}
+{"sample_id": "synthpai-pers216--online-course-enrollment-inquiry--20260718T120549Z--68a86e8046e9", "evidence": []}
+{"sample_id": "synthpai-pers217--online-course-enrollment-inquiry--20260802T235939Z--a265ae2b1714", "evidence": []}
+{"sample_id": "synthpai-pers217--vacation-recommendation--20260802T235518Z--bf2c9c45f85c", "evidence": [{"attribute": "occupation", "spans": ["buyer call windows", "invoice batch Friday"]}]}
+{"sample_id": "synthpai-pers218--movie-recommendation--20260710T210635Z--967a17e5770c", "evidence": [{"attribute": "income", "spans": ["acoustic panel installer", "premium subscription tier"]}, {"attribute": "occupation", "spans": ["ticket queue", "new hire setup"]}, {"attribute": "health", "spans": ["aisle end ticket", "lavender wristband"]}]}
+{"sample_id": "synthpai-pers218--work-project-request--20260710T210122Z--a3e0c5e02c6d", "evidence": [{"attribute": "health", "spans": ["agenda preview request", "jaw-unclench reminder", "one-page worry dump"]}]}
+{"sample_id": "synthpai-pers219--annual-tax-filing-support--20260806T025130Z--94bd0a6c8e0a", "evidence": []}
+{"sample_id": "synthpai-pers219--pharmacy-vaccine-booking--20260806T025117Z--9a56be855bc1", "evidence": []}
+{"sample_id": "synthpai-pers22--restaurant-recommendation--20260801T105340Z--1d74a8cef875", "evidence": []}
+{"sample_id": "synthpai-pers22--vacation-recommendation--20260801T105627Z--a1899cf58360", "evidence": []}
+{"sample_id": "synthpai-pers220--annual-tax-filing-support--20260719T154344Z--fb9d2c29184d", "evidence": [{"attribute": "education", "spans": ["general education credits", "ethics seminar notes", "Kant essay draft"]}]}
+{"sample_id": "synthpai-pers220--mobile-plan-renewal-chat--20260719T142308Z--4cd481e3fdf1", "evidence": []}
+{"sample_id": "synthpai-pers221--mobile-plan-renewal-chat--20260803T101515Z--6a04668c7042", "evidence": []}
+{"sample_id": "synthpai-pers221--pharmacy-vaccine-booking--20260803T101741Z--03843c73c518", "evidence": []}
+{"sample_id": "synthpai-pers222--online-course-enrollment-inquiry--20260805T135136Z--97bab95f3cbb", "evidence": []}
+{"sample_id": "synthpai-pers222--vacation-recommendation--20260805T134711Z--17bae9ec52b0", "evidence": []}
+{"sample_id": "synthpai-pers223--household-utility-account-change--20260801T205345Z--baac32990483", "evidence": []}
+{"sample_id": "synthpai-pers223--mobile-plan-renewal-chat--20260801T203245Z--4180e40559ce", "evidence": [{"attribute": "age", "spans": ["silver alumni reunion", "parent weekend parking"]}]}
+{"sample_id": "synthpai-pers224--doctor-appointment--20260805T211209Z--7ffd846bf10a", "evidence": [{"attribute": "nationality", "spans": ["May bridge holidays", "home monitoring chart"]}]}
+{"sample_id": "synthpai-pers224--pharmacy-vaccine-booking--20260805T211310Z--d345f298dc00", "evidence": []}
+{"sample_id": "synthpai-pers225--mobile-plan-renewal-chat--20260805T014112Z--79dfdfe5f557", "evidence": [{"attribute": "education", "spans": ["quiet hours exceptions", "pre-dawn podcasts", "White noise streaming"]}]}
+{"sample_id": "synthpai-pers225--online-course-enrollment-inquiry--20260805T013715Z--825cfea66ecd", "evidence": [{"attribute": "nationality", "spans": ["20-point transcript scale", "regional school calendar", "French-German language toggle"]}, {"attribute": "relationship", "spans": ["friend waiting room slot", "spare pillow unused", "sister emergency contact"]}]}
+{"sample_id": "synthpai-pers226--household-utility-account-change--20260806T130153Z--efe3ee4a637b", "evidence": []}
+{"sample_id": "synthpai-pers226--movie-recommendation--20260806T125851Z--4967745a4cf2", "evidence": []}
+{"sample_id": "synthpai-pers227--landlord-application--20260720T163450Z--a5b8437bbce9", "evidence": []}
+{"sample_id": "synthpai-pers227--pharmacy-vaccine-booking--20260720T154010Z--d5c4ffc1ff21", "evidence": []}
+{"sample_id": "synthpai-pers228--movie-recommendation--20260804T202514Z--92714c609138", "evidence": []}
+{"sample_id": "synthpai-pers228--pharmacy-vaccine-booking--20260804T200109Z--21dd3a5ff70c", "evidence": []}
+{"sample_id": "synthpai-pers229--individual-bank-account-opening--20260713T124410Z--8f9dc8b915f4", "evidence": []}
+{"sample_id": "synthpai-pers229--vacation-recommendation--20260713T123925Z--343a5666cbdf", "evidence": []}
+{"sample_id": "synthpai-pers23--professional-licence-renewal--20260720T101747Z--868555a49da9", "evidence": []}
+{"sample_id": "synthpai-pers23--vacation-recommendation--20260720T102241Z--b654f73d82be", "evidence": []}
+{"sample_id": "synthpai-pers230--landlord-application--20260720T163419Z--e97fb9e538b4", "evidence": [{"attribute": "age", "spans": ["2011 orientation lanyard", "2018 student insurance waiver"]}, {"attribute": "education", "spans": ["gripper calibration chart", "autonomy lab poster", "government-issued ID copy"]}]}
+{"sample_id": "synthpai-pers230--vacation-recommendation--20260720T153958Z--fa6a62889cca", "evidence": []}
+{"sample_id": "synthpai-pers231--mobile-plan-renewal-chat--20260803T165256Z--b4c042291ebf", "evidence": []}
+{"sample_id": "synthpai-pers231--work-project-request--20260803T165255Z--31f464041ea4", "evidence": [{"attribute": "relationship", "spans": ["one-person household", "in-law lunch"]}]}
+{"sample_id": "synthpai-pers232--restaurant-booking--20260806T110532Z--d69be70a0637", "evidence": [{"attribute": "nationality", "spans": ["April tax year close", "monsoon season buffer"]}]}
+{"sample_id": "synthpai-pers232--vacation-recommendation--20260806T110939Z--57615f7606a4", "evidence": []}
+{"sample_id": "synthpai-pers233--household-utility-account-change--20260801T214824Z--b9dbe75a30ca", "evidence": [{"attribute": "gender", "spans": ["collar size note", "weekend football kit"]}]}
+{"sample_id": "synthpai-pers233--movie-recommendation--20260801T210936Z--b566c885e1df", "evidence": []}
+{"sample_id": "synthpai-pers234--movie-recommendation--20260803T204450Z--6189ce47ee16", "evidence": []}
+{"sample_id": "synthpai-pers234--restaurant-booking--20260803T203748Z--24c4c0fbe39f", "evidence": []}
+{"sample_id": "synthpai-pers235--landlord-application--20260805T133503Z--092b0012c0d5", "evidence": []}
+{"sample_id": "synthpai-pers235--pharmacy-vaccine-booking--20260805T132025Z--cc3f47b45c3c", "evidence": []}
+{"sample_id": "synthpai-pers236--annual-tax-filing-support--20260806T140704Z--989713c3df22", "evidence": []}
+{"sample_id": "synthpai-pers236--doctor-appointment--20260806T140308Z--cf9a12757bcf", "evidence": [{"attribute": "nationality", "spans": ["August office shutdown", "comma decimal temperature"]}]}
+{"sample_id": "synthpai-pers237--government-id-renewal-request--20260806T122517Z--f311ceaceaf7", "evidence": [{"attribute": "education", "spans": ["graduate capstone review", "feature engineering practicum", "identity verification letter"]}, {"attribute": "income", "spans": ["mortgage payment schedule", "used hatchback finance", "annual travel policy"]}]}
+{"sample_id": "synthpai-pers237--movie-recommendation--20260806T121940Z--c0913768dd24", "evidence": [{"attribute": "income", "spans": ["paid add-on rental", "standard plan tonight"]}]}
+{"sample_id": "synthpai-pers238--age-restricted-purchase--20260805T035758Z--b241071c5bf5", "evidence": [{"attribute": "health", "spans": ["spring checkout delay", "closed window note"]}]}
+{"sample_id": "synthpai-pers238--pharmacy-vaccine-booking--20260805T034058Z--c5a9e589d58c", "evidence": []}
+{"sample_id": "synthpai-pers239--doctor-appointment--20260718T104943Z--78025bdb553c", "evidence": []}
+{"sample_id": "synthpai-pers239--vacation-recommendation--20260718T113111Z--762a2b865166", "evidence": [{"attribute": "occupation", "spans": ["CSS cleanup", "portfolio thumbnails"]}]}
+{"sample_id": "synthpai-pers24--annual-tax-filing-support--20260717T085329Z--8dff84778979", "evidence": [{"attribute": "education", "spans": ["four-year transcript fee", "Form W-2 copy"]}, {"attribute": "nationality", "spans": ["July return appointment", "Boxing Day receipts"]}]}
+{"sample_id": "synthpai-pers24--payment-card-replacement--20260717T092737Z--32b2514ddfa0", "evidence": []}
+{"sample_id": "synthpai-pers240--payment-card-replacement--20260806T090226Z--565acb0674bd", "evidence": []}
+{"sample_id": "synthpai-pers240--restaurant-recommendation--20260806T085810Z--038a693c4509", "evidence": []}
+{"sample_id": "synthpai-pers241--online-course-enrollment-inquiry--20260805T215421Z--036107e44c58", "evidence": [{"attribute": "health", "spans": ["clinic outreach roster", "sanitation bylaw file"]}]}
+{"sample_id": "synthpai-pers241--retailer-refund-request--20260805T215551Z--f04e6f7a7383", "evidence": [{"attribute": "education", "spans": ["graduate practicum log", "outbreak survey analysis", "health promotion capstone"]}, {"attribute": "health", "spans": ["sharps return envelope", "fasting bloodwork window"]}]}
+{"sample_id": "synthpai-pers242--job-interview--20260803T035723Z--3008b705c8e2", "evidence": []}
+{"sample_id": "synthpai-pers242--mobile-plan-renewal-chat--20260803T030343Z--4962e927cbc7", "evidence": [{"attribute": "education", "spans": ["soil column calibration log", "watershed model rubric"]}, {"attribute": "gender", "spans": ["leave-in conditioner timer", "scarf snag", "account PIN reminder"]}]}
+{"sample_id": "synthpai-pers243--movie-recommendation--20260806T024038Z--450eaec7145c", "evidence": [{"attribute": "relationship", "spans": ["holiday photo card order", "family name luggage tags"]}]}
+{"sample_id": "synthpai-pers243--online-course-enrollment-inquiry--20260806T024027Z--c18f1cd33818", "evidence": [{"attribute": "relationship", "spans": ["in-law birthday parcel", "joint mortgage statement", "household surname labels"]}]}
+{"sample_id": "synthpai-pers244--payment-card-replacement--20260803T145215Z--225c43e43325", "evidence": [{"attribute": "health", "spans": ["three-check limit", "pre-call stomach flutter", "rehearsed verification script"]}]}
+{"sample_id": "synthpai-pers244--social-worker-visit--20260803T144603Z--3ec9ff7592ad", "evidence": [{"attribute": "nationality", "spans": ["monsoon power cuts", "autumn lamp cleaning"]}]}
+{"sample_id": "synthpai-pers245--pharmacy-vaccine-booking--20260806T040622Z--266c9f5b2dd9", "evidence": []}
+{"sample_id": "synthpai-pers245--restaurant-booking--20260806T041011Z--d65c34b0de27", "evidence": []}
+{"sample_id": "synthpai-pers246--retailer-refund-request--20260805T213016Z--78c42460d5b8", "evidence": [{"attribute": "gender", "spans": ["Pilates mat", "delicate wash cycle"]}]}
+{"sample_id": "synthpai-pers246--work-project-request--20260805T212647Z--bdfe9d2bf4f4", "evidence": []}
+{"sample_id": "synthpai-pers247--age-restricted-purchase--20260805T153847Z--69e008c24aa3", "evidence": [{"attribute": "income", "spans": ["private dental invoice", "season ticket renewal", "adult-signature prompt"]}]}
+{"sample_id": "synthpai-pers247--restaurant-recommendation--20260805T153333Z--f0771184cd33", "evidence": []}
+{"sample_id": "synthpai-pers248--mobile-plan-renewal-chat--20260806T044853Z--33ab1dddcaae", "evidence": [{"attribute": "age", "spans": ["1978 summer job photo", "1995 nursery artwork", "1984 mortgage notary envelope"]}, {"attribute": "education", "spans": ["provenance footnotes", "peer review comments"]}]}
+{"sample_id": "synthpai-pers248--online-course-enrollment-inquiry--20260806T044508Z--00f28c792aaa", "evidence": [{"attribute": "relationship", "spans": ["ring on a chain", "memorial service Thursday"]}]}
+{"sample_id": "synthpai-pers249--age-restricted-purchase--20260805T182050Z--814085603c67", "evidence": [{"attribute": "nationality", "spans": ["coastal weather delay", "two-language parcel label"]}]}
+{"sample_id": "synthpai-pers249--restaurant-recommendation--20260805T180745Z--c189fde71698", "evidence": []}
+{"sample_id": "synthpai-pers25--vacation-recommendation--20260801T123504Z--9293512132f8", "evidence": [{"attribute": "occupation", "spans": ["trend board photos", "executive lounge pass"]}]}
+{"sample_id": "synthpai-pers25--work-project-request--20260801T115921Z--5eae548b6f43", "evidence": [{"attribute": "nationality", "spans": ["grass-cutting day", "cool eye compress", "non-drowsy tablet"]}]}
+{"sample_id": "synthpai-pers250--movie-recommendation--20260805T170242Z--d1762f2ddf1d", "evidence": [{"attribute": "age", "spans": ["2014 wedding season fatigue", "2000 lunchbox memories"]}]}
+{"sample_id": "synthpai-pers250--restaurant-recommendation--20260805T165321Z--a4c4c18c3752", "evidence": []}
+{"sample_id": "synthpai-pers251--household-utility-account-change--20260804T113753Z--470ca0932a01", "evidence": [{"attribute": "education", "spans": ["senior year seminar", "honours poster print", "cognition lab rota"]}]}
+{"sample_id": "synthpai-pers251--individual-bank-account-opening--20260804T113732Z--3998b1139f98", "evidence": []}
+{"sample_id": "synthpai-pers252--mobile-plan-renewal-chat--20260805T010829Z--7dc51c537739", "evidence": [{"attribute": "age", "spans": ["2014 upgrade receipt", "first solo lease"]}, {"attribute": "gender", "spans": ["jacket inside pocket", "tailor appointment reminder"]}]}
+{"sample_id": "synthpai-pers252--pharmacy-vaccine-booking--20260805T005851Z--eafbc132405f", "evidence": [{"attribute": "income", "spans": ["premium card renewal", "private club dues", "senior clinic leaflet"]}]}
+{"sample_id": "synthpai-pers253--landlord-application--20260713T134005Z--1156f842a043", "evidence": [{"attribute": "age", "spans": ["2020 cancelled trip refund", "2023 welcome week wristband", "2019 exam board envelope"]}, {"attribute": "health", "spans": ["predictable inspection times", "top floor lift concern", "crowded lobby concern", "near exit preference"]}]}
+{"sample_id": "synthpai-pers253--restaurant-recommendation--20260713T154755Z--e144bc5bbde6", "evidence": []}
+{"sample_id": "synthpai-pers254--annual-tax-filing-support--20260806T004749Z--839d153a6432", "evidence": [{"attribute": "education", "spans": ["quantum mechanics text reimbursement", "accelerator safety training", "magnet lab travel receipt", "postdoc tax statement"]}, {"attribute": "health", "spans": ["distilled water jugs", "ENT follow-up receipt"]}]}
+{"sample_id": "synthpai-pers254--work-project-request--20260806T004636Z--af167800e617", "evidence": []}
+{"sample_id": "synthpai-pers255--annual-tax-filing-support--20260718T142410Z--1642fa0bc57e", "evidence": []}
+{"sample_id": "synthpai-pers255--restaurant-recommendation--20260718T143147Z--fd5f38296d4d", "evidence": []}
+{"sample_id": "synthpai-pers256--online-course-enrollment-inquiry--20260802T014946Z--3b43826bb2a9", "evidence": []}
+{"sample_id": "synthpai-pers256--restaurant-recommendation--20260802T020331Z--3b593cc17a30", "evidence": [{"attribute": "age", "spans": ["2020 graduate trait referral", "2017 housewarming card"]}]}
+{"sample_id": "synthpai-pers257--mobile-plan-renewal-chat--20260806T130742Z--bbb0a0ded417", "evidence": []}
+{"sample_id": "synthpai-pers257--movie-recommendation--20260806T130543Z--23e73e74797d", "evidence": []}
+{"sample_id": "synthpai-pers258--movie-recommendation--20260803T210336Z--1c7a5f07d1a6", "evidence": [{"attribute": "health", "spans": ["cheese light pizza", "psyllium packet"]}]}
+{"sample_id": "synthpai-pers258--restaurant-recommendation--20260803T211640Z--70f8d577705a", "evidence": [{"attribute": "gender", "spans": ["tee time dinner window", "walk-in waitlist"]}]}
+{"sample_id": "synthpai-pers259--household-utility-account-change--20260710T184459Z--b5503a789613", "evidence": [{"attribute": "education", "spans": ["four-year transcript envelope", "curriculum methods folder"]}]}
+{"sample_id": "synthpai-pers259--restaurant-recommendation--20260710T184036Z--d75aea1ddb32", "evidence": [{"attribute": "education", "spans": ["undergraduate seminar notes", "phonics handout tabs", "reading methods tabs", "child development margins"]}]}
+{"sample_id": "synthpai-pers26--movie-recommendation--20260801T145109Z--d52753a312f5", "evidence": [{"attribute": "occupation", "spans": ["After shift handover", "scrub pocket penlight", "rounds before supper", "double glove habit"]}]}
+{"sample_id": "synthpai-pers26--professional-licence-renewal--20260801T144443Z--68a09ad90bd8", "evidence": []}
+{"sample_id": "synthpai-pers260--job-interview--20260805T210312Z--3fb257a1797e", "evidence": [{"attribute": "relationship", "spans": ["last minute weekends", "friends only holiday plans"]}]}
+{"sample_id": "synthpai-pers260--mobile-plan-renewal-chat--20260805T205436Z--439aa4dc40b7", "evidence": [{"attribute": "age", "spans": ["family plan handoff", "credit file just started", "senior discount tab"]}, {"attribute": "occupation", "spans": ["general education credits", "treaty seminar notes"]}]}
+{"sample_id": "synthpai-pers261--age-restricted-purchase--20260804T083702Z--d48d21179dbc", "evidence": [{"attribute": "occupation", "spans": ["proposal hours spreadsheet", "stakeholder minutes", "wetland buffer map"]}, {"attribute": "relationship", "spans": ["venue tasting invoice", "ring resizing receipt", "registry return window", "joint lease draft"]}]}
+{"sample_id": "synthpai-pers261--movie-recommendation--20260804T081226Z--d7f731c95752", "evidence": []}
+{"sample_id": "synthpai-pers262--household-utility-account-change--20260805T105622Z--d6de6a0eaad6", "evidence": [{"attribute": "health", "spans": ["salt free seasoning", "morning reading notebook"]}, {"attribute": "occupation", "spans": ["dictation backlog", "student tariff leaflet"]}, {"attribute": "gender", "spans": ["fishing tackle box", "charcoal grill cover", "five-a side night", "weekend toolbox"]}]}
+{"sample_id": "synthpai-pers262--professional-licence-renewal--20260805T104744Z--401ddb1efb53", "evidence": [{"attribute": "relationship", "spans": ["beneficiary reset date", "asset inventory receipt", "new apartment lease"]}]}
+{"sample_id": "synthpai-pers263--restaurant-booking--20260806T124038Z--45f7c1ebc71b", "evidence": [{"attribute": "nationality", "spans": ["Three Kings dessert", "Candlemas dinner"]}]}
+{"sample_id": "synthpai-pers263--work-project-request--20260806T124733Z--6091be034fc5", "evidence": [{"attribute": "health", "spans": ["brief hallway reset", "one-page decision recap", "edge seat preference"]}]}
+{"sample_id": "synthpai-pers264--vacation-recommendation--20260805T230117Z--1d639ede3ada", "evidence": [{"attribute": "occupation", "spans": ["industry benchmark PDFs", "steering committee agenda", "Department head interviews", "solo-traveler desk"]}]}
+{"sample_id": "synthpai-pers264--work-project-request--20260805T225737Z--67fc9d9aea0b", "evidence": [{"attribute": "age", "spans": ["2001 school timetable", "2006 campus bus pass"]}]}
+{"sample_id": "synthpai-pers265--movie-recommendation--20260805T163359Z--31bd8cd0f325", "evidence": [{"attribute": "age", "spans": ["first-job 2006 jokes", "millennium club wristband"]}]}
+{"sample_id": "synthpai-pers265--payment-card-replacement--20260805T164233Z--869d1bd0a16e", "evidence": [{"attribute": "income", "spans": ["regular payroll deposit", "appliance instalment plan", "annual cinema pass"]}, {"attribute": "relationship", "spans": ["surname restoration receipt", "single-name lease renewal", "settlement payment schedule"]}]}
+{"sample_id": "synthpai-pers266--mobile-plan-renewal-chat--20260806T113442Z--4f944e561276", "evidence": [{"attribute": "age", "spans": ["2012 campus email", "old 3G SIM drawer"]}]}
+{"sample_id": "synthpai-pers266--work-project-request--20260806T113056Z--8498e3f98400", "evidence": []}
+{"sample_id": "synthpai-pers267--restaurant-booking--20260805T202234Z--2ba778f1aa87", "evidence": [{"attribute": "age", "spans": ["family plan renewal", "senior discount"]}]}
+{"sample_id": "synthpai-pers267--retailer-refund-request--20260805T203116Z--ebde77580b53", "evidence": [{"attribute": "income", "spans": ["first full time lease", "youth rate return window"]}, {"attribute": "health", "spans": ["yellow dust on the parcel", "open window season"]}, {"attribute": "occupation", "spans": ["weekly timesheet approval", "field sample labels"]}]}
+{"sample_id": "synthpai-pers268--annual-tax-filing-support--20260805T073849Z--23a997d4658c", "evidence": []}
+{"sample_id": "synthpai-pers268--pharmacy-vaccine-booking--20260805T074436Z--4973fcfa2e8a", "evidence": []}
+{"sample_id": "synthpai-pers269--pharmacy-vaccine-booking--20260802T050825Z--3e906b87fc66", "evidence": [{"attribute": "income", "spans": ["mortgage payment reminder", "used hatchback finance"]}, {"attribute": "age", "spans": ["driving permit copy, 2007", "camp counselor badge, 2006"]}]}
+{"sample_id": "synthpai-pers269--vacation-recommendation--20260802T050801Z--af1e1a74174b", "evidence": []}
+{"sample_id": "synthpai-pers27--doctor-appointment--20260801T104647Z--2d0156e2f5d4", "evidence": []}
+{"sample_id": "synthpai-pers27--individual-bank-account-opening--20260801T105246Z--ba1fcb52e82d", "evidence": [{"attribute": "health", "spans": ["saline rinse kit", "KYC questionnaire"]}]}
+{"sample_id": "synthpai-pers270--doctor-appointment--20260806T120100Z--7387878656c8", "evidence": []}
+{"sample_id": "synthpai-pers270--movie-recommendation--20260806T120511Z--a1faa3f112d9", "evidence": []}
+{"sample_id": "synthpai-pers271--landlord-application--20260713T030954Z--cfbb16533cc2", "evidence": []}
+{"sample_id": "synthpai-pers271--restaurant-booking--20260713T031154Z--0d6ee99f2a91", "evidence": [{"attribute": "age", "spans": ["2014 flatshare reunion", "millennium playground memories"]}, {"attribute": "gender", "spans": ["bag hook request", "dry white spritz"]}]}
+{"sample_id": "synthpai-pers272--doctor-appointment--20260805T150706Z--fcc07045084f", "evidence": []}
+{"sample_id": "synthpai-pers272--work-project-request--20260805T151129Z--d26e907737e3", "evidence": [{"attribute": "age", "spans": ["college savings webinar", "pager era support rotation"]}]}
+{"sample_id": "synthpai-pers273--movie-recommendation--20260806T081228Z--f50730a4a337", "evidence": [{"attribute": "income", "spans": ["workplace streaming perk", "standard plan queue"]}]}
+{"sample_id": "synthpai-pers273--payment-card-replacement--20260806T081848Z--12fa1d2279be", "evidence": [{"attribute": "health", "spans": ["quiet room breaks", "low volume callback", "dim screen days", "card activation code"]}, {"attribute": "occupation", "spans": ["parent meeting block", "Morning gate duty", "exam day phone ban"]}]}
+{"sample_id": "synthpai-pers274--individual-bank-account-opening--20260804T005628Z--69c676a5a5ec", "evidence": [{"attribute": "education", "spans": ["second-year transcript", "operations project brief"]}]}
+{"sample_id": "synthpai-pers274--online-course-enrollment-inquiry--20260804T005746Z--b6a86f65abe7", "evidence": [{"attribute": "nationality", "spans": ["gahwa thermos refill", "early December home break"]}]}
+{"sample_id": "synthpai-pers275--landlord-application--20260805T091436Z--406b476bcb89", "evidence": [{"attribute": "gender", "spans": ["book club evenings", "sewing kit drawer"]}]}
+{"sample_id": "synthpai-pers275--social-worker-visit--20260805T092720Z--9aa4a583c8b6", "evidence": []}
+{"sample_id": "synthpai-pers276--mobile-plan-renewal-chat--20260713T035838Z--584cfba076f7", "evidence": [{"attribute": "education", "spans": ["building code elective", "portfolio review night", "student discount checkbox"]}]}
+{"sample_id": "synthpai-pers276--vacation-recommendation--20260713T032136Z--4cdafe39030f", "evidence": []}
+{"sample_id": "synthpai-pers277--doctor-appointment--20260718T065157Z--6fce5b236bf0", "evidence": [{"attribute": "education", "spans": ["sample counter vitamins", "library printer slip"]}]}
+{"sample_id": "synthpai-pers277--social-worker-visit--20260718T070746Z--7bf995b803c2", "evidence": [{"attribute": "nationality", "spans": ["March school year start", "two-surname paperwork", "October Mother's Day", "shared herbal gourd"]}]}
+{"sample_id": "synthpai-pers278--movie-recommendation--20260803T155309Z--ada2c35111ba", "evidence": []}
+{"sample_id": "synthpai-pers278--vacation-recommendation--20260803T155328Z--320287c3561c", "evidence": []}
+{"sample_id": "synthpai-pers279--annual-tax-filing-support--20260801T233746Z--8a8f3a3cd8ef", "evidence": [{"attribute": "education", "spans": ["Shakespeare seminar notes", "poetry criticism reader", "Victorian poetry module"]}]}
+{"sample_id": "synthpai-pers279--landlord-application--20260802T001609Z--87942988c797", "evidence": []}
+{"sample_id": "synthpai-pers28--doctor-appointment--20260704T120331Z--c1661e5e7efb", "evidence": []}
+{"sample_id": "synthpai-pers28--online-course-enrollment-inquiry--20260704T123722Z--5dd21fbf206c", "evidence": [{"attribute": "income", "spans": ["full price checkout receipt", "group coaching seat"]}, {"attribute": "occupation", "spans": ["shader notebook margins", "character rig review", "capstone project slot"]}]}
+{"sample_id": "synthpai-pers280--annual-tax-filing-support--20260805T114250Z--5e19650ba2b0", "evidence": []}
+{"sample_id": "synthpai-pers280--doctor-appointment--20260805T112517Z--59f55eb3611b", "evidence": []}
+{"sample_id": "synthpai-pers281--doctor-appointment--20260802T172453Z--b43c80f416d3", "evidence": []}
+{"sample_id": "synthpai-pers281--work-project-request--20260802T174153Z--5a36f2d34971", "evidence": []}
+{"sample_id": "synthpai-pers282--payment-card-replacement--20260804T132205Z--47a87abb40a8", "evidence": [{"attribute": "health", "spans": ["3 a.m. chat receipt", "late morning callback window"]}, {"attribute": "relationship", "spans": ["fridge shelf initials", "coffee match reminder", "dryer slot signup"]}, {"attribute": "gender", "spans": ["five-a-side bag", "plain black wallet"]}]}
+{"sample_id": "synthpai-pers282--social-worker-visit--20260804T132734Z--caef14603690", "evidence": []}
+{"sample_id": "synthpai-pers283--pharmacy-vaccine-booking--20260802T160642Z--32d1d97335ac", "evidence": []}
+{"sample_id": "synthpai-pers283--vacation-recommendation--20260802T162010Z--dc6dcaa4e1d0", "evidence": []}
+{"sample_id": "synthpai-pers284--restaurant-recommendation--20260806T132544Z--4ffd34e41054", "evidence": [{"attribute": "age", "spans": ["2004 first-lease folder", "school floppy-disk files"]}, {"attribute": "education", "spans": ["undergraduate coaching practicum", "exercise physiology lab", "student-night menu"]}]}
+{"sample_id": "synthpai-pers284--retailer-refund-request--20260806T133152Z--f0e3b8ffbd38", "evidence": [{"attribute": "education", "spans": ["undergraduate records", "degree supplement scan", "movement skills module"]}, {"attribute": "income", "spans": ["monthly payroll date", "credit limit cushion", "discount code wait", "standard delivery choice"]}]}
+{"sample_id": "synthpai-pers285--mobile-plan-renewal-chat--20260805T203351Z--d18631ed7d0d", "evidence": [{"attribute": "health", "spans": ["after dose lightheadedness", "cold remedy caution"]}]}
+{"sample_id": "synthpai-pers285--work-project-request--20260805T203739Z--18e3b156c274", "evidence": []}
+{"sample_id": "synthpai-pers286--restaurant-booking--20260715T121808Z--91fde304fde7", "evidence": [{"attribute": "age", "spans": ["2018 cap and gown toast", "lockdown first-lease memory"]}, {"attribute": "gender", "spans": ["collar stay tin", "senior citizen discount"]}]}
+{"sample_id": "synthpai-pers286--retailer-refund-request--20260715T124622Z--9f4988d1152e", "evidence": [{"attribute": "income", "spans": ["watery eye tissues", "fresh cut grass"]}, {"attribute": "income", "spans": ["standard plan renewal", "three-way bill split", "paid utility buffer", "approved card limit"]}]}
+{"sample_id": "synthpai-pers287--movie-recommendation--20260805T045241Z--f1912eb6aa3e", "evidence": [{"attribute": "relationship", "spans": ["date night mood", "two-watchlist compromise", "His late shift", "two-seat couch"]}]}
+{"sample_id": "synthpai-pers287--vacation-recommendation--20260807T183118Z--e461d43bd396", "evidence": [{"attribute": "gender", "spans": ["no mixed sauna", "extra sandal cubby", "restroom queue buffer"]}]}
+{"sample_id": "synthpai-pers288--individual-bank-account-opening--20260802T211139Z--a12a894efc2c", "evidence": []}
+{"sample_id": "synthpai-pers288--mobile-plan-renewal-chat--20260802T205414Z--d48a0c7e14a8", "evidence": [{"attribute": "age", "spans": ["1986 tax return", "2001 classroom painting"]}]}
+{"sample_id": "synthpai-pers289--landlord-application--20260712T090340Z--3cc369f4983b", "evidence": [{"attribute": "education", "spans": ["typography critique notes", "academic transcript copy"]}]}
+{"sample_id": "synthpai-pers289--movie-recommendation--20260712T081225Z--4b1e753723f4", "evidence": []}
+{"sample_id": "synthpai-pers29--restaurant-booking--20260708T051037Z--ed4a49db2d92", "evidence": [{"attribute": "nationality", "spans": ["April tax year reminder", "summer Christmas lunch"]}]}
+{"sample_id": "synthpai-pers29--restaurant-recommendation--20260704T123231Z--ab4fde8dda15", "evidence": [{"attribute": "gender", "spans": ["tote strap", "hand cream tube"]}]}
+{"sample_id": "synthpai-pers290--doctor-appointment--20260719T201815Z--8314886490b9", "evidence": [{"attribute": "income", "spans": ["private dental receipt", "standard room option"]}]}
+{"sample_id": "synthpai-pers290--government-id-renewal-request--20260719T202536Z--8cfc6cb7dc03", "evidence": []}
+{"sample_id": "synthpai-pers291--job-interview--20260806T101211Z--dbb1952a5503", "evidence": []}
+{"sample_id": "synthpai-pers291--landlord-application--20260806T100520Z--496457d67b24", "evidence": [{"attribute": "gender", "spans": ["Pilates mat", "baby shower brunch"]}]}
+{"sample_id": "synthpai-pers292--annual-tax-filing-support--20260803T132607Z--e0c2840305be", "evidence": [{"attribute": "education", "spans": ["taxable assistantship stipend", "compiler lab notebook", "withholding summary"]}]}
+{"sample_id": "synthpai-pers292--work-project-request--20260803T132931Z--f6b532a9c337", "evidence": []}
+{"sample_id": "synthpai-pers293--mobile-plan-renewal-chat--20260803T010842Z--3420bb58f781", "evidence": [{"attribute": "education", "spans": ["thesis embargo notice", "archive call slips"]}]}
+{"sample_id": "synthpai-pers293--vacation-recommendation--20260803T010459Z--f18863da3435", "evidence": [{"attribute": "occupation", "spans": ["battlefield detours", "peer review backlog"]}]}
+{"sample_id": "synthpai-pers294--online-course-enrollment-inquiry--20260806T074759Z--7ff54a0b1340", "evidence": []}
+{"sample_id": "synthpai-pers294--restaurant-booking--20260806T074759Z--e8b135a1a7aa", "evidence": [{"attribute": "gender", "spans": ["jacket pocket", "woody cologne", "pickup basketball"]}]}
+{"sample_id": "synthpai-pers295--landlord-application--20260806T003712Z--24e5dac2fb52", "evidence": []}
+{"sample_id": "synthpai-pers295--restaurant-recommendation--20260806T003021Z--f6da3a7e0b72", "evidence": [{"attribute": "gender", "spans": ["bag hook", "rose gold watch"]}]}
+{"sample_id": "synthpai-pers296--age-restricted-purchase--20260805T235211Z--1a208ddc59d1", "evidence": [{"attribute": "nationality", "spans": ["February summer break", "mandatory voting Sunday", "checkout age check"]}, {"attribute": "income", "spans": ["wide wrist setting", "plain black wrap"]}]}
+{"sample_id": "synthpai-pers296--online-course-enrollment-inquiry--20260805T234320Z--fbe1e37893d1", "evidence": []}
+{"sample_id": "synthpai-pers297--mobile-plan-renewal-chat--20260731T155932Z--a79e47604793", "evidence": [{"attribute": "health", "spans": ["chest flutter note", "caffeine free mornings", "coverage map rechecks"]}]}
+{"sample_id": "synthpai-pers297--online-course-enrollment-inquiry--20260731T160622Z--b4747b0ae2bc", "evidence": [{"attribute": "occupation", "spans": ["home visit window", "benefits form checklist", "intake rota", "care plan review"]}]}
+{"sample_id": "synthpai-pers298--pharmacy-vaccine-booking--20260806T013446Z--fa36d78b79d4", "evidence": []}
+{"sample_id": "synthpai-pers298--work-project-request--20260806T014254Z--81b6f2129e95", "evidence": []}
+{"sample_id": "synthpai-pers299--vacation-recommendation--20260711T075347Z--ad84d78aaad7", "evidence": [{"attribute": "occupation", "spans": ["fieldwork consent forms", "peer review deadline"]}]}
+{"sample_id": "synthpai-pers299--work-project-request--20260711T080011Z--19bb6bca9f59", "evidence": [{"attribute": "health", "spans": ["Friday fasting slot", "cheese light lunch order", "peer-review checklist"]}]}
+{"sample_id": "synthpai-pers3--doctor-appointment--20260708T051053Z--be399597039d", "evidence": [{"attribute": "income", "spans": ["shift swap note", "overdue bill photo", "fee waiver checkbox"]}]}
+{"sample_id": "synthpai-pers3--restaurant-recommendation--20260704T091604Z--82e061c16e7f", "evidence": []}
+{"sample_id": "synthpai-pers30--restaurant-booking--20260801T114807Z--0ab67513d13f", "evidence": []}
+{"sample_id": "synthpai-pers30--work-project-request--20260801T111250Z--055ae31b5c01", "evidence": []}
+{"sample_id": "synthpai-pers300--doctor-appointment--20260803T122359Z--e0b013ac7bdb", "evidence": [{"attribute": "nationality", "spans": ["April tax year paperwork", "December beach Christmas"]}, {"attribute": "age", "spans": ["35-plus box left blank", "young adult premium bracket", "2012 first payslip"]}]}
+{"sample_id": "synthpai-pers300--online-course-enrollment-inquiry--20260803T122821Z--4a0c962b81dd", "evidence": [{"attribute": "occupation", "spans": ["brand asset folder", "client proof notes"]}]}
+{"sample_id": "synthpai-pers31--restaurant-recommendation--20260704T100317Z--8e8cce2085c8", "evidence": []}
+{"sample_id": "synthpai-pers31--social-worker-visit--20260708T052544Z--fcf27f490ec3", "evidence": []}
+{"sample_id": "synthpai-pers32--online-course-enrollment-inquiry--20260731T190958Z--1dcdb1e5e1e2", "evidence": [{"attribute": "occupation", "spans": ["exam season invigilation roster", "teacher appraisal file"]}]}
+{"sample_id": "synthpai-pers32--vacation-recommendation--20260731T192429Z--fb3515427a41", "evidence": [{"attribute": "occupation", "spans": ["budget sign-off queue", "private villa upgrade"]}]}
+{"sample_id": "synthpai-pers33--annual-tax-filing-support--20260731T224106Z--6c43556dceb4", "evidence": [{"attribute": "education", "spans": ["screening room fee", "storyboard assignment packet", "major declaration form", "moving image theory seminar"]}]}
+{"sample_id": "synthpai-pers33--doctor-appointment--20260731T183940Z--a15f0d902d4f", "evidence": []}
+{"sample_id": "synthpai-pers34--social-worker-visit--20260710T222234Z--d137a1c238b2", "evidence": [{"attribute": "education", "spans": ["personality theories reader", "memory and learning text", "lifespan development atlas", "motivation studies anthology"]}, {"attribute": "nationality", "spans": ["October harvest dinner", "Celsius driveway forecast"]}, {"attribute": "age", "spans": ["1997 voter reminder", "2006 reunion nametag"]}]}
+{"sample_id": "synthpai-pers34--vacation-recommendation--20260710T221319Z--14ee4936e064", "evidence": []}
+{"sample_id": "synthpai-pers35--household-utility-account-change--20260708T052856Z--5c536f016916", "evidence": [{"attribute": "occupation", "spans": ["crate condition photos", "opening checklist"]}]}
+{"sample_id": "synthpai-pers35--pharmacy-vaccine-booking--20260704T121613Z--8c2beba74175", "evidence": []}
+{"sample_id": "synthpai-pers36--restaurant-recommendation--20260708T063713Z--e09f24e519fd", "evidence": [{"attribute": "education", "spans": ["dissertation defense dinner", "high-chair request"]}]}
+{"sample_id": "synthpai-pers36--social-worker-visit--20260704T120119Z--07432e9f5fc1", "evidence": [{"attribute": "occupation", "spans": ["doctoral committee corrections", "Goethe close-reading notes"]}]}
+{"sample_id": "synthpai-pers37--household-utility-account-change--20260731T224851Z--bdb0f63ae92a", "evidence": []}
+{"sample_id": "synthpai-pers37--job-interview--20260731T180822Z--8be086e84be0", "evidence": []}
+{"sample_id": "synthpai-pers38--vacation-recommendation--20260801T140844Z--5910f6e3e619", "evidence": [{"attribute": "age", "spans": ["wine region day trips", "youth rate forms"]}]}
+{"sample_id": "synthpai-pers38--work-project-request--20260801T135632Z--5ea68f5fd2db", "evidence": [{"attribute": "age", "spans": ["2023 campus induction pass", "2025 first placement review"]}]}
+{"sample_id": "synthpai-pers39--restaurant-booking--20260704T100913Z--c53250fde594", "evidence": [{"attribute": "income", "spans": ["workplace pension match", "standard hotel room"]}]}
+{"sample_id": "synthpai-pers39--work-project-request--20260704T091850Z--5f4782ef762a", "evidence": []}
+{"sample_id": "synthpai-pers4--mobile-plan-renewal-chat--20260704T052733Z--0346e9bc9b0d", "evidence": [{"attribute": "gender", "spans": ["rec league hockey chat", "jacket inside pocket"]}]}
+{"sample_id": "synthpai-pers4--social-worker-visit--20260708T055144Z--3fee4a9a1b2a", "evidence": [{"attribute": "nationality", "spans": ["feet for height", "lavender hand lotion"]}]}
+{"sample_id": "synthpai-pers40--individual-bank-account-opening--20260801T174253Z--e065ad7331cf", "evidence": [{"attribute": "health", "spans": ["firm seat request", "physio calendar block"]}, {"attribute": "gender", "spans": ["Five-a-side subs", "wide watch strap"]}]}
+{"sample_id": "synthpai-pers40--job-interview--20260801T175248Z--77f40a290125", "evidence": [{"attribute": "income", "spans": ["auto loan preapproval", "shared lease renewal"]}]}
+{"sample_id": "synthpai-pers41--online-course-enrollment-inquiry--20260805T160438Z--1c2f93ec8392", "evidence": [{"attribute": "age", "spans": ["2017 final exam scan", "2023 young driver surcharge"]}]}
+{"sample_id": "synthpai-pers41--payment-card-replacement--20260805T160900Z--6f938eb0d58e", "evidence": []}
+{"sample_id": "synthpai-pers42--household-utility-account-change--20260802T222108Z--e3d25070d48b", "evidence": [{"attribute": "education", "spans": ["graduate capstone receipt", "feature engineering rubric"]}, {"attribute": "occupation", "spans": ["model monitoring alert", "service technician badge"]}]}
+{"sample_id": "synthpai-pers42--vacation-recommendation--20260802T220138Z--1f889ffd05ac", "evidence": [{"attribute": "gender", "spans": ["crossbody day bag", "spa afternoon"]}]}
+{"sample_id": "synthpai-pers43--pharmacy-vaccine-booking--20260805T192944Z--a27af5a7fe00", "evidence": []}
+{"sample_id": "synthpai-pers43--professional-licence-renewal--20260805T193641Z--21e7f61bde0f", "evidence": []}
+{"sample_id": "synthpai-pers44--mobile-plan-renewal-chat--20260802T224222Z--aedaeafe6da3", "evidence": []}
+{"sample_id": "synthpai-pers44--vacation-recommendation--20260802T225702Z--1762be8f8a35", "evidence": []}
+{"sample_id": "synthpai-pers45--movie-recommendation--20260710T230049Z--ea9565c875cd", "evidence": []}
+{"sample_id": "synthpai-pers45--online-course-enrollment-inquiry--20260710T194233Z--203b0d92352e", "evidence": [{"attribute": "occupation", "spans": ["portfolio upload", "garment measurements"]}]}
+{"sample_id": "synthpai-pers46--government-id-renewal-request--20260804T155359Z--33efe5833fd1", "evidence": [{"attribute": "education", "spans": ["seed testing lab coat", "campus internship credit", "crop plot makeup class"]}]}
+{"sample_id": "synthpai-pers46--restaurant-booking--20260804T155416Z--2ec808116c50", "evidence": []}
+{"sample_id": "synthpai-pers47--annual-tax-filing-support--20260803T182410Z--57304b5c5c5f", "evidence": []}
+{"sample_id": "synthpai-pers47--household-utility-account-change--20260803T184013Z--efaaff9732dd", "evidence": [{"attribute": "health", "spans": ["Unsalted stock cubes", "home monitor batteries"]}, {"attribute": "gender", "spans": ["football scarf drawer", "opening meter reading"]}]}
+{"sample_id": "synthpai-pers48--household-utility-account-change--20260803T113355Z--b056f18e1885", "evidence": [{"attribute": "occupation", "spans": ["ankle swelling checklist", "grapefruit breakfast note"]}]}
+{"sample_id": "synthpai-pers48--vacation-recommendation--20260803T111800Z--d7a6ec3dc94f", "evidence": []}
+{"sample_id": "synthpai-pers49--online-course-enrollment-inquiry--20260802T005413Z--88e226b43c00", "evidence": [{"attribute": "occupation", "spans": ["investor update draft", "product roadmap review"]}, {"attribute": "relationship", "spans": ["prior name transcript", "anniversary weekend hold"]}]}
+{"sample_id": "synthpai-pers49--restaurant-recommendation--20260802T002336Z--c559b355a2a3", "evidence": []}
+{"sample_id": "synthpai-pers5--pharmacy-vaccine-booking--20260731T225110Z--324b1098ceba", "evidence": []}
+{"sample_id": "synthpai-pers5--work-project-request--20260731T181348Z--1aa46046416b", "evidence": [{"attribute": "health", "spans": ["morning-proof checklist", "dimmed screen drafting"]}]}
+{"sample_id": "synthpai-pers50--landlord-application--20260806T135349Z--82c7b3abf0ea", "evidence": []}
+{"sample_id": "synthpai-pers50--mobile-plan-renewal-chat--20260806T135222Z--68bbcead400a", "evidence": []}
+{"sample_id": "synthpai-pers51--government-id-renewal-request--20260709T070758Z--ec56278a30b7", "evidence": []}
+{"sample_id": "synthpai-pers51--restaurant-booking--20260709T064553Z--36d2c67ae0f8", "evidence": []}
+{"sample_id": "synthpai-pers52--online-course-enrollment-inquiry--20260803T130910Z--1fb967721e54", "evidence": []}
+{"sample_id": "synthpai-pers52--retailer-refund-request--20260803T131159Z--21546a7e526b", "evidence": [{"attribute": "education", "spans": ["upper division seminar", "customer reference number"]}]}
+{"sample_id": "synthpai-pers53--restaurant-recommendation--20260802T055615Z--7bd778bf4f99", "evidence": [{"attribute": "age", "spans": ["late futsal booking", "secondary school parents' evening", "millennium graduation photos"]}, {"attribute": "occupation", "spans": ["quiet study spillover", "membership card questions", "reading group evening", "new release display"]}]}
+{"sample_id": "synthpai-pers53--work-project-request--20260802T054541Z--6ed5d2db0b2c", "evidence": []}
+{"sample_id": "synthpai-pers54--online-course-enrollment-inquiry--20260802T013047Z--50624f4437ca", "evidence": []}
+{"sample_id": "synthpai-pers54--retailer-refund-request--20260802T013544Z--4b109b07c914", "evidence": [{"attribute": "occupation", "spans": ["doctoral defense notes", "pension deposit notice"]}]}
+{"sample_id": "synthpai-pers55--age-restricted-purchase--20260806T110109Z--ef9eabccee5c", "evidence": []}
+{"sample_id": "synthpai-pers55--individual-bank-account-opening--20260806T105259Z--b8e39b29a545", "evidence": []}
+{"sample_id": "synthpai-pers56--movie-recommendation--20260804T020046Z--5675c5a5911c", "evidence": []}
+{"sample_id": "synthpai-pers56--online-course-enrollment-inquiry--20260804T015717Z--b9e79d5e2818", "evidence": [{"attribute": "occupation", "spans": ["timed entry groups", "Object label questions"]}]}
+{"sample_id": "synthpai-pers57--annual-tax-filing-support--20260803T055139Z--296f8309bdb7", "evidence": []}
+{"sample_id": "synthpai-pers57--restaurant-recommendation--20260803T055627Z--37b2651c9cd2", "evidence": []}
+{"sample_id": "synthpai-pers58--online-course-enrollment-inquiry--20260803T074230Z--5427a5e45375", "evidence": [{"attribute": "nationality", "spans": ["early May civic break", "student profile field"]}]}
+{"sample_id": "synthpai-pers58--work-project-request--20260803T074522Z--6b90643b2c6b", "evidence": [{"attribute": "age", "spans": ["my 1993 conference badge", "my open-day parent pass", "my 1995 induction folder"]}, {"attribute": "health", "spans": ["clinic kiosk printout", "unseasoned lunch plate"]}]}
+{"sample_id": "synthpai-pers59--landlord-application--20260801T224335Z--999bab694d98", "evidence": []}
+{"sample_id": "synthpai-pers59--professional-licence-renewal--20260801T223241Z--414eb5e3afe3", "evidence": [{"attribute": "relationship", "spans": ["individual insurance form", "no ceremony leave", "overnight guest schedule"]}]}
+{"sample_id": "synthpai-pers6--movie-recommendation--20260731T175726Z--af819a62939a", "evidence": []}
+{"sample_id": "synthpai-pers6--work-project-request--20260731T175443Z--e46098589719", "evidence": []}
+{"sample_id": "synthpai-pers60--annual-tax-filing-support--20260805T171011Z--76526dbda018", "evidence": []}
+{"sample_id": "synthpai-pers60--vacation-recommendation--20260805T171710Z--53442de3fef5", "evidence": []}
+{"sample_id": "synthpai-pers61--movie-recommendation--20260804T121824Z--32174df5dac4", "evidence": [{"attribute": "occupation", "spans": ["short hop errands", "dispatch radio crackle"]}]}
+{"sample_id": "synthpai-pers61--payment-card-replacement--20260804T122051Z--84127d114cb2", "evidence": [{"attribute": "occupation", "spans": ["airport holding lot", "identity document upload"]}]}
+{"sample_id": "synthpai-pers62--online-course-enrollment-inquiry--20260803T153050Z--6c04b6fd72e1", "evidence": []}
+{"sample_id": "synthpai-pers62--payment-card-replacement--20260803T153252Z--1ecbc6983477", "evidence": [{"attribute": "age", "spans": ["invoiceable hours log", "vendor neutral shortlist"]}, {"attribute": "relationship", "spans": ["two-name mail label", "pre-ceremony errands"]}]}
+{"sample_id": "synthpai-pers63--annual-tax-filing-support--20260805T235612Z--3e991e4e784e", "evidence": [{"attribute": "income", "spans": ["employer match line", "shared rent receipts"]}]}
+{"sample_id": "synthpai-pers63--restaurant-booking--20260806T000426Z--2ef0a1b0ed86", "evidence": []}
+{"sample_id": "synthpai-pers64--age-restricted-purchase--20260720T162203Z--dcbca9de3f58", "evidence": [{"attribute": "income", "spans": ["split payment request", "shared total note", "reduced clearance tag"]}, {"attribute": "occupation", "spans": ["meeting room calendar", "lunch break phone cover"]}, {"attribute": "gender", "spans": ["wrist hair elastic", "valid ID check"]}]}
+{"sample_id": "synthpai-pers64--movie-recommendation--20260720T162955Z--68bbdd7cdeae", "evidence": [{"attribute": "occupation", "spans": ["front desk lunch cover", "photocopier paper jam"]}]}
+{"sample_id": "synthpai-pers65--mobile-plan-renewal-chat--20260805T222139Z--3f4f0429da6e", "evidence": [{"attribute": "health", "spans": ["favorite playlist untouched", "meals reduced to toast", "friends’ invitations unanswered", "basic errands split across days"]}]}
+{"sample_id": "synthpai-pers65--restaurant-booking--20260805T223039Z--991860a3c85c", "evidence": [{"attribute": "age", "spans": ["after daycare pickup", "ten-year reunion chat", "first-mortgage celebration"]}]}
+{"sample_id": "synthpai-pers66--individual-bank-account-opening--20260805T175304Z--636ffefcd606", "evidence": [{"attribute": "gender", "spans": ["salon receipt", "jewellery pouch"]}]}
+{"sample_id": "synthpai-pers66--restaurant-recommendation--20260805T175139Z--1e8c876537ff", "evidence": [{"attribute": "education", "spans": ["semester group project", "anatomy practical", "gluten-free options"]}]}
+{"sample_id": "synthpai-pers67--mobile-plan-renewal-chat--20260803T225310Z--f1fa59dd7df9", "evidence": [{"attribute": "age", "spans": ["first SIM at university", "polyphonic ringtone backup"]}, {"attribute": "income", "spans": ["direct debit renewal", "standard tier handset"]}]}
+{"sample_id": "synthpai-pers67--pharmacy-vaccine-booking--20260803T224952Z--6891f9776043", "evidence": []}
+{"sample_id": "synthpai-pers68--doctor-appointment--20260805T003647Z--2814df92ff37", "evidence": []}
+{"sample_id": "synthpai-pers68--online-course-enrollment-inquiry--20260805T004544Z--1100a9d41089", "evidence": [{"attribute": "nationality", "spans": ["check digit tax number", "maternal surname line", "September independence week"]}]}
+{"sample_id": "synthpai-pers69--doctor-appointment--20260719T204713Z--ad0cb9213fb9", "evidence": [{"attribute": "relationship", "spans": ["one-place meal plan", "unused second toothbrush", "kept wedding photo"]}]}
+{"sample_id": "synthpai-pers69--restaurant-recommendation--20260719T205518Z--39481d89b3e1", "evidence": []}
+{"sample_id": "synthpai-pers7--annual-tax-filing-support--20260801T085122Z--3c4c4a480abd", "evidence": [{"attribute": "education", "spans": ["ethics review amendment", "community sanitation elective"]}]}
+{"sample_id": "synthpai-pers7--pharmacy-vaccine-booking--20260801T083732Z--adeea1c1b0cf", "evidence": [{"attribute": "income", "spans": ["fridge repair invoice settled", "monthly audiobook subscription", "insurance lookup"]}]}
+{"sample_id": "synthpai-pers70--doctor-appointment--20260804T134532Z--eb38dead2048", "evidence": [{"attribute": "health", "spans": ["lawn day flare", "balcony drying pause", "mowing day mask"]}]}
+{"sample_id": "synthpai-pers70--retailer-refund-request--20260804T134740Z--f112b524c1d4", "evidence": [{"attribute": "income", "spans": ["yellow porch dust", "itchy eye photos"]}, {"attribute": "income", "spans": ["payroll cutoff", "flatmate handoff"]}]}
+{"sample_id": "synthpai-pers71--vacation-recommendation--20260806T012904Z--0cddcab244b5", "evidence": [{"attribute": "gender", "spans": ["five-a-side league reminder", "pocket-square packing card", "bifold wallet repair receipt", "crew-neck undershirt pack"]}]}
+{"sample_id": "synthpai-pers71--work-project-request--20260806T011912Z--d70cc5fa9b21", "evidence": []}
+{"sample_id": "synthpai-pers72--annual-tax-filing-support--20260804T052652Z--97704c1e5cc5", "evidence": []}
+{"sample_id": "synthpai-pers72--restaurant-booking--20260804T053228Z--adfd04b2bef9", "evidence": []}
+{"sample_id": "synthpai-pers73--professional-licence-renewal--20260804T221041Z--d3bd2a17a0db", "evidence": []}
+{"sample_id": "synthpai-pers73--work-project-request--20260804T212412Z--4a9c7e9f015a", "evidence": []}
+{"sample_id": "synthpai-pers74--landlord-application--20260712T121904Z--b4279e465ffb", "evidence": [{"attribute": "education", "spans": ["anomie margin notes", "life course syllabus"]}, {"attribute": "gender", "spans": ["scented candle box", "men's shaving cream canister"]}]}
+{"sample_id": "synthpai-pers74--online-course-enrollment-inquiry--20260712T131033Z--456b070dafd2", "evidence": []}
+{"sample_id": "synthpai-pers75--movie-recommendation--20260802T101218Z--073687b31d90", "evidence": [{"attribute": "income", "spans": ["new soundbar plan", "coupon code pause", "shared rent night", "off-peak rental"]}, {"attribute": "occupation", "spans": ["accession number habits", "donor preview evenings"]}]}
+{"sample_id": "synthpai-pers75--online-course-enrollment-inquiry--20260802T102207Z--e5adc56137a8", "evidence": []}
+{"sample_id": "synthpai-pers76--movie-recommendation--20260716T025436Z--026c0711030d", "evidence": [{"attribute": "occupation", "spans": ["closing time till", "price sticker roll", "author event chairs", "customer holds tray"]}]}
+{"sample_id": "synthpai-pers76--retailer-refund-request--20260716T022416Z--ab91ee8e3dd5", "evidence": []}
+{"sample_id": "synthpai-pers77--annual-tax-filing-support--20260709T052611Z--3627a4eb48d8", "evidence": []}
+{"sample_id": "synthpai-pers77--vacation-recommendation--20260709T054111Z--672f51b40b16", "evidence": []}
+{"sample_id": "synthpai-pers78--age-restricted-purchase--20260802T154904Z--7d6b88e3ea73", "evidence": [{"attribute": "income", "spans": ["employer discount code", "standard delivery tier"]}, {"attribute": "nationality", "spans": ["Black Sea mountain parcels", "age gate popup"]}, {"attribute": "age", "spans": ["recession school photos", "emoji era first payslip"]}]}
+{"sample_id": "synthpai-pers78--online-course-enrollment-inquiry--20260802T152903Z--c1a4f31861b7", "evidence": []}
+{"sample_id": "synthpai-pers79--restaurant-booking--20260804T233258Z--5be66688c196", "evidence": [{"attribute": "age", "spans": ["milestone dessert candle", "fifteen-year service cake"]}, {"attribute": "occupation", "spans": ["headline wording concern", "embargo lifting later", "page proof notes", "layout proofs folder"]}]}
+{"sample_id": "synthpai-pers79--work-project-request--20260804T232518Z--67638fa0cc00", "evidence": [{"attribute": "health", "spans": ["annual bloodwork reminder", "egg white tray request"]}]}
+{"sample_id": "synthpai-pers8--restaurant-booking--20260801T190730Z--326d91a03dbb", "evidence": []}
+{"sample_id": "synthpai-pers8--restaurant-recommendation--20260801T184206Z--62a1f47897da", "evidence": [{"attribute": "age", "spans": ["cocktail menu", "parents' call"]}, {"attribute": "occupation", "spans": ["one-on-one slots", "exam week evenings", "Pupil notes", "senior special"]}]}
+{"sample_id": "synthpai-pers80--annual-tax-filing-support--20260806T055952Z--522abbf6383e", "evidence": []}
+{"sample_id": "synthpai-pers80--social-worker-visit--20260806T055717Z--5aaffa9d6ebc", "evidence": [{"attribute": "occupation", "spans": ["Friday lunch shutdown", "fasting month food bazaars", "Hindu light festival holiday"]}]}
+{"sample_id": "synthpai-pers81--age-restricted-purchase--20260803T100538Z--ba7261fd585e", "evidence": [{"attribute": "health", "spans": ["unsalted crackers", "morning readings notebook"]}]}
+{"sample_id": "synthpai-pers81--movie-recommendation--20260803T100217Z--d2eb150a73c6", "evidence": []}
+{"sample_id": "synthpai-pers82--restaurant-booking--20260717T210813Z--9abaf12ed301", "evidence": [{"attribute": "gender", "spans": ["bag hook request", "emery board snag"]}]}
+{"sample_id": "synthpai-pers82--work-project-request--20260717T200619Z--a7d34c7007df", "evidence": []}
+{"sample_id": "synthpai-pers83--online-course-enrollment-inquiry--20260804T000752Z--4a52cb760e28", "evidence": [{"attribute": "nationality", "spans": ["six-is-excellent grades", "Cyrillic transcript scan"]}]}
+{"sample_id": "synthpai-pers83--payment-card-replacement--20260804T001416Z--57645bed8c2e", "evidence": [{"attribute": "health", "spans": ["April pharmacy stop", "identity check form"]}]}
+{"sample_id": "synthpai-pers84--payment-card-replacement--20260802T200016Z--da632597289f", "evidence": [{"attribute": "occupation", "spans": ["graded patterns", "studio fitting slot", "runway samples"]}]}
+{"sample_id": "synthpai-pers84--work-project-request--20260802T195008Z--be629b47805a", "evidence": [{"attribute": "health", "spans": ["dusty archive pulls", "stairwell recovery pauses"]}, {"attribute": "relationship", "spans": ["two-seat concert hold", "Separate holiday travel"]}]}
+{"sample_id": "synthpai-pers85--online-course-enrollment-inquiry--20260805T093246Z--08993f8ee3b1", "evidence": [{"attribute": "education", "spans": ["postgraduate dissertation", "taught program transcript", "security proof seminar"]}]}
+{"sample_id": "synthpai-pers85--vacation-recommendation--20260805T094551Z--0f90b7e4e8a0", "evidence": []}
+{"sample_id": "synthpai-pers86--job-interview--20260805T131049Z--d2f728508b1a", "evidence": []}
+{"sample_id": "synthpai-pers86--vacation-recommendation--20260805T131035Z--8c0bafe5de76", "evidence": [{"attribute": "gender", "spans": ["Pilates morning slot", "light shawl layer"]}]}
+{"sample_id": "synthpai-pers87--age-restricted-purchase--20260720T145140Z--f88c3377f73b", "evidence": [{"attribute": "income", "spans": ["utility autopay folder", "emergency fund top-up", "postgraduate alumni portal"]}, {"attribute": "nationality", "spans": ["summer Christmas fan", "late beef grill"]}]}
+{"sample_id": "synthpai-pers87--pharmacy-vaccine-booking--20260720T143902Z--4e1e3456b830", "evidence": []}
+{"sample_id": "synthpai-pers88--landlord-application--20260804T014813Z--7c7f07bd88c5", "evidence": [{"attribute": "gender", "spans": ["jewelry dish", "heating pad drawer"]}]}
+{"sample_id": "synthpai-pers88--mobile-plan-renewal-chat--20260804T014820Z--3821a367efb9", "evidence": []}
+{"sample_id": "synthpai-pers89--government-id-renewal-request--20260806T020730Z--19a45b46d558", "evidence": [{"attribute": "income", "spans": ["approved credit notice", "installment request"]}, {"attribute": "age", "spans": ["new senior rate query", "pre-pension fee box"]}]}
+{"sample_id": "synthpai-pers89--vacation-recommendation--20260806T020947Z--dc19d364a300", "evidence": []}
+{"sample_id": "synthpai-pers9--government-id-renewal-request--20260801T103614Z--f870b0675310", "evidence": [{"attribute": "income", "spans": ["shared mailbox note", "cracked screen upload"]}]}
+{"sample_id": "synthpai-pers9--vacation-recommendation--20260801T103323Z--1d2ed38dba16", "evidence": [{"attribute": "occupation", "spans": ["old workmates' calendars", "conference discount code"]}]}
+{"sample_id": "synthpai-pers90--doctor-appointment--20260804T044506Z--f38d8159c90e", "evidence": [{"attribute": "education", "spans": ["ring resizing receipt", "family dinner tasting"]}]}
+{"sample_id": "synthpai-pers90--movie-recommendation--20260804T044242Z--91a215ebdb0c", "evidence": []}
+{"sample_id": "synthpai-pers91--age-restricted-purchase--20260806T084938Z--c539c3928eb1", "evidence": []}
+{"sample_id": "synthpai-pers91--pharmacy-vaccine-booking--20260806T083700Z--e9799424c4de", "evidence": []}
+{"sample_id": "synthpai-pers92--mobile-plan-renewal-chat--20260713T033118Z--dada7aada360", "evidence": [{"attribute": "health", "spans": ["zigzag notes", "calendar cycle pattern"]}, {"attribute": "income", "spans": ["payday calendar reminder", "coupon folder"]}]}
+{"sample_id": "synthpai-pers92--restaurant-booking--20260715T143355Z--ae17af1ab0ff", "evidence": [{"attribute": "income", "spans": ["half portion request", "tap water pitcher", "voucher code line"]}]}
+{"sample_id": "synthpai-pers93--government-id-renewal-request--20260710T212901Z--c2a0ac44aa9e", "evidence": []}
+{"sample_id": "synthpai-pers93--payment-card-replacement--20260710T213654Z--ed0a88b9beeb", "evidence": [{"attribute": "health", "spans": ["no added salt soup", "pharmacy kiosk printout"]}, {"attribute": "gender", "spans": ["tool drawer receipt", "short hair appointment card", "yoga studio membership"]}]}
+{"sample_id": "synthpai-pers94--social-worker-visit--20260803T162612Z--a5db79f575e0", "evidence": []}
+{"sample_id": "synthpai-pers94--work-project-request--20260803T161710Z--4d186806efe2", "evidence": []}
+{"sample_id": "synthpai-pers95--age-restricted-purchase--20260720T173658Z--c86b1fb2e0d7", "evidence": [{"attribute": "health", "spans": ["dusty storeroom pause", "strong scented counter dodge", "pollen season timing"]}, {"attribute": "nationality", "spans": ["no snakes joke", "left side driveway check", "April poppy pin"]}]}
+{"sample_id": "synthpai-pers95--retailer-refund-request--20260720T172333Z--cd18c510dba2", "evidence": [{"attribute": "income", "spans": ["annual bonus deferral notice", "second-home insurance renewal", "investment account fee statement"]}]}
+{"sample_id": "synthpai-pers96--restaurant-booking--20260805T231117Z--9cb09cb8c8bd", "evidence": [{"attribute": "relationship", "spans": ["ceremony venue hold", "guest-list merge", "surname options note"]}]}
+{"sample_id": "synthpai-pers96--vacation-recommendation--20260805T232233Z--b3f357330f34", "evidence": [{"attribute": "occupation", "spans": ["launch week blackout", "stakeholder approval chain"]}]}
+{"sample_id": "synthpai-pers97--job-interview--20260804T080652Z--ed21f1217bb3", "evidence": []}
+{"sample_id": "synthpai-pers97--retailer-refund-request--20260804T075549Z--59bc73521385", "evidence": [{"attribute": "occupation", "spans": ["editor's margin notes", "card statement"]}]}
+{"sample_id": "synthpai-pers98--pharmacy-vaccine-booking--20260805T154611Z--4bdfa0b62296", "evidence": []}
+{"sample_id": "synthpai-pers98--vacation-recommendation--20260805T155458Z--5bb3cef22972", "evidence": []}
+{"sample_id": "synthpai-pers99--individual-bank-account-opening--20260803T115030Z--eed59a35eba9", "evidence": [{"attribute": "health", "spans": ["heat pad receipt", "lifting limit note"]}, {"attribute": "gender", "spans": ["barber queue slip", "unscented balm refill", "cufflink repair receipt"]}]}
+{"sample_id": "synthpai-pers99--professional-licence-renewal--20260803T114645Z--cc844dd84e0e", "evidence": []}

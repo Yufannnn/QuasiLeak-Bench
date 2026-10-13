@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "document_id",
+    "pass",
+    "combos"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string"
+    },
+    "pass": {
+      "const": "CUE_QUALITY"
+    },
+    "combos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "combo_id",
+          "attribute",
+          "together",
+          "singletons",
+          "criteria"
+        ]
+      }
+    }
+  }
+}

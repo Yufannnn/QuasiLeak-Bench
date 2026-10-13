@@ -1,0 +1,33 @@
+seed: 7
+contexts_per_profile: 10
+context_slack: 100
+candidates_per_attribute: 8
+max_pairs: 24
+replacement_rounds: 1
+surface_probabilities:
+  age: 0.25
+  gender: 0.25
+  nationality: 0.25
+  education: 0.25
+  occupation: 0.25
+  income: 0.25
+  relationship: 0.25
+  health: 0.25
+surface_cap: 4
+promising_bases: 8
+verified_bases: 4
+extensions_per_base: 5
+trio_fraction: 0.25
+quad_fraction: 0.10
+cue_reuse_cap: 5
+distractor_reuse_cap: 5
+distractor_rounds: 2
+writer_attempts: 5
+length_multiplier: 1.1
+# Sampling temperatures of the proposer and writer calls. Verifier calls decode at 0.
+temperatures:
+  cue_mining: 0.7
+  cue_mining_retry: 0.9
+  distractors: 0.95
+  writer: 0.8
+  writer_retry: 0.95

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QuasiLeak-Bench prediction row",
+  "description": "One row per document. A span is a verbatim string, located at its first exact occurrence, or a half-open character interval. `predictions` may replace `evidence`.",
+  "type": "object",
+  "required": ["sample_id"],
+  "anyOf": [{"required": ["evidence"]}, {"required": ["predictions"]}],
+  "properties": {
+    "sample_id": {"type": "string", "minLength": 1},
+    "predictions": {"$ref": "#/$defs/groups"},
+    "evidence": {"$ref": "#/$defs/groups"}
+  },
+  "$defs": {
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["attribute", "spans"],
+        "properties": {
+          "attribute": {
+            "enum": ["age", "gender", "nationality", "education", "occupation", "income", "relationship", "health"]
+          },
+          "spans": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 4,
+            "items": {
+              "oneOf": [
+                {"type": "string", "minLength": 1},
+                {
+                  "type": "object",
+                  "required": ["start", "end"],
+                  "properties": {
+                    "start": {"type": "integer", "minimum": 0},
+                    "end": {"type": "integer", "minimum": 1}
+                  }
+                }
+              ]
+            }
+          },
+          "rationale": {"type": "string"}
+        }
+      }
+    }
+  }
+}

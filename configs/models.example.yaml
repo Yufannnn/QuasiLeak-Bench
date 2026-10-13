@@ -1,0 +1,18 @@
+proposer:
+  model: gpt-5.5
+verifier:
+  model: claude-opus-4.8
+writer:
+  model: gpt-5.5
+census_judges:
+  - gemini-3.5-flash
+  - claude-opus-4.8
+compatibility_judges:
+  - gemini-3.5-flash
+  - claude-opus-4.8
+  - gpt-5.5
+# Quality-check panel. The prompts are in quasileak/prompts/quality_check.py.
+quality_check_judges:
+  - gpt-5.5
+  - gemini-3.5-flash
+quality_check_arbiter: claude-opus-4.8

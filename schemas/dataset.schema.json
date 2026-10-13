@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QuasiLeak-Bench dataset row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sample_id", "document", "profile", "context", "policy", "gold"],
+  "properties": {
+    "sample_id": {"type": "string", "minLength": 1},
+    "document": {"type": "string", "minLength": 1},
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_id", "age", "gender", "nationality", "education", "occupation", "income", "relationship", "health"],
+      "properties": {
+        "profile_id": {"type": "string", "minLength": 1},
+        "age": {"type": "string"},
+        "gender": {"type": "string"},
+        "nationality": {"type": "string"},
+        "education": {"type": "string"},
+        "occupation": {"type": "string"},
+        "income": {"type": "string"},
+        "relationship": {"type": "string"},
+        "health": {"type": "string"}
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["context_id", "name", "description", "purpose", "recipient", "length"],
+      "properties": {
+        "context_id": {"type": "string", "minLength": 1},
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "purpose": {"type": "string"},
+        "recipient": {"type": "string"},
+        "length": {"type": "integer", "minimum": 1}
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hide", "keep", "neutral"],
+      "properties": {
+        "hide": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "keep": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "neutral": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "gold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["groups", "spans", "distractors"],
+      "properties": {
+        "groups": {"type": "array", "items": {"$ref": "#/$defs/group"}},
+        "spans": {"type": "array", "items": {"$ref": "#/$defs/span"}},
+        "distractors": {"type": "array", "items": {"$ref": "#/$defs/distractor"}}
+      }
+    }
+  },
+  "$defs": {
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["raw_confidence", "lift_over_chance", "band"],
+      "properties": {
+        "raw_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "lift_over_chance": {"type": "number", "minimum": 0, "maximum": 1},
+        "band": {"enum": ["CHANCE", "WEAK", "BORDERLINE", "MODERATE", "STRONG"]}
+      }
+    },
+    "singleton": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cue_id", "metric_verdict", "rationale", "confidence"],
+      "properties": {
+        "cue_id": {"type": "string"},
+        "metric_verdict": {"const": "nonleaking"},
+        "rationale": {"type": "string", "minLength": 1},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "joint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_verdict", "rationale", "confidence"],
+      "properties": {
+        "metric_verdict": {"const": "revealing"},
+        "rationale": {"type": "string", "minLength": 1},
+        "confidence": {"$ref": "#/$defs/confidence"}
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group_id", "attribute", "cue_ids", "distance", "secondary_attributes", "verification"],
+      "properties": {
+        "group_id": {"type": "string"},
+        "attribute": {"enum": ["age", "gender", "nationality", "education", "occupation", "income", "relationship", "health"]},
+        "cue_ids": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "string"}, "uniqueItems": true},
+        "distance": {"enum": ["NEAR", "MEDIUM", "FAR"]},
+        "secondary_attributes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["singletons", "joint"],
+          "properties": {
+            "singletons": {"type": "array", "items": {"$ref": "#/$defs/singleton"}},
+            "joint": {"$ref": "#/$defs/joint"}
+          }
+        }
+      }
+    },
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["span_id", "group_id", "text", "start", "end"],
+      "properties": {
+        "span_id": {"type": "string"},
+        "group_id": {"type": "string"},
+        "text": {"type": "string", "minLength": 1},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1}
+      }
+    },
+    "distractor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["distractor_id", "text", "start", "end"],
+      "properties": {
+        "distractor_id": {"type": "string"},
+        "text": {"type": "string", "minLength": 1},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

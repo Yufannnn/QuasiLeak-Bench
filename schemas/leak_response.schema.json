@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "document_id",
+    "pass",
+    "recoveries",
+    "decoys"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string"
+    },
+    "pass": {
+      "const": "LEAK_GATE"
+    },
+    "recoveries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "attribute",
+          "recovered_value",
+          "confidence",
+          "span_source",
+          "evidence_segment_ids"
+        ]
+      }
+    },
+    "decoys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "segment_id",
+          "naturalness",
+          "justification"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+.env
+outputs/
+requests.jsonl
+training/out/
+training/runs/
+# unpacked from data/quasileak_bench_data.zip
+data/quasileak_bench_data_*.jsonl
+data/metadata/
