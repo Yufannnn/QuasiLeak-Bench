@@ -11,6 +11,21 @@ python -m zipfile -e data/quasileak_bench_data.zip data/
 | `metadata/` | counts, distributions, thresholds, and file hashes |
 | `DATASHEET.md` | datasheet |
 
+`splits/` sits next to the zip:
+
+| file | |
+|---|---|
+| `split_manifest.json` | sample ids of Train, Validation, Test, NoViolation, PolicyShift, and the paper's policy study, with source hashes |
+| `validation_report.json` | the checks the split files pass |
+| `policy_shift.jsonl.gz` | QLB-PolicyShift, 500 Test documents, each under its released and a reassigned policy |
+| `paper_policy_ablation.jsonl.gz` | the 500 policy pairs of the paper's prompted policy study, for reproduction only |
+
+A policy-shift row is a dataset row with `policy_original` and `policy_reassigned` in place
+of `policy`, the gold `group_id`s each policy hides (`targets_original`,
+`targets_reassigned`), and the attributes whose HIDE status changes for groups in the
+document (`newly_hidden`, `newly_permitted`). Each policy's targets are all verified groups
+of an attribute it marks HIDE.
+
 ## Fields
 
 | field | |

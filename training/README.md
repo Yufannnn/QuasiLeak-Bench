@@ -12,7 +12,7 @@ python training/train_lora.py --model-id Qwen/Qwen3.5-4B --train training/out/tr
     --dev training/out/dev_A.jsonl --out training/runs/B_s1 --epochs 1 --seed 1 --merge
 ```
 
-| | own policy (A) | policy and label augmentation (B) |
+| | own policy (A) | + reassigned policies (B) |
 |---|---|---|
 | training examples | 3,500 | 10,500 |
 | epochs | 3 | 1 |

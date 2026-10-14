@@ -153,3 +153,56 @@ def test_missing_document_is_rejected(tmp_path):
     write(tmp_path / "pred.jsonl", [])
     with pytest.raises(ValueError, match="cover every document"):
         qlb.score(tmp_path / "pred.jsonl", tmp_path / "data.jsonl.gz")
+
+
+def test_false_alarm_rate_counts_documents_without_hide_groups(tmp_path):
+    clean = copy.deepcopy(ROW)
+    clean["sample_id"], clean["policy"] = "c", {"hide": ["income"], "keep": ["age"], "neutral": OTHERS[:-1]}
+    quiet = {**copy.deepcopy(clean), "sample_id": "q"}
+    write(tmp_path / "data.jsonl", [ROW, clean, quiet])
+    write(tmp_path / "pred.jsonl", [{"sample_id": "d", "evidence": [group("age", *EXACT)]},
+                                    {"sample_id": "c", "evidence": [group("income", *EXACT)]},
+                                    {"sample_id": "q", "evidence": []}])
+    s = qlb.score(tmp_path / "pred.jsonl", tmp_path / "data.jsonl")
+    assert s["N_no_violation"] == 2 and s["FAR"] == 50.0
+
+
+def test_split_restricts_the_documents(tmp_path):
+    other = {**copy.deepcopy(ROW), "sample_id": "e"}
+    write(tmp_path / "data.jsonl", [ROW, other])
+    write(tmp_path / "pred.jsonl", [{"sample_id": "d", "evidence": [group("age", *EXACT)]}])
+    (tmp_path / "manifest.json").write_text(json.dumps({"membership": {"test": ["d"]}}))
+    rows = qlb.gold_rows_for(tmp_path / "data.jsonl", "test", manifest=tmp_path / "manifest.json")
+    assert [r["sample_id"] for r in rows] == ["d"]
+
+
+def shift_pair(original, reassigned):
+    row = copy.deepcopy(ROW)
+    del row["policy"]
+    hide_o, hide_r = set(original["hide"]), set(reassigned["hide"])
+    return {**row, "policy_original": original, "policy_reassigned": reassigned,
+            "newly_hidden": sorted({"age"} & (hide_r - hide_o)), "newly_permitted": sorted({"age"} & (hide_o - hide_r))}
+
+
+def test_policy_shift_needs_an_arm(tmp_path):
+    write(tmp_path / "pairs.jsonl", [shift_pair(ROW["policy"], ROW["policy"])])
+    with pytest.raises(ValueError, match="--arm"):
+        qlb.gold_rows_for(tmp_path / "pairs.jsonl")
+
+
+def test_policy_shift_suppress_and_surface(tmp_path):
+    hide_age = {"hide": ["age"], "keep": OTHERS, "neutral": []}
+    keep_age = {"hide": ["income"], "keep": ["age"], "neutral": OTHERS[:-1]}
+    found = [{"sample_id": "d", "evidence": [group("age", *EXACT)]}]
+    silent = [{"sample_id": "d", "evidence": []}]
+    write(tmp_path / "found.jsonl", found)
+    write(tmp_path / "silent.jsonl", silent)
+    # HIDE -> KEEP: a group found under the original policy and dropped afterwards is suppressed
+    write(tmp_path / "down.jsonl", [shift_pair(hide_age, keep_age)])
+    s = qlb.score_policy_shift(tmp_path / "found.jsonl", tmp_path / "silent.jsonl", tmp_path / "down.jsonl")
+    assert s["Suppress"] == 100.0 and s["N_suppress"] == 1 and s["Surface"] is None
+    assert s["original"]["P-GF1"] == 100.0
+    # KEEP -> HIDE: the newly hidden group must be emitted
+    write(tmp_path / "up.jsonl", [shift_pair(keep_age, hide_age)])
+    s = qlb.score_policy_shift(tmp_path / "silent.jsonl", tmp_path / "found.jsonl", tmp_path / "up.jsonl")
+    assert s["Surface"] == 100.0 and s["Suppress"] is None and s["reassigned"]["P-GF1"] == 100.0

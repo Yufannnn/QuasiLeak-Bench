@@ -30,6 +30,22 @@ pytest
 `examples/predictions_1k.jsonl` is a synthetic detector built from the 1K gold with misses,
 partial groups, and binding and policy errors. It scores P-GF1 60.0 (N_pred 665).
 
+## Benchmark views
+
+| view | documents | use |
+|---|---:|---|
+| QLB-Test | 1,000 | the headline set for prompted and fine-tuned systems |
+| QLB-Full | 5,000 | prompted systems, as in the paper's main comparison |
+| QLB-NoViolation | 475 | Test documents with no HIDE group; false-alarm rate |
+| QLB-PolicyShift | 500 pairs | Test documents under a second, reassigned policy |
+| Train / Validation | 3,500 / 500 | fine-tuning and model selection |
+
+The split is by profile (350 / 50 / 100 profiles, `training/split.json`), so no Test profile
+appears in Train or Validation. Test lies inside Full, so no system may train on a Test
+document. `data/splits/` holds the membership of each view and the paired policy-shift file.
+The 1,000-document subset in the data zip predates the split and overlaps Train and Test, so
+it serves only as a quick check.
+
 ## Contents
 
 | path | |
@@ -46,11 +62,15 @@ partial groups, and binding and policy errors. It scores P-GF1 60.0 (N_pred 665)
 
 ```bash
 python prompts/render.py --dataset data/quasileak_bench_data_full.jsonl --shots 3 --output requests.jsonl
-python scorer/score.py --predictions predictions.jsonl --dataset data/quasileak_bench_data_full.jsonl
+python scorer/score.py --predictions predictions.jsonl --dataset data/quasileak_bench_data_full.jsonl --split test
+python scorer/score.py --predictions predictions.jsonl --reassigned-predictions reassigned.jsonl \
+    --dataset data/splits/policy_shift.jsonl.gz
 ```
 
 A prediction row is `{"sample_id": ..., "evidence": [...]}` with `evidence` taken from the
-model's reply.
+model's reply. Scores on Test include the false-alarm rate on its NoViolation documents.
+PolicyShift reuses the Test predictions under the original policy and adds one run under the
+reassigned policy; `scorer/README.md` lists every output.
 
 ## Construction
 

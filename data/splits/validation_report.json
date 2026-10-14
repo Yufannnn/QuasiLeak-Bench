@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "passed": true,
+  "checks": [
+    {
+      "check": "Full is the exact union of train, validation and test",
+      "ok": true,
+      "detail": "5000 documents, 5000 unique in the union"
+    },
+    {
+      "check": "Split sizes 3,500 / 500 / 1,000",
+      "ok": true,
+      "detail": "3500 / 500 / 1000"
+    },
+    {
+      "check": "Profile-disjoint 350 / 50 / 100",
+      "ok": true,
+      "detail": "350 / 50 / 100"
+    },
+    {
+      "check": "NoViolation: 475 ids, all in Test, none with a HIDE gold group",
+      "ok": true,
+      "detail": "475 documents"
+    },
+    {
+      "check": "PolicyShift B: 500 ids, all in Test",
+      "ok": true,
+      "detail": "500 ids, 500 in Test"
+    },
+    {
+      "check": "Paper policy ablation A: 500 ids, 108 in Test",
+      "ok": true,
+      "detail": "500 ids, 108 in Test"
+    },
+    {
+      "check": "A and B overlap in 54 ids",
+      "ok": true,
+      "detail": "54"
+    },
+    {
+      "check": "Legacy 1K meets Test in 200 ids",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "check": "B original policy equals the released policy",
+      "ok": true,
+      "detail": "policy_original vs data zip policy"
+    },
+    {
+      "check": "A original policy equals the released policy",
+      "ok": true,
+      "detail": "policy_verified vs data zip policy"
+    },
+    {
+      "check": "B original-arm targets equal the Test gold targets",
+      "ok": true,
+      "detail": "targets_original vs HIDE groups of the released row"
+    },
+    {
+      "check": "B reassigned-arm targets agree with the study's frozen targets",
+      "ok": true,
+      "detail": "asserted per row while building"
+    },
+    {
+      "check": "Every policy partitions the eight attributes",
+      "ok": true,
+      "detail": "hide + keep + neutral = the eight attributes, gender naming"
+    },
+    {
+      "check": "No stale per-group policy labels in pair files",
+      "ok": true,
+      "detail": "gold groups carry no policy_class field"
+    },
+    {
+      "check": "Records copied unchanged from the data zip",
+      "ok": true,
+      "detail": "documents, profiles, contexts, policies and gold identical"
+    },
+    {
+      "check": "Span and distractor offsets resolve to their text",
+      "ok": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Smoke set drawn from Train only",
+      "ok": true,
+      "detail": "20 documents"
+    }
+  ],
+  "statistics": {
+    "policy_shift": {
+      "pairs": 500,
+      "profiles": 100,
+      "pairs_with_changed_targets": 296,
+      "pairs_with_no_target_in_either_arm": 141,
+      "pairs_with_newly_hidden_groups": 168,
+      "pairs_with_newly_permitted_groups": 182,
+      "targets_original": 343,
+      "targets_reassigned": 331,
+      "newly_hidden_by_attribute": {
+        "age": 20,
+        "education": 29,
+        "gender": 21,
+        "health": 27,
+        "income": 24,
+        "nationality": 29,
+        "occupation": 24,
+        "relationship": 27
+      },
+      "newly_permitted_by_attribute": {
+        "age": 19,
+        "education": 24,
+        "gender": 36,
+        "health": 29,
+        "income": 32,
+        "nationality": 17,
+        "occupation": 40,
+        "relationship": 16
+      }
+    },
+    "paper_policy_ablation": {
+      "pairs": 500,
+      "profiles": 311,
+      "pairs_with_changed_targets": 302,
+      "pairs_with_no_target_in_either_arm": 155,
+      "pairs_with_newly_hidden_groups": 161,
+      "pairs_with_newly_permitted_groups": 191,
+      "targets_original": 332,
+      "targets_reassigned": 302,
+      "newly_hidden_by_attribute": {
+        "age": 39,
+        "education": 30,
+        "gender": 19,
+        "health": 20,
+        "income": 14,
+        "nationality": 23,
+        "occupation": 21,
+        "relationship": 24
+      },
+      "newly_permitted_by_attribute": {
+        "age": 14,
+        "education": 31,
+        "gender": 30,
+        "health": 33,
+        "income": 33,
+        "nationality": 21,
+        "occupation": 40,
+        "relationship": 18
+      }
+    }
+  }
+}
