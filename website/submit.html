@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QuasiLeak-Bench: policy-conditioned quasi-evidence group recovery.">
+  <title>Submit &middot; QuasiLeak-Bench</title>
+  <link rel="icon" type="image/png" href="assets/quasileak-logo.png">
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/leaderboard.css">
+  <script src="assets/scores.js" defer></script>
+  <script src="assets/research-data.js" defer></script>
+  <script src="assets/research.js" defer></script>
+  <script src="assets/visitor-atlas.js" defer></script>
+  <link rel="stylesheet" href="assets/research.css">
+<link rel="preload" href="assets/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/design-system.css">
+<script src="assets/analytics.js" defer></script></head>
+<body class="qlb-research"><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="research-header"><a class="wordmark" href="index.html" aria-label="QuasiLeak-Bench"><img class="brand-kit-icon" src="assets/quasileak-logo.png" width="850" height="685" alt=""><span>QuasiLeak<span class="wordmark-suffix">-Bench</span></span></a><nav id="site-navigation" class="primary-nav" aria-label="Main navigation"><a href="index.html">Leaderboard</a><a href="explore.html">Examples</a><a href="evaluation.html">Guide</a><a href="submit.html" class="active" aria-current="page">Submit</a></nav><button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch color theme"></button><button type="button" class="nav-toggle" data-nav-toggle aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header><main id="content" tabindex="-1"><section class="page-view submission-page" data-page="submit" id="submit" aria-labelledby="submit-title">
+    <div class="submission-introduction">
+      <div class="submission-heading"><h1 id="submit-title">Prepare your submission</h1><span class="submission-status">Coming soon</span></div>
+      <p class="submission-lead">Format your predictions, validate them with the official evaluation tools, and prepare your method details before submissions open.</p>
+      <div class="submission-actions" aria-label="Preparation resources">
+        <a class="button primary" href="evaluation.html#format">Prediction format <span aria-hidden="true">&rarr;</span></a>
+        <a class="button secondary" href="evaluation.html#reproduce">Guide <span aria-hidden="true">&rarr;</span></a>
+        <a class="button secondary" href="assets/submission-template.json" download="quasileak-submission-metadata.json"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>Metadata template</a>
+      </div>
+    </div>
+
+    <section class="submission-workflow" aria-labelledby="workflow-title">
+      <h2 id="workflow-title">Submission workflow</h2>
+      <ol class="preparation-flow">
+        <li>
+          <div class="preparation-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 3H5v18h14V8l-5-5Z"/><path d="M14 3v5h5M8 12h8M8 16h6"/></svg><span>01</span></div>
+          <h3>Prepare</h3><p>Format prediction records.</p>
+        </li>
+        <li>
+          <div class="preparation-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>02</span></div>
+          <h3>Validate</h3><p>Check the schema and run the scorer.</p>
+        </li>
+        <li class="preparation-locked">
+          <div class="preparation-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg><span>03</span></div>
+          <h3>Submit</h3><p>Available after launch.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="submission-packages" aria-label="Submission requirements">
+      <article class="preparation-card">
+        <h2>Prediction package</h2>
+        <p>One <code>qlb.solution.v1</code> record per document, including empty predictions.</p>
+        <dl class="preparation-specs">
+          <div><dt>File</dt><dd>JSONL with unique document IDs</dd></div>
+          <div><dt>Groups</dt><dd>Attribute labels and evidence spans</dd></div>
+          <div><dt>Offsets</dt><dd>Half-open Unicode-code-point intervals</dd></div>
+        </dl>
+        <a class="text-link" href="assets/prediction-schema.json" download="quasileak-prediction-schema.json">Download prediction schema <span aria-hidden="true">&darr;</span></a>
+      </article>
+      <article class="preparation-card">
+        <h2>Method details</h2>
+        <p>Use the metadata template to document how your predictions were produced.</p>
+        <dl class="preparation-specs">
+          <div><dt>System</dt><dd>Model, checkpoint and revision</dd></div>
+          <div><dt>Settings</dt><dd>Prompting or fine-tuning, decoding and seeds</dd></div>
+          <div><dt>Provenance</dt><dd>Data usage, evaluation split and scorer revision</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <div class="submission-availability">
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>Submissions are not open yet.</p>
+      <a class="button secondary" href="index.html">View leaderboard <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section></main><footer id="footer" class="site-footer"><div class="footer-inner"><div class="footer-main"><div class="footer-project"><a class="footer-brand" href="index.html">QuasiLeak-Bench</a><p class="footer-tagline">Individually weak, but revealing together.</p><p>A benchmark for policy-conditioned quasi-evidence group recovery.</p></div><nav class="footer-column" aria-label="Benchmark links"><h2>Benchmark</h2><a href="index.html">Leaderboard</a><a href="explore.html">Examples</a><a href="evaluation.html">Guide</a><a href="submit.html">Submit</a></nav><nav class="footer-column" aria-label="Research resources"><h2>Resources</h2><a href="assets/paper.pdf" target="_blank" rel="noopener">Paper &nearr;</a><a href="https://github.com/Yufannnn/QuasiLeak-Bench" target="_blank" rel="noopener">GitHub &nearr;</a><span class="pending-resource">Hugging Face <small>Coming soon</small></span><span class="pending-resource">Citation <small>Pending release</small></span></nav></div><div class="footer-bottom"><span>&copy; 2026 QuasiLeak-Bench</span><a href="evaluation.html#sets">Dataset / scorer: release pending</a><details class="footer-license"><summary>Licenses</summary><a href="assets/code-license.txt" target="_blank" rel="noopener">Code: MIT</a><a href="assets/data-license.txt" target="_blank" rel="noopener">Dataset: CC BY-NC-SA 4.0</a></details></div></div></footer></body></html>

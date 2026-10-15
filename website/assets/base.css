@@ -1,0 +1,515 @@
+/* =============================================================================
+ * QuasiLeak — shared design system
+ *
+ * One file for all three sites: Countdown, Studio, Review. Pages under tools/ link it;
+ * the review portal inlines it at build time, because reviewer packages are zipped and
+ * emailed and must stay self-contained.
+ *
+ * This replaces eight appended layers that had begun to override each other, which is
+ * why fixes kept needing another fix. Rules are written once, in cascade order, and
+ * nothing here needs !important to win. The previous version is kept as
+ * qlb.css.gen8.bak until this one has been through a few sessions.
+ *
+ * PALETTE — Philadelphia 76ers.
+ *   blue #006BB6 · red #ED174C · navy #002B5C · silver #C4CED4
+ * Blue carries every interactive surface, red is reserved for refusal, navy is ink in
+ * light mode and ground in dark, silver draws the few lines that remain.
+ *
+ * The eight ATTRIBUTE hues are not part of that palette and are deliberately untouched:
+ * the studio uses them to say which attribute a span is evidence for, and collapsing
+ * eight distinguishable hues into two team colours would destroy that distinction.
+ *
+ * CONTAINERS — one border, not four. The earlier version gave every element a border,
+ * a shadow, a fill and a 20px radius, so a page became boxes inside boxes and read as
+ * a toy. Here elevation separates the page from a card, and space separates a card's
+ * contents from each other. Nested elements get tone, not outlines.
+ * ========================================================================== */
+
+/* ---------------------------------------------------------------- tokens */
+:root{
+  --team-blue:#006BB6; --team-blue-lt:#1d84cf; --team-blue-dk:#00518b;
+  --team-red:#ED174C;  --team-red-lt:#ff3d68;
+  --team-navy:#002B5C; --team-silver:#C4CED4;
+
+  --bg:#eef2f7;
+  --panel:#ffffff;
+  --panel2:#f5f8fb;
+  --sunken:#eaf0f6;
+  --ink:#0d2843;
+  --ink-2:#3c5a76;
+  --muted:#6b839a;
+  --line:#dde5ee;
+
+  --accent:var(--team-blue);
+  --accent-soft:#e2eff9;
+
+  --yes:#0f7a45; --yes-bg:#e2f4ea;
+  --no:var(--team-red); --no-bg:#fde5eb;
+  --acc:#0f7a45; --rev:#b7791f; --rej:var(--team-red);
+
+  --a-age:#dc2626;          --a-age-bg:#fee2e2;
+  --a-nationality:#ea580c;  --a-nationality-bg:#ffe8d1;
+  --a-health:#a16207;       --a-health-bg:#fdf0c3;
+  --a-income:#15a34a;       --a-income-bg:#d6f7e2;
+  --a-sex:#0891b2;          --a-sex-bg:#cdf5fb;
+  --a-occupation:#2563eb;   --a-occupation-bg:#dbe6ff;
+  --a-education:#9333ea;    --a-education-bg:#f0e2ff;
+  --a-relationship:#db2777; --a-relationship-bg:#fcdff0;
+
+  --r-sm:8px; --r-md:12px; --r-lg:16px;
+  --radius:12px;
+  --font:"Comic Sans MS","Comic Neue","Chalkboard SE",ui-rounded,cursive;
+  --mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+
+  --sh-1:0 1px 2px rgba(13,40,67,.06);
+  --sh-2:0 1px 3px rgba(13,40,67,.07), 0 8px 24px rgba(0,107,182,.10);
+  --sh-3:0 2px 6px rgba(13,40,67,.09), 0 18px 42px rgba(0,107,182,.16);
+
+  --rail:linear-gradient(90deg,var(--team-navy),var(--team-blue) 45%,var(--team-red));
+  --ground:
+    radial-gradient(820px 440px at 6% -10%, rgba(0,107,182,.16) 0%, transparent 60%),
+    radial-gradient(700px 400px at 100% 0%, rgba(237,23,76,.08) 0%, transparent 55%);
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#04101f; --panel:#0a2340; --panel2:#071c33; --sunken:#05182c;
+    --ink:#e6f0f8; --ink-2:#b6cfe3; --muted:#8aa8c2; --line:#123c63;
+    --accent:#4aa6e5; --accent-soft:#0c2f52;
+    --yes:#3fcf8e; --yes-bg:#08301d; --no:#ff5f7c; --no-bg:#3a1220;
+    --acc:#3fcf8e; --rev:#f0b429; --rej:#ff5f7c;
+    --a-age-bg:#3b1717;      --a-nationality-bg:#3a2110;
+    --a-health-bg:#332708;   --a-income-bg:#0f2f1c;
+    --a-sex-bg:#0c2b33;      --a-occupation-bg:#16244a;
+    --a-education-bg:#2a1640;--a-relationship-bg:#3a1329;
+    --sh-1:0 1px 2px rgba(0,0,0,.5);
+    --sh-2:0 2px 8px rgba(0,0,0,.5);
+    --sh-3:0 14px 38px rgba(0,0,0,.6);
+    --ground:
+      radial-gradient(820px 440px at 6% -10%, rgba(0,107,182,.30) 0%, transparent 60%),
+      radial-gradient(700px 400px at 100% 0%, rgba(237,23,76,.12) 0%, transparent 55%);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#04101f; --panel:#0a2340; --panel2:#071c33; --sunken:#05182c;
+  --ink:#e6f0f8; --ink-2:#b6cfe3; --muted:#8aa8c2; --line:#123c63;
+  --accent:#4aa6e5; --accent-soft:#0c2f52;
+  --yes:#3fcf8e; --yes-bg:#08301d; --no:#ff5f7c; --no-bg:#3a1220;
+  --acc:#3fcf8e; --rev:#f0b429; --rej:#ff5f7c;
+  --a-age-bg:#3b1717;      --a-nationality-bg:#3a2110;
+  --a-health-bg:#332708;   --a-income-bg:#0f2f1c;
+  --a-sex-bg:#0c2b33;      --a-occupation-bg:#16244a;
+  --a-education-bg:#2a1640;--a-relationship-bg:#3a1329;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);
+  --sh-2:0 2px 8px rgba(0,0,0,.5);
+  --sh-3:0 14px 38px rgba(0,0,0,.6);
+  --ground:
+    radial-gradient(820px 440px at 6% -10%, rgba(0,107,182,.30) 0%, transparent 60%),
+    radial-gradient(700px 400px at 100% 0%, rgba(237,23,76,.12) 0%, transparent 55%);
+}
+
+/* ---------------------------------------------------------------- base */
+*{box-sizing:border-box}
+body{
+  margin:0;color:var(--ink);font:15px/1.6 var(--font);
+  background:var(--ground),var(--bg);background-attachment:fixed;
+}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--accent)}
+code,.mono{font-family:var(--mono)}
+::selection{background:color-mix(in srgb,var(--accent) 26%,transparent)}
+
+/* ---------------------------------------------------------------- chrome */
+header{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;
+  padding:11px max(18px,calc((100vw - 2100px)/2));
+  min-height:56px;
+  background:var(--panel);border-bottom:1px solid var(--line);
+  box-shadow:var(--sh-1);
+}
+header::after{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--rail);
+}
+header h1,header .brand,h1.brand{
+  font-size:18px;line-height:1.2;margin:0;font-weight:800;white-space:nowrap;
+  display:flex;align-items:center;gap:9px;
+}
+header .studio,h1.brand .studio{color:var(--accent)}
+header .brand i,header .qlb-brand i{
+  width:9px;height:9px;border-radius:50%;display:inline-block;
+  background:linear-gradient(135deg,var(--team-blue),var(--team-red));
+}
+header .tag,header .qlb-sub,.who{
+  font-size:12.5px;color:var(--muted);font-weight:600;
+  padding-left:14px;border-left:1px solid var(--line);
+}
+.grow,.qlb-grow{flex:1}
+.wrap,.qlb-wrap{max-width:min(2100px,96vw);margin:0 auto;padding:20px max(16px,2vw) 64px}
+
+/* ---------------------------------------------------------------- surfaces
+ * A card is the only bordered container. Everything inside it is separated by tone
+ * and space, which is what stops the page looking like nested boxes.
+ */
+.card,.qlb-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);
+  box-shadow:var(--sh-2);padding:20px 22px;
+}
+.card h2,.qlb-card h2{
+  font-size:14px;margin:0 0 16px;font-weight:800;letter-spacing:.01em;
+  display:flex;align-items:center;gap:9px;color:var(--ink);
+}
+.card h2::before,.qlb-card h2::before{
+  content:"";width:5px;height:16px;border-radius:3px;background:var(--accent);flex:none;
+}
+.eyebrow,.qlb-eyebrow{
+  font-size:11px;text-transform:uppercase;letter-spacing:.11em;
+  color:var(--accent);font-weight:800;margin-bottom:6px;
+}
+.layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}}
+
+.bar,.progress{
+  display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:11px 15px;margin-bottom:16px;box-shadow:var(--sh-1);
+}
+.track,.qlb-track{height:8px;border-radius:99px;background:var(--sunken);overflow:hidden;flex:1;min-width:110px}
+.track span,.qlb-track span{height:100%;display:block;background:var(--rail);border-radius:99px;
+  transition:width .35s cubic-bezier(.2,.7,.3,1)}
+.status,.qlb-status{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.blurb{color:var(--muted);font-size:13px;margin:0 0 16px;max-width:96ch}
+
+/* ---------------------------------------------------------------- controls */
+.btn,.qlb-btn{
+  border:1px solid var(--line);background:var(--panel);border-radius:var(--r-sm);
+  padding:7px 13px;cursor:pointer;font-weight:700;font-size:13.5px;
+  transition:border-color .14s ease,background-color .14s ease,transform .14s ease;
+}
+.btn:hover,.qlb-btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn:active,.qlb-btn:active{transform:translateY(1px)}
+.btn.primary,.qlb-btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover,.qlb-btn.primary:hover{background:var(--team-blue-dk);border-color:var(--team-blue-dk);color:#fff}
+.btn:disabled,.qlb-btn:disabled{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:2px solid color-mix(in srgb,var(--accent) 65%,transparent);outline-offset:2px}
+
+select,input[type=text],input[type=search]{
+  color-scheme:light dark;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r-sm);padding:6px 10px;font-weight:600;
+}
+select:hover{border-color:var(--accent)}
+select option{background:var(--panel);color:var(--ink)}
+textarea{
+  width:100%;min-height:56px;resize:vertical;padding:10px 12px;margin-top:6px;
+  background:var(--sunken);border:1px solid var(--line);border-radius:var(--r-md);
+}
+textarea:focus{outline:none;border-color:var(--accent)}
+
+.raterbox{
+  display:flex;align-items:center;gap:8px;padding:3px 5px 3px 12px;
+  border:1px solid var(--accent);border-radius:99px;background:var(--accent-soft);
+}
+.raterbox span{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;font-weight:800;color:var(--accent)}
+.raterbox select{border:none;background:transparent;padding:2px 4px;font-weight:800;color:var(--accent)}
+.toggle{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12.5px;font-weight:700}
+
+/* ---------------------------------------------------------------- data */
+.attrs,.qlb-attrs{margin:0;display:grid;grid-template-columns:130px 1fr;border-top:1px solid var(--line)}
+.attrs dt,.attrs dd,.qlb-attrs dt,.qlb-attrs dd{
+  margin:0;padding:7px 2px;border-bottom:1px solid var(--line);font-size:13.5px;
+}
+.attrs dt,.qlb-attrs dt{font-weight:700;color:var(--muted);text-transform:capitalize}
+.tag,.qlb-tag{display:inline-block;border-radius:99px;padding:1px 9px;font-size:11px;font-weight:800;margin-left:6px}
+.tag.keep,.qlb-tag.keep{color:var(--acc);background:var(--yes-bg)}
+.tag.hide,.qlb-tag.hide{color:var(--rej);background:var(--no-bg)}
+.tag.neutral,.qlb-tag.neutral{color:var(--muted);background:var(--sunken)}
+.flag,.qlb-flag{width:20px;height:15px;margin-right:8px;vertical-align:-2px;border-radius:2px;object-fit:cover}
+
+.meta{display:grid;gap:7px;margin-bottom:14px}
+.meta div{display:grid;grid-template-columns:92px 1fr;gap:10px;font-size:13.5px}
+.meta b{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:800}
+.item-id{font-family:var(--mono);color:var(--muted);font-size:11.5px;margin-top:12px;word-break:break-all}
+.notes{margin-top:12px;padding:11px 13px;background:var(--sunken);border-radius:var(--r-md);
+  font-size:13px;color:var(--ink-2)}
+
+/* the document is sunken paper: no border, it is not another card */
+.doc,.qlb-doc{
+  white-space:pre-wrap;background:var(--sunken);border:none;border-radius:var(--r-md);
+  padding:16px 18px;max-height:58vh;overflow:auto;font-size:14px;line-height:1.7;
+  scrollbar-width:thin;scrollbar-color:var(--line) transparent;
+}
+.doc mark,.qlb-doc mark{border-radius:3px;padding:0 2px;color:inherit;background:var(--accent-soft)}
+mark[data-a=age]{background:var(--a-age-bg);box-shadow:inset 0 -2px 0 var(--a-age)}
+mark[data-a=sex]{background:var(--a-sex-bg);box-shadow:inset 0 -2px 0 var(--a-sex)}
+mark[data-a=nationality]{background:var(--a-nationality-bg);box-shadow:inset 0 -2px 0 var(--a-nationality)}
+mark[data-a=education]{background:var(--a-education-bg);box-shadow:inset 0 -2px 0 var(--a-education)}
+mark[data-a=occupation]{background:var(--a-occupation-bg);box-shadow:inset 0 -2px 0 var(--a-occupation)}
+mark[data-a=income]{background:var(--a-income-bg);box-shadow:inset 0 -2px 0 var(--a-income)}
+mark[data-a=relationship]{background:var(--a-relationship-bg);box-shadow:inset 0 -2px 0 var(--a-relationship)}
+mark[data-a=health]{background:var(--a-health-bg);box-shadow:inset 0 -2px 0 var(--a-health)}
+
+.qlb-chip{display:inline-block;border-radius:99px;padding:1px 10px;font-size:11px;font-weight:800}
+.chip-age{color:var(--a-age);background:var(--a-age-bg)}
+.chip-sex{color:var(--a-sex);background:var(--a-sex-bg)}
+.chip-nationality{color:var(--a-nationality);background:var(--a-nationality-bg)}
+.chip-education{color:var(--a-education);background:var(--a-education-bg)}
+.chip-occupation{color:var(--a-occupation);background:var(--a-occupation-bg)}
+.chip-income{color:var(--a-income);background:var(--a-income-bg)}
+.chip-relationship{color:var(--a-relationship);background:var(--a-relationship-bg)}
+.chip-health{color:var(--a-health);background:var(--a-health-bg)}
+
+/* an evidence group is a tinted band, not a boxed card inside a boxed card */
+.grp{
+  border:none;border-left:3px solid var(--accent);border-radius:0 var(--r-sm) var(--r-sm) 0;
+  padding:9px 12px;margin-bottom:8px;background:var(--sunken);
+}
+.grp .h{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-weight:800}
+.grp code{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;
+  font-size:12.5px;margin:5px 5px 0 0;display:inline-block}
+
+/* ---------------------------------------------------------------- criteria */
+.criteria{display:grid;gap:10px}
+.crit{
+  display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;
+  min-height:88px;padding:14px 16px;border:1px solid var(--line);border-left:4px solid var(--line);
+  border-radius:var(--r-md);background:var(--panel2);
+  box-shadow:0 1px 0 color-mix(in srgb,var(--ink) 8%,transparent);
+  transition:background-color .14s ease,border-color .14s ease;
+}
+.crit:nth-child(odd){background:color-mix(in srgb,var(--panel2) 88%,var(--sunken))}
+.crit:hover{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.crit-top{display:contents}
+.crit .kbd,.crit .qlb-kbd{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;padding:0;margin:0;flex:none;border:none;
+  border-radius:7px;font-size:11.5px;font-weight:800;font-family:var(--mono);
+  color:var(--muted);background:var(--sunken);
+}
+.crit-label{grid-column:2;font-size:14px;font-weight:800;line-height:1.35;
+  display:flex;flex-direction:column;gap:3px}
+.crit-label > span{display:block;font-weight:400;color:var(--muted);font-size:12.5px;line-height:1.5}
+
+.choices{
+  grid-column:3;display:flex;gap:2px;align-self:center;
+  background:var(--sunken);border-radius:99px;padding:3px;
+}
+.choice{
+  border:none;background:transparent;border-radius:99px;
+  padding:6px 14px;font-size:12.5px;font-weight:800;color:var(--muted);cursor:pointer;
+  transition:background-color .14s ease,color .14s ease;
+}
+.choice:hover{color:var(--ink)}
+.choice.yes.on{color:#fff;background:var(--yes)}
+.choice.no.on{color:#fff;background:var(--no)}
+.crit:has(.choice.yes.on){border-left-color:var(--yes)}
+.crit:has(.choice.no.on){border-left-color:var(--no)}
+.crit:has(.choice.on) .kbd{color:var(--accent)}
+
+.ref{
+  grid-column:1 / -1;                 /* .crit is a grid: the judge block spans it, never a column */
+  min-height:64px;border-left:2px solid var(--accent);margin:8px 0 0;padding:6px 10px;
+  font-size:12px;color:var(--muted);background:var(--sunken);border-radius:0 6px 6px 0;
+}
+.ref .why{display:block;min-height:34px;margin-top:4px;font-size:12px;line-height:1.45;color:var(--muted)}
+.ref .why b{color:var(--ink);font-weight:700}
+.crit-name{display:block;font-weight:800}
+.crit-name .gate{display:inline-block;font-size:10px;padding:0 6px;border-radius:99px;border:1px solid var(--line);
+  margin-left:6px;color:var(--muted);vertical-align:middle;font-weight:600}
+.crit-name .gate.hard{border-color:var(--rej);color:var(--rej)}
+.pill.weak{background:var(--line);color:var(--muted)}
+#criteria.assisted .ref{display:block}
+.adopt{margin:6px 0 10px}
+.pill{padding:1px 8px;border-radius:99px;font-weight:800;font-size:10.5px;color:#fff;margin-right:5px}
+.pill.met{background:var(--acc)} .pill.no{background:var(--rej)}
+body.blind .ref{display:none}
+
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px}
+#done{display:none;background:var(--yes-bg);color:var(--acc);border:1px solid var(--acc);
+  padding:10px 12px;border-radius:var(--r-md);margin-top:12px;font-weight:800}
+#done.on{display:block}
+.kbd,.qlb-kbd{font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--sunken);
+  border:none;border-radius:5px;padding:1px 5px;margin-right:6px}
+.foot{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}
+.err{color:var(--rej);font-weight:800;padding:40px}
+
+/* ---------------------------------------------------------------- motion
+ * Short and explanatory. Honours the OS preference; data-motion is an explicit
+ * override in either direction, set by the switch in the nav.
+ */
+@keyframes qlb-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: no-preference){
+  .card,.qlb-card{animation:qlb-in .26s cubic-bezier(.2,.75,.3,1) both}
+  #pane,#criteria{animation:qlb-in .2s cubic-bezier(.2,.75,.3,1) both}
+}
+:root[data-motion=on] .card,:root[data-motion=on] .qlb-card,
+:root[data-motion=on] #pane,:root[data-motion=on] #criteria{
+  animation:qlb-in .26s cubic-bezier(.2,.75,.3,1) both;
+}
+@media (prefers-reduced-motion: reduce){
+  :root:not([data-motion=on]) *,
+  :root:not([data-motion=on]) *::before,
+  :root:not([data-motion=on]) *::after{
+    animation-duration:.001ms !important;transition-duration:.001ms !important;
+  }
+}
+:root[data-motion=off] *,:root[data-motion=off] *::before,:root[data-motion=off] *::after{
+  animation-duration:.001ms !important;transition-duration:.001ms !important;
+}
+
+@media (max-width:760px){
+  .crit{grid-template-columns:auto 1fr;gap:10px}
+  .choices{grid-column:1 / -1;justify-self:start;margin-top:6px}
+}
+
+/* ---- attribute icons --------------------------------------------------------
+ * The eight attributes already have colours; giving them glyphs too means a reviewer
+ * can find the row they want without reading the column. Kept here with the palette so
+ * there is one icon map rather than one per renderer.
+ */
+.attrs dt[data-a],.qlb-attrs dt[data-a]{
+  display:flex;align-items:center;gap:8px;
+}
+.attrs dt[data-a]::before,.qlb-attrs dt[data-a]::before{
+  font-size:13px;line-height:1;width:18px;text-align:center;flex:none;
+  filter:saturate(.9);
+}
+.attrs dt[data-a=age]::before        {content:"\1F382"}   /* cake        */
+.attrs dt[data-a=sex]::before        {content:"\26A7"}    /* sex sign    */
+.attrs dt[data-a=nationality]::before{content:"\1F30D"}   /* globe       */
+.attrs dt[data-a=education]::before  {content:"\1F393"}   /* graduate cap*/
+.attrs dt[data-a=occupation]::before {content:"\1F4BC"}   /* briefcase   */
+.attrs dt[data-a=income]::before     {content:"\1F4B0"}   /* money bag   */
+.attrs dt[data-a=relationship]::before{content:"\1F48D"}  /* ring        */
+.attrs dt[data-a=health]::before     {content:"\1FA7A"}   /* stethoscope */
+
+/* the attribute's own colour on the label makes the table scannable */
+.attrs dt[data-a=age]{color:var(--a-age)}
+.attrs dt[data-a=sex]{color:var(--a-sex)}
+.attrs dt[data-a=nationality]{color:var(--a-nationality)}
+.attrs dt[data-a=education]{color:var(--a-education)}
+.attrs dt[data-a=occupation]{color:var(--a-occupation)}
+.attrs dt[data-a=income]{color:var(--a-income)}
+.attrs dt[data-a=relationship]{color:var(--a-relationship)}
+.attrs dt[data-a=health]{color:var(--a-health)}
+
+/* policy tags read faster with a mark than with a word alone */
+.tag.keep::before,.qlb-tag.keep::before{content:"\2713 "}
+.tag.hide::before,.qlb-tag.hide::before{content:"\1F441 "}
+.tag.neutral::before,.qlb-tag.neutral::before{content:"\00B7 "}
+
+/* section headings take the accent bar plus a glyph where the page supplies one */
+.card h2 .ico,.qlb-card h2 .ico{font-size:15px;line-height:1}
+
+/* ---- countdown --------------------------------------------------------------
+ * The landing page carries the deadline, so the timer is allowed to be the loudest
+ * thing on any of the three sites. Everything below it is a quiet status panel, which
+ * is the opposite balance to the review portal and deliberately so.
+ */
+.page{max-width:min(1400px,94vw);margin:0 auto;padding:0 0 56px}
+.page .herowrap{padding:26px 0 8px}
+.page .hero{
+  display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  background:linear-gradient(135deg,var(--team-navy),var(--team-blue) 70%,var(--team-blue-lt));
+  color:#fff;border-radius:var(--r-lg);padding:26px 30px;box-shadow:var(--sh-3);
+  position:relative;overflow:hidden;
+}
+/* a faint 76ers red sweep so the block is not one flat blue */
+.page .hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(520px 300px at 108% 120%, rgba(237,23,76,.42), transparent 62%);
+}
+.page .hero > *{position:relative;z-index:1}
+.page .hero .kicker{
+  font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;
+  color:rgba(255,255,255,.72);margin-bottom:8px;
+}
+.page .hero h1{font-size:clamp(28px,3.6vw,42px);margin:0 0 10px;line-height:1.05;color:#fff}
+.page .hero .meta{display:flex;gap:8px;flex-wrap:wrap;margin:0}
+.page .hero .meta span,.page .hero .meta div{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+  border-radius:99px;padding:4px 12px;font-size:12.5px;font-weight:700;color:#fff;
+  display:inline-block;grid-template-columns:none;
+}
+
+.page .countdown{display:flex;gap:10px;flex-wrap:wrap}
+.page .unit{
+  min-width:104px;text-align:center;padding:14px 16px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);
+  border-radius:var(--r-md);backdrop-filter:blur(4px);
+}
+.page .unit strong{
+  display:block;font-size:40px;line-height:1;color:#fff;font-variant-numeric:tabular-nums;
+  text-shadow:0 2px 12px rgba(0,0,0,.28);
+}
+.page .unit span{
+  display:block;margin-top:7px;font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.12em;font-weight:800;color:rgba(255,255,255,.75);
+}
+
+.page main{display:grid;gap:16px;margin-top:18px}
+.page .panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);
+  box-shadow:var(--sh-2);padding:18px 20px;
+}
+.page .panel-head{
+  display:flex;align-items:center;gap:10px;margin-bottom:14px;
+}
+.page .panel-head h2{
+  font-size:14px;margin:0;font-weight:800;display:flex;align-items:center;gap:9px;
+}
+.page .panel-head h2::before{
+  content:"";width:5px;height:16px;border-radius:3px;background:var(--accent);flex:none;
+}
+.page .badge{
+  margin-left:auto;font-size:11px;font-weight:800;color:var(--accent);
+  background:var(--accent-soft);border-radius:99px;padding:3px 11px;
+}
+
+
+.page footer{
+  margin-top:22px;padding:16px 20px;font-size:12.5px;color:var(--muted);
+  border-top:1px solid var(--line);
+}
+
+/* ---- reading -----------------------------------------------------------------
+ * A reviewer reads a 629-word message a hundred times in a sitting, so the document
+ * pane is the one place where typography is not decoration. At 2100px the left column
+ * is over 1000px wide, which puts roughly 160 characters on a line -- around twice the
+ * distance an eye tracks comfortably, so every return sweep risks losing the row.
+ * Capped near 78 characters and given a longer line-height.
+ *
+ * The criteria also scrolled away as soon as the message got long, which meant
+ * scrolling up to answer and back down to check. They stay put instead.
+ */
+.doc,.qlb-doc{
+  width:100%;
+  max-width:78ch;
+  margin-inline:auto;
+  font-size:15px;
+  line-height:1.75;
+  padding:18px 22px;
+}
+.doc mark,.qlb-doc mark{
+  /* a highlight inside 1.75 line-height needs vertical padding or it looks detached */
+  padding:1px 3px;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+
+/* the answer panel follows you down a long message */
+@media (min-width:1101px){
+  .layout > .card:last-child,.layout > .qlb-card:last-child{
+    position:sticky;top:98px;max-height:calc(100vh - 118px);overflow:auto;
+  }
+}
+
+/* paragraphs inside the message need air; pre-wrap alone gives none */
+.doc,.qlb-doc{white-space:pre-wrap;word-break:normal;overflow-wrap:break-word}
+
+/* quoted evidence should look quoted */
+.grp code{
+  background:var(--panel);border:1px solid var(--line);
+  font-size:12.5px;line-height:1.5;padding:3px 8px;
+}
+
+/* long ids should not force the card wider than the column */
+.item-id{overflow-wrap:anywhere}

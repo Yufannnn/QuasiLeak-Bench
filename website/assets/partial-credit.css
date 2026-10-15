@@ -1,0 +1,83 @@
+/* Research explorer, using shared site typography, controls and palette. */
+.factor-demo{--fig-target-fill:#E3F1EB;--fig-target-stroke:var(--status-positive);--fig-other-fill:#F5E2E7;--fig-other-stroke:var(--status-prohibited);--credit-board-line:#CBD5E1;container:credit-board / inline-size;scroll-margin-top:100px}
+html[data-research-theme=dark] .factor-demo{--fig-target-fill:#253E38;--fig-other-fill:#412D36;--credit-board-line:#52636F}
+html .qlb-research .factor-demo{padding:32px;border:2px solid var(--credit-board-line);border-radius:18px;background:var(--lb-surface);box-shadow:0 8px 28px rgb(23 33 47 / 7%);color:var(--lb-ink);margin:24px 0}
+html .qlb-research .credit-board-heading h3{font-size:24px;font-weight:600;margin:0 0 8px}
+html .qlb-research .credit-board-heading p{font-size:var(--type-body);color:var(--lb-muted);margin:0}
+.credit-factor-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-lg);margin-top:var(--space-lg)}
+.credit-factor{display:flex;flex-direction:column;min-width:0;padding:24px;background:var(--lb-soft);border-radius:var(--card-radius)}
+.credit-factor-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;min-height:46px}
+.credit-factor-heading>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px}
+html .qlb-research .credit-factor-heading h4{font-size:var(--type-emphasis);font-weight:600;margin:0;line-height:1.4}
+.credit-factor-code{font-size:var(--type-emphasis);font-weight:500;color:var(--lb-muted)}
+html .qlb-research .credit-factor-score{font:600 22px/1.25 var(--lb-font);font-variant-numeric:tabular-nums;color:var(--lb-ink)}
+.credit-figure{display:flex;flex-direction:column;justify-content:center;gap:16px;min-height:144px;margin:12px 0 20px;min-width:0}
+html .qlb-research .credit-diagram-caption{margin:0;font-size:var(--type-small);line-height:1.5;color:var(--lb-muted)}
+.credit-cue-set{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.credit-cue{display:flex;flex-direction:column;gap:8px;padding:12px;border:1px solid var(--fig-target-stroke);border-radius:var(--control-radius);background:var(--fig-target-fill);font-size:var(--type-small);font-weight:500;color:var(--lb-ink)}
+.credit-cue>span:last-child{display:flex;align-items:center;gap:6px;font-weight:400}
+.credit-cue svg{width:18px;height:18px;flex:none;color:var(--fig-target-stroke)}
+.credit-cue.is-missed{border-color:var(--control-border);border-style:dashed;background:var(--lb-surface)}
+.credit-cue.is-missed svg{color:var(--lb-muted)}
+.credit-proportion{display:flex;gap:3px;width:100%;height:36px;overflow:hidden;border:1px solid var(--control-border);border-radius:8px;background:var(--lb-surface)}
+.credit-proportion>span{flex-basis:0;min-width:0}
+.credit-proportion-target{background:var(--fig-target-stroke)}
+.credit-proportion-other{background:var(--fig-other-stroke)}
+.credit-proportion-labels{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:var(--type-small);color:var(--lb-ink)}
+.credit-proportion-labels>span{display:flex;align-items:center;gap:6px}
+.credit-key{display:inline-block;width:10px;height:10px;flex:none;border-radius:2px}
+.credit-key.target{background:var(--fig-target-stroke)}
+.credit-key.other{background:var(--fig-other-stroke)}
+.credit-binding-flow{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:12px;align-items:center}
+.credit-binding-flow>div{display:flex;flex-direction:column;justify-content:center;gap:8px;min-height:80px;padding:12px;border-radius:var(--control-radius);background:var(--lb-surface);font-size:var(--type-small);line-height:1.5;color:var(--lb-ink)}
+.credit-binding-flow .credit-binding-label{background:var(--fig-target-fill);border-left:3px solid var(--fig-target-stroke)}
+.credit-binding-flow .is-unsupported{background:var(--fig-other-fill);border-left-color:var(--fig-other-stroke)}
+.credit-binding-flow span{color:var(--lb-muted)}
+.credit-binding-arrow{width:24px;height:24px;color:var(--lb-muted)}
+.credit-factor-controls{display:grid;gap:12px;margin-top:auto;padding-top:16px;border-top:1px solid var(--lb-line)}
+html .qlb-research .credit-factor-controls .control label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0;font-size:var(--type-body);line-height:1.5;color:var(--lb-ink)}
+html .qlb-research .credit-factor-controls .control b{font-size:var(--type-body);font-weight:600;color:var(--lb-ink)}
+html .qlb-research .credit-factor-controls input[type=range]{display:block;width:100%;height:44px;margin:0;accent-color:var(--lb-accent);cursor:pointer}
+.credit-factor-controls select{width:100%;min-width:0;margin-top:8px}
+.credit-result{margin-top:24px;padding-top:24px;border-top:1px solid var(--lb-line)}
+.credit-policy-control .control{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px}
+html .qlb-research .credit-policy-control .control label{margin:0;font-size:var(--type-body);color:var(--lb-ink)}
+.credit-policy-control select{width:260px;max-width:100%;min-width:0}
+.policy-credit-strip{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin:20px 0 0;font-variant-numeric:tabular-nums}
+.credit-calculation{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1}
+.credit-calculation-label{font-size:var(--type-small);color:var(--lb-muted)}
+.credit-expression{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:var(--type-body);line-height:1.5;color:var(--lb-ink)}
+.credit-expression b{font-size:var(--type-body);font-weight:500}
+.credit-expression>span{color:var(--lb-muted)}
+.credit-total{display:flex;align-items:center;gap:16px;color:var(--lb-ink)}
+.credit-total>span{font-size:var(--type-small);color:var(--lb-muted)}
+html .qlb-research .credit-total output{font:600 var(--type-title)/1.25 var(--lb-font);color:var(--lb-ink)}
+html .qlb-research .credit-note{margin:16px 0 0;font-size:var(--type-small);line-height:1.5;color:var(--lb-muted)}
+.credit-scoring-notes{border-top:1px solid var(--lb-line);padding-top:16px;margin-top:20px}
+.credit-scoring-notes summary{cursor:pointer;font-size:var(--type-body);font-weight:500;color:var(--lb-ink)}
+html .qlb-research .credit-scoring-notes p{margin:12px 0 0;font-size:var(--type-small);color:var(--lb-muted)}
+html .qlb-research .credit-scoring-notes sub{font-size:inherit;vertical-align:baseline}
+@container credit-board (min-width:1000px){
+ .credit-factor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .credit-factor-controls{min-height:172px;align-content:start}
+}
+@container credit-board (max-width:480px){
+ .credit-factor{padding:16px}
+ .credit-cue-set{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .credit-cue{padding:10px}
+ .credit-binding-flow{gap:8px;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr)}
+ .credit-binding-arrow{width:20px}
+ .credit-binding-flow>div{padding:10px}
+ .credit-total{width:100%;justify-content:space-between}
+}
+@media(min-width:1500px){
+ html .qlb-evaluation main{max-width:1480px}
+ .qlb-evaluation .docs-article{max-width:none}
+ .qlb-evaluation .doc-section>:not(.factor-demo){max-width:760px}
+}
+@media(max-width:760px){
+ html .qlb-research .factor-demo{padding:24px}
+}
+@media(max-width:420px){
+ html .qlb-research .factor-demo{padding:24px 16px}
+}

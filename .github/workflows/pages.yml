@@ -1,0 +1,60 @@
+name: Benchmark website
+
+on:
+  push:
+    branches: [main]
+    paths: ['website/**', 'website-tools/**', '.github/workflows/pages.yml']
+  public:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: benchmark-pages
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check browser scripts
+        run: for script in website/assets/*.js; do node --check "$script" || exit 1; done
+      - name: Check static links and assets
+        run: python website-tools/check_site.py website
+      - name: Refresh Visitor Atlas
+        if: ${{ !github.event.repository.private }}
+        env:
+          QLB_GOATCOUNTER_SITE: ${{ vars.QLB_GOATCOUNTER_SITE }}
+          QLB_ANALYTICS_START: ${{ vars.QLB_ANALYTICS_START }}
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: python website-tools/prepare_atlas.py --directory website
+      - name: Configure Pages
+        if: ${{ !github.event.repository.private }}
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload website
+        if: ${{ !github.event.repository.private }}
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: website
+
+  deploy:
+    if: ${{ !github.event.repository.private }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy benchmark website
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

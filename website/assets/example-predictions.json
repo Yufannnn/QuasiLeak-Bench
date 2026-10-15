@@ -1,0 +1,275 @@
+{
+  "document_sha256": "edd7ea76deaa4c65fedbd805c9a0447526e20001c774296d7f9521265af4e76b",
+  "predictions": [
+    {
+      "id": "full-gpt-5.6-sol-3shot",
+      "name": "GPT-5.6 Sol",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_refresh_aaff64cc/main/predictions/gpt-5.6-sol_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-claude-opus-5-3shot",
+      "name": "Claude-Opus-5",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_refresh_aaff64cc/main/predictions/claude-opus-5_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-gemini-3.8-flash-3shot",
+      "name": "Gemini-3.8-Flash",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_refresh_aaff64cc/main/predictions/gemini-3.8-flash_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-deepseek-v4-pro-3shot",
+      "name": "DeepSeek-V4-Pro",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/predictions/deepseek-v4-pro_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-grok-4.5-3shot",
+      "name": "Grok-4.5",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/predictions/grok-4.5_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-olmo-3.1-32b-3shot",
+      "name": "OLMo-3.1-32B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/olmo-3.1-32b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-mistral-small-24b-3shot",
+      "name": "Mistral-Small-24B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/mistral-small-24b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "occupation",
+          "spans": [
+            "I’m looking for a movie recommendation for tonight",
+            "I do not need a perfect fit on every point",
+            "I am open to something recent or older as long as it matches the"
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 1,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-phi-4-3shot",
+      "name": "Phi-4",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/phi-4_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "occupation",
+          "spans": [
+            "part-time PR assistant",
+            "studying towards a Masters in Public Relations",
+            "His late shift means I am probably starting later than planned"
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 1,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-ministral-3-14b-3shot",
+      "name": "Ministral-3-14B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/ministral-3-14b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-glm-4-9b-3shot",
+      "name": "GLM-4-9B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/glm-4-9b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "occupation",
+          "spans": [
+            "part-time PR assistant",
+            "PR assistant"
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 1,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-llama-3.1-8b-3shot",
+      "name": "Llama-3.1-8B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/llama-3.1-8b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [],
+      "scored": {
+        "P-GF1": 1.0,
+        "P-GP": 1.0,
+        "P-GR": 1.0,
+        "n_pred": 0,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-ministral-3-8b-3shot",
+      "name": "Ministral-3-8B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/ministral-3-8b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "occupation",
+          "spans": [
+            "I’m looking for a movie recommendation for tonight, ideally something with a date night mood",
+            "I am open to something recent or older as long as it matches the tone I described and does not rely on constant noise to stay interesting",
+            "I am not trying to overthink it; I just want the evening to feel settled once the opening credits roll"
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 1,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-phi-4-mini-3shot",
+      "name": "Phi-4-Mini",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/decoder_corrected_final/phi-4-mini_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "occupation",
+          "spans": [
+            "part-time PR assistant",
+            "settle on the right film",
+            "start without scrolling forever"
+          ]
+        },
+        {
+          "attribute": "income",
+          "spans": [
+            "low income",
+            "I do not mind a film in another language if the rhythm is strong and the scenes feel purposeful",
+            "I have been leaning toward stories with a strong opening scene and a middle that actually moves"
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 2,
+        "n_gold": 0,
+        "n_keep_flag": 0,
+        "matched": []
+      }
+    },
+    {
+      "id": "full-llama-3.2-3b-3shot",
+      "name": "Llama-3.2-3B",
+      "source": "runs/frontier_eval/qfc_v1_prompt_v3_23c808837387/local_soc/llama-3.2-3b_fixed_full_input_v3_orderk_3shot.jsonl",
+      "evidence": [
+        {
+          "attribute": "health",
+          "spans": [
+            "IBS",
+            "small note on runtime, tone, and whether it is more talky or..."
+          ]
+        }
+      ],
+      "scored": {
+        "P-GF1": 0.0,
+        "P-GP": 0.0,
+        "P-GR": 0.0,
+        "n_pred": 1,
+        "n_gold": 0,
+        "n_keep_flag": 1,
+        "matched": []
+      }
+    }
+  ]
+}

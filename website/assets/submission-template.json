@@ -1,0 +1,31 @@
+{
+  "status": "Preparation template; submissions are not yet open",
+  "name": "",
+  "base_model": "",
+  "model_revision": "",
+  "method": "",
+  "model_size": "",
+  "deployment": "",
+  "evaluation_view": "QLB-Test",
+  "dataset_revision": "",
+  "dataset_sha256": "",
+  "scorer_commit": "",
+  "training_data": {
+    "quasileak_train_used": null,
+    "external_data_description": "",
+    "test_gold_used": null
+  },
+  "inference": {
+    "prompt_or_configuration": "",
+    "shots": null,
+    "reasoning_configuration": "",
+    "decoding": "",
+    "candidates_per_document": null
+  },
+  "seeds": [],
+  "artifacts": {
+    "predictions": "",
+    "code_or_checkpoint": "",
+    "report": ""
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "name": "QuasiLeak-Bench Interactive Example Icon Bundle",
+  "icons": [
+    {
+      "name": "movie",
+      "label": "Movie recommendation",
+      "category": "context",
+      "illustrated": "illustrated/movie.svg",
+      "glyph": "glyphs/movie.svg"
+    },
+    {
+      "name": "recipient",
+      "label": "Recipient / agent",
+      "category": "context",
+      "illustrated": "illustrated/recipient.svg",
+      "glyph": "glyphs/recipient.svg"
+    },
+    {
+      "name": "message",
+      "label": "Message text",
+      "category": "context",
+      "illustrated": "illustrated/message.svg",
+      "glyph": "glyphs/message.svg"
+    },
+    {
+      "name": "profile",
+      "label": "Author profile",
+      "category": "profile",
+      "illustrated": "illustrated/profile.svg",
+      "glyph": "glyphs/profile.svg"
+    },
+    {
+      "name": "age",
+      "label": "Age",
+      "category": "profile",
+      "illustrated": "illustrated/age.svg",
+      "glyph": "glyphs/age.svg"
+    },
+    {
+      "name": "gender",
+      "label": "Gender",
+      "category": "profile",
+      "illustrated": "illustrated/gender.svg",
+      "glyph": "glyphs/gender.svg"
+    },
+    {
+      "name": "nationality",
+      "label": "Nationality",
+      "category": "profile",
+      "illustrated": "illustrated/nationality.svg",
+      "glyph": "glyphs/nationality.svg"
+    },
+    {
+      "name": "relationship",
+      "label": "Relationship",
+      "category": "profile",
+      "illustrated": "illustrated/relationship.svg",
+      "glyph": "glyphs/relationship.svg"
+    },
+    {
+      "name": "education",
+      "label": "Education",
+      "category": "profile",
+      "illustrated": "illustrated/education.svg",
+      "glyph": "glyphs/education.svg"
+    },
+    {
+      "name": "occupation",
+      "label": "Occupation",
+      "category": "profile",
+      "illustrated": "illustrated/occupation.svg",
+      "glyph": "glyphs/occupation.svg"
+    },
+    {
+      "name": "income",
+      "label": "Income",
+      "category": "profile",
+      "illustrated": "illustrated/income.svg",
+      "glyph": "glyphs/income.svg"
+    },
+    {
+      "name": "health",
+      "label": "Health",
+      "category": "profile",
+      "illustrated": "illustrated/health.svg",
+      "glyph": "glyphs/health.svg"
+    },
+    {
+      "name": "policy",
+      "label": "Disclosure policy",
+      "category": "policy",
+      "illustrated": "illustrated/policy.svg",
+      "glyph": "glyphs/policy.svg"
+    },
+    {
+      "name": "hide",
+      "label": "HIDE policy",
+      "category": "hide",
+      "illustrated": "illustrated/hide.svg",
+      "glyph": "glyphs/hide.svg"
+    },
+    {
+      "name": "keep",
+      "label": "KEEP policy",
+      "category": "keep",
+      "illustrated": "illustrated/keep.svg",
+      "glyph": "glyphs/keep.svg"
+    },
+    {
+      "name": "neutral",
+      "label": "NEUTRAL policy",
+      "category": "neutral",
+      "illustrated": "illustrated/neutral.svg",
+      "glyph": "glyphs/neutral.svg"
+    },
+    {
+      "name": "evidence",
+      "label": "Evidence spans",
+      "category": "evidence",
+      "illustrated": "illustrated/evidence.svg",
+      "glyph": "glyphs/evidence.svg"
+    },
+    {
+      "name": "cue_group",
+      "label": "Evidence group",
+      "category": "evidence",
+      "illustrated": "illustrated/cue_group.svg",
+      "glyph": "glyphs/cue_group.svg"
+    },
+    {
+      "name": "gold",
+      "label": "Gold evidence",
+      "category": "evidence",
+      "illustrated": "illustrated/gold.svg",
+      "glyph": "glyphs/gold.svg"
+    },
+    {
+      "name": "download",
+      "label": "Download source",
+      "category": "action",
+      "illustrated": "illustrated/download.svg",
+      "glyph": "glyphs/download.svg"
+    },
+    {
+      "name": "reset",
+      "label": "Restore original",
+      "category": "action",
+      "illustrated": "illustrated/reset.svg",
+      "glyph": "glyphs/reset.svg"
+    },
+    {
+      "name": "interaction",
+      "label": "Interactive example",
+      "category": "action",
+      "illustrated": "illustrated/interaction.svg",
+      "glyph": "glyphs/interaction.svg"
+    },
+    {
+      "name": "check",
+      "label": "Validate",
+      "category": "action",
+      "illustrated": "illustrated/check.svg",
+      "glyph": "glyphs/check.svg"
+    }
+  ],
+  "license": "Custom icons generated for this QuasiLeak-Bench package."
+}

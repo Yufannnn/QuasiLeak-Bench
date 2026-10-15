@@ -1,0 +1,25 @@
+{
+  "definition": "Locally evaluated open-weight model in the paper's reported size bands up to and including 14B. Exact checkpoint counts are retained as metadata, not used as the band boundary.",
+  "checked_on": "2026-10-14",
+  "deployment_evidence": [
+    "docs/paper/sections/05_evaluation_setup.tex",
+    "src/mosaic_bench/pilot_feasibility/run_eval.py (HF_MODEL_IDS and local adapters)",
+    "scripts/experimental/sft_split/eval_merged.py (local vLLM evaluation)",
+    "scripts/experimental/thinking_ablation/campaign.json"
+  ],
+  "models": {
+    "qwen3.5-4b": {"repo": "Qwen/Qwen3.5-4B", "total_parameters": 4659865088, "open_weights": true, "evaluated_locally": true},
+    "qwen3.5-9b": {"repo": "Qwen/Qwen3.5-9B", "total_parameters": 9653104368, "open_weights": true, "evaluated_locally": true},
+    "qwen3-14b": {"repo": "Qwen/Qwen3-14B", "total_parameters": 14768307200, "open_weights": true, "evaluated_locally": true},
+    "gemma-4-e4b": {"repo": "google/gemma-4-e4b-it", "total_parameters": 7996156490, "open_weights": true, "evaluated_locally": true},
+    "gemma-4-12b": {"repo": "google/gemma-4-12b-it", "total_parameters": 11959730224, "open_weights": true, "evaluated_locally": true},
+    "phi-4-mini": {"repo": "microsoft/Phi-4-mini-instruct", "total_parameters": 3836021760, "open_weights": true, "evaluated_locally": true},
+    "phi-4": {"repo": "microsoft/phi-4", "total_parameters": 14659507200, "open_weights": true, "evaluated_locally": true},
+    "ministral-3-8b": {"repo": "mistralai/Ministral-3-8B-Instruct-2512-BF16", "total_parameters": 8918026240, "open_weights": true, "evaluated_locally": true},
+    "ministral-3-14b": {"repo": "mistralai/Ministral-3-14B-Instruct-2512", "total_parameters": 13945032240, "open_weights": true, "evaluated_locally": true},
+    "glm-4-9b": {"repo": "zai-org/GLM-4-9B-0414", "total_parameters": 9400279040, "open_weights": true, "evaluated_locally": true},
+    "llama-3.1-8b": {"repo": "NousResearch/Meta-Llama-3.1-8B-Instruct", "total_parameters": 8030261248, "open_weights": true, "evaluated_locally": true},
+    "llama-3.2-3b": {"repo": "unsloth/Llama-3.2-3B-Instruct", "total_parameters": 3212749824, "open_weights": true, "evaluated_locally": true}
+  },
+  "parameter_source": "https://huggingface.co/api/models/{repo}: safetensors.total"
+}

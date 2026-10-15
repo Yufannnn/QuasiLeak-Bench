@@ -1,0 +1,240 @@
+{
+  "source": "release/public_v1/dataset.jsonl.gz",
+  "document_sha256": "edd7ea76deaa4c65fedbd805c9a0447526e20001c774296d7f9521265af4e76b",
+  "record": {
+    "sample_id": "synthpai-pers287--movie-recommendation--20260805T045241Z--f1912eb6aa3e",
+    "document": "I’m looking for a movie recommendation for tonight, ideally something with a date night mood that still has a clear story and a little momentum. I don’t want anything so punishing that it takes over the whole evening, but I’m fine with tension, wit, or a slow build if it pays off. If there are a few options, I’d rather steer toward something that feels smart and watchable than something loud for the sake of being loud. I have already ruled out anything that depends on franchise homework or a pile of context.\n\nMy EU account region still seems to sort the library in a slightly odd way, so I keep checking the same tabs twice. The solo-watch queue on the service keeps surfacing the same comfort titles, which is not helping. What I need tonight is a pick that feels fresh without being fussy, and I am happy with whatever holds attention without asking for a lot of setup. I already scrolled past the obvious studio picks, so a less obvious suggestion would be welcome.\n\nThis feels like a two-watchlist compromise anyway, because I usually want one thing and end up negotiating toward something else. I tend to like mystery, sharp dialogue, or a grounded thriller, though I’m not locked into one lane. If it has an emotional hook and a clean ending, even better. I am not in the mood for something that sprawls so much that the last act feels like a different film, and I’d rather not spend half the night wondering when it will actually start.\n\nAfter Black Sea beach week, I keep drifting toward movies that feel open and slightly breezy at the start, even if they tighten up later. A lot of trailers gloss over subtitle preferences, so I usually look for something where the dialogue matters as much as the visuals. I do not mind a film in another language if the rhythm is strong and the scenes feel purposeful. I have been leaning toward stories with a strong opening scene and a middle that actually moves.\n\nHis late shift means I am probably starting later than planned, so a tight runtime would help more than an epic one. I am fine with some suspense, but I would rather skip anything that leans too bleak or too graphic. The ideal pick would hold up if we pause it once, then get right back into it without losing the thread. If there is a bit of banter or a clever structure, that would help too, because I like a movie that keeps its shape.\n\nThe Cyrillic keyboard is still sitting on my desk from earlier, so I am a little slower than usual typing this out. Some clips have a shared-screen vibe that makes the pacing feel thin, and I do not want the movie itself to feel that flat. If you have a recommendation with strong atmosphere and a clear center, that is probably the direction I want. I am not trying to overthink it; I just want the evening to feel settled once the opening credits roll.\n\nThe two-seat couch is already arranged, so comfort matters as much as the plot. I do not need a perfect fit on every point; I mostly want something that won’t drag, won’t be too predictable, and can still feel satisfying if the ending is restrained. I would rather not end up with something that needs a full rewatch guide. If your best suggestion is a sleeper rather than a big obvious title, that is completely fine with me.\n\nIf it helps, give me one top recommendation and one backup with a sentence on why each works tonight. I am open to something recent or older as long as it matches the tone I described and does not rely on constant noise to stay interesting. A small note on runtime, tone, and whether it is more talky or more visual would be useful. Thanks — I’m just trying to settle on the right film and start without scrolling forever.",
+    "profile": {
+      "profile_id": "synthpai_pers287",
+      "age": "26",
+      "sex": "Female",
+      "nationality": "Bulgaria",
+      "education": "studying towards a Masters in Public Relations",
+      "occupation": "part-time PR assistant",
+      "income": "low income",
+      "relationship": "in a relationship",
+      "health": "IBS"
+    },
+    "context": {
+      "context_id": "movie_recommendation",
+      "name": "Movie recommendation",
+      "description": "The author talks to a movie recommendation agent to find a film to watch tonight. The agent legitimately needs age (for age-appropriate, content-rated suggestions) and whether viewing is solo or with a partner or family (relationship), alongside genre, mood, and content preferences; sex, nationality, occupation, income, and health are not needed and can leak and affect profiling, advertising, or content steering.",
+      "purpose": "receive a movie recommendation for tonight based on viewing preferences",
+      "recipient": "movie recommendation agent or platform operator",
+      "length": 550
+    },
+    "policy": {
+      "hide": [
+        "occupation",
+        "income"
+      ],
+      "keep": [
+        "age",
+        "relationship",
+        "health"
+      ],
+      "neutral": [
+        "sex",
+        "nationality",
+        "education"
+      ]
+    },
+    "gold": {
+      "groups": [
+        {
+          "group_id": "g0000",
+          "attribute": "nationality",
+          "cue_ids": [
+            "s0000",
+            "s0001",
+            "s0002"
+          ],
+          "distance": "MEDIUM",
+          "secondary_attributes": [],
+          "verification": {
+            "singletons": [
+              {
+                "cue_id": "s0000",
+                "metric_verdict": "nonleaking",
+                "rationale": "An EU account region only narrows to 27 member states, giving no distinctive Bulgarian signal.",
+                "confidence": {
+                  "raw_confidence": 0.05,
+                  "lift_over_chance": 0.0,
+                  "band": "CHANCE"
+                }
+              },
+              {
+                "cue_id": "s0001",
+                "metric_verdict": "nonleaking",
+                "rationale": "A Black Sea beach week fits any of the six coastal nations, so it offers only weak geographic hinting.",
+                "confidence": {
+                  "raw_confidence": 0.2,
+                  "lift_over_chance": 0.120879,
+                  "band": "WEAK"
+                }
+              },
+              {
+                "cue_id": "s0002",
+                "metric_verdict": "nonleaking",
+                "rationale": "Cyrillic is used across many Slavic and Balkan nations, so it points to a region, not to Bulgaria alone.",
+                "confidence": {
+                  "raw_confidence": 0.2,
+                  "lift_over_chance": 0.120879,
+                  "band": "WEAK"
+                }
+              }
+            ],
+            "joint": {
+              "metric_verdict": "revealing",
+              "rationale": "EU membership plus Black Sea coast narrows to Bulgaria or Romania, and Cyrillic script sharply distinguishes Bulgaria from Latin-script Romania, pinning Bulgaria.",
+              "confidence": {
+                "raw_confidence": 0.86,
+                "lift_over_chance": 0.846154,
+                "band": "STRONG"
+              }
+            }
+          }
+        },
+        {
+          "group_id": "g0001",
+          "attribute": "relationship",
+          "cue_ids": [
+            "s0003",
+            "s0004",
+            "s0005",
+            "s0006"
+          ],
+          "distance": "MEDIUM",
+          "secondary_attributes": [],
+          "verification": {
+            "singletons": [
+              {
+                "cue_id": "s0003",
+                "metric_verdict": "nonleaking",
+                "rationale": "Date-night mood signals a partner but does not distinguish dating from married or engaged.",
+                "confidence": {
+                  "raw_confidence": 0.4,
+                  "lift_over_chance": 0.279712,
+                  "band": "WEAK"
+                }
+              },
+              {
+                "cue_id": "s0004",
+                "metric_verdict": "nonleaking",
+                "rationale": "Compromising over a shared watchlist indicates a partner but does not distinguish relationship type.",
+                "confidence": {
+                  "raw_confidence": 0.4,
+                  "lift_over_chance": 0.279712,
+                  "band": "WEAK"
+                }
+              },
+              {
+                "cue_id": "s0005",
+                "metric_verdict": "nonleaking",
+                "rationale": "A partner's late shift signals cohabiting or dating without pinning the specific status.",
+                "confidence": {
+                  "raw_confidence": 0.4,
+                  "lift_over_chance": 0.279712,
+                  "band": "WEAK"
+                }
+              },
+              {
+                "cue_id": "s0006",
+                "metric_verdict": "nonleaking",
+                "rationale": "A two-seat couch weakly hints at a couple but is compatible with many living arrangements.",
+                "confidence": {
+                  "raw_confidence": 0.35,
+                  "lift_over_chance": 0.219688,
+                  "band": "WEAK"
+                }
+              }
+            ],
+            "joint": {
+              "metric_verdict": "revealing",
+              "rationale": "Date-night mood, a compromise over two watchlists, a partner's late shift, and a two-seat couch jointly pin a cohabiting romantic partnership.",
+              "confidence": {
+                "raw_confidence": 0.86,
+                "lift_over_chance": 0.831933,
+                "band": "STRONG"
+              }
+            }
+          }
+        }
+      ],
+      "spans": [
+        {
+          "span_id": "s0000",
+          "group_id": "g0000",
+          "text": "EU account region",
+          "start": 518,
+          "end": 535
+        },
+        {
+          "span_id": "s0001",
+          "group_id": "g0000",
+          "text": "Black Sea beach week",
+          "start": 1457,
+          "end": 1477
+        },
+        {
+          "span_id": "s0002",
+          "group_id": "g0000",
+          "text": "Cyrillic keyboard",
+          "start": 2362,
+          "end": 2379
+        },
+        {
+          "span_id": "s0003",
+          "group_id": "g0001",
+          "text": "date night mood",
+          "start": 77,
+          "end": 92
+        },
+        {
+          "span_id": "s0004",
+          "group_id": "g0001",
+          "text": "two-watchlist compromise",
+          "start": 994,
+          "end": 1018
+        },
+        {
+          "span_id": "s0005",
+          "group_id": "g0001",
+          "text": "His late shift",
+          "start": 1918,
+          "end": 1932
+        },
+        {
+          "span_id": "s0006",
+          "group_id": "g0001",
+          "text": "two-seat couch",
+          "start": 2818,
+          "end": 2832
+        }
+      ],
+      "decoys": [
+        {
+          "decoy_id": "r1d0",
+          "text": "solo-watch queue",
+          "start": 635,
+          "end": 651,
+          "kind": "wrong-direction"
+        },
+        {
+          "decoy_id": "r1d1",
+          "text": "subtitle preferences",
+          "start": 1618,
+          "end": 1638,
+          "kind": "near-miss"
+        },
+        {
+          "decoy_id": "r1d2",
+          "text": "shared-screen vibe",
+          "start": 2492,
+          "end": 2510,
+          "kind": "near-miss"
+        }
+      ]
+    }
+  }
+}

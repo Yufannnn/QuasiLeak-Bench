@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore QuasiLeak-Bench paper examples, evidence cues, full profiles, and disclosure policies.">
+  <title>Interactive example &middot; QuasiLeak-Bench</title>
+  <link rel="icon" type="image/png" href="assets/quasileak-logo.png">
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/leaderboard.css">
+  <script src="assets/examples.js" defer></script>
+<link rel="stylesheet" href="assets/research.css">
+<link rel="preload" href="assets/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/design-system.css">
+<script src="assets/analytics.js" defer></script></head>
+<body class="qlb-research qlb-examples">
+<a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="research-header"><a class="wordmark" href="index.html" aria-label="QuasiLeak-Bench"><img class="brand-kit-icon" src="assets/quasileak-logo.png" width="850" height="685" alt=""><span>QuasiLeak<span class="wordmark-suffix">-Bench</span></span></a><nav id="site-navigation" class="primary-nav" aria-label="Main navigation"><a href="index.html">Leaderboard</a><a href="explore.html" class="active" aria-current="page">Examples</a><a href="evaluation.html">Guide</a><a href="submit.html">Submit</a></nav><button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch color theme"></button><button type="button" class="nav-toggle" data-nav-toggle aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header>
+  <main id="content" tabindex="-1">
+    <section class="page-view" data-page="examples">
+      <div class="page-heading"><h1>Interactive example</h1></div>
+      <div class="corpus-toolbar example-scenario"><img class="example-illustrated scenario-icon" src="assets/icons/interactive-example/illustrated/movie.svg" alt="" width="64" height="64"><div class="scenario-copy"><h2>Movie recommendation</h2><p><span id="corpus-recipient"></span><span class="scenario-separator" aria-hidden="true"> &middot; </span><span id="corpus-purpose"></span></p></div><a class="button secondary" href="assets/corpus-example.json" download><span data-example-icon="download" aria-hidden="true"></span>Source record</a></div>
+      <div id="example-error" class="prototype-notice" hidden aria-live="polite"></div>
+      <div id="corpus-example" class="corpus-layout" hidden>
+        <div class="corpus-inputs" aria-label="Context, full profile, and disclosure policy">
+          <section class="corpus-profile-card" aria-labelledby="profile-title"><div class="profile-card-heading"><div class="example-card-title"><img class="example-illustrated" src="assets/icons/interactive-example/illustrated/profile.svg" alt="" width="44" height="44"><h2 id="profile-title">Author profile</h2></div><span id="profile-number" class="status-label"></span></div><div id="corpus-profile" class="profile-clusters"></div></section>
+          <section class="corpus-policy-card" aria-labelledby="policy-title"><div class="profile-card-heading"><div class="example-card-title"><img class="example-illustrated" src="assets/icons/interactive-example/illustrated/policy-blue.svg" alt="" width="44" height="44"><h2 id="policy-title">Disclosure policy</h2></div><button id="restore-policy" class="text-button"><span data-example-icon="reset" aria-hidden="true"></span>Restore original</button></div><p id="policy-origin" class="small-copy" aria-live="polite">Original corpus policy</p><div id="corpus-policy"></div></section>
+        </div>
+        <div class="corpus-document-column">
+          <div class="document-card corpus-document"><div class="document-header"><div class="example-card-title"><img class="example-illustrated" src="assets/icons/interactive-example/illustrated/evidence.svg" alt="" width="44" height="44"><h2>Document evidence</h2></div><span id="document-meta" class="tiny-label"></span></div><h3 class="document-title">A movie for tonight</h3><div id="corpus-document-text" lang="en"></div><div class="document-footer"><label class="distractor-toggle"><input id="show-decoys" type="checkbox" checked> Distractors</label><button id="reset-cues" class="text-button"><span data-example-icon="reset" aria-hidden="true"></span>Reset selection</button></div></div>
+          <details class="corpus-provenance"><summary>Source and paper illustration</summary><p id="corpus-id" class="small-copy"></p><figure class="paper-figure"><img src="assets/quasileak-paper-motivation.webp" width="1800" height="1334" loading="lazy" alt="The paper’s illustration of explicit disclosure, a weak single cue, and jointly revealing nationality cues."></figure></details>
+        </div>
+        <div class="corpus-results">
+          <div class="explore-tabs" role="group" aria-label="Example mode"><button class="button primary" data-explore-mode="gold" aria-pressed="true"><span data-example-icon="gold" aria-hidden="true"></span>Gold evidence</button><button class="button secondary" data-explore-mode="predictions" aria-pressed="false"><span data-example-icon="message" aria-hidden="true"></span>Model predictions</button><button class="button secondary" data-explore-mode="score" aria-pressed="false"><span data-example-icon="check" aria-hidden="true"></span>Score explanation</button></div>
+        <aside class="corpus-sidebar"><section id="prediction-panel" class="corpus-interaction-card" hidden><label class="policy-label" for="example-model">Recorded model</label><select id="example-model"></select><div id="prediction-output"></div></section><section id="score-panel" class="corpus-interaction-card" hidden><h2>Partial credit</h2><div id="example-score"></div><a class="text-link" href="evaluation.html#factors">Full scoring cascade &rarr;</a></section>
+          <section class="corpus-interaction-card"><div class="evidence-controls"><div class="field"><label class="policy-label" for="evidence-group">Gold group</label><select id="evidence-group"></select></div><div class="field"><label class="policy-label" for="policy">Selected attribute’s policy</label><select id="policy"><option value="hide">HIDE — report this group</option><option value="keep">KEEP — permitted disclosure</option><option value="neutral">NEUTRAL — no HIDE requirement</option></select></div></div><div id="demo-output" class="demo-output" aria-live="polite"></div></section>
+        </aside>
+        </div>
+      </div>
+      <section class="group-recovery" aria-labelledby="group-recovery-title"><h2 id="group-recovery-title">Group recovery</h2><ol class="recovery-steps"><li><h3>Evidence</h3><p>Recover all cues with precise spans.</p></li><li><h3>Binding</h3><p>Group the cues and bind them to the correct attribute.</p></li><li><h3>Policy</h3><p>Report HIDE groups. Leave permitted disclosures unflagged.</p></li></ol></section>
+    </section>
+  </main>
+  <footer id="footer" class="site-footer"><div class="footer-inner"><div class="footer-main"><div class="footer-project"><a class="footer-brand" href="index.html">QuasiLeak-Bench</a><p class="footer-tagline">Individually weak, but revealing together.</p><p>A benchmark for policy-conditioned quasi-evidence group recovery.</p></div><nav class="footer-column" aria-label="Benchmark links"><h2>Benchmark</h2><a href="index.html">Leaderboard</a><a href="explore.html">Examples</a><a href="evaluation.html">Guide</a><a href="submit.html">Submit</a></nav><nav class="footer-column" aria-label="Research resources"><h2>Resources</h2><a href="assets/paper.pdf" target="_blank" rel="noopener">Paper &nearr;</a><a href="https://github.com/Yufannnn/QuasiLeak-Bench" target="_blank" rel="noopener">GitHub &nearr;</a><span class="pending-resource">Hugging Face <small>Coming soon</small></span><span class="pending-resource">Citation <small>Pending release</small></span></nav></div><div class="footer-bottom"><span>&copy; 2026 QuasiLeak-Bench</span><a href="evaluation.html#sets">Dataset / scorer: release pending</a><details class="footer-license"><summary>Licenses</summary><a href="assets/code-license.txt" target="_blank" rel="noopener">Code: MIT</a><a href="assets/data-license.txt" target="_blank" rel="noopener">Dataset: CC BY-NC-SA 4.0</a></details></div></div></footer>
+</body>
+</html>
