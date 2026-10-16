@@ -185,8 +185,9 @@ The layout adapts to terminal width. Use `quasileak --plain datasets list` to
 disable decoration, or set `NO_COLOR=1` to remove colours. Redirected output,
 JSON, CSV, and saved score/report files remain plain; scores are unchanged.
 
-The README includes a vector terminal preview generated from the actual CLI,
-released scorer, and bundled example predictions. Regenerate it after a layout change:
+The README uses a captured terminal screenshot, `docs/screenshot.png`. A separate
+vector preview can be generated from the actual CLI, released scorer, and bundled
+example predictions:
 
 ```bash
 python scripts/render_cli_preview.py

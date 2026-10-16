@@ -45,9 +45,7 @@ It uses the released scorer unchanged. Scoring, prompt rendering, reports, and i
 checks run locally without API credentials. Only `run` and the model-based construction
 commands call a model endpoint.
 
-<p align="center"><img src="docs/cli-preview.svg" alt="QuasiLeak-Bench CLI: benchmark views, prediction checks, and evaluation metrics" width="100%"></p>
-
-*CLI preview using the bundled synthetic example predictions.*
+<p align="center"><img src="docs/screenshot.png" alt="QuasiLeak-Bench command-line banner" width="100%"></p>
 
 ```bash
 quasileak --help
