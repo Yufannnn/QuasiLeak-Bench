@@ -8,6 +8,7 @@ python -m zipfile -e data/quasileak_bench_data.zip data/
 |---|---|
 | `quasileak_bench_data_full.jsonl` | 5,000 documents, 500 profiles, 20 contexts, 9,099 groups, 23,041 cues, 12,237 distractors |
 | `quasileak_bench_data_1k.jsonl` | 1,000-document subset of the same rows |
+| `quasileak_bench_data_v1.0.jsonl` | v1.0.0, the corpus of the submitted paper (`CHANGELOG.md`) |
 | `metadata/` | counts, distributions, thresholds, and file hashes |
 | `DATASHEET.md` | datasheet |
 
@@ -15,10 +16,11 @@ python -m zipfile -e data/quasileak_bench_data.zip data/
 
 | file | |
 |---|---|
-| `split_manifest.json` | sample ids of Train, Validation, Test, NoViolation, PolicyShift, and the paper's policy study, with source hashes |
+| `split_manifest.json` | sample ids of Train, Validation, Test, QLB-SNR, QLB-PS, and the fine-tuning study's policy pairs, with source hashes |
 | `validation_report.json` | the checks the split files pass |
-| `policy_shift.jsonl.gz` | QLB-PolicyShift, 500 Test documents, each under its released and a reassigned policy |
-| `paper_policy_ablation.jsonl.gz` | the 500 policy pairs of the paper's prompted policy study, for reproduction only |
+| `subset_non_revealing.jsonl.gz` | QLB-SNR (Subset Non-Revealing), 1,618 Full documents in which no smaller subset of any HIDE group reveals its attribute |
+| `policy_shift.jsonl.gz` | QLB-PS, the paper's 500-pair policy study, each document under its released and a reassigned policy |
+| `sft_policy_shift.jsonl.gz` | the fine-tuning study's 500 policy pairs, all in Test |
 
 A policy-shift row is a dataset row with `policy_original` and `policy_reassigned` in place
 of `policy`, the gold `group_id`s each policy hides (`targets_original`,

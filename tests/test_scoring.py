@@ -164,7 +164,7 @@ def test_false_alarm_rate_counts_documents_without_hide_groups(tmp_path):
                                     {"sample_id": "c", "evidence": [group("income", *EXACT)]},
                                     {"sample_id": "q", "evidence": []}])
     s = qlb.score(tmp_path / "pred.jsonl", tmp_path / "data.jsonl")
-    assert s["N_no_violation"] == 2 and s["FAR"] == 50.0
+    assert s["N_no_hide"] == 2 and s["FAR"] == 50.0
 
 
 def test_split_restricts_the_documents(tmp_path):

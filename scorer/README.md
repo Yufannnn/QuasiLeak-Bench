@@ -17,9 +17,9 @@ Output, 0 to 100 except `N_pred`: P-GP, P-GR, P-GF1 (headline), B-GP, B-GR, B-GF
 E-GR, E-GF1, the mean factors `E_C`, `E_L`, `B_G`, `B_A`, cue recall `E_R`, distractor
 selection rate DSR, and `N_pred`. The paper defines each metric. FAR is the false-alarm rate,
 the share of documents with no HIDE group that still receive a scored prediction, over
-`N_no_violation` such documents. On Test these are the 475 QLB-NoViolation documents.
+`N_no_hide` such documents.
 
-`--split` scores one view of a dataset file (`train`, `validation`, `test`, `no_violation`)
+`--split` scores one view of a dataset file (`train`, `validation`, `test`, `subset_non_revealing`)
 using `data/splits/split_manifest.json`, ignoring prediction rows outside it. A policy-shift file is scored one policy at a time
 with `--arm original` or `--arm reassigned`, or both at once:
 

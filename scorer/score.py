@@ -21,7 +21,7 @@ from pathlib import Path
 
 GAMMA, THETA, RHO_SEC, LAMBDA_K = 2.0, 0.75, 0.5, 1.0
 MANIFEST = Path(__file__).resolve().parents[1] / "data" / "splits" / "split_manifest.json"
-SPLITS = ("train", "validation", "test", "no_violation")
+SPLITS = ("train", "validation", "test", "subset_non_revealing")
 DSR_IOU = 0.5
 TOKEN = re.compile(r"\w+(?:['\N{RIGHT SINGLE QUOTATION MARK}]\w+)*")
 WHITESPACE_TOKEN = re.compile(r"\S+")
@@ -240,7 +240,7 @@ def score(predictions, dataset, gamma=GAMMA, theta=THETA, rho_sec=RHO_SEC, lambd
 
     total = dict.fromkeys(("c_E", "c_B", "c_P", "n_pred", "n_keep", "n_hide", "aligned", *FACTORS), 0.0)
     cues_found = cues_hide = planted = selected = 0
-    no_violation = false_alarms = 0
+    no_hide = false_alarms = 0
     for row in gold_rows:
         doc = row["document"]
         offsets = [(m.start(), m.end()) for m in TOKEN.finditer(doc)]
@@ -265,7 +265,7 @@ def score(predictions, dataset, gamma=GAMMA, theta=THETA, rho_sec=RHO_SEC, lambd
         for key in total:
             total[key] += doc_score[key]
         if not doc_score["n_hide"]:
-            no_violation += 1
+            no_hide += 1
             false_alarms += doc_score["n_pred"] > 0
         if details is not None:
             details[row["sample_id"]] = doc_score
@@ -287,11 +287,11 @@ def score(predictions, dataset, gamma=GAMMA, theta=THETA, rho_sec=RHO_SEC, lambd
     scores["E_R"] = cues_found / cues_hide if cues_hide else 0.0
     scores["DSR"] = selected / planted if planted else 0.0
     # documents with no HIDE gold group that still receive a scored prediction
-    scores["FAR"] = false_alarms / no_violation if no_violation else None
+    scores["FAR"] = false_alarms / no_hide if no_hide else None
     out = {k: None if v is None else round(100 * v, 4) for k, v in scores.items()}
     out["N_pred"] = int(total["n_pred"])
     out["N_docs"] = len(gold_rows)
-    out["N_no_violation"] = no_violation
+    out["N_no_hide"] = no_hide
     return out
 
 

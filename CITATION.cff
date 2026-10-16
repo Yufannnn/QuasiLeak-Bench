@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use QuasiLeak-Bench, please cite the paper."
+title: "QuasiLeak-Bench"
+type: software
+version: 1.0.1
+date-released: 2026-10-14
+license: MIT
+authors:
+  - family-names: Zhu
+    given-names: Yufan
+  - family-names: Jiang
+    given-names: Yangfan
+  - family-names: Fei
+    given-names: Yang
+  - family-names: Hou
+    given-names: Shizheng
+  - family-names: Mohapatra
+    given-names: Shubhankar
+  - family-names: Xiao
+    given-names: Xiaokui
+preferred-citation:
+  type: article
+  title: "QuasiLeak-Bench: Evaluating LLM-Based Privacy Detectors on Policy-Conditioned Quasi-Evidence Group Recovery"
+  authors:
+    - family-names: Zhu
+      given-names: Yufan
+    - family-names: Jiang
+      given-names: Yangfan
+    - family-names: Fei
+      given-names: Yang
+    - family-names: Hou
+      given-names: Shizheng
+    - family-names: Mohapatra
+      given-names: Shubhankar
+    - family-names: Xiao
+      given-names: Xiaokui
+  journal: "arXiv preprint arXiv:ARXIV_ID"
+  year: 2026
