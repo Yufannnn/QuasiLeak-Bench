@@ -1,4 +1,11 @@
 {
-  "status": "not-configured",
-  "provider": "goatcounter"
+  "status": "ok",
+  "provider": "cloudflare",
+  "generatedAt": "2026-10-16T05:24:20.197Z",
+  "collectedSince": "2026-10-16",
+  "pageViews": 0,
+  "visitors": 0,
+  "metric": "pageviews",
+  "countries": 0,
+  "countryVisits": []
 }

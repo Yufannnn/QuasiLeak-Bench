@@ -1,0 +1,17 @@
+name = "qlb-visitor-atlas"
+main = "index.mjs"
+compatibility_date = "2026-10-16"
+account_id = "d9f3a3a3c9251aa3bf356ae22a843470"
+workers_dev = true
+
+[vars]
+ALLOWED_ORIGIN = "https://yufannnn.github.io"
+COLLECTED_SINCE = "2026-10-16"
+
+[observability]
+enabled = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "qlb-visitor-atlas"
+database_id = "04f88ee9-b4f7-4adf-a088-2031dc046df4"

@@ -1,6 +1,6 @@
 {
-  "provider": "goatcounter",
-  "site": "",
+  "provider": "cloudflare",
+  "endpoint": "https://qlb-visitor-atlas.encformer-visitors.workers.dev",
   "productionHostname": "yufannnn.github.io",
   "productionPath": "/QuasiLeak-Bench/"
 }

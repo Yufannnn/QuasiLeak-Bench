@@ -9,7 +9,9 @@
     if (!map) map = fetch(new URL('visitor-atlas.svg',base)).then(r=>r.ok?r.text():Promise.reject()).then(source=>{
       const svg = new DOMParser().parseFromString(source,'image/svg+xml').documentElement;
       if (svg.localName !== 'svg') throw Error('Invalid atlas map');
-      svg.setAttribute('aria-label','Visitor countries. Shading represents recorded visits.');
+      svg.setAttribute('aria-label','Visitor countries. Shading represents recorded page views.');
+      svg.style.width = '100%';
+      svg.style.height = 'auto';
       svg.removeAttribute('aria-labelledby');
       atlas.querySelector('.atlas-map').replaceChildren(document.importNode(svg,true));
       return atlas.querySelector('.atlas-map svg');
@@ -36,7 +38,7 @@
         path.dataset.visits = String(visits);
         path.style.fill = 'var(--lb-teal)';
         path.style.fillOpacity = String(0.35 + 0.65 * Math.log1p(visits) / Math.log1p(maximum));
-        title.textContent = name + ': ' + visits.toLocaleString('en-US') + ' visits';
+        title.textContent = name + ': ' + visits.toLocaleString('en-US') + ' page views';
       } else {
         delete path.dataset.visits; path.style.fill = ''; path.style.fillOpacity = ''; title.textContent = name;
       }
@@ -53,15 +55,28 @@
     if (received) {
       const status = document.getElementById('visitor-atlas-status');
       const generated = new Date(stats.generatedAt);
-      status.textContent = Number.isFinite(generated.getTime()) ? 'Updated ' + generated.toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}) : 'Live';
-      status.title = Number.isFinite(generated.getTime()) ? generated.toISOString() : '';
+      status.textContent = stats.provider === 'cloudflare' ? 'Live' : (Number.isFinite(generated.getTime()) ? 'Updated ' + generated.toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}) : 'Live');
+      status.title = stats.collectedSince ? 'Page views recorded since ' + stats.collectedSince : (Number.isFinite(generated.getTime()) ? generated.toISOString() : '');
       atlas.dataset.analytics = 'live';
       paintCountries(stats.countryVisits).catch(()=>{});
     }
   };
   window.updateQuasiLeakVisitorAtlas = update;
   window.addEventListener('quasileak:visitor-stats', event => update(event.detail));
-  if (atlas) fetch(new URL('visitor-stats.json',base),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(stats=>{
-    if (stats?.status === 'ok') update(stats);
-  }).catch(()=>{});
+  const config = fetch(new URL('analytics-config.json',base)).then(r=>r.ok?r.json():null);
+  async function refresh() {
+    const settings = await config;
+    const endpoint = settings?.provider === 'cloudflare' ? new URL('/stats',settings.endpoint) : new URL('visitor-stats.json',base);
+    try {
+      const response = await fetch(endpoint,{cache:'no-store',credentials:'omit',referrerPolicy:'origin'});
+      if (!response.ok) throw Error('Atlas unavailable');
+      const stats = await response.json();
+      if (stats?.status === 'ok') update(stats);
+    } catch {
+      const response = await fetch(new URL('visitor-stats.json',base),{cache:'no-store'});
+      if (response.ok) { const stats=await response.json(); if(stats?.status==='ok') update({...stats,provider:'snapshot'}); }
+    }
+  }
+  window.addEventListener('quasileak:visitor-recorded',()=>refresh().catch(()=>{}));
+  if (atlas) refresh().catch(()=>{});
 })();

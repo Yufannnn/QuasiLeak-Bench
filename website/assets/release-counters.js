@@ -11,6 +11,7 @@
       stars: stats.github?.stars,
       forks: stats.github?.forks,
       downloads: stats.huggingFace?.downloads,
+      likes: stats.huggingFace?.likes,
     };
     let received = false;
     panel.querySelectorAll('[data-release-stat]').forEach(element => {

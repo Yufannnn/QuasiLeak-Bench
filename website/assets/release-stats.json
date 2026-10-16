@@ -1,13 +1,14 @@
 {
   "status": "ok",
-  "generatedAt": "2026-10-16T04:47:26.121507+00:00",
+  "generatedAt": "2026-10-16T05:24:20.003873+00:00",
   "github": {
-    "stars": 1,
-    "forks": 0,
+    "stars": 2,
+    "forks": 1,
     "url": "https://github.com/Yufannnn/QuasiLeak-Bench"
   },
   "huggingFace": {
     "downloads": 3,
+    "likes": 0,
     "url": "https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench"
   },
   "arxiv": {
