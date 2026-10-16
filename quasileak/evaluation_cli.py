@@ -13,6 +13,8 @@ import math
 from pathlib import Path
 import sys
 
+from . import terminal
+
 METRICS = ("P-GF1", "P-GP", "P-GR", "E-GF1", "DSR", "FAR", "N_docs", "N_pred")
 SPLITS = ("train", "validation", "test", "subset_non_revealing")
 PARAMETERS = {"gamma": 2.0, "theta": 0.75, "rho_sec": 0.5, "lambda_k": 1.0}
@@ -152,8 +154,10 @@ def list_datasets(args):
     if args.json:
         output_json(views)
     else:
-        print("QuasiLeak-Bench | Dataset views\n")
-        print(table(("View", "Documents", "Selection", "Use"), [[v[k] for k in ("view", "documents", "selection", "use")] for v in views]))
+        terminal.heading("Dataset views", "6 VIEWS")
+        headers = ("View", "Documents", "Selection", "Use")
+        rows = [[v[k] for k in ("view", "documents", "selection", "use")] for v in views]
+        terminal.show_table(headers, rows, table(headers, rows))
         print("Splits are by profile. QLB-Full contains Test; do not train on Test documents.")
 
 
@@ -213,8 +217,11 @@ def score_predictions(args):
     if args.json:
         output_json(snapshot)
     else:
-        print("QuasiLeak-Bench | Evaluation\n")
-        print(format_report([snapshot]))
+        terminal.heading("Evaluation", "P-GF1")
+        terminal.result_badge(metrics)
+        rows = metric_rows([snapshot])
+        headers = ("Run", *METRICS)
+        terminal.show_table(headers, [[row[key] for key in headers] for row in rows], format_report([snapshot]))
         print("Scores are percentages; N_docs and N_pred are counts.")
         if args.output:
             print(f"Saved scores and evaluation metadata → {args.output}")
@@ -246,7 +253,7 @@ def check_predictions(args):
                     invalid.append(f"{row['sample_id']}: span cannot be located in the document")
     if invalid:
         raise ValueError(f"{len(invalid)} prediction issue(s); " + "; ".join(invalid[:5]))
-    print(f"PASS | {len(gold):,} documents, {groups:,} predicted groups; format, IDs, coverage, and spans checked.")
+    terminal.success(f"{len(gold):,} documents, {groups:,} predicted groups; format, IDs, coverage, and spans checked.")
     if len(predictions) > len(gold):
         print(f"{len(predictions) - len(gold):,} valid dataset IDs outside the selected split were ignored.")
 
@@ -297,7 +304,12 @@ def write_report(args, snapshots, rows, headers):
         writer.writerows(rows)
         output_text(buffer.getvalue(), args.output)
     else:
-        output_text(table(headers, [[r.get(key) for key in headers] for r in rows]), args.output)
+        cells = [[r.get(key) for key in headers] for r in rows]
+        if args.output:
+            output_text(table(headers, cells), args.output)
+        else:
+            terminal.heading("Comparison" if "Δ P-GF1" in headers else "Report")
+            terminal.show_table(headers, cells, table(headers, cells))
 
 
 def report_scores(args):

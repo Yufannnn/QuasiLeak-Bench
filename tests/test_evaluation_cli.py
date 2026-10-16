@@ -126,3 +126,23 @@ def test_output_cannot_overwrite_inputs(evaluation_files):
         with pytest.raises(SystemExit):
             main(argv)
         assert output.read_bytes() == before
+
+
+def test_decorated_terminal_preserves_json_csv_and_saved_reports(evaluation_files, tmp_path, monkeypatch, capsys):
+    from quasileak import terminal
+    import csv
+    import io
+
+    monkeypatch.setattr(terminal, "enabled", lambda: True)
+    dataset, predictions = evaluation_files
+    output = tmp_path / "score.json"
+    score_file(dataset, predictions, output, "--json")
+    assert json.loads(capsys.readouterr().out)["metrics"]["P-GF1"] == 100
+    assert main(["report", str(output), "--format", "csv"]) == 0
+    exported = capsys.readouterr().out
+    assert "\x1b" not in exported
+    assert list(csv.DictReader(io.StringIO(exported)))[0]["P-GF1"] == "100.0"
+    report = tmp_path / "report.txt"
+    assert main(["report", str(output), "--output", str(report)]) == 0
+    assert "\x1b" not in report.read_text()
+    assert "╭" not in report.read_text()

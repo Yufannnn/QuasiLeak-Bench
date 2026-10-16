@@ -1,4 +1,4 @@
-/* Render the aggregate release snapshot prepared by the Pages workflow. */
+/* Live public counters via Cloudflare; the Pages snapshot is an offline fallback. */
 (() => {
   const panel = document.querySelector('.release-counters');
   const base = new URL('.', document.currentScript.src);
@@ -33,17 +33,43 @@
     if (!received) return;
     const status = document.getElementById('release-counters-status');
     const generated = new Date(stats.generatedAt);
-    status.textContent = Number.isFinite(generated.getTime())
-      ? 'Updated ' + generated.toLocaleDateString('en-US', {month: 'short', day: 'numeric', timeZone: 'UTC'})
-      : 'Live';
-    status.title = Number.isFinite(generated.getTime()) ? generated.toISOString() : '';
-    panel.dataset.releaseStats = 'live';
+    const live = stats.provider === 'cloudflare';
+    status.textContent = (live ? 'Live · ' : 'Snapshot · ') + (Number.isFinite(generated.getTime())
+      ? generated.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'}) : 'available');
+    status.title = (Number.isFinite(generated.getTime()) ? generated.toISOString() + '. ' : '') +
+      (live ? 'Checks every minute; upstream counts cached for two minutes. Hugging Face may report downloads with a delay.' : 'Static fallback; live refresh temporarily unavailable.');
+    panel.dataset.releaseStats = live ? 'live' : 'snapshot';
   };
 
   if (panel) {
-    fetch(new URL('release-stats.json', base), {cache: 'no-store'})
-      .then(response => response.ok ? response.json() : null)
-      .then(update)
-      .catch(() => {});
+    const config = fetch(new URL('analytics-config.json', base), {cache: 'no-store'})
+      .then(response => response.ok ? response.json() : null).catch(() => null);
+    let busy = false;
+    async function refresh() {
+      if (busy) return;
+      busy = true;
+      try {
+        const settings = await config;
+        if (settings?.provider !== 'cloudflare') throw Error('No live endpoint');
+        const result = await fetch(new URL('/release', settings.endpoint), {
+          cache: 'no-store', credentials: 'omit', referrerPolicy: 'no-referrer', signal: AbortSignal.timeout(12000)
+        });
+        if (!result.ok) throw Error('Release counters unavailable');
+        const stats = await result.json();
+        if (stats?.status !== 'ok') throw Error('Invalid counters');
+        update(stats);
+      } catch {
+        // Keep the last successful live values, but do not label them live.
+        if (panel.dataset.releaseStats === 'live') {
+          document.getElementById('release-counters-status').textContent = 'Refresh delayed';
+        } else {
+          const fallback = await fetch(new URL('release-stats.json', base), {cache: 'no-store'});
+          if (fallback.ok) update({...await fallback.json(), provider: 'snapshot'});
+        }
+      } finally { busy = false; }
+    }
+    refresh().catch(() => {});
+    setInterval(() => { if (!document.hidden) refresh().catch(() => {}); }, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh().catch(() => {}); });
   }
 })();

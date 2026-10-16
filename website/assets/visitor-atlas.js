@@ -3,6 +3,7 @@
   const base = new URL('.', document.currentScript.src);
   const atlas = document.getElementById('visitor-atlas');
   let map;
+  let hadLiveData = false;
   const aliases = {'United States of America':'US','United Kingdom':'GB','Russia':'RU','S. Korea':'KR','N. Korea':'KP','Czechia':'CZ','Dem. Rep. Congo':'CD','Congo':'CG','Central African Rep.':'CF','Eq. Guinea':'GQ','S. Sudan':'SS','Dominican Rep.':'DO','Bosnia and Herz.':'BA','Solomon Is.':'SB','Falkland Is.':'FK','eSwatini':'SZ','W. Sahara':'EH','Taiwan':'TW','Palestine':'PS','Kosovo':'XK'};
   async function paintCountries(countries) {
     if (!atlas || !Array.isArray(countries) || !countries.length) return;
@@ -58,25 +59,35 @@
       status.textContent = stats.provider === 'cloudflare' ? 'Live' : (Number.isFinite(generated.getTime()) ? 'Updated ' + generated.toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}) : 'Live');
       status.title = stats.collectedSince ? 'Page views recorded since ' + stats.collectedSince : (Number.isFinite(generated.getTime()) ? generated.toISOString() : '');
       atlas.dataset.analytics = 'live';
+      if (stats.provider === 'cloudflare') hadLiveData = true;
       paintCountries(stats.countryVisits).catch(()=>{});
     }
   };
   window.updateQuasiLeakVisitorAtlas = update;
   window.addEventListener('quasileak:visitor-stats', event => update(event.detail));
-  const config = fetch(new URL('analytics-config.json',base)).then(r=>r.ok?r.json():null);
+  const config = fetch(new URL('analytics-config.json',base),{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
   async function refresh() {
     const settings = await config;
     const endpoint = settings?.provider === 'cloudflare' ? new URL('/stats',settings.endpoint) : new URL('visitor-stats.json',base);
     try {
-      const response = await fetch(endpoint,{cache:'no-store',credentials:'omit',referrerPolicy:'origin'});
+      const response = await fetch(endpoint,{cache:'no-store',credentials:'omit',referrerPolicy:'origin',signal:AbortSignal.timeout(10000)});
       if (!response.ok) throw Error('Atlas unavailable');
       const stats = await response.json();
-      if (stats?.status === 'ok') update(stats);
+      if (stats?.status !== 'ok') throw Error('Invalid Atlas data');
+      update({...stats,provider:settings?.provider === 'cloudflare'?'cloudflare':'snapshot'});
     } catch {
+      if (hadLiveData) {
+        document.getElementById('visitor-atlas-status').textContent = 'Refresh delayed';
+        return;
+      }
       const response = await fetch(new URL('visitor-stats.json',base),{cache:'no-store'});
       if (response.ok) { const stats=await response.json(); if(stats?.status==='ok') update({...stats,provider:'snapshot'}); }
     }
   }
   window.addEventListener('quasileak:visitor-recorded',()=>refresh().catch(()=>{}));
-  if (atlas) refresh().catch(()=>{});
+  if (atlas) {
+    refresh().catch(()=>{});
+    setInterval(()=>{if(!document.hidden) refresh().catch(()=>{});},30000);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden) refresh().catch(()=>{});});
+  }
 })();

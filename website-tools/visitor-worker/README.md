@@ -26,7 +26,7 @@ References: [Workers pricing](https://developers.cloudflare.com/workers/platform
 [D1 pricing](https://developers.cloudflare.com/d1/platform/pricing/).
 
 ```bash
-node --test website-tools/visitor-worker/worker.test.mjs
+node --test website-tools/visitor-worker/*.test.mjs
 npx wrangler d1 execute qlb-visitor-atlas --remote \
   --file website-tools/visitor-worker/schema.sql --config website-tools/visitor-worker/wrangler.toml
 npx wrangler deploy --config website-tools/visitor-worker/wrangler.toml
@@ -37,7 +37,16 @@ an unrelated database. Wrangler uses the owner's local Cloudflare login. No API
 secret is committed or needed by the browser.
 
 `POST /visit` receives only a public page path. `GET /stats` returns aggregate
-counts. The page refreshes the Atlas from this live endpoint and after a recorded
-view. The six-hour Pages workflow also exports a static fallback snapshot using
-`prepare_atlas.py`. Release counters use the same job to refresh GitHub stars and
-forks plus Hugging Face downloads and likes.
+counts. The page refreshes the Atlas every 30 seconds while visible, on return to
+the tab, and after a recorded view. Polling does not record extra visits.
+
+`GET /release` fetches public GitHub stars/forks and Hugging Face downloads/likes.
+Cloudflare caches the result for 120 seconds per edge location to reduce upstream
+API traffic; no tokens are needed. The page checks every minute while visible and
+on return to the tab. The displayed timestamp is the upstream fetch time, not the
+time the browser read the cache. Provider-side reporting delays still apply,
+particularly for Hugging Face downloads. Failures are not cached; the UI labels
+fallback data as a snapshot or the last live result as delayed, never as fresh.
+
+The six-hour Pages workflow exports static fallback snapshots using
+`prepare_atlas.py`; it is no longer the primary source for either live panel.

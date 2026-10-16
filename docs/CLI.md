@@ -30,13 +30,13 @@ From the repository root, after installation:
 bash scripts/demo_cli.sh
 ```
 
-This prints the version, dataset views, and score table without model calls.
+This prints the wordmark, release badges, dataset views, and score table without model calls.
 The script extracts only the demo dataset into `outputs/cli-demo/`. The equivalent
 individual commands are:
 
 ```bash
 python -m zipfile -e data/quasileak_bench_data.zip data/
-quasileak --version
+quasileak banner --demo
 quasileak datasets list
 quasileak score --predictions examples/predictions_1k.jsonl \
   --dataset data/quasileak_bench_data_1k.jsonl \
@@ -174,3 +174,12 @@ python -m build
 
 Builds bundle the canonical evaluator resources byte for byte. The original
 `scorer/score.py` and corpus checksums remain unchanged.
+
+## Terminal appearance
+
+Interactive terminals use a coloured QLB wordmark, release badges, boxed tables,
+and a P-GF1 score card. Run `quasileak banner` to show the wordmark on its own,
+or `bash scripts/demo_cli.sh` for the labelled synthetic offline demonstration.
+The layout adapts to terminal width. Use `quasileak --plain datasets list` to
+disable decoration, or set `NO_COLOR=1` to remove colours. Redirected output,
+JSON, CSV, and saved score/report files remain plain; scores are unchanged.

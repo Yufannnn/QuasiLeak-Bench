@@ -16,6 +16,44 @@ function response(data, status = 200, origin = '*') {
   }});
 }
 
+// Public upstream counts are shared at the edge for two minutes, not per visitor.
+// No GitHub/Hugging Face token or visitor information is sent upstream.
+export async function releaseStats(request, cache = globalThis.caches?.default, fetcher = fetch) {
+  const key = new Request(new URL('/release', request.url));
+  try {
+    const hit = await cache?.match(key);
+    if (hit) return response(await hit.json());
+  } catch { /* A cache outage must not disable the public counters. */ }
+  try {
+    const load = async url => {
+      const result = await fetcher(url, {headers: {'User-Agent': 'QuasiLeak-Bench-public-counters/1.0',
+        Accept: 'application/json'}, signal: AbortSignal.timeout(8000)});
+      if (!result.ok) throw Error(new URL(url).hostname + ': HTTP ' + result.status);
+      return result.json();
+    };
+    const [github, hf] = await Promise.all([
+      load('https://api.github.com/repos/Yufannnn/QuasiLeak-Bench'),
+      load('https://huggingface.co/api/datasets/HenryZYF/QuasiLeak-Bench')
+    ]);
+    const counts = [github.stargazers_count, github.forks_count, hf.downloads, hf.likes];
+    if (!counts.every(value => Number.isSafeInteger(value) && value >= 0)) throw Error('Invalid counters');
+    const data = {status: 'ok', provider: 'cloudflare', generatedAt: new Date().toISOString(),
+      refreshSeconds: 120,
+      github: {stars: counts[0], forks: counts[1], url: 'https://github.com/Yufannnn/QuasiLeak-Bench'},
+      huggingFace: {downloads: counts[2], likes: counts[3], url: 'https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench'},
+      arxiv: {url: 'https://arxiv.org/abs/2610.21333'}};
+    try {
+      await cache?.put(key, new Response(JSON.stringify(data), {headers: {
+        'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=120'
+      }}));
+    } catch { /* Return fresh data even if the edge cache is temporarily unavailable. */ }
+    return response(data);
+  } catch (error) {
+    const reason = /^(api.github.com|huggingface.co): HTTP \d{3}$/.test(error.message) ? error.message : 'Upstream request failed';
+    return response({status: 'unavailable', error: 'Release counters temporarily unavailable', reason}, 503);
+  }
+}
+
 async function readPage(request) {
   if (!request.body) throw Error('Invalid body');
   const reader = request.body.getReader();
@@ -46,6 +84,7 @@ export default {
     const allowed = env.ALLOWED_ORIGIN || 'https://yufannnn.github.io';
     if (request.method === 'OPTIONS') return response(null, origin === allowed ? 204 : 403, allowed);
     if (url.pathname === '/health' && request.method === 'GET') return response({ok: true, service: 'qlb-visitor-atlas'});
+    if (url.pathname === '/release' && request.method === 'GET') return releaseStats(request);
     if (!env.DB) return response({error: 'Analytics unavailable'}, 503);
     try {
       if (url.pathname === '/visit' && request.method === 'POST') {

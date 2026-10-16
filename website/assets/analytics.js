@@ -1,7 +1,7 @@
 /* Count only the public project site; no token, query strings or model inputs. */
 (() => {
   const base = new URL('.', document.currentScript.src);
-  fetch(new URL('analytics-config.json', base)).then(response => response.ok ? response.json() : null).then(config => {
+  fetch(new URL('analytics-config.json', base), {cache: 'no-store'}).then(response => response.ok ? response.json() : null).then(config => {
     if (!config) return;
     if (location.hostname !== config.productionHostname || !location.pathname.startsWith(config.productionPath)) return;
     if (navigator.globalPrivacyControl || navigator.doNotTrack === '1') return;

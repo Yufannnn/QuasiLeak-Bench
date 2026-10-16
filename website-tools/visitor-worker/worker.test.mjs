@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker from './index.mjs';
+import worker, {releaseStats} from './index.mjs';
 
 function database() {
   const rows = new Map();
@@ -49,4 +49,49 @@ test('unknown country still counts a view, but not an additional country', async
   const snapshot = await stats(env);
   assert.equal(snapshot.pageViews, 1);
   assert.equal(snapshot.countries, 0);
+});
+
+test('release counters fetch public APIs once and reuse the two-minute edge cache', async () => {
+  let saved, calls = 0;
+  const cache = {
+    async match() { return saved?.clone(); },
+    async put(key, result) {
+      assert.equal(key.url, 'https://example.workers.dev/release');
+      assert.equal(result.headers.get('Cache-Control'), 'public, max-age=120');
+      saved = result;
+    }
+  };
+  const upstream = async (url, options) => {
+    calls++;
+    assert.equal('Authorization' in options.headers, false);
+    return Response.json(url.includes('github.com') ? {stargazers_count: 3, forks_count: 1} : {downloads: 8, likes: 2});
+  };
+  const request = new Request('https://example.workers.dev/release?ignored=1');
+  const first = await releaseStats(request, cache, upstream);
+  assert.equal(first.headers.get('Access-Control-Allow-Origin'), '*');
+  assert.equal(first.headers.get('Cache-Control'), 'no-store');
+  const stats = await first.json();
+  assert.equal(stats.github.stars, 3);
+  assert.equal(stats.huggingFace.likes, 2);
+  assert.equal(stats.refreshSeconds, 120);
+  assert.deepEqual(await (await releaseStats(request, cache, upstream)).json(), stats);
+  assert.equal(calls, 2);
+});
+
+test('release counters reject upstream errors or malformed counts without caching', async () => {
+  const request = new Request('https://example.workers.dev/release');
+  const cache = {async match() {}, async put() { assert.fail('Do not cache a failed refresh'); }};
+  for (const upstream of [async () => new Response('', {status: 429}), async () => Response.json({likes: -1}),
+                          async () => { throw Error('Network failure'); }]) {
+    const result = await releaseStats(request, cache, upstream);
+    assert.equal(result.status, 503);
+    assert.equal((await result.json()).status, 'unavailable');
+  }
+});
+
+test('a cache failure does not block fresh public release data', async () => {
+  const request = new Request('https://example.workers.dev/release');
+  const cache = {async match() { throw Error(); }, async put() { throw Error(); }};
+  const upstream = async () => Response.json({stargazers_count: 0, forks_count: 0, downloads: 0, likes: 0});
+  assert.equal((await releaseStats(request, cache, upstream)).status, 200);
 });

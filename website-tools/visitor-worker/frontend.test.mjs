@@ -1,0 +1,81 @@
+// DOM stubs exercise refresh/fallback behavior without a browser or fake visits.
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+
+async function harness(script, kind, initiallyOffline = false) {
+  const fields = {};
+  const attribute = kind === 'release' ? 'releaseStat' : 'visitorStat';
+  for (const key of kind === 'release' ? ['stars', 'forks', 'downloads', 'likes'] : ['pageViews', 'visitors', 'countries']) {
+    fields[key] = {dataset: {[attribute]: key}, textContent: '—'};
+  }
+  const panel = {dataset: {}, querySelectorAll: selector => selector.includes('stat]') ? Object.values(fields) : []};
+  const status = {textContent: ''};
+  const events = {}, timers = [], calls = [];
+  const document = {
+    hidden: false, currentScript: {src: 'https://example.test/assets/' + script},
+    querySelector: () => panel,
+    getElementById: id => id === 'visitor-atlas' ? panel : status,
+    addEventListener: (event, callback) => { events[event] = callback; }
+  };
+  const live = kind === 'release' ? {
+    github: {stars: 4, forks: 1}, huggingFace: {downloads: 9, likes: 2}
+  } : {pageViews: 7, visitors: 5, countries: 1, countryVisits: []};
+  let fail = initiallyOffline;
+  const fetch = async url => {
+    url = String(url); calls.push(url);
+    if (url.includes('analytics-config.json')) return Response.json({provider: 'cloudflare', endpoint: 'https://counts.workers.dev'});
+    if (url.includes('-stats.json')) return Response.json({status: 'ok', ...live, generatedAt: '2026-10-16T05:00:00Z'});
+    if (fail) throw Error('Offline');
+    return Response.json({status: 'ok', provider: 'cloudflare', generatedAt: '2026-10-16T05:30:00Z', ...live});
+  };
+  const window = {addEventListener: (event, callback) => { events[event] = callback; }};
+  const source = await readFile(new URL('../../website/assets/' + script, import.meta.url), 'utf8');
+  vm.runInNewContext(source, {document, window, URL, fetch, AbortSignal, Intl,
+    setInterval: (callback, period) => { timers.push({callback, period}); }});
+  const settle = async () => { for (let i = 0; i < 8; i++) await new Promise(resolve => setImmediate(resolve)); };
+  await settle();
+  return {fields, status, panel, document, events, timers, calls, settle, fail: () => { fail = true; }};
+}
+
+for (const [script, kind, period] of [['release-counters.js', 'release', 60000], ['visitor-atlas.js', 'visitor', 30000]]) {
+  test(script + ': load live values, poll only when visible, refresh on tab return', async () => {
+    const h = await harness(script, kind);
+    assert.match(h.status.textContent, /^Live/);
+    assert.equal(h.fields[kind === 'release' ? 'likes' : 'pageViews'].textContent, kind === 'release' ? '2' : '7');
+    assert.equal(h.timers[0].period, period);
+    const start = h.calls.length;
+    h.document.hidden = true;
+    h.timers[0].callback(); await h.settle();
+    assert.equal(h.calls.length, start);
+    h.document.hidden = false;
+    h.events.visibilitychange(); await h.settle();
+    assert.equal(h.calls.length, start + 1);
+    h.timers[0].callback(); await h.settle();
+    assert.equal(h.calls.length, start + 2);
+    assert.equal(h.calls.some(url => url.endsWith('/visit')), false);
+  });
+}
+
+test('a failed release refresh retains the last good values and reports the delay', async () => {
+  const h = await harness('release-counters.js', 'release');
+  h.fail(); h.timers[0].callback(); await h.settle();
+  assert.equal(h.fields.likes.textContent, '2');
+  assert.equal(h.status.textContent, 'Refresh delayed');
+});
+
+test('a failed Atlas refresh retains the last good values and reports the delay', async () => {
+  const h = await harness('visitor-atlas.js', 'visitor');
+  h.fail(); h.timers[0].callback(); await h.settle();
+  assert.equal(h.fields.pageViews.textContent, '7');
+  assert.equal(h.status.textContent, 'Refresh delayed');
+});
+
+for (const [script, kind] of [['release-counters.js', 'release'], ['visitor-atlas.js', 'visitor']]) {
+  test(script + ': initial outage uses an explicitly labelled static snapshot', async () => {
+    const h = await harness(script, kind, true);
+    assert.match(h.status.textContent, /^(Snapshot|Updated)/);
+    assert.equal(h.fields[kind === 'release' ? 'likes' : 'pageViews'].textContent, kind === 'release' ? '2' : '7');
+  });
+}

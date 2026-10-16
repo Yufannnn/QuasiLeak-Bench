@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Construction and evaluation code for QuasiLeak-Bench"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-dependencies = ["PyYAML>=6.0", "jsonschema>=4"]
+dependencies = ["PyYAML>=6.0", "jsonschema>=4", "rich>=13.7"]
 
 [project.optional-dependencies]
 assign = ["numpy>=1.24", "scipy>=1.11"]

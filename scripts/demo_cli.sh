@@ -21,7 +21,7 @@ with ZipFile("data/quasileak_bench_data.zip") as archive:
     archive.extract("quasileak_bench_data_1k.jsonl", "outputs/cli-demo")
 PY
 fi
-"$demo_cli" --version
+"$demo_cli" banner --demo
 echo
 "$demo_cli" datasets list
 echo
