@@ -95,3 +95,14 @@ test('a cache failure does not block fresh public release data', async () => {
   const upstream = async () => Response.json({stargazers_count: 0, forks_count: 0, downloads: 0, likes: 0});
   assert.equal((await releaseStats(request, cache, upstream)).status, 200);
 });
+
+test('a rate-limited GitHub API does not freeze Hugging Face counters', async () => {
+  const request = new Request('https://example.workers.dev/release');
+  const upstream = async url => url.includes('github.com') ? new Response('', {status: 403}) : Response.json({downloads: 3, likes: 1});
+  const result = await releaseStats(request, null, upstream);
+  assert.equal(result.status, 200);
+  const body = await result.json();
+  assert.equal(body.status, 'partial');
+  assert.equal(body.github, null);
+  assert.equal(body.huggingFace.likes, 1);
+});

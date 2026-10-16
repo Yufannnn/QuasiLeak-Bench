@@ -45,8 +45,13 @@ Cloudflare caches the result for 120 seconds per edge location to reduce upstrea
 API traffic; no tokens are needed. The page checks every minute while visible and
 on return to the tab. The displayed timestamp is the upstream fetch time, not the
 time the browser read the cache. Provider-side reporting delays still apply,
-particularly for Hugging Face downloads. Failures are not cached; the UI labels
-fallback data as a snapshot or the last live result as delayed, never as fresh.
+particularly for Hugging Face downloads. If one provider fails, the Worker returns
+and caches the available provider with `status: partial`. The browser fills missing
+counts directly from the public GitHub/Hugging Face API (no credentials or referrer),
+with its own two-minute in-memory cache. This avoids GitHub rate limits on shared
+Cloudflare egress. Complete failures are not cached. The UI labels incomplete
+results as partial, static fallback data as a snapshot, and failed refreshes as
+delayed, never as fresh. No page views or visitor data go to these release APIs.
 
 The six-hour Pages workflow exports static fallback snapshots using
 `prepare_atlas.py`; it is no longer the primary source for either live panel.

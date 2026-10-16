@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
 
-async function harness(script, kind, initiallyOffline = false) {
+async function harness(script, kind, initiallyOffline = false, sharedGitHubLimit = false) {
   const fields = {};
   const attribute = kind === 'release' ? 'releaseStat' : 'visitorStat';
   for (const key of kind === 'release' ? ['stars', 'forks', 'downloads', 'likes'] : ['pageViews', 'visitors', 'countries']) {
@@ -28,6 +28,11 @@ async function harness(script, kind, initiallyOffline = false) {
     if (url.includes('analytics-config.json')) return Response.json({provider: 'cloudflare', endpoint: 'https://counts.workers.dev'});
     if (url.includes('-stats.json')) return Response.json({status: 'ok', ...live, generatedAt: '2026-10-16T05:00:00Z'});
     if (fail) throw Error('Offline');
+    if (url.includes('api.github.com')) return Response.json({stargazers_count: 6, forks_count: 2});
+    if (url.includes('huggingface.co/api/')) return Response.json({downloads: 9, likes: 2});
+    if (sharedGitHubLimit === 'offline-worker') return new Response('', {status: 503});
+    if (sharedGitHubLimit && kind === 'release') return Response.json({status: 'partial', provider: 'cloudflare',
+      generatedAt: '2026-10-16T05:30:00Z', github: null, huggingFace: live.huggingFace});
     return Response.json({status: 'ok', provider: 'cloudflare', generatedAt: '2026-10-16T05:30:00Z', ...live});
   };
   const window = {addEventListener: (event, callback) => { events[event] = callback; }};
@@ -38,6 +43,22 @@ async function harness(script, kind, initiallyOffline = false) {
   await settle();
   return {fields, status, panel, document, events, timers, calls, settle, fail: () => { fail = true; }};
 }
+
+test('shared GitHub rate limits use the direct public API, cached across refreshes', async () => {
+  const h = await harness('release-counters.js', 'release', false, true);
+  assert.equal(h.fields.stars.textContent, '6');
+  assert.equal(h.fields.likes.textContent, '2');
+  assert.match(h.status.textContent, /^Live/);
+  h.timers[0].callback(); await h.settle();
+  assert.equal(h.calls.filter(url => url.includes('api.github.com')).length, 1);
+});
+
+test('both direct public APIs can recover a failed Worker release endpoint', async () => {
+  const h = await harness('release-counters.js', 'release', false, 'offline-worker');
+  assert.equal(h.fields.stars.textContent, '6');
+  assert.equal(h.fields.likes.textContent, '2');
+  assert.match(h.status.textContent, /^Live/);
+});
 
 for (const [script, kind, period] of [['release-counters.js', 'release', 60000], ['visitor-atlas.js', 'visitor', 30000]]) {
   test(script + ': load live values, poll only when visible, refresh on tab return', async () => {

@@ -31,16 +31,23 @@ export async function releaseStats(request, cache = globalThis.caches?.default, 
       if (!result.ok) throw Error(new URL(url).hostname + ': HTTP ' + result.status);
       return result.json();
     };
-    const [github, hf] = await Promise.all([
-      load('https://api.github.com/repos/Yufannnn/QuasiLeak-Bench'),
-      load('https://huggingface.co/api/datasets/HenryZYF/QuasiLeak-Bench')
+    const integer = value => Number.isSafeInteger(value) && value >= 0;
+    const [github, hf] = await Promise.allSettled([
+      load('https://api.github.com/repos/Yufannnn/QuasiLeak-Bench').then(value => {
+        if (!integer(value.stargazers_count) || !integer(value.forks_count)) throw Error('Invalid GitHub counts');
+        return {stars: value.stargazers_count, forks: value.forks_count, url: 'https://github.com/Yufannnn/QuasiLeak-Bench'};
+      }),
+      load('https://huggingface.co/api/datasets/HenryZYF/QuasiLeak-Bench').then(value => {
+        if (!integer(value.downloads) || !integer(value.likes)) throw Error('Invalid Hugging Face counts');
+        return {downloads: value.downloads, likes: value.likes, url: 'https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench'};
+      })
     ]);
-    const counts = [github.stargazers_count, github.forks_count, hf.downloads, hf.likes];
-    if (!counts.every(value => Number.isSafeInteger(value) && value >= 0)) throw Error('Invalid counters');
-    const data = {status: 'ok', provider: 'cloudflare', generatedAt: new Date().toISOString(),
+    if (github.status === 'rejected' && hf.status === 'rejected') throw github.reason;
+    const data = {status: github.status === 'fulfilled' && hf.status === 'fulfilled' ? 'ok' : 'partial',
+      provider: 'cloudflare', generatedAt: new Date().toISOString(),
       refreshSeconds: 120,
-      github: {stars: counts[0], forks: counts[1], url: 'https://github.com/Yufannnn/QuasiLeak-Bench'},
-      huggingFace: {downloads: counts[2], likes: counts[3], url: 'https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench'},
+      github: github.status === 'fulfilled' ? github.value : null,
+      huggingFace: hf.status === 'fulfilled' ? hf.value : null,
       arxiv: {url: 'https://arxiv.org/abs/2610.21333'}};
     try {
       await cache?.put(key, new Response(JSON.stringify(data), {headers: {
