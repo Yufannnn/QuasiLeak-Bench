@@ -7,5 +7,7 @@
   "visitors": 0,
   "metric": "pageviews",
   "countries": 0,
-  "countryVisits": []
+  "countryVisits": [],
+  "daily": [],
+  "generated_at": "2026-10-16T05:24:20.197Z"
 }

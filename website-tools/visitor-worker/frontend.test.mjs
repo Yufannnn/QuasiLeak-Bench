@@ -11,7 +11,7 @@ async function harness(script, kind, initiallyOffline = false, sharedGitHubLimit
     fields[key] = {dataset: {[attribute]: key}, textContent: '—'};
   }
   const panel = {dataset: {}, querySelectorAll: selector => selector.includes('stat]') ? Object.values(fields) : []};
-  const status = {textContent: ''};
+  const status = {textContent: '', dataset: {}};
   const events = {}, timers = [], calls = [];
   const document = {
     hidden: false, currentScript: {src: 'https://example.test/assets/' + script},

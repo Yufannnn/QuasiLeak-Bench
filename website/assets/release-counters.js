@@ -34,8 +34,8 @@
     const status = document.getElementById('release-counters-status');
     const generated = new Date(stats.generatedAt);
     const live = stats.provider === 'cloudflare';
-    status.textContent = (live ? (stats.status === 'partial' ? 'Partial · ' : 'Live · ') : 'Snapshot · ') + (Number.isFinite(generated.getTime())
-      ? generated.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'}) : 'available');
+    status.textContent = live ? (stats.status === 'partial' ? 'Partial' : 'Live') : 'Snapshot';
+    status.dataset.live = String(live && stats.status === 'ok');
     status.title = (Number.isFinite(generated.getTime()) ? generated.toISOString() + '. ' : '') +
       (live ? (stats.status === 'partial' ? 'Some sources unavailable; missing values retain their previous snapshot. ' : '') +
         'Checks every minute; upstream counts cached for two minutes. Hugging Face may report downloads with a delay.' : 'Static fallback; live refresh temporarily unavailable.');
@@ -99,6 +99,7 @@
         // Keep the last successful live values, but do not label them live.
         if (['live', 'partial'].includes(panel.dataset.releaseStats)) {
           document.getElementById('release-counters-status').textContent = 'Refresh delayed';
+          document.getElementById('release-counters-status').dataset.live = 'false';
         } else {
           const fallback = await fetch(new URL('release-stats.json', base), {cache: 'no-store'});
           if (fallback.ok) update({...await fallback.json(), provider: 'snapshot'});

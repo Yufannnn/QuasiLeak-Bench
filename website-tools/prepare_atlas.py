@@ -1,6 +1,6 @@
 """Prepare aggregate-only Visitor Atlas and public release-counter snapshots."""
 import argparse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 import os
 from pathlib import Path
@@ -112,6 +112,45 @@ def collect(site, token, start, prefix):
     return aggregate(total, home, locations)
 
 
+def activity_snapshot(prefix, now=None):
+    """Read only daily totals; never copy provider paths or visitor details.
+
+    API v0 /stats/total returns stats[{day, daily, hourly}]; daily buckets are
+    included without the deprecated daily query flag. See goatcounter.com/api.json.
+    """
+    now = now or datetime.now(timezone.utc)
+    result = {"daily": [], "generated_at": now.isoformat()}
+    site = os.environ.get("QLB_GOATCOUNTER_SITE", "").strip().lower()
+    token = os.environ.get("GOATCOUNTER_API_TOKEN", "")
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", site) or not token:
+        return result
+    first = (now - timedelta(days=83)).date()
+    paths = [prefix, prefix+"index.html", prefix+"explore.html", prefix+"evaluation.html",
+             prefix+"submit.html", prefix+"run.html", prefix+"compare.html"]
+    query = {"start": first.isoformat()+"T00:00:00Z",
+             "end": now.replace(minute=0, second=0, microsecond=0).isoformat(),
+             "path_by_name": "true", "include_paths": ",".join(paths)}
+    request = Request("https://"+site+".goatcounter.com/api/v0/stats/total?"+urlencode(query),
+                      headers={"Authorization": "Bearer "+token, "Content-Type": "application/json"})
+    try:
+        with urlopen(request, timeout=30) as response:
+            payload = json.load(response)
+        if "error" in payload or "errors" in payload or not isinstance(payload.get("stats"), list):
+            raise ValueError("Invalid daily totals")
+        totals = {}
+        for row in payload["stats"]:
+            day = datetime.strptime(row["day"], "%Y-%m-%d").date()
+            if day.isoformat() != row["day"] or day in totals:
+                raise ValueError("Invalid or duplicate day")
+            totals[day] = count(row["daily"])
+        result["daily"] = [{"day": (first+timedelta(days=index)).isoformat(),
+                            "views": totals.get(first+timedelta(days=index), 0)} for index in range(84)]
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError, TypeError):
+        # A missing/failed account is the quiet collecting state, never a fake series.
+        pass
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, required=True)
@@ -120,6 +159,7 @@ def main():
     refresh_release_counters(assets)
     config_path = assets / "analytics-config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    activity = activity_snapshot(config["productionPath"])
     if config.get("provider") == "cloudflare":
         endpoint = urlsplit(config["endpoint"])
         if endpoint.scheme != "https" or not endpoint.hostname.endswith(".workers.dev"):
@@ -127,6 +167,7 @@ def main():
         snapshot = public_json(config["endpoint"].rstrip("/") + "/stats")
         if snapshot.get("status") != "ok" or snapshot.get("provider") != "cloudflare":
             raise ValueError("Invalid Cloudflare aggregate snapshot")
+        snapshot.update(activity)
         (assets / "visitor-stats.json").write_text(json.dumps(snapshot, indent=2)+"\n", encoding="utf-8")
         print("Cloudflare Atlas aggregate snapshot prepared.")
         return
@@ -138,10 +179,15 @@ def main():
     token = os.environ.get("GOATCOUNTER_API_TOKEN", "")
     if not site or not token:
         print("Atlas account or API token is not configured; no fabricated counts will be published.")
+        path = assets / "visitor-stats.json"
+        snapshot = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"status": "unconfigured"}
+        snapshot.update(activity)
+        path.write_text(json.dumps(snapshot, indent=2)+"\n", encoding="utf-8")
         return
     start = os.environ.get("QLB_ANALYTICS_START") or "2026-10-15"
     datetime.strptime(start, "%Y-%m-%d")
     snapshot = collect(site, token, start, config["productionPath"])
+    snapshot.update(activity)
     (assets / "visitor-stats.json").write_text(json.dumps(snapshot, indent=2)+"\n", encoding="utf-8")
     print("Atlas aggregate snapshot prepared.")
 
