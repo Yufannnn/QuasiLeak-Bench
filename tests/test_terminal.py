@@ -56,6 +56,15 @@ def test_plain_option_disables_decoration(monkeypatch, capsys):
     assert "\x1b" not in output
 
 
+@pytest.mark.parametrize("width", [35, 52, 72, 104, 120])
+def test_full_name_wordmark_fits_and_has_a_colour_gradient(width):
+    mark = terminal.wordmark(width)
+    assert "█" in mark.plain
+    assert all(len(line) <= width for line in mark.plain.splitlines())
+    assert len({str(span.style) for span in mark.spans}) >= 10
+    assert len(mark.plain.splitlines()) == (11 if width < 60 else 5)
+
+
 def test_no_color_keeps_layout_without_ansi_color(monkeypatch):
     monkeypatch.setenv("NO_COLOR", "1")
     output = io.StringIO()

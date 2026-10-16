@@ -177,8 +177,9 @@ Builds bundle the canonical evaluator resources byte for byte. The original
 
 ## Terminal appearance
 
-Interactive terminals use a compact benchmark header, restrained teal accents,
-boxed tables, and a P-GF1 score card. Run `quasileak banner` to show the header on
+Interactive terminals use a large, full-name QuasiLeak-Bench block wordmark with a
+cyan-to-blue-to-purple gradient, boxed tables, and a P-GF1 score card. The wordmark
+adapts to the terminal width. Run `quasileak banner` to show the header on
 its own, or `bash scripts/demo_cli.sh` for the synthetic example workflow.
 The layout adapts to terminal width. Use `quasileak --plain datasets list` to
 disable decoration, or set `NO_COLOR=1` to remove colours. Redirected output,

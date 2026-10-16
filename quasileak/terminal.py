@@ -12,6 +12,46 @@ from rich.text import Text
 
 _plain = False
 
+# Compact block letters keep the full name readable even in an 80-column shell.
+_LETTERING = {
+    "Q": "111/101/101/111/001", "U": "101/101/101/101/111",
+    "A": "111/101/111/101/101", "S": "111/100/111/001/111",
+    "I": "111/010/010/010/111", "L": "100/100/100/100/111",
+    "E": "111/100/110/100/111", "K": "101/101/110/101/101",
+    "-": "000/000/111/000/000", "B": "110/101/110/101/110",
+    "N": "1001/1101/1011/1001/1001", "C": "111/100/100/100/111",
+    "H": "101/101/111/101/101",
+}
+
+
+def wordmark(width):
+    name = "QUASILEAK-BENCH"
+    if width < 35:
+        return Text("QuasiLeak-Bench", style="bold cyan")
+    glyphs = [_LETTERING[letter].split("/") for letter in name]
+    full_width = sum(len(glyph[0]) + 1 for glyph in glyphs) - 1
+    scale = 2 if width >= full_width * 2 else 1
+    groups = [range(len(name))] if width >= full_width else [range(9), range(9, len(name))]
+    result = Text(no_wrap=True)
+    stops = [(64, 218, 224), (119, 159, 255), (211, 126, 247)]
+    for group_index, group in enumerate(groups):
+        if group_index:
+            result.append("\n\n")
+        for row in range(5):
+            if row:
+                result.append("\n")
+            for position, index in enumerate(group):
+                if position:
+                    result.append(" " * scale)
+                fraction = index / (len(name) - 1) * 2
+                left = min(int(fraction), 1)
+                mix = fraction - left
+                rgb = [round(a + (b - a) * mix) for a, b in zip(stops[left], stops[left + 1])]
+                colour = "#" + "".join(f"{value:02x}" for value in rgb)
+                pixels = "".join(("█" if bit == "1" else " ") * scale for bit in glyphs[index][row])
+                result.append(pixels, style="bold " + colour)
+    return result
+
 
 def configure(*, plain=False):
     global _plain
@@ -47,12 +87,14 @@ def banner(*, demo=False):
     for command in ("check", "score", "report", "compare"):
         commands.append("  /  ", style="bright_black")
         commands.append(command, style="cyan")
-    content = [title, Text("Individually weak, but revealing together.", style="italic white"), Text(""),
+    panel_width = min(out.width, 128)
+    content = [wordmark(panel_width - 8), Text(""), title,
+               Text("Individually weak, but revealing together.", style="italic white"), Text(""),
                Text("Policy-conditioned quasi-evidence group recovery", style="white"), Text(""), facts,
                Text(""), commands]
     if demo:
         content.extend([Text(""), Text("Example workflow · bundled predictions", style="bright_black")])
-    out.print(Panel(Group(*content), border_style="cyan", padding=(1, 3), width=min(out.width, 104)))
+    out.print(Panel(Group(*content), border_style="cyan", padding=(1, 3), width=panel_width))
     out.print()
 
 
