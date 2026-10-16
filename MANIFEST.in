@@ -1,0 +1,4 @@
+include scorer/score.py scorer/prediction_schema.json
+include prompts/render.py prompts/zero_shot_messages.json prompts/few_shot_messages.json
+include data/splits/split_manifest.json
+include data/LICENSE

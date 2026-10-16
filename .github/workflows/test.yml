@@ -10,3 +10,16 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install -e ".[dev]"
       - run: python -m pytest -q
+      - name: Build installable CLI
+        run: |
+          python -m pip install build
+          python -m build --wheel
+      - name: Check wheel outside the checkout
+        run: |
+          qlb_cli_env="${RUNNER_TEMP}/qlb-cli"
+          python -m venv "$qlb_cli_env"
+          "$qlb_cli_env/bin/python" -m pip install dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$qlb_cli_env/bin/quasileak" --version
+          "$qlb_cli_env/bin/quasileak" diagnose
+          "$qlb_cli_env/bin/qlb" datasets list

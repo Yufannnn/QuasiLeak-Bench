@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quasileak-bench"
-version = "0.0.0"
+version = "0.1.0"
 description = "Construction and evaluation code for QuasiLeak-Bench"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-dependencies = ["PyYAML>=6.0"]
+dependencies = ["PyYAML>=6.0", "jsonschema>=4"]
 
 [project.optional-dependencies]
 assign = ["numpy>=1.24", "scipy>=1.11"]
@@ -17,6 +17,12 @@ dev = ["pytest>=8", "jsonschema>=4", "numpy>=1.24", "scipy>=1.11"]
 
 [project.scripts]
 quasileak = "quasileak.cli:main"
+qlb = "quasileak.cli:main"
+
+[project.urls]
+Homepage = "https://yufannnn.github.io/QuasiLeak-Bench/"
+Repository = "https://github.com/Yufannnn/QuasiLeak-Bench"
+Paper = "https://arxiv.org/abs/2610.21333"
 
 [tool.setuptools.packages.find]
 include = ["quasileak*"]

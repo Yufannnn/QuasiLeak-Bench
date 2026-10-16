@@ -2,7 +2,12 @@
 
 # QuasiLeak-Bench
 
-[Paper](https://arxiv.org/abs/2610.21333) · [Dataset](https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench) · [Leaderboard](https://yufannnn.github.io/QuasiLeak-Bench/)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.21333-B31B1B)](https://arxiv.org/abs/2610.21333)
+[![Dataset](https://img.shields.io/badge/Hugging_Face-Dataset-FFD21E?logo=huggingface)](https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-View_results-4F7689)](https://yufannnn.github.io/QuasiLeak-Bench/)
+[![Tests](https://img.shields.io/github/actions/workflow/status/Yufannnn/QuasiLeak-Bench/test.yml?branch=main&label=tests)](https://github.com/Yufannnn/QuasiLeak-Bench/actions/workflows/test.yml)
+[![Code license: MIT](https://img.shields.io/badge/Code-MIT-blue)](LICENSE)
+[![Data license: CC BY-NC-SA 4.0](https://img.shields.io/badge/Data-CC_BY--NC--SA_4.0-green)](data/LICENSE)
 
 QuasiLeak-Bench is a benchmark for policy-conditioned quasi-evidence group recovery. Messages
 often contain cues that are weak alone but together reveal a private attribute of the sender,
@@ -23,14 +28,41 @@ Policy-Conditioned Quasi-Evidence Group Recovery*.
 ## Quickstart
 
 ```bash
-pip install -e ".[dev]"
+python -m pip install .
 python -m zipfile -e data/quasileak_bench_data.zip data/
-python scorer/score.py --predictions examples/predictions_1k.jsonl --dataset data/quasileak_bench_data_1k.jsonl
-pytest
+quasileak score --predictions examples/predictions_1k.jsonl \
+  --dataset data/quasileak_bench_data_1k.jsonl \
+  --name "Example detector (synthetic)" --output outputs/example-score.json
 ```
 
 `examples/predictions_1k.jsonl` is a synthetic detector built from the 1K gold with misses,
 partial groups, and binding and policy errors. It scores P-GF1 60.0 (N_pred 665).
+
+## Command line
+
+`quasileak` (also available as `qlb`) brings evaluation and construction into one CLI.
+It uses the released scorer unchanged. Scoring, prompt rendering, reports, and input
+checks run locally without API credentials. Only `run` and the model-based construction
+commands call a model endpoint.
+
+```bash
+quasileak --help
+quasileak datasets list
+quasileak check --predictions examples/predictions_1k.jsonl --dataset data/quasileak_bench_data_1k.jsonl
+quasileak report outputs/example-score.json
+quasileak render --dataset data/quasileak_bench_data_full.jsonl --split test --shots 3 --output requests.jsonl
+quasileak compare outputs/baseline-score.json outputs/model-score.json
+quasileak diagnose
+```
+
+Comparisons require matching dataset hashes, evaluated document IDs, policy arms,
+scorer versions, and metric parameters. Reports also accept the original
+`python scorer/score.py` JSON output. Existing scripts and construction commands
+continue to work.
+
+See [the CLI guide](docs/CLI.md) for installation, resumable model runs, paired policy
+evaluation, CSV export, and a short terminal demo suitable for a screenshot.
+Run that offline demo from the repository root with `bash scripts/demo_cli.sh`.
 
 ## Benchmark views
 
