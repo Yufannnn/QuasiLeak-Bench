@@ -14,7 +14,7 @@ def main(argv=None) -> int:
     parser.add_argument("--plain", action="store_true", help="Disable terminal decoration (JSON/CSV are always plain)")
     commands = parser.add_subparsers(dest="command", required=True)
     banner = commands.add_parser("banner", help="Show the terminal wordmark and release badges")
-    banner.add_argument("--demo", action="store_true", help="Label a synthetic offline demonstration")
+    banner.add_argument("--demo", action="store_true", help="Add a short example-workflow caption")
     banner.set_defaults(handler=lambda args: terminal.banner(demo=args.demo))
     add_evaluation_commands(commands)
     # Preserve the existing construction commands and their interfaces.

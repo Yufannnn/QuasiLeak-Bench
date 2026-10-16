@@ -1,0 +1,210 @@
+<svg class="rich-terminal" viewBox="0 0 1385 1050.4" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    .qlb-cli-preview-matrix {
+        font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .qlb-cli-preview-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .qlb-cli-preview-r1 { fill: #72c8cf }
+.qlb-cli-preview-r2 { fill: #dce5ef }
+.qlb-cli-preview-r3 { fill: #72c8cf;font-weight: bold }
+.qlb-cli-preview-r4 { fill: #8b9db1 }
+.qlb-cli-preview-r5 { fill: #dce5ef;font-style: italic; }
+.qlb-cli-preview-r6 { fill: #dce5ef;font-weight: bold }
+.qlb-cli-preview-r7 { fill: #8b9db1;font-weight: bold }
+.qlb-cli-preview-r8 { fill: #8e959f }
+.qlb-cli-preview-r9 { fill: #85c7a1;font-weight: bold }
+.qlb-cli-preview-r10 { fill: #4e848b;font-weight: bold }
+    </style>
+
+    <defs>
+    <clipPath id="qlb-cli-preview-clip-terminal">
+      <rect x="0" y="0" width="1365.3999999999999" height="999.4" />
+    </clipPath>
+    <clipPath id="qlb-cli-preview-line-0">
+    <rect x="0" y="1.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-1">
+    <rect x="0" y="25.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-2">
+    <rect x="0" y="50.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-3">
+    <rect x="0" y="74.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-4">
+    <rect x="0" y="99.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-5">
+    <rect x="0" y="123.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-6">
+    <rect x="0" y="147.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-7">
+    <rect x="0" y="172.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-8">
+    <rect x="0" y="196.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-9">
+    <rect x="0" y="221.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-10">
+    <rect x="0" y="245.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-11">
+    <rect x="0" y="269.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-12">
+    <rect x="0" y="294.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-13">
+    <rect x="0" y="318.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-14">
+    <rect x="0" y="343.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-15">
+    <rect x="0" y="367.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-16">
+    <rect x="0" y="391.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-17">
+    <rect x="0" y="416.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-18">
+    <rect x="0" y="440.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-19">
+    <rect x="0" y="465.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-20">
+    <rect x="0" y="489.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-21">
+    <rect x="0" y="513.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-22">
+    <rect x="0" y="538.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-23">
+    <rect x="0" y="562.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-24">
+    <rect x="0" y="587.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-25">
+    <rect x="0" y="611.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-26">
+    <rect x="0" y="635.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-27">
+    <rect x="0" y="660.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-28">
+    <rect x="0" y="684.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-29">
+    <rect x="0" y="709.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-30">
+    <rect x="0" y="733.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-31">
+    <rect x="0" y="757.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-32">
+    <rect x="0" y="782.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-33">
+    <rect x="0" y="806.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-34">
+    <rect x="0" y="831.1" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-35">
+    <rect x="0" y="855.5" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-36">
+    <rect x="0" y="879.9" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-37">
+    <rect x="0" y="904.3" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-38">
+    <rect x="0" y="928.7" width="1366.4" height="24.65"/>
+            </clipPath>
+<clipPath id="qlb-cli-preview-line-39">
+    <rect x="0" y="953.1" width="1366.4" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#191f27" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1383" height="1048.4" rx="8"/><text class="qlb-cli-preview-title" fill="#dce5ef" text-anchor="middle" x="691" y="27">QuasiLeak-Bench&#160;·&#160;Command&#160;line</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#qlb-cli-preview-clip-terminal)">
+    
+    <g class="qlb-cli-preview-matrix">
+    <text class="qlb-cli-preview-r1" x="0" y="20" textLength="1268.8" clip-path="url(#qlb-cli-preview-line-0)">╭──────────────────────────────────────────────────────────────────────────────────────────────────────╮</text><text class="qlb-cli-preview-r2" x="1366.4" y="20" textLength="12.2" clip-path="url(#qlb-cli-preview-line-0)">
+</text><text class="qlb-cli-preview-r1" x="0" y="44.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-1)">│</text><text class="qlb-cli-preview-r1" x="1256.6" y="44.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-1)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="44.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-1)">
+</text><text class="qlb-cli-preview-r1" x="0" y="68.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-2)">│</text><text class="qlb-cli-preview-r3" x="48.8" y="68.8" textLength="1098" clip-path="url(#qlb-cli-preview-line-2)">QuasiLeak-Bench&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1146.8" y="68.8" textLength="73.2" clip-path="url(#qlb-cli-preview-line-2)">v0.1.0</text><text class="qlb-cli-preview-r1" x="1256.6" y="68.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-2)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="68.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-2)">
+</text><text class="qlb-cli-preview-r1" x="0" y="93.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-3)">│</text><text class="qlb-cli-preview-r5" x="48.8" y="93.2" textLength="512.4" clip-path="url(#qlb-cli-preview-line-3)">Individually&#160;weak,&#160;but&#160;revealing&#160;together.</text><text class="qlb-cli-preview-r1" x="1256.6" y="93.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-3)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="93.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-3)">
+</text><text class="qlb-cli-preview-r1" x="0" y="117.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-4)">│</text><text class="qlb-cli-preview-r1" x="1256.6" y="117.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-4)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="117.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-4)">
+</text><text class="qlb-cli-preview-r1" x="0" y="142" textLength="12.2" clip-path="url(#qlb-cli-preview-line-5)">│</text><text class="qlb-cli-preview-r2" x="48.8" y="142" textLength="585.6" clip-path="url(#qlb-cli-preview-line-5)">Policy-conditioned&#160;quasi-evidence&#160;group&#160;recovery</text><text class="qlb-cli-preview-r1" x="1256.6" y="142" textLength="12.2" clip-path="url(#qlb-cli-preview-line-5)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="142" textLength="12.2" clip-path="url(#qlb-cli-preview-line-5)">
+</text><text class="qlb-cli-preview-r1" x="0" y="166.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-6)">│</text><text class="qlb-cli-preview-r1" x="1256.6" y="166.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-6)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="166.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-6)">
+</text><text class="qlb-cli-preview-r1" x="0" y="190.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-7)">│</text><text class="qlb-cli-preview-r3" x="48.8" y="190.8" textLength="61" clip-path="url(#qlb-cli-preview-line-7)">5,000</text><text class="qlb-cli-preview-r6" x="109.8" y="190.8" textLength="170.8" clip-path="url(#qlb-cli-preview-line-7)">&#160;documents&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r3" x="280.6" y="190.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-7)">4</text><text class="qlb-cli-preview-r6" x="292.8" y="190.8" textLength="244" clip-path="url(#qlb-cli-preview-line-7)">&#160;benchmark&#160;views&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r3" x="536.8" y="190.8" textLength="61" clip-path="url(#qlb-cli-preview-line-7)">P-GF1</text><text class="qlb-cli-preview-r6" x="597.8" y="190.8" textLength="134.2" clip-path="url(#qlb-cli-preview-line-7)">&#160;evaluation</text><text class="qlb-cli-preview-r1" x="1256.6" y="190.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-7)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="190.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-7)">
+</text><text class="qlb-cli-preview-r1" x="0" y="215.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-8)">│</text><text class="qlb-cli-preview-r1" x="1256.6" y="215.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-8)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="215.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-8)">
+</text><text class="qlb-cli-preview-r1" x="0" y="239.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-9)">│</text><text class="qlb-cli-preview-r1" x="48.8" y="239.6" textLength="97.6" clip-path="url(#qlb-cli-preview-line-9)">datasets</text><text class="qlb-cli-preview-r4" x="146.4" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r1" x="207.4" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">check</text><text class="qlb-cli-preview-r4" x="268.4" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r1" x="329.4" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">score</text><text class="qlb-cli-preview-r4" x="390.4" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r1" x="451.4" y="239.6" textLength="73.2" clip-path="url(#qlb-cli-preview-line-9)">report</text><text class="qlb-cli-preview-r4" x="524.6" y="239.6" textLength="61" clip-path="url(#qlb-cli-preview-line-9)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r1" x="585.6" y="239.6" textLength="85.4" clip-path="url(#qlb-cli-preview-line-9)">compare</text><text class="qlb-cli-preview-r1" x="1256.6" y="239.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-9)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="239.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-9)">
+</text><text class="qlb-cli-preview-r1" x="0" y="264" textLength="12.2" clip-path="url(#qlb-cli-preview-line-10)">│</text><text class="qlb-cli-preview-r1" x="1256.6" y="264" textLength="12.2" clip-path="url(#qlb-cli-preview-line-10)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="264" textLength="12.2" clip-path="url(#qlb-cli-preview-line-10)">
+</text><text class="qlb-cli-preview-r1" x="0" y="288.4" textLength="1268.8" clip-path="url(#qlb-cli-preview-line-11)">╰──────────────────────────────────────────────────────────────────────────────────────────────────────╯</text><text class="qlb-cli-preview-r2" x="1366.4" y="288.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-11)">
+</text><text class="qlb-cli-preview-r2" x="1366.4" y="312.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-12)">
+</text><text class="qlb-cli-preview-r2" x="1366.4" y="337.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-13)">
+</text><text class="qlb-cli-preview-r3" x="0" y="361.6" textLength="158.6" clip-path="url(#qlb-cli-preview-line-14)">Dataset&#160;views</text><text class="qlb-cli-preview-r7" x="158.6" y="361.6" textLength="61" clip-path="url(#qlb-cli-preview-line-14)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r6" x="219.6" y="361.6" textLength="85.4" clip-path="url(#qlb-cli-preview-line-14)">6&#160;views</text><text class="qlb-cli-preview-r2" x="1366.4" y="361.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-14)">
+</text><text class="qlb-cli-preview-r4" x="0" y="386" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-15)">╭──────────────┬─────────────┬──────────────────────────────────┬──────────────────────────────────────────────╮</text><text class="qlb-cli-preview-r2" x="1366.4" y="386" textLength="12.2" clip-path="url(#qlb-cli-preview-line-15)">
+</text><text class="qlb-cli-preview-r4" x="0" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">│</text><text class="qlb-cli-preview-r3" x="24.4" y="410.4" textLength="146.4" clip-path="url(#qlb-cli-preview-line-16)">View&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">│</text><text class="qlb-cli-preview-r3" x="207.4" y="410.4" textLength="134.2" clip-path="url(#qlb-cli-preview-line-16)">&#160;&#160;Documents</text><text class="qlb-cli-preview-r4" x="353.8" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">│</text><text class="qlb-cli-preview-r3" x="378.2" y="410.4" textLength="390.4" clip-path="url(#qlb-cli-preview-line-16)">Selection&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">│</text><text class="qlb-cli-preview-r3" x="805.2" y="410.4" textLength="536.8" clip-path="url(#qlb-cli-preview-line-16)">Use&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="410.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-16)">
+</text><text class="qlb-cli-preview-r4" x="0" y="434.8" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-17)">├──────────────┼─────────────┼──────────────────────────────────┼──────────────────────────────────────────────┤</text><text class="qlb-cli-preview-r2" x="1366.4" y="434.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-17)">
+</text><text class="qlb-cli-preview-r4" x="0" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">│</text><text class="qlb-cli-preview-r2" x="12.2" y="459.2" textLength="170.8" clip-path="url(#qlb-cli-preview-line-18)">&#160;QLB-Test&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">│</text><text class="qlb-cli-preview-r2" x="195.2" y="459.2" textLength="158.6" clip-path="url(#qlb-cli-preview-line-18)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1000&#160;</text><text class="qlb-cli-preview-r4" x="353.8" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">│</text><text class="qlb-cli-preview-r2" x="366" y="459.2" textLength="414.8" clip-path="url(#qlb-cli-preview-line-18)">&#160;--split&#160;test&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">│</text><text class="qlb-cli-preview-r2" x="793" y="459.2" textLength="561.2" clip-path="url(#qlb-cli-preview-line-18)">&#160;Held-out&#160;evaluation&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="459.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-18)">
+</text><text class="qlb-cli-preview-r4" x="0" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">│</text><text class="qlb-cli-preview-r8" x="24.4" y="483.6" textLength="146.4" clip-path="url(#qlb-cli-preview-line-19)">QLB-Full&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">│</text><text class="qlb-cli-preview-r8" x="207.4" y="483.6" textLength="134.2" clip-path="url(#qlb-cli-preview-line-19)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;5000</text><text class="qlb-cli-preview-r4" x="353.8" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">│</text><text class="qlb-cli-preview-r8" x="378.2" y="483.6" textLength="390.4" clip-path="url(#qlb-cli-preview-line-19)">Full&#160;dataset&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">│</text><text class="qlb-cli-preview-r8" x="805.2" y="483.6" textLength="536.8" clip-path="url(#qlb-cli-preview-line-19)">Prompted&#160;evaluation;&#160;includes&#160;Train/Test&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="483.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-19)">
+</text><text class="qlb-cli-preview-r4" x="0" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">│</text><text class="qlb-cli-preview-r2" x="12.2" y="508" textLength="170.8" clip-path="url(#qlb-cli-preview-line-20)">&#160;QLB-SNR&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">│</text><text class="qlb-cli-preview-r2" x="195.2" y="508" textLength="158.6" clip-path="url(#qlb-cli-preview-line-20)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1618&#160;</text><text class="qlb-cli-preview-r4" x="353.8" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">│</text><text class="qlb-cli-preview-r2" x="366" y="508" textLength="414.8" clip-path="url(#qlb-cli-preview-line-20)">&#160;--split&#160;subset_non_revealing&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">│</text><text class="qlb-cli-preview-r2" x="793" y="508" textLength="561.2" clip-path="url(#qlb-cli-preview-line-20)">&#160;Subset&#160;non-revealing&#160;groups&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="508" textLength="12.2" clip-path="url(#qlb-cli-preview-line-20)">
+</text><text class="qlb-cli-preview-r4" x="0" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">│</text><text class="qlb-cli-preview-r8" x="24.4" y="532.4" textLength="146.4" clip-path="url(#qlb-cli-preview-line-21)">QLB-PS&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">│</text><text class="qlb-cli-preview-r8" x="207.4" y="532.4" textLength="134.2" clip-path="url(#qlb-cli-preview-line-21)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;500</text><text class="qlb-cli-preview-r4" x="353.8" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">│</text><text class="qlb-cli-preview-r8" x="378.2" y="532.4" textLength="390.4" clip-path="url(#qlb-cli-preview-line-21)">Policy-shift&#160;file&#160;+&#160;--arm&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">│</text><text class="qlb-cli-preview-r8" x="805.2" y="532.4" textLength="536.8" clip-path="url(#qlb-cli-preview-line-21)">Paired&#160;policy&#160;evaluation&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="532.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-21)">
+</text><text class="qlb-cli-preview-r4" x="0" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">│</text><text class="qlb-cli-preview-r2" x="12.2" y="556.8" textLength="170.8" clip-path="url(#qlb-cli-preview-line-22)">&#160;Train&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">│</text><text class="qlb-cli-preview-r2" x="195.2" y="556.8" textLength="158.6" clip-path="url(#qlb-cli-preview-line-22)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3500&#160;</text><text class="qlb-cli-preview-r4" x="353.8" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">│</text><text class="qlb-cli-preview-r2" x="366" y="556.8" textLength="414.8" clip-path="url(#qlb-cli-preview-line-22)">&#160;--split&#160;train&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">│</text><text class="qlb-cli-preview-r2" x="793" y="556.8" textLength="561.2" clip-path="url(#qlb-cli-preview-line-22)">&#160;Training&#160;only&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="556.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-22)">
+</text><text class="qlb-cli-preview-r4" x="0" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">│</text><text class="qlb-cli-preview-r8" x="24.4" y="581.2" textLength="146.4" clip-path="url(#qlb-cli-preview-line-23)">Validation&#160;&#160;</text><text class="qlb-cli-preview-r4" x="183" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">│</text><text class="qlb-cli-preview-r8" x="207.4" y="581.2" textLength="134.2" clip-path="url(#qlb-cli-preview-line-23)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;500</text><text class="qlb-cli-preview-r4" x="353.8" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">│</text><text class="qlb-cli-preview-r8" x="378.2" y="581.2" textLength="390.4" clip-path="url(#qlb-cli-preview-line-23)">--split&#160;validation&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="780.8" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">│</text><text class="qlb-cli-preview-r8" x="805.2" y="581.2" textLength="536.8" clip-path="url(#qlb-cli-preview-line-23)">Model&#160;selection&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="581.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-23)">
+</text><text class="qlb-cli-preview-r4" x="0" y="605.6" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-24)">╰──────────────┴─────────────┴──────────────────────────────────┴──────────────────────────────────────────────╯</text><text class="qlb-cli-preview-r2" x="1366.4" y="605.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-24)">
+</text><text class="qlb-cli-preview-r2" x="0" y="630" textLength="951.6" clip-path="url(#qlb-cli-preview-line-25)">Splits&#160;are&#160;by&#160;profile.&#160;QLB-Full&#160;contains&#160;Test;&#160;do&#160;not&#160;train&#160;on&#160;Test&#160;documents.</text><text class="qlb-cli-preview-r2" x="1366.4" y="630" textLength="12.2" clip-path="url(#qlb-cli-preview-line-25)">
+</text><text class="qlb-cli-preview-r2" x="1366.4" y="654.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-26)">
+</text><text class="qlb-cli-preview-r9" x="0" y="678.8" textLength="1073.6" clip-path="url(#qlb-cli-preview-line-27)">✓&#160;PASS&#160;&#160;1,000&#160;documents,&#160;665&#160;predicted&#160;groups;&#160;format,&#160;IDs,&#160;coverage,&#160;and&#160;spans&#160;checked.</text><text class="qlb-cli-preview-r2" x="1366.4" y="678.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-27)">
+</text><text class="qlb-cli-preview-r2" x="1366.4" y="703.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-28)">
+</text><text class="qlb-cli-preview-r3" x="0" y="727.6" textLength="122" clip-path="url(#qlb-cli-preview-line-29)">Evaluation</text><text class="qlb-cli-preview-r7" x="122" y="727.6" textLength="61" clip-path="url(#qlb-cli-preview-line-29)">&#160;&#160;/&#160;&#160;</text><text class="qlb-cli-preview-r6" x="183" y="727.6" textLength="61" clip-path="url(#qlb-cli-preview-line-29)">P-GF1</text><text class="qlb-cli-preview-r2" x="1366.4" y="727.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-29)">
+</text><text class="qlb-cli-preview-r1" x="0" y="752" textLength="683.2" clip-path="url(#qlb-cli-preview-line-30)">╭──────────────────────────────────────────────────────╮</text><text class="qlb-cli-preview-r2" x="1366.4" y="752" textLength="12.2" clip-path="url(#qlb-cli-preview-line-30)">
+</text><text class="qlb-cli-preview-r1" x="0" y="776.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-31)">│</text><text class="qlb-cli-preview-r3" x="36.6" y="776.4" textLength="85.4" clip-path="url(#qlb-cli-preview-line-31)">60.0163</text><text class="qlb-cli-preview-r3" x="122" y="776.4" textLength="158.6" clip-path="url(#qlb-cli-preview-line-31)">&#160;/&#160;100&#160;&#160;P-GF1</text><text class="qlb-cli-preview-r1" x="671" y="776.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-31)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="776.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-31)">
+</text><text class="qlb-cli-preview-r1" x="0" y="800.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-32)">│</text><text class="qlb-cli-preview-r10" x="36.6" y="800.8" textLength="402.6" clip-path="url(#qlb-cli-preview-line-32)">Policy-conditioned&#160;group&#160;recovery</text><text class="qlb-cli-preview-r1" x="671" y="800.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-32)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="800.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-32)">
+</text><text class="qlb-cli-preview-r1" x="0" y="825.2" textLength="683.2" clip-path="url(#qlb-cli-preview-line-33)">╰──────────────────────────────────────────────────────╯</text><text class="qlb-cli-preview-r2" x="1366.4" y="825.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-33)">
+</text><text class="qlb-cli-preview-r4" x="0" y="849.6" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-34)">╭──────────────────────────────────┬─────────┬─────────┬─────────┬─────────┬────────┬────────┬────────┬────────╮</text><text class="qlb-cli-preview-r2" x="1366.4" y="849.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-34)">
+</text><text class="qlb-cli-preview-r4" x="0" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="24.4" y="874" textLength="390.4" clip-path="url(#qlb-cli-preview-line-35)">Run&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="qlb-cli-preview-r4" x="427" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="451.4" y="874" textLength="85.4" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;P-GF1</text><text class="qlb-cli-preview-r4" x="549" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="573.4" y="874" textLength="85.4" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;&#160;P-GP</text><text class="qlb-cli-preview-r4" x="671" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="695.4" y="874" textLength="85.4" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;&#160;P-GR</text><text class="qlb-cli-preview-r4" x="793" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="817.4" y="874" textLength="85.4" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;E-GF1</text><text class="qlb-cli-preview-r4" x="915" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="939.4" y="874" textLength="73.2" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;&#160;DSR</text><text class="qlb-cli-preview-r4" x="1024.8" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="1049.2" y="874" textLength="73.2" clip-path="url(#qlb-cli-preview-line-35)">&#160;&#160;&#160;FAR</text><text class="qlb-cli-preview-r4" x="1134.6" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="1159" y="874" textLength="73.2" clip-path="url(#qlb-cli-preview-line-35)">N_docs</text><text class="qlb-cli-preview-r4" x="1244.4" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r3" x="1268.8" y="874" textLength="73.2" clip-path="url(#qlb-cli-preview-line-35)">N_pred</text><text class="qlb-cli-preview-r4" x="1354.2" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="874" textLength="12.2" clip-path="url(#qlb-cli-preview-line-35)">
+</text><text class="qlb-cli-preview-r4" x="0" y="898.4" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-36)">├──────────────────────────────────┼─────────┼─────────┼─────────┼─────────┼────────┼────────┼────────┼────────┤</text><text class="qlb-cli-preview-r2" x="1366.4" y="898.4" textLength="12.2" clip-path="url(#qlb-cli-preview-line-36)">
+</text><text class="qlb-cli-preview-r4" x="0" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="12.2" y="922.8" textLength="414.8" clip-path="url(#qlb-cli-preview-line-37)">&#160;Example&#160;predictions&#160;(synthetic)&#160;&#160;</text><text class="qlb-cli-preview-r4" x="427" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r3" x="451.4" y="922.8" textLength="85.4" clip-path="url(#qlb-cli-preview-line-37)">60.0163</text><text class="qlb-cli-preview-r4" x="549" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="561.2" y="922.8" textLength="109.8" clip-path="url(#qlb-cli-preview-line-37)">&#160;59.4827&#160;</text><text class="qlb-cli-preview-r4" x="671" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="683.2" y="922.8" textLength="109.8" clip-path="url(#qlb-cli-preview-line-37)">&#160;60.5597&#160;</text><text class="qlb-cli-preview-r4" x="793" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="805.2" y="922.8" textLength="109.8" clip-path="url(#qlb-cli-preview-line-37)">&#160;68.6650&#160;</text><text class="qlb-cli-preview-r4" x="915" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="927.2" y="922.8" textLength="97.6" clip-path="url(#qlb-cli-preview-line-37)">&#160;4.9020&#160;</text><text class="qlb-cli-preview-r4" x="1024.8" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="1037" y="922.8" textLength="97.6" clip-path="url(#qlb-cli-preview-line-37)">&#160;7.7253&#160;</text><text class="qlb-cli-preview-r4" x="1134.6" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="1146.8" y="922.8" textLength="97.6" clip-path="url(#qlb-cli-preview-line-37)">&#160;&#160;&#160;1000&#160;</text><text class="qlb-cli-preview-r4" x="1244.4" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="1256.6" y="922.8" textLength="97.6" clip-path="url(#qlb-cli-preview-line-37)">&#160;&#160;&#160;&#160;665&#160;</text><text class="qlb-cli-preview-r4" x="1354.2" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">│</text><text class="qlb-cli-preview-r2" x="1366.4" y="922.8" textLength="12.2" clip-path="url(#qlb-cli-preview-line-37)">
+</text><text class="qlb-cli-preview-r4" x="0" y="947.2" textLength="1366.4" clip-path="url(#qlb-cli-preview-line-38)">╰──────────────────────────────────┴─────────┴─────────┴─────────┴─────────┴────────┴────────┴────────┴────────╯</text><text class="qlb-cli-preview-r2" x="1366.4" y="947.2" textLength="12.2" clip-path="url(#qlb-cli-preview-line-38)">
+</text><text class="qlb-cli-preview-r2" x="0" y="971.6" textLength="646.6" clip-path="url(#qlb-cli-preview-line-39)">Scores&#160;are&#160;percentages;&#160;N_docs&#160;and&#160;N_pred&#160;are&#160;counts.</text><text class="qlb-cli-preview-r2" x="1366.4" y="971.6" textLength="12.2" clip-path="url(#qlb-cli-preview-line-39)">
+</text><text class="qlb-cli-preview-r2" x="1366.4" y="996" textLength="12.2" clip-path="url(#qlb-cli-preview-line-40)">
+</text>
+    </g>
+    </g>
+</svg>

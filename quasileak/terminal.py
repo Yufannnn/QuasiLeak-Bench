@@ -29,28 +29,30 @@ def enabled():
 def banner(*, demo=False):
     release = version("quasileak-bench")
     if not enabled():
-        print(f"QuasiLeak-Bench {release}" + (" | OFFLINE DEMO · synthetic detector" if demo else ""))
+        print(f"QuasiLeak-Bench {release}")
         print("Individually weak, but revealing together.")
         return
     out = console()
-    logo = Text(
-        " ██████╗ ██╗     ██████╗ \n"
-        "██╔═══██╗██║     ██╔══██╗\n"
-        "██║   ██║██║     ██████╔╝\n"
-        "██║▄▄ ██║██║     ██╔══██╗\n"
-        "╚██████╔╝███████╗██████╔╝\n"
-        " ╚══▀▀═╝ ╚══════╝╚═════╝ ", style="bold cyan")
-    title = Text("QuasiLeak-Bench", style="bold bright_white")
-    title.append("  /  privacy evaluation toolkit", style="dim")
-    badges = Text(f" v{release} ", style="bold black on cyan")
-    badges.append("  ")
-    badges.append(" OFFLINE DEMO " if demo else " EVALUATE · COMPARE · REPRODUCE ", style="bold white on dark_magenta")
-    badges.append("  ")
-    badges.append(" RELEASED SCORER ", style="bold black on green")
-    content = [logo, Text(""), title, Text("Individually weak, but revealing together.", style="italic"), Text(""), badges]
+    title = Table.grid(expand=True)
+    title.add_column(ratio=1)
+    title.add_column(justify="right", no_wrap=True)
+    title.add_row(Text("QuasiLeak-Bench", style="bold cyan"), Text(f"v{release}", style="bright_black"))
+    facts = Text("5,000", style="bold cyan")
+    facts.append(" documents    ", style="white")
+    facts.append("4", style="bold cyan")
+    facts.append(" benchmark views    ", style="white")
+    facts.append("P-GF1", style="bold cyan")
+    facts.append(" evaluation", style="white")
+    commands = Text("datasets", style="cyan")
+    for command in ("check", "score", "report", "compare"):
+        commands.append("  /  ", style="bright_black")
+        commands.append(command, style="cyan")
+    content = [title, Text("Individually weak, but revealing together.", style="italic white"), Text(""),
+               Text("Policy-conditioned quasi-evidence group recovery", style="white"), Text(""), facts,
+               Text(""), commands]
     if demo:
-        content.extend([Text(""), Text("Synthetic example detector · no model calls · not a leaderboard result", style="dim")])
-    out.print(Panel(Group(*content), border_style="cyan", padding=(1, 3), width=min(out.width, 108)))
+        content.extend([Text(""), Text("Example workflow · bundled predictions", style="bright_black")])
+    out.print(Panel(Group(*content), border_style="cyan", padding=(1, 3), width=min(out.width, 104)))
     out.print()
 
 
@@ -58,11 +60,10 @@ def heading(title, badge=None):
     if not enabled():
         print(f"QuasiLeak-Bench | {title}\n")
         return
-    label = Text(" QLB ", style="bold black on cyan")
-    label.append("  " + title.upper(), style="bold cyan")
+    label = Text(title, style="bold cyan")
     if badge:
-        label.append("  ")
-        label.append(f" {badge} ", style="bold white on dark_magenta")
+        label.append("  /  ", style="bright_black")
+        label.append(badge if badge == "P-GF1" else badge.lower(), style="white")
     out = console()
     out.print(label)
 
@@ -82,7 +83,7 @@ def show_table(headers, rows, plain_text):
             grid.add_column("Value", justify="right", no_wrap=True)
             for header, value in zip(headers[1:], row[1:]):
                 label = "—" if value is None else f"{value:.4f}" if isinstance(value, float) else str(value)
-                grid.add_row(Text(header), Text(label, style="bold magenta" if header == "P-GF1" else ""))
+                grid.add_row(Text(header), Text(label, style="bold cyan" if header == "P-GF1" else ""))
             out.print(grid)
         return
     grid = Table(box=box.ROUNDED, border_style="bright_black", header_style="bold cyan",
@@ -90,7 +91,7 @@ def show_table(headers, rows, plain_text):
     for index, header in enumerate(headers):
         numeric = index > 0 and header not in ("Selection", "Use")
         grid.add_column(header, justify="left" if index == 0 or header in ("Selection", "Use") else "right",
-                        no_wrap=numeric, overflow="fold", style="bold magenta" if header == "P-GF1" else None)
+                        no_wrap=numeric, overflow="fold", style="bold cyan" if header == "P-GF1" else None)
     for row in rows:
         grid.add_row(*(Text("—" if value is None else f"{value:.4f}" if isinstance(value, float) else str(value)) for value in row))
     out.print(grid)
@@ -100,16 +101,16 @@ def result_badge(metrics):
     if not enabled() or not isinstance(metrics.get("P-GF1"), (int, float)):
         return
     out = console()
-    text = Text(f"{metrics['P-GF1']:.4f}", style="bold magenta")
+    text = Text(f"{metrics['P-GF1']:.4f}", style="bold cyan")
     text.append(" / 100  P-GF1", style="bold")
     text.append("\nPolicy-conditioned group recovery", style="dim")
-    out.print(Panel(text, border_style="magenta", width=min(out.width, 56), padding=(0, 2)))
+    out.print(Panel(text, border_style="cyan", width=min(out.width, 56), padding=(0, 2)))
 
 
 def success(message):
     if not enabled():
         print("PASS | " + message)
         return
-    text = Text(" PASS ", style="bold black on green")
+    text = Text("✓ PASS", style="bold green")
     text.append("  " + message)
     console().print(text)
