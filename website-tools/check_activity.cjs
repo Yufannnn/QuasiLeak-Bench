@@ -32,14 +32,21 @@ const daily = Array.from({length:84}, (_,index) => ({
     for (const width of [1440,1024,390]) for (const mode of ['light','dark']) for (const populated of [false,true]) {
       const context = await browser.newContext({viewport:{width,height:1100},colorScheme:mode});
       const page = await context.newPage(), errors = [];
+      let todayViews=12, generatedAt=live.generatedAt;
       page.on('pageerror', error => errors.push(error.message));
       await page.clock.install({time:new Date('2026-10-18T08:27:00Z')});
       await page.route('**/*', async route => {
         const url = new URL(route.request().url());
         if (url.pathname.endsWith('/visitor-stats.json')) return route.fulfill({json:{...live, daily:populated?daily:[], generated_at:live.generatedAt}});
-        if (url.hostname.endsWith('.workers.dev')) return route.fulfill({json:url.pathname==='/stats'?live:{
+        if (url.hostname.endsWith('.workers.dev')) return route.fulfill({json:url.pathname==='/stats'?{
+          ...live,generatedAt,generated_at:generatedAt,daily:populated?daily.map(row=>row.day==='2026-10-18'?{...row,views:todayViews}:row):[]
+        }:{
           status:'ok',provider:'cloudflare',generatedAt:live.generatedAt,github:{stars:2,forks:1},huggingFace:{downloads:3,likes:1}
         }});
+        // Existing release-counter fallbacks may run when the virtual clock
+        // advances through an API timeout; they remain intercepted, never sent.
+        if (url.hostname==='api.github.com') return route.fulfill({json:{stargazers_count:2,forks_count:1}});
+        if (url.hostname==='huggingface.co') return route.fulfill({json:{downloads:3,likes:1}});
         if (url.hostname!=='127.0.0.1') throw Error('Unexpected third-party request: '+url.origin);
         return route.continue();
       });
@@ -86,6 +93,12 @@ const daily = Array.from({length:84}, (_,index) => ({
       await page.locator('.public-pulse').screenshot({path:path.join(output,`${width}-${mode}-${populated?'populated':'empty'}.png`),
         style:'.site-header{visibility:hidden!important}.activity-tooltip{visibility:hidden!important}'});
       if(width===1440 && mode==='light' && populated) {
+        todayViews=17; generatedAt='2026-10-18T08:28:30Z';
+        await page.clock.runFor(30000);
+        await page.waitForFunction(()=>document.getElementById('activity-summary').textContent.startsWith('Today 17'));
+        await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
+        await page.waitForTimeout(100);
+        assert.match(await page.locator('#activity-summary').innerText(),/^Today 17/,'Old static snapshots must not overwrite live counts');
         const oldColour=await page.locator('.activity-cell[data-level="4"]').first().evaluate(element=>getComputedStyle(element).backgroundColor);
         await page.emulateMedia({colorScheme:'dark'});
         await page.waitForFunction(()=>document.documentElement.dataset.researchTheme==='dark');

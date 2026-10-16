@@ -159,7 +159,6 @@ def main():
     refresh_release_counters(assets)
     config_path = assets / "analytics-config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
-    activity = activity_snapshot(config["productionPath"])
     if config.get("provider") == "cloudflare":
         endpoint = urlsplit(config["endpoint"])
         if endpoint.scheme != "https" or not endpoint.hostname.endswith(".workers.dev"):
@@ -167,10 +166,14 @@ def main():
         snapshot = public_json(config["endpoint"].rstrip("/") + "/stats")
         if snapshot.get("status") != "ok" or snapshot.get("provider") != "cloudflare":
             raise ValueError("Invalid Cloudflare aggregate snapshot")
-        snapshot.update(activity)
+        # The same Cloudflare database already stores UTC daily page counts.
+        # Never replace this series with an unconfigured GoatCounter result.
+        snapshot["daily"] = [{"day": row["day"], "views": count(row["views"])} for row in snapshot.get("daily", [])]
+        snapshot["generated_at"] = snapshot.get("generated_at") or snapshot.get("generatedAt") or datetime.now(timezone.utc).isoformat()
         (assets / "visitor-stats.json").write_text(json.dumps(snapshot, indent=2)+"\n", encoding="utf-8")
         print("Cloudflare Atlas aggregate snapshot prepared.")
         return
+    activity = activity_snapshot(config["productionPath"])
     site = os.environ.get("QLB_GOATCOUNTER_SITE", "").strip().lower()
     if site and not re.fullmatch(r"[a-z0-9][a-z0-9-]*", site):
         raise ValueError("QLB_GOATCOUNTER_SITE must be the account name, without a URL")

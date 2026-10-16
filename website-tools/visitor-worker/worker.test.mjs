@@ -51,6 +51,30 @@ test('unknown country still counts a view, but not an additional country', async
   assert.equal(snapshot.countries, 0);
 });
 
+test('daily activity sums existing page/country rows without exposing them or recording a visit', async () => {
+  const day = offset => new Date(Date.now() - offset * 86400000).toISOString().slice(0, 10);
+  const rows = [
+    {day:day(0),path:'/QuasiLeak-Bench/',country:'SG',views:2},
+    {day:day(0),path:'/QuasiLeak-Bench/explore.html',country:'US',views:3},
+    {day:day(0),path:'/QuasiLeak-Bench/',country:'ZZ',views:1},
+    {day:day(1),path:'/QuasiLeak-Bench/',country:'SG',views:4},
+    {day:day(84),path:'/QuasiLeak-Bench/',country:'SG',views:9}
+  ];
+  const env = {DB:{prepare(sql) {
+    assert.match(sql,/GROUP BY day, path, country/);
+    return {async all(){return {results:rows};},async run(){assert.fail('GET must not record visits');}};
+  }}};
+  const result = await stats(env);
+  assert.equal(result.pageViews,19);
+  assert.equal(result.daily.length,84);
+  assert.equal(result.daily[0].day,day(83));
+  assert.deepEqual(result.daily.at(-1),{day:day(0),views:6});
+  assert.deepEqual(result.daily.at(-2),{day:day(1),views:4});
+  assert.equal(result.daily.reduce((sum,row)=>sum+row.views,0),10);
+  assert.ok(result.daily.every(row=>Object.keys(row).sort().join(',')==='day,views'));
+  assert.equal(result.generated_at,result.generatedAt);
+});
+
 test('release counters fetch public APIs once and reuse the two-minute edge cache', async () => {
   let saved, calls = 0;
   const cache = {

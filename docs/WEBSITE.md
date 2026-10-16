@@ -12,7 +12,21 @@ Later website pushes, manual workflow runs, and the six-hour schedule update it.
 Pages is configured to use GitHub Actions; no domain or hosting purchase is needed.
 If necessary, run Actions → Benchmark website → Run workflow after changing visibility.
 
-## Activate free visitor analytics
+## Current analytics: Cloudflare
+
+The public site uses the existing Cloudflare Worker and D1 database; no GoatCounter
+account or token is needed. Atlas and Activity share `/stats`, including 84 daily
+UTC page-view totals. Activity receives the Atlas's existing 30-second refreshes
+without another provider request. The six-hour Pages job also preserves those
+counts in `assets/visitor-stats.json` for same-origin fallback. No visitor IDs,
+IPs, paths, or referrers are included in the public daily series.
+
+Deployment and storage details: [Cloudflare counter](../website-tools/visitor-worker/README.md).
+
+## Optional GoatCounter alternative
+
+These steps apply only if `analytics-config.json` is switched from Cloudflare to
+GoatCounter. They are not required for the current deployment.
 
 1. Manually create a free account at https://www.goatcounter.com/signup. Use a
    dedicated account/site for this benchmark; suggested account name: `quasileak-bench`
@@ -39,15 +53,18 @@ Tracking runs only on the production hostname and `/QuasiLeak-Bench/` path. Loca
 previews do not count. Query strings, hash state, and model/prediction contents are
 not sent. The script respects Do Not Track and Global Privacy Control.
 
-The Atlas labels are **Page visits**, **Homepage visits**, and **Countries reached**.
-GoatCounter session-deduplicates visits per page; these are neither every browser
+Cloudflare counts page views, not distinct people. The Atlas summary shows views
+and countries; small countries such as Singapore get an approximate map marker.
+Activity uses the same stored views grouped by UTC day, not calendar refreshes.
+
+With the optional GoatCounter provider, session-deduplicated visits are neither every browser
 reload nor a global count of distinct people. Homepage visits include the project
 root and `index.html`. All API queries are limited to the seven public page paths.
 Unknown countries are excluded from the country total. Country fills and hover
 titles use the same aggregate snapshot; the low-resolution map omits some small
 countries even when they are included in the country count.
 
-The API token is read only inside GitHub Actions. The uploaded artifact contains
+For GoatCounter, the API token is read only inside GitHub Actions. The uploaded artifact contains
 only a public account name and aggregate JSON. Until configured, the Atlas keeps
 its unavailable state and displays no fabricated counts. A provider/API failure
 fails the refresh rather than replacing a published snapshot with fake numbers.

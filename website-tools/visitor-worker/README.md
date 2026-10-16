@@ -40,6 +40,14 @@ secret is committed or needed by the browser.
 counts. The page refreshes the Atlas every 30 seconds while visible, on return to
 the tab, and after a recorded view. Polling does not record extra visits.
 
+The same `/stats` response includes `daily: [{day, views}, ...]` for the last 84 UTC
+days, summed across public pages and countries, plus `generated_at`. No paths,
+visitor identifiers, or country breakdowns are included in the daily series.
+Activity reuses these existing Atlas responses, so it updates every 30 seconds
+without extra third-party browser requests. The Pages job preserves this series
+in `visitor-stats.json` as the same-origin static backup. GoatCounter credentials
+are not used when the configured provider is Cloudflare.
+
 `GET /release` fetches public GitHub stars/forks and Hugging Face downloads/likes.
 Cloudflare caches the result for 120 seconds per edge location to reduce upstream
 API traffic; no tokens are needed. The page checks every minute while visible and

@@ -21,7 +21,7 @@ async function harness(script, kind, initiallyOffline = false, sharedGitHubLimit
   };
   const live = kind === 'release' ? {
     github: {stars: 4, forks: 1}, huggingFace: {downloads: 9, likes: 2}
-  } : {pageViews: 7, visitors: 5, countries: 1, countryVisits: []};
+  } : {pageViews: 7, visitors: 5, countries: 1, countryVisits: [], daily:[{day:'2026-10-16',views:7}]};
   let fail = initiallyOffline;
   const fetch = async url => {
     url = String(url); calls.push(url);
@@ -35,14 +35,27 @@ async function harness(script, kind, initiallyOffline = false, sharedGitHubLimit
       generatedAt: '2026-10-16T05:30:00Z', github: null, huggingFace: live.huggingFace});
     return Response.json({status: 'ok', provider: 'cloudflare', generatedAt: '2026-10-16T05:30:00Z', ...live});
   };
-  const window = {addEventListener: (event, callback) => { events[event] = callback; }};
+  const window = {addEventListener: (event, callback) => { events[event] = callback; },
+    dispatchEvent: event => { events[event.type]?.(event); }};
   const source = await readFile(new URL('../../website/assets/' + script, import.meta.url), 'utf8');
   vm.runInNewContext(source, {document, window, URL, fetch, AbortSignal, Intl,
+    CustomEvent: class { constructor(type, options){this.type=type;this.detail=options.detail;} },
     setInterval: (callback, period) => { timers.push({callback, period}); }});
   const settle = async () => { for (let i = 0; i < 8; i++) await new Promise(resolve => setImmediate(resolve)); };
   await settle();
-  return {fields, status, panel, document, events, timers, calls, settle, fail: () => { fail = true; }};
+  return {fields, status, panel, document, window, events, timers, calls, settle, fail: () => { fail = true; }};
 }
+
+test('Atlas shares daily counts with Activity through its existing refresh, without extra requests', async () => {
+  const h = await harness('visitor-atlas.js','visitor');
+  assert.equal(h.window.quasiLeakVisitorStats.daily[0].views,7);
+  let received;
+  h.events['quasileak:activity-stats'] = event => { received=event.detail; };
+  const start=h.calls.length;
+  h.timers[0].callback(); await h.settle();
+  assert.equal(h.calls.length,start+1);
+  assert.equal(received.daily[0].views,7);
+});
 
 test('shared GitHub rate limits use the direct public API, cached across refreshes', async () => {
   const h = await harness('release-counters.js', 'release', false, true);

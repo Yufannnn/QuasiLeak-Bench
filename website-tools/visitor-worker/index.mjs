@@ -107,18 +107,27 @@ export default {
         return response({counted: true}, 201, allowed);
       }
       if (url.pathname === '/stats' && request.method === 'GET') {
-        const rows = await env.DB.prepare('SELECT path, country, SUM(views) AS views FROM daily_page_views GROUP BY path, country').all();
+        const rows = await env.DB.prepare('SELECT day, path, country, SUM(views) AS views FROM daily_page_views GROUP BY day, path, country').all();
         const countries = new Map();
+        const dailyViews = new Map();
+        const now = new Date();
+        const first = new Date(now.getTime() - 83 * 86400000).toISOString().slice(0, 10);
+        const today = now.toISOString().slice(0, 10);
         let pageViews = 0, homepageViews = 0;
         for (const row of rows.results || []) {
           const views = Number(row.views);
           pageViews += views;
+          if (row.day >= first && row.day <= today) dailyViews.set(row.day, (dailyViews.get(row.day) || 0) + views);
           if (row.path === ROOT || row.path === ROOT + 'index.html') homepageViews += views;
           if (/^[A-Z]{2}$/.test(row.country) && !['ZZ', 'XX'].includes(row.country)) {
             countries.set(row.country, (countries.get(row.country) || 0) + views);
           }
         }
-        return response({status: 'ok', provider: 'cloudflare', generatedAt: new Date().toISOString(),
+        const daily = Array.from({length: 84}, (_, index) => {
+          const day = new Date(now.getTime() - (83 - index) * 86400000).toISOString().slice(0, 10);
+          return {day, views: dailyViews.get(day) || 0};
+        });
+        return response({status: 'ok', provider: 'cloudflare', generatedAt: now.toISOString(), generated_at: now.toISOString(), daily,
           collectedSince: env.COLLECTED_SINCE || '2026-10-16', pageViews, visitors: homepageViews,
           metric: 'pageviews', countries: countries.size,
           countryVisits: [...countries].map(([code, visits]) => ({code, name: code, visits})).sort((a, b) => b.visits - a.visits)});

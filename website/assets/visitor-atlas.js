@@ -107,6 +107,10 @@
       status.title = stats.collectedSince ? 'Page views recorded since ' + stats.collectedSince : (Number.isFinite(generated.getTime()) ? generated.toISOString() : '');
       atlas.dataset.analytics = 'live';
       if (stats.provider === 'cloudflare') hadLiveData = true;
+      if (Array.isArray(stats.daily) && stats.daily.length) {
+        window.quasiLeakVisitorStats = stats;
+        window.dispatchEvent(new CustomEvent('quasileak:activity-stats', {detail:stats}));
+      }
       paintCountries(stats.countryVisits).catch(()=>{});
     }
   };

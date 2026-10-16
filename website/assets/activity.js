@@ -1,4 +1,4 @@
-/* Aggregate daily counts only. No provider requests, cookies or visitor identifiers. */
+/* Aggregate daily counts, reused from the Atlas; no additional provider requests. */
 (() => {
   const card = document.getElementById('activity-card');
   if (!card) return;
@@ -13,6 +13,16 @@
   const dayKey = date => date.toISOString().slice(0, 10);
   const label = date => date.toLocaleDateString('en-US', {month:'short', day:'numeric', timeZone:'UTC'});
   let snapshot = null;
+
+  function receive(stats) {
+    if (!Array.isArray(stats?.daily) || !stats.daily.length) return false;
+    const incoming = Date.parse(stats.generated_at || stats.generatedAt || '');
+    const current = Date.parse(snapshot?.generated_at || snapshot?.generatedAt || '');
+    if (Number.isFinite(current) && (!Number.isFinite(incoming) || incoming < current)) return false;
+    snapshot = stats;
+    render();
+    return true;
+  }
 
   function render() {
     const focusedDay = grid.contains(document.activeElement) ? document.activeElement.dataset.day : null;
@@ -86,13 +96,16 @@
     try {
       const result = await fetch(new URL('visitor-stats.json', base), {cache:'no-store', credentials:'omit'});
       if (!result.ok) throw Error('Snapshot unavailable');
-      snapshot = await result.json();
-    } catch { snapshot = null; }
+      const stats = await result.json();
+      receive(stats);
+    } catch { /* Keep the last valid Atlas or static snapshot during an outage. */ }
     render();
   }
+  window.addEventListener('quasileak:activity-stats', event => receive(event.detail));
+  receive(window.quasiLeakVisitorStats);
   render(); refresh();
   setInterval(() => { if (!document.hidden) render(); }, 60000);
-  // The upstream snapshot is produced by the existing six-hour Pages job.
+  // Six-hour static backup; live daily counts arrive with the Atlas's 30s refresh.
   setInterval(() => { if (!document.hidden) refresh(); }, 300000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
 })();

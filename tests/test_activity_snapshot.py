@@ -68,3 +68,19 @@ def test_cloudflare_atlas_is_preserved_when_activity_is_unconfigured(monkeypatch
     assert result["countryVisits"] == [{"code":"SG", "visits":5}]
     assert result["daily"] == []
     assert "generated_at" in result
+
+
+def test_cloudflare_daily_counts_are_not_replaced_by_goatcounter(monkeypatch, tmp_path):
+    assets = tmp_path / "assets"
+    assets.mkdir()
+    (assets / "analytics-config.json").write_text(json.dumps({"provider":"cloudflare",
+        "endpoint":"https://qlb-visitor-atlas.encformer-visitors.workers.dev", "productionPath":"/QuasiLeak-Bench/"}))
+    monkeypatch.setattr(atlas.sys, "argv", ["prepare_atlas", "--directory", str(tmp_path)])
+    monkeypatch.setattr(atlas, "refresh_release_counters", lambda *args: None)
+    monkeypatch.setattr(atlas, "activity_snapshot", lambda *args: pytest.fail("Cloudflare must not depend on GoatCounter"))
+    monkeypatch.setattr(atlas, "public_json", lambda url: {"status":"ok", "provider":"cloudflare", "pageViews":6,
+        "daily":[{"day":"2026-10-16", "views":6}], "generatedAt":"2026-10-16T06:23:00Z"})
+    atlas.main()
+    result = json.loads((assets / "visitor-stats.json").read_text())
+    assert result["daily"] == [{"day":"2026-10-16", "views":6}]
+    assert result["generated_at"] == "2026-10-16T06:23:00Z"
