@@ -2,7 +2,7 @@
 
 # QuasiLeak-Bench
 
-[Paper](https://arxiv.org/abs/ARXIV_ID) · [Dataset](https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench) · [Leaderboard](https://yufannnn.github.io/QuasiLeak-Bench/)
+[Paper](https://arxiv.org/abs/2610.21333) · [Dataset](https://huggingface.co/datasets/HenryZYF/QuasiLeak-Bench) · [Leaderboard](https://yufannnn.github.io/QuasiLeak-Bench/)
 
 QuasiLeak-Bench is a benchmark for policy-conditioned quasi-evidence group recovery. Messages
 often contain cues that are weak alone but together reveal a private attribute of the sender,
@@ -106,7 +106,7 @@ OpenAI-compatible API (`.env.example`).
              Policy-Conditioned Quasi-Evidence Group Recovery},
   author  = {Zhu, Yufan and Jiang, Yangfan and Fei, Yang and Hou, Shizheng and
              Mohapatra, Shubhankar and Xiao, Xiaokui},
-  journal = {arXiv preprint arXiv:ARXIV_ID},
+  journal = {arXiv preprint arXiv:2610.21333},
   year    = {2026}
 }
 ```
