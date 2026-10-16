@@ -364,28 +364,49 @@ html[data-research-theme=dark] #leaderboard :is(.results-view select,.control-po
 }
 @media(prefers-reduced-motion:reduce){#leaderboard :is(button,input,select,.search-field){transition:none}}
 
-/* A single atlas surface, with the map and compact statistics sharing its height. */
-#visitor-atlas .atlas-heading{flex-direction:row;align-items:center;margin-bottom:16px}
-#visitor-atlas .atlas-heading h2{margin:0}
+/* Public activity uses two balanced cards rather than leaving the Atlas alone. */
+.public-pulse{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(290px,.85fr);gap:20px;padding:34px 0 44px;border-top:1px solid var(--lb-line)}
+#visitor-atlas{margin:0;padding:0;border:0}
+#visitor-atlas .atlas-heading,.release-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+#visitor-atlas .atlas-heading h2,.release-heading h2{margin:0}
 #visitor-atlas .atlas-status{padding:5px 10px;background:transparent}
 #visitor-atlas .atlas-status i{background:var(--lb-muted);opacity:.55}
 #visitor-atlas[data-analytics=live] .atlas-status i{background:var(--lb-teal);opacity:1}
-#visitor-atlas .atlas-layout{grid-template-columns:minmax(0,1fr) 250px;gap:0;border:1px solid var(--lb-line);border-radius:14px;overflow:hidden;background:var(--lb-surface)}
+#visitor-atlas .atlas-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border:1px solid var(--lb-line);border-radius:14px;overflow:hidden;background:var(--lb-surface)}
 #visitor-atlas .atlas-map{display:flex;align-items:center;min-width:0;margin:0;padding:20px;border:0;border-radius:0;box-shadow:none;background:var(--lb-soft)}
-#visitor-atlas .atlas-map img{width:100%;height:clamp(160px,24vw,260px);object-fit:contain;opacity:1}
-#visitor-atlas .atlas-stats{display:flex;flex-direction:column;justify-content:center;gap:0;padding:8px 24px;border-left:1px solid var(--lb-line)}
-#visitor-atlas .atlas-stats>div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border:0;border-bottom:1px solid var(--lb-line);border-radius:0;box-shadow:none;background:transparent}
-#visitor-atlas .atlas-stats>div:last-child{border-bottom:0}
+#visitor-atlas .atlas-map img{width:100%;height:clamp(175px,22vw,255px);object-fit:contain;opacity:1}
+#visitor-atlas .atlas-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--lb-line)}
+#visitor-atlas .atlas-stats>div{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:8px;padding:16px 18px;border:0;border-right:1px solid var(--lb-line);border-radius:0;box-shadow:none;background:transparent}
+#visitor-atlas .atlas-stats>div:last-child{border-right:0}
 #visitor-atlas .atlas-stats span{color:var(--lb-muted)}
 #visitor-atlas .atlas-stats strong{margin:0;font-variant-numeric:tabular-nums;color:var(--lb-ink)}
-@media(max-width:760px){
- #visitor-atlas .atlas-layout{grid-template-columns:minmax(0,1fr)}
- #visitor-atlas .atlas-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:16px 0;border-left:0;border-top:1px solid var(--lb-line)}
- #visitor-atlas .atlas-stats>div{flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:10px;padding:0 16px;border-bottom:0;border-right:1px solid var(--lb-line)}
- #visitor-atlas .atlas-stats>div:last-child{border-right:0}
-}
-@media(max-width:480px){
+.release-counters{padding:20px;border:1px solid var(--lb-line);border-radius:14px;background:var(--lb-surface);box-shadow:0 4px 18px rgb(32 54 65 / 3%)}
+.release-heading p{margin:5px 0 0;color:var(--lb-muted);font-size:var(--type-small)}
+.release-status{flex:0 0 auto;color:var(--lb-muted);font-size:var(--type-small);white-space:nowrap}
+.release-counter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.release-counter,.release-paper{display:flex;flex-direction:column;justify-content:space-between;gap:7px;min-height:104px;padding:14px;border:1px solid var(--lb-line);border-radius:10px;background:var(--lb-soft);color:var(--lb-ink);text-decoration:none;transition:border-color .15s,background .15s,transform .15s}
+.release-counter:hover,.release-paper:hover{border-color:var(--lb-accent);background:color-mix(in srgb,var(--lb-accent) 8%,var(--lb-surface));transform:translateY(-1px);text-decoration:none}
+.release-counter>span,.release-paper>span{color:var(--lb-muted);font-size:var(--type-small)}
+.release-counter strong{font-size:var(--type-section);font-variant-numeric:tabular-nums;line-height:1}
+.release-counter small{color:var(--lb-accent);font-size:var(--type-small)}
+.release-counter-wide{grid-column:1/-1;min-height:82px}
+.release-paper{min-height:auto;flex-direction:row;align-items:center;margin-top:10px}
+.release-paper strong{color:var(--lb-accent);font-size:var(--type-small);font-weight:600}
+html[data-research-theme=dark] .release-counters{background:var(--lb-surface)}
+html[data-research-theme=dark] .release-counter,html[data-research-theme=dark] .release-paper{background:var(--lb-soft)}
+@media(max-width:980px){.public-pulse{grid-template-columns:minmax(0,1fr)}.release-counters{padding:18px}.release-counter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.release-counter-wide{grid-column:auto}}
+@media(max-width:600px){
+ .public-pulse{gap:28px;padding:28px 0 36px}
  #visitor-atlas .atlas-map{padding:12px}
- #visitor-atlas .atlas-stats{display:flex;padding:0 16px}
- #visitor-atlas .atlas-stats>div{flex-direction:row;align-items:center;padding:12px 0;border-right:0;border-bottom:1px solid var(--lb-line)}
+ #visitor-atlas .atlas-stats>div{padding:14px 12px}
+ .release-counter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .release-counter-wide{grid-column:1/-1}
+}
+@media(max-width:420px){
+ #visitor-atlas .atlas-stats{display:flex;flex-direction:column}
+ #visitor-atlas .atlas-stats>div{flex-direction:row;align-items:center;width:100%;border-right:0;border-bottom:1px solid var(--lb-line)}
+ #visitor-atlas .atlas-stats>div:last-child{border-bottom:0}
+ .release-heading{align-items:flex-start;flex-direction:column}
+ .release-counter-grid{grid-template-columns:1fr}
+ .release-counter-wide{grid-column:auto}
 }

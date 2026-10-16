@@ -1,4 +1,4 @@
-"""Prepare public GoatCounter configuration and an aggregate-only Atlas snapshot."""
+"""Prepare aggregate-only Visitor Atlas and public release-counter snapshots."""
 import argparse
 from datetime import datetime, timezone
 import json
@@ -11,10 +11,56 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
+GITHUB_REPOSITORY = "Yufannnn/QuasiLeak-Bench"
+HUGGING_FACE_DATASET = "HenryZYF/QuasiLeak-Bench"
+ARXIV_URL = "https://arxiv.org/abs/2610.21333"
+
+
 def count(value):
     if isinstance(value, bool) or not isinstance(value, int) or value < 0:
         raise ValueError("Analytics returned an invalid count")
     return value
+
+
+def public_json(url):
+    request = Request(url, headers={
+        "Accept": "application/json",
+        "User-Agent": "QuasiLeak-Bench-Pages-Refresh",
+    })
+    with urlopen(request, timeout=30) as response:
+        return json.load(response)
+
+
+def release_snapshot():
+    github = public_json("https://api.github.com/repos/" + GITHUB_REPOSITORY)
+    hugging_face = public_json("https://huggingface.co/api/datasets/" + HUGGING_FACE_DATASET)
+    return {
+        "status": "ok",
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "github": {
+            "stars": count(github["stargazers_count"]),
+            "forks": count(github["forks_count"]),
+            "url": "https://github.com/" + GITHUB_REPOSITORY,
+        },
+        "huggingFace": {
+            "downloads": count(hugging_face["downloads"]),
+            "url": "https://huggingface.co/datasets/" + HUGGING_FACE_DATASET,
+        },
+        "arxiv": {"url": ARXIV_URL},
+    }
+
+
+def refresh_release_counters(assets):
+    try:
+        snapshot = release_snapshot()
+    except (HTTPError, URLError, ValueError, KeyError, json.JSONDecodeError) as error:
+        # These public APIs are supplementary: retain the last good snapshot if one fails.
+        print("Release counter refresh skipped: " + type(error).__name__, file=sys.stderr)
+        return
+    (assets / "release-stats.json").write_text(
+        json.dumps(snapshot, indent=2) + "\n", encoding="utf-8"
+    )
+    print("Release counter snapshot prepared.")
 
 
 def aggregate(total, home, locations):
@@ -70,6 +116,7 @@ def main():
     parser.add_argument("--directory", type=Path, required=True)
     args = parser.parse_args()
     assets = args.directory / "assets"
+    refresh_release_counters(assets)
     config_path = assets / "analytics-config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
     site = os.environ.get("QLB_GOATCOUNTER_SITE", "").strip().lower()
