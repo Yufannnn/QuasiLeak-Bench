@@ -1,0 +1,11 @@
+NUS School of Computing logos, downloaded from the school's official website:
+https://www.comp.nus.edu.sg/
+
+Full colour:
+https://www.comp.nus.edu.sg/wp-content/uploads/2023/09/nus-computing-logo-1.png
+
+White (dark theme):
+https://www.comp.nus.edu.sg/wp-content/uploads/2023/09/logo-soc-white.svg
+
+The NUS name and logos are trademarks of the National University of Singapore.
+These assets are not covered by the repository's code or dataset licences.
